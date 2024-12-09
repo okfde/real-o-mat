@@ -1,5 +1,9 @@
 ---
 import '@fontsource-variable/inter'
+import '../assets/style.css'
+import logo from '../assets/fragdenstaat.svg'
+
+const { enablePadding } = Astro.props
 ---
 
 <!doctype html>
@@ -10,23 +14,47 @@ import '@fontsource-variable/inter'
     <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
     <title>Real-O-Mat</title>
   </head>
-  <body class="bg-blue-100">
+  <body class="bg-blue-100 flex flex-col min-h-screen">
     <header class="container mx-auto py-12 px-4">
       <h1 class="text-6xl font-extrabold mb-1">Real-O-Mat</h1>
       <span class="text-xl font-semibold text-blue-800">
         Bundestagswahl 2025
       </span>
     </header>
+
     <div class="container mx-auto px-4">
-      <div class="bg-white py-8 px-4">
+      <main
+        class="bg-white"
+        class:list={{ 'py-8 px-4': enablePadding !== false }}
+      >
         <slot />
-      </div>
+      </main>
     </div>
+
+    <footer class="mt-auto pt-12">
+      <div class="bg-blue-50">
+        <div
+          class="container mx-auto py-12 px-4 text-gray-600 md:flex items-center"
+        >
+          <div>
+            <a href="https://fragdenstaat.de" target="_blank">
+              <img src={logo.src} alt="Ein Projekt von FragDenStaat" />
+            </a>
+          </div>
+          <ul class="flex space-x-2 ms-auto">
+            <li>
+              <a href="https://fragdenstaat.de/impressum" target="_blank">
+                Impressum
+              </a>
+            </li>
+            <li>
+              <a href="https://fragdenstaat.de/datenschutz" target="_blank">
+                Datenschutz
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
-
-<style>
-  body {
-    font-feature-settings: 'cv05', 'cv07', 'ss03';
-  }
-</style>

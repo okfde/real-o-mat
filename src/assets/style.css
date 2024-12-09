@@ -1,0 +1,8 @@
+body {
+  font-feature-settings: 'cv05', 'cv07', 'ss03';
+}
+
+.btn {
+  @apply px-4 py-2 text-white font-semibold;
+  @apply bg-blue-700 hover:bg-blue-800 focus:ring focus:ring-blue-900 outline-none transition;
+}

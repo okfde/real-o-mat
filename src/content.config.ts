@@ -10,24 +10,28 @@ import { file } from 'astro/loaders'
 //   ),
 // })
 
-const answer = z.enum(['yes', 'no', 'neutral'])
+export const answerSchema = z.enum(['yes', 'no', 'neutral'])
+export type Answer = z.infer<typeof answerSchema>
+
+const questionSchema = z.object({
+  id: z.string(),
+  question: z.string(),
+  category: z.string(),
+  answers: z.object({
+    cdu: answerSchema,
+    spd: answerSchema,
+    fdp: answerSchema,
+    gruene: answerSchema,
+    linke: answerSchema,
+    bsw: answerSchema,
+    afd: answerSchema,
+  }),
+})
+export type Question = z.infer<typeof questionSchema>
 
 const questions = defineCollection({
   loader: file('src/data/questions.yaml'),
-  schema: z.object({
-    id: z.number(),
-    question: z.string(),
-    category: z.string(),
-    answers: z.object({
-      cdu: answer,
-      spd: answer,
-      fdp: answer,
-      gruene: answer,
-      linke: answer,
-      bsw: answer,
-      afd: answer,
-    }),
-  }),
+  schema: questionSchema,
 })
 
 export const collections = { questions }

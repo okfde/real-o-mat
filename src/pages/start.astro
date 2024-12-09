@@ -1,0 +1,12 @@
+---
+import { getCollection } from 'astro:content'
+import Questionnaire from '../components/Questionnaire.vue'
+import Layout from '../layouts/Layout.astro'
+import type { Question } from '../content.config'
+
+const questions = (await getCollection('questions')).map((q) => q.data)
+---
+
+<Layout enablePadding={false}>
+  <Questionnaire questions={questions} client:load />
+</Layout>

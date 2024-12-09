@@ -1,5 +1,5 @@
 - question: Es soll wieder nach Afghanistan abgeschoben werden.
-  id: 1
+  id: '1'
   category: Migration
   answers:
     cdu: yes
@@ -10,7 +10,7 @@
     bsw: yes
     afd: no
 - question: Es soll ein Demokratiefördergesetz geben.
-  id: 2
+  id: '2'
   category: Demokratie
   answers:
     cdu: yes
