@@ -2,13 +2,6 @@
 import '@fontsource-variable/inter'
 import '../assets/style.css'
 import logo from '../assets/fragdenstaat.svg'
-
-interface Props {
-  enablePadding?: boolean
-  bg?: boolean
-}
-
-const { enablePadding, bg } = Astro.props
 ---
 
 <!doctype html>
@@ -28,27 +21,22 @@ const { enablePadding, bg } = Astro.props
     </header>
 
     <div class="container mx-auto px-4">
-      <main
-        class:list={{
-          'py-8 px-4': enablePadding !== false,
-          'bg-white': bg !== false,
-        }}
-      >
+      <main>
         <slot />
       </main>
     </div>
 
     <footer class="mt-auto pt-12">
-      <div class="bg-blue-50">
+      <div class="bg-gray-50">
         <div
-          class="container mx-auto py-12 px-4 text-gray-600 md:flex items-center"
+          class="container mx-auto py-12 px-4 text-gray-600 flex max-md:flex-col items-center"
         >
           <div>
             <a href="https://fragdenstaat.de" target="_blank">
               <img src={logo.src} alt="Ein Projekt von FragDenStaat" />
             </a>
           </div>
-          <ul class="flex space-x-2 ms-auto">
+          <ul class="flex space-x-6 max-md:mt-6 md:space-x-12 md:ms-auto">
             <li>
               <a href="https://fragdenstaat.de/impressum" target="_blank">
                 Impressum

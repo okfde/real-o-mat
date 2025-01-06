@@ -3,6 +3,10 @@ body {
 }
 
 .btn {
-  @apply px-4 py-2 text-white font-semibold;
+  @apply inline-flex items-center px-4 py-2 text-white font-semibold;
   @apply bg-blue-700 hover:bg-blue-800 focus:ring focus:ring-blue-900 outline-none transition;
+}
+
+.btn-text {
+  @apply inline-flex items-center;
 }

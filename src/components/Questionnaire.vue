@@ -1,17 +1,22 @@
 <script setup lang="ts">
-import { computed, onMounted, ref, watch } from 'vue'
-import type { Question, Answer } from '../content.config.ts'
+import { computed, watch } from 'vue'
 import { useStorage } from '@vueuse/core'
+import type { Question, Answer } from '../content.config.ts'
+import { answers, currentQuestionIndex } from '../store.ts'
 import IconBack from '~icons/material-symbols/arrow-back'
+import IconForward from '~icons/material-symbols/arrow-forward'
 import IconRestart from '~icons/material-symbols/restart-alt-rounded'
+import IconLess from '~icons/material-symbols/stat-minus-2-rounded'
+import IconMore from '~icons/material-symbols/stat-2-rounded'
+import IconRight from '~icons/material-symbols/check-rounded'
+import IconNeutral from '~icons/material-symbols/shield-question-outline-rounded'
 
 const props = defineProps<{
   questions: Question[]
 }>()
 
-const answers = useStorage('realomat-answers', {} as Record<string, Answer>)
+const emit = defineEmits(['done', 'reset'])
 
-const currentQuestionIndex = useStorage('realomat-current-question', 0)
 if (currentQuestionIndex.value > props.questions.length) {
   currentQuestionIndex.value = 0
 }
@@ -24,7 +29,14 @@ const currentQuestion = computed(
 const questionsCount = computed(() => props.questions.length)
 
 const saveAnswer = (answer: Answer) => {
-  answers.value[currentQuestion.value!.id] = answer
+  answers.value[currentQuestion.value!.id] = { answer, weight: 1 }
+  currentQuestionIndex.value++
+}
+
+const skipQuestion = () => {
+  if (answers.value[currentQuestion.value!.id]) {
+    delete answers.value[currentQuestion.value!.id]
+  }
   currentQuestionIndex.value++
 }
 
@@ -32,14 +44,9 @@ const previousQuestion = () => {
   if (currentQuestionIndex.value > 0) currentQuestionIndex.value--
 }
 
-const reset = () => {
-  answers.value = {}
-  currentQuestionIndex.value = 0
-}
-
 const confirmReset = () => {
   if (window.confirm('Wirklich von vorne beginnen?')) {
-    reset()
+    emit('reset')
   }
 }
 
@@ -53,6 +60,10 @@ watch(currentQuestion, () => {
     window.addEventListener('beforeunload', beforeUnload)
   } else {
     window.removeEventListener('beforeunload', beforeUnload)
+  }
+
+  if (!currentQuestion.value && currentQuestionIndex.value > 0) {
+    emit('done')
   }
 })
 </script>
@@ -68,7 +79,7 @@ watch(currentQuestion, () => {
         :aria-valuenow="currentQuestionProgress"
       >
         <div
-          class="h-2 bg-blue-900"
+          class="h-2 bg-blue-900 transition-all duration-300 ease-out"
           :style="{
             width: `${(currentQuestionProgress / questionsCount) * 100}%`,
           }"
@@ -90,9 +101,11 @@ watch(currentQuestion, () => {
       <div class="px-4">
         <div class="flex flex-col md:flex-row max-md:space-y-3 md:space-x-2">
           <button class="btn" @click="saveAnswer('zu weit')" accesskey="1">
+            <IconLess class="me-1" />
             geht zu weit
           </button>
           <button class="btn" @click="saveAnswer('richtig')" accesskey="2">
+            <IconRight class="me-1" />
             genau richtig
           </button>
           <button
@@ -100,33 +113,29 @@ watch(currentQuestion, () => {
             @click="saveAnswer('nicht weit genug')"
             accesskey="3"
           >
+            <IconMore class="me-1" />
             geht nicht weit genug
           </button>
           <div class="!ms-auto self-center max-md:pt-4">
-            <button @click="currentQuestionIndex++">These überspringen</button>
+            <button @click="skipQuestion" class="btn-text">
+              These überspringen <IconForward class="ms-1" />
+            </button>
           </div>
         </div>
       </div>
     </article>
-
-    <div v-else class="px-4 pt-4">
-      <h2 class="text-4xl font-semibold">Fertig</h2>
-      <div class="my-4">
-        Deine Antworten:
-        <pre>{{ answers }}</pre>
-      </div>
-
-      <button @click="reset" class="btn">Neustart</button>
-    </div>
   </div>
 
-  <div class="flex mt-4" v-if="currentQuestion && currentQuestionIndex > 0">
-    <button @click="previousQuestion" class="flex items-center">
+  <div
+    class="flex mt-4 text-blue-900"
+    v-if="currentQuestion && currentQuestionIndex > 0"
+  >
+    <button @click="previousQuestion" class="btn-text">
       <IconBack class="me-1" />
       Zurück
     </button>
 
-    <button @click="confirmReset" class="flex items-center ms-auto">
+    <button @click="confirmReset" class="btn-text ms-auto">
       <IconRestart class="me-1" />
       Neustarten
     </button>
