@@ -13,6 +13,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# cache
+.cache
+
 # environment variables
 .env
 .env.production
@@ -22,3 +25,5 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+service-account.json

@@ -1,36 +1,54 @@
 import { defineCollection, z } from 'astro:content'
 import { file } from 'astro/loaders'
+import {
+  importGoogleSheet,
+  cachedImportGoogleSheet,
+} from './import-google-sheet'
 
-// const categories = defineCollection({
-//   loader: file('src/data/categories.yaml'),
-//   schema: z.array(
-//     z.object({
-//       title: z.string(),
-//     }),
-//   ),
-// })
-
-export const answerSchema = z.enum(['yes', 'no', 'neutral'])
+export const answerSchema = z.enum([
+  'nicht weit genug',
+  'richtig',
+  'zu weit',
+  '/', // neutral
+  '-', // undefined
+])
 export type Answer = z.infer<typeof answerSchema>
+
+export const partySchema = z.enum([
+  'spd',
+  'cdu',
+  'fdp',
+  'gruene',
+  'bsw',
+  'linke',
+  'afd',
+])
+
+export const positionSchema = z.object({
+  party: partySchema,
+  answer: answerSchema,
+  comment: z.string().optional(),
+})
+export type Position = z.infer<typeof positionSchema>
 
 const questionSchema = z.object({
   id: z.string(),
-  question: z.string(),
+  thesis: z.string(),
   category: z.string(),
-  answers: z.object({
-    cdu: answerSchema,
-    spd: answerSchema,
-    fdp: answerSchema,
-    gruene: answerSchema,
-    linke: answerSchema,
-    bsw: answerSchema,
-    afd: answerSchema,
-  }),
+  answers: z.array(positionSchema),
 })
 export type Question = z.infer<typeof questionSchema>
 
 const questions = defineCollection({
-  loader: file('src/data/questions.yaml'),
+  loader: async () => {
+    const fn = import.meta.env.DEV ? cachedImportGoogleSheet : importGoogleSheet
+
+    return await fn(
+      process.cwd() + '/service-account.json',
+      import.meta.env.GOOGLE_SPREADSHEET_ID,
+      import.meta.env.GOOGLE_SPREADSHEET_RANGE,
+    )
+  },
   schema: questionSchema,
 })
 
