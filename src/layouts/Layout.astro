@@ -3,7 +3,12 @@ import '@fontsource-variable/inter'
 import '../assets/style.css'
 import logo from '../assets/fragdenstaat.svg'
 
-const { enablePadding } = Astro.props
+interface Props {
+  enablePadding?: boolean
+  bg?: boolean
+}
+
+const { enablePadding, bg } = Astro.props
 ---
 
 <!doctype html>
@@ -24,8 +29,10 @@ const { enablePadding } = Astro.props
 
     <div class="container mx-auto px-4">
       <main
-        class="bg-white"
-        class:list={{ 'py-8 px-4': enablePadding !== false }}
+        class:list={{
+          'py-8 px-4': enablePadding !== false,
+          'bg-white': bg !== false,
+        }}
       >
         <slot />
       </main>
