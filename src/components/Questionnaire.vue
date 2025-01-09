@@ -28,26 +28,29 @@ const currentQuestion = computed(
 )
 const questionsCount = computed(() => props.questions.length)
 
+const nextQuestion = () => {
+  if (currentQuestionIndex.value < props.questions.length - 1) {
+    currentQuestionIndex.value++
+  } else {
+    emit('done')
+  }
+}
+
 const saveAnswer = (answer: Answer) => {
-  answers.value[currentQuestion.value!.id] = { answer, weight: 1 }
-  currentQuestionIndex.value++
+  answers.value[currentQuestion.value!.id] = { answer }
+
+  nextQuestion()
 }
 
 const skipQuestion = () => {
   if (answers.value[currentQuestion.value!.id]) {
     delete answers.value[currentQuestion.value!.id]
   }
-  currentQuestionIndex.value++
+  nextQuestion()
 }
 
 const previousQuestion = () => {
   if (currentQuestionIndex.value > 0) currentQuestionIndex.value--
-}
-
-const confirmReset = () => {
-  if (window.confirm('Wirklich von vorne beginnen?')) {
-    emit('reset')
-  }
 }
 
 const beforeUnload = (event: BeforeUnloadEvent) => {
@@ -61,10 +64,6 @@ watch(currentQuestion, () => {
   } else {
     window.removeEventListener('beforeunload', beforeUnload)
   }
-
-  if (!currentQuestion.value && currentQuestionIndex.value > 0) {
-    emit('done')
-  }
 })
 </script>
 
@@ -72,6 +71,7 @@ watch(currentQuestion, () => {
   <div class="pb-4 bg-white">
     <article v-if="currentQuestion">
       <div
+        class="bg-blue-200"
         role="progressbar"
         aria-label="Fortschritt"
         aria-valuemin="1"
@@ -135,7 +135,7 @@ watch(currentQuestion, () => {
       Zurück
     </button>
 
-    <button @click="confirmReset" class="btn-text ms-auto">
+    <button @click="emit('reset')" class="btn-text ms-auto">
       <IconRestart class="me-1" />
       Neustarten
     </button>

@@ -1,6 +1,7 @@
 import { defineCollection, z } from 'astro:content'
 import { file } from 'astro/loaders'
 import { importGoogleSheet, cachedImportGoogleSheet } from './importGoogleSheet'
+import { getSecret } from 'astro:env/server'
 
 export const answerSchema = z.enum([
   'nicht weit genug',
@@ -20,6 +21,7 @@ export const partySchema = z.enum([
   'linke',
   'afd',
 ])
+export type Party = z.infer<typeof partySchema>
 
 export const positionSchema = z.object({
   party: partySchema,
@@ -42,8 +44,8 @@ const questions = defineCollection({
 
     return await fn(
       process.cwd() + '/service-account.json',
-      import.meta.env.GOOGLE_SPREADSHEET_ID,
-      import.meta.env.GOOGLE_SPREADSHEET_RANGE,
+      getSecret('GOOGLE_SPREADSHEET_ID')!,
+      getSecret('GOOGLE_SPREADSHEET_RANGE')!,
     )
   },
   schema: questionSchema,

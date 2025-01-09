@@ -7,5 +7,5 @@ const questions = (await getCollection('questions')).map((q) => q.data)
 ---
 
 <Layout>
-  <App questions={questions} client:load />
+  <App questions={questions} client:only="vue" />
 </Layout>

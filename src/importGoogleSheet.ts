@@ -1,8 +1,6 @@
 import { sheets, auth } from '@googleapis/sheets'
 import memoizeFs from 'memoize-fs'
 
-console.log(process.cwd() + '/service-account.json')
-
 export async function importGoogleSheet(
   keyFilename: string,
   spreadsheetId: string,
@@ -57,7 +55,7 @@ export async function importGoogleSheet(
         ],
         i,
       ) => {
-        const data = {
+        const item = {
           id: `question-${i}`,
           thesis,
           category: category || lastCategory,
@@ -75,7 +73,7 @@ export async function importGoogleSheet(
         if (category) {
           lastCategory = category
         }
-        return data
+        return item
       },
     )
 }

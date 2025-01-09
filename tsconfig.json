@@ -10,6 +10,9 @@
   "compilerOptions": {
     "jsx": "preserve",
     "strictNullChecks": true,
-    "allowJs": true
+    "allowJs": true,
+    "types": [
+      "unplugin-icons/types/vue"
+    ]
   }
 }

@@ -1,9 +1,8 @@
 import { useStorage } from '@vueuse/core'
-import type { Answer } from './content.config.ts'
+import type { Answer, Party } from './content.config.ts'
 
 type UserPosition = {
   answer: Answer
-  weight: number
 }
 
 export const answers = useStorage(
@@ -11,7 +10,25 @@ export const answers = useStorage(
   {} as Record<string, UserPosition>,
 )
 
+export const weightedTopics = useStorage('realomat-weights', [] as string[])
+
 export const currentQuestionIndex = useStorage('realomat-current-question', 0)
 
-type Stage = 'intro' | 'questionnaire' | 'weights' | 'results'
-export const stage = useStorage<Stage>('realomat-stage', 'intro')
+export enum Stage {
+  Intro,
+  Questionnaire,
+  Weights,
+  Results,
+}
+
+export const currentStage = useStorage<Stage>('realomat-stage', Stage.Intro)
+
+export const partyNames: Record<Party, string> = {
+  spd: 'SPD',
+  cdu: 'CDU',
+  fdp: 'FDP',
+  gruene: 'Die Grünen',
+  bsw: 'BSW',
+  linke: 'Die Linke',
+  afd: 'AFD',
+}

@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import type { Question } from '../content.config'
 import IconForward from '~icons/material-symbols/arrow-forward'
+import { weightedTopics } from '../store'
 
 const props = defineProps<{
   questions: Question[]
@@ -12,40 +13,42 @@ const emit = defineEmits(['done'])
 const categories = computed(() => {
   return Object.groupBy(props.questions, (q) => q.category)
 })
-
-const done = () => {
-  // TODO: apply weights
-
-  emit('done')
-}
 </script>
 
 <template>
-  <div class="p-4 bg-white">
+  <form class="p-4 bg-white" @submit.prevent="emit('done')">
     <h2 class="text-xl mb-4">Welche Themen sind Ihnen besonders wichtig?</h2>
     <p class="mb-4">
       Markieren Sie die Themen, um diese mit doppelter Gewichtung in die
       Berechnung einfließen zu lassen.
     </p>
 
-    <div class="space-y-2">
-      <article
-        v-for="(questions, categoryName) in categories"
+    <div class="grid gap-2 md:grid-cols-3">
+      <div
+        v-for="(questions, categoryName, i) in categories"
         :key="categoryName"
         class="flex items-start space-x-2"
       >
-        <div><input type="checkbox" /></div>
+        <input
+          type="checkbox"
+          :id="`category-${i}`"
+          v-model="weightedTopics"
+          :value="categoryName"
+        />
 
-        <h3 class="inline font-semibold text-lg hyphens-auto">
+        <label
+          :for="`category-${i}`"
+          class="inline font-semibold text-lg hyphens-auto"
+        >
           {{ categoryName }}
-        </h3>
-      </article>
+        </label>
+      </div>
     </div>
 
-    <button class="btn mt-4" @click="done">
+    <button type="submit" class="btn mt-4">
       Weiter <IconForward class="ms-1" />
     </button>
-  </div>
+  </form>
 </template>
 
 <style scoped>
