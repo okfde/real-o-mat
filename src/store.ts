@@ -10,6 +10,14 @@ export const answers = useStorage(
   {} as Record<string, UserPosition>,
 )
 
+export const answerLabels: Record<Answer, string> = {
+  'zu weit': 'nein, geht mir zu weit',
+  richtig: 'ja, finde ich auch',
+  'nicht weit genug': 'nein, reicht mir nicht aus',
+  '/': 'keine Antwort vorhanden',
+  '-': 'neutral',
+}
+
 export const weightedTopics = useStorage('realomat-weights', [] as string[])
 
 export const currentQuestionIndex = useStorage('realomat-current-question', 0)
@@ -32,3 +40,5 @@ export const partyNames: Record<Party, string> = {
   linke: 'Die Linke',
   afd: 'AFD',
 }
+
+export const parties = Object.keys(partyNames) as Party[]

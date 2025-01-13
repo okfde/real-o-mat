@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import { computed, ref } from 'vue'
-import Questionnaire from './Questionnaire.vue'
-import Results from './Results.vue'
-import Weights from './Weights.vue'
+import Questionnaire from '../views/Questionnaire.vue'
+import Results from '../views/Results.vue'
+import Weights from '../views/Weights.vue'
 import type { Question } from '../content.config'
 import {
   answers,
@@ -14,7 +14,7 @@ import {
 import IconBack from '~icons/material-symbols/arrow-back'
 import IconRestart from '~icons/material-symbols/restart-alt-rounded'
 
-const props = defineProps<{
+defineProps<{
   questions: Question[]
 }>()
 
@@ -62,6 +62,7 @@ const previousStage = () => {
       </p>
       <button class="btn text-4xl mt-4" @click="nextStage">Los geht's!</button>
     </div>
+
     <Questionnaire
       v-else-if="currentStage === Stage.Questionnaire"
       :questions="questions"
@@ -69,11 +70,13 @@ const previousStage = () => {
       @previous="previousStage"
       @reset="confirmReset"
     />
+
     <Weights
       v-else-if="currentStage === Stage.Weights"
       :questions="questions"
       @done="nextStage"
     />
+
     <Results v-else :questions="questions" />
   </Transition>
 
@@ -85,6 +88,7 @@ const previousStage = () => {
       <IconBack class="me-1" />
       Zurück
     </button>
+
     <button @click="confirmReset" class="btn-text ms-auto">
       <IconRestart class="me-1" />
       Neustarten

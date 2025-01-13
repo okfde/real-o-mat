@@ -8,7 +8,7 @@ import IconRestart from '~icons/material-symbols/restart-alt-rounded'
 import IconLess from '~icons/material-symbols/stat-minus-2-rounded'
 import IconMore from '~icons/material-symbols/stat-2-rounded'
 import IconRight from '~icons/material-symbols/check-rounded'
-import AnswerButton from './AnswerButton.vue'
+import AnswerButton from '../components/AnswerButton.vue'
 
 const props = defineProps<{
   questions: Question[]
@@ -26,6 +26,22 @@ const currentQuestion = computed(
   (): Question | undefined => props.questions[currentQuestionIndex.value],
 )
 const questionsCount = computed(() => props.questions.length)
+
+const answerButtons = computed(() => {
+  const buttons: Record<string, any> = {
+    'zu weit': { icon: IconLess },
+    richtig: { icon: IconRight },
+    'nicht weit genug': { icon: IconMore },
+  }
+
+  for (const button in buttons) {
+    buttons[button].disabled = !currentQuestion.value!.answers.some(
+      (a) => a.answer === button,
+    )
+  }
+
+  return buttons
+})
 
 const transitionName = ref('slide')
 
@@ -129,32 +145,15 @@ watch(currentQuestion, () => {
             :key="currentQuestionIndex"
           >
             <AnswerButton
-              answer="zu weit"
-              label="nein, geht mir zu weit"
-              :party-answer-exists="partyAnswerExists('zu weit')"
+              :answer="answer as Answer"
               @save="saveAnswer"
-              accesskey="1"
+              :accesskey="i + 1"
+              :disabled="disabled"
+              v-for="({ disabled, icon }, answer, i) in answerButtons"
             >
-              <IconLess />
+              <component :is="icon" />
             </AnswerButton>
-            <AnswerButton
-              answer="richtig"
-              label="ja, finde ich auch"
-              :party-answer-exists="partyAnswerExists('richtig')"
-              @save="saveAnswer"
-              accesskey="2"
-            >
-              <IconRight />
-            </AnswerButton>
-            <AnswerButton
-              answer="nicht weit genug"
-              label="nein, reicht mir nicht aus"
-              :party-answer-exists="partyAnswerExists('nicht weit genug')"
-              @save="saveAnswer"
-              accesskey="3"
-            >
-              <IconMore />
-            </AnswerButton>
+
             <div class="!ms-auto self-center max-md:pt-4">
               <button @click="skipQuestion" class="btn-text">
                 These überspringen <IconForward class="ms-1" />
