@@ -18,6 +18,8 @@ const partyMatches = computed(() => {
     afd: 0,
   }
 
+  let denominator = 0
+
   for (const question of props.questions) {
     const userAnswer = answers.value[question.id]?.answer
     if (!userAnswer) continue
@@ -31,13 +33,17 @@ const partyMatches = computed(() => {
         }
       }
     }
+
+    denominator += weightedTopics.value.includes(question.category) ? 2 : 1
   }
+
+  console.log(answerCount.value, denominator)
 
   return Object.entries(results)
     .map(([party, score]) => ({
       party: partyNames[party as Party],
       score,
-      percentage: (score / answerCount.value) * 100,
+      percentage: (score / denominator) * 100,
     }))
     .sort((a, b) => b.score - a.score)
 })
