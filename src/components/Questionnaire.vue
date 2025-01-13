@@ -103,13 +103,12 @@ watch(currentQuestion, () => {
       <div class="px-4">
         <div class="flex flex-col md:flex-row max-md:space-y-3 md:space-x-2">
           <AnswerButton
-            answer="richtig"
-            :party-answer-exists="partyAnswerExists('richtig')"
+            answer="zu weit"
+            :party-answer-exists="partyAnswerExists('zu weit')"
             @save="saveAnswer"
             accesskey="1"
           >
             <IconLess />
-            geht zu weit
           </AnswerButton>
           <AnswerButton
             answer="richtig"
