@@ -38,7 +38,7 @@ const categories = computed(() => {
 
         <label
           :for="`category-${i}`"
-          class="inline font-semibold text-lg hyphens-auto"
+          class="inline font-medium text-lg hyphens-auto"
         >
           {{ categoryName }}
         </label>

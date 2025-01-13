@@ -14,9 +14,6 @@ importers:
       '@astrojs/vue':
         specifier: ^5.0.4
         version: 5.0.4(@types/node@22.10.5)(astro@5.1.4(@types/node@22.10.5)(jiti@1.21.7)(rollup@4.30.1)(typescript@5.7.3)(yaml@2.7.0))(jiti@1.21.7)(rollup@4.30.1)(vue@3.5.13(typescript@5.7.3))(yaml@2.7.0)
-      '@fontsource-variable/inter':
-        specifier: ^5.1.1
-        version: 5.1.1
       '@googleapis/sheets':
         specifier: ^9.3.1
         version: 9.3.1
@@ -530,9 +527,6 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
-
-  '@fontsource-variable/inter@5.1.1':
-    resolution: {integrity: sha512-OpXFTmiH6tHkYijMvQTycFKBLK4X+SRV6tet1m4YOUH7SzIIlMqDja+ocDtiCA72UthBH/vF+3ZtlMr2rN/wIw==}
 
   '@googleapis/sheets@9.3.1':
     resolution: {integrity: sha512-nPgzOiDs/FSFhE+dX2KfkmsmkXM3WfXYP06FoW8cXvHshwxHSI3FbXwe5XJYstDAWXP9YA7AMSvmwnuD4OAl2w==}
@@ -3087,8 +3081,6 @@ snapshots:
 
   '@esbuild/win32-x64@0.24.2':
     optional: true
-
-  '@fontsource-variable/inter@5.1.1': {}
 
   '@googleapis/sheets@9.3.1':
     dependencies:

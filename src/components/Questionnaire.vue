@@ -93,7 +93,7 @@ watch(currentQuestion, () => {
           </div>
         </div>
         <div class="px-4">
-          <h2 class="my-8 text-xl md:text-2xl font-semibold">
+          <h2 class="my-8 text-xl md:text-2xl font-medium">
             {{ currentQuestion.thesis }}
           </h2>
         </div>

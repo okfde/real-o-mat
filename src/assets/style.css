@@ -3,10 +3,34 @@ body {
 }
 
 .btn {
-  @apply inline-flex items-center px-4 py-2 text-white font-semibold;
+  @apply inline-flex items-center px-4 py-2 text-white font-medium;
   @apply bg-blue-700 hover:bg-blue-800 focus:ring focus:ring-blue-900 outline-none transition;
 }
 
 .btn-text {
   @apply inline-flex items-center;
+}
+
+@font-face {
+  font-family: 'Creato Display';
+  src: url('./CreatoDisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Creato Display';
+  src: url('./CreatoDisplay-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Creato Display';
+  src: url('./CreatoDisplay-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
