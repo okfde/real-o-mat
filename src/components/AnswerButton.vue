@@ -25,7 +25,7 @@ const emit = defineEmits<{
     >
       <button
         class="btn"
-        @click="emit('save', 'zu weit')"
+        @click="emit('save', answer)"
         :disabled="!partyAnswerExists"
       >
         <slot class="me-1" />
