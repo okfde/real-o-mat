@@ -56,25 +56,21 @@ const previousStage = () => {
       über Parteien und ihr Abstimmungsverhalten.
     </p>
 
-    <button
-      class="btn text-4xl mt-4"
-      @click="currentStage = Stage.Questionnaire"
-    >
-      Los geht's!
-    </button>
+    <button class="btn text-4xl mt-4" @click="nextStage">Los geht's!</button>
   </div>
 
   <Questionnaire
     v-else-if="currentStage === Stage.Questionnaire"
     :questions="questions"
-    @done="currentStage = Stage.Weights"
+    @done="nextStage"
+    @previous="previousStage"
     @reset="confirmReset"
   />
 
   <Weights
     v-else-if="currentStage === Stage.Weights"
     :questions="questions"
-    @done="currentStage = Stage.Results"
+    @done="nextStage"
   />
 
   <Results v-else :questions="questions" />

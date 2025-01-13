@@ -14,7 +14,7 @@ const props = defineProps<{
   questions: Question[]
 }>()
 
-const emit = defineEmits(['done', 'reset'])
+const emit = defineEmits(['done', 'reset', 'previous'])
 
 if (currentQuestionIndex.value > props.questions.length) {
   currentQuestionIndex.value = 0
@@ -50,6 +50,7 @@ const skipQuestion = () => {
 
 const previousQuestion = () => {
   if (currentQuestionIndex.value > 0) currentQuestionIndex.value--
+  else emit('previous')
 }
 
 const partyAnswerExists = (answer: Answer): boolean =>
@@ -139,16 +140,17 @@ watch(currentQuestion, () => {
     </article>
   </div>
 
-  <div
-    class="flex mt-4 text-blue-900"
-    v-if="currentQuestion && currentQuestionIndex > 0"
-  >
+  <div class="flex mt-4 text-blue-900">
     <button @click="previousQuestion" class="btn-text">
       <IconBack class="me-1" />
       Zurück
     </button>
 
-    <button @click="emit('reset')" class="btn-text ms-auto">
+    <button
+      @click="emit('reset')"
+      class="btn-text ms-auto"
+      v-if="currentQuestionIndex > 0"
+    >
       <IconRestart class="me-1" />
       Neustarten
     </button>
