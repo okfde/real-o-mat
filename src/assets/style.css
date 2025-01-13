@@ -9,6 +9,10 @@ body {
   @apply bg-blue-700 hover:bg-blue-800 focus:ring focus:ring-blue-900 outline-none transition;
 }
 
+.btn:disabled {
+  @apply bg-gray-700 hover:bg-gray-800 focus:ring-gray-900 cursor-not-allowed;
+}
+
 .btn-text {
   @apply inline-flex items-center;
 }

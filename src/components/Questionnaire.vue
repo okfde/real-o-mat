@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { computed, watch } from 'vue'
-import { useStorage } from '@vueuse/core'
 import type { Question, Answer } from '../content.config.ts'
 import { answers, currentQuestionIndex } from '../store.ts'
 import IconBack from '~icons/material-symbols/arrow-back'
@@ -9,7 +8,7 @@ import IconRestart from '~icons/material-symbols/restart-alt-rounded'
 import IconLess from '~icons/material-symbols/stat-minus-2-rounded'
 import IconMore from '~icons/material-symbols/stat-2-rounded'
 import IconRight from '~icons/material-symbols/check-rounded'
-import IconNeutral from '~icons/material-symbols/shield-question-outline-rounded'
+import AnswerButton from './AnswerButton.vue'
 
 const props = defineProps<{
   questions: Question[]
@@ -52,6 +51,9 @@ const skipQuestion = () => {
 const previousQuestion = () => {
   if (currentQuestionIndex.value > 0) currentQuestionIndex.value--
 }
+
+const partyAnswerExists = (answer: Answer): boolean =>
+  currentQuestion.value!.answers.some((a) => a.answer === answer)
 
 const beforeUnload = (event: BeforeUnloadEvent) => {
   event.preventDefault()
@@ -100,22 +102,31 @@ watch(currentQuestion, () => {
       </div>
       <div class="px-4">
         <div class="flex flex-col md:flex-row max-md:space-y-3 md:space-x-2">
-          <button class="btn" @click="saveAnswer('zu weit')" accesskey="1">
-            <IconLess class="me-1" />
+          <AnswerButton
+            answer="richtig"
+            :party-answer-exists="partyAnswerExists('richtig')"
+            @save="saveAnswer"
+            accesskey="1"
+          >
+            <IconLess />
             geht zu weit
-          </button>
-          <button class="btn" @click="saveAnswer('richtig')" accesskey="2">
+          </AnswerButton>
+          <AnswerButton
+            answer="richtig"
+            :party-answer-exists="partyAnswerExists('richtig')"
+            @save="saveAnswer"
+            accesskey="2"
+          >
             <IconRight class="me-1" />
-            genau richtig
-          </button>
-          <button
-            class="btn"
-            @click="saveAnswer('nicht weit genug')"
+          </AnswerButton>
+          <AnswerButton
+            answer="nicht weit genug"
+            :party-answer-exists="partyAnswerExists('nicht weit genug')"
+            @save="saveAnswer"
             accesskey="3"
           >
             <IconMore class="me-1" />
-            geht nicht weit genug
-          </button>
+          </AnswerButton>
           <div class="!ms-auto self-center max-md:pt-4">
             <button @click="skipQuestion" class="btn-text">
               These überspringen <IconForward class="ms-1" />
