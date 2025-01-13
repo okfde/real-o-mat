@@ -6,7 +6,7 @@ body {
 
 .btn {
   @apply inline-flex items-center px-4 py-2 text-white font-medium;
-  @apply bg-blue-700 hover:bg-blue-800 focus:ring focus:ring-blue-900 outline-none transition;
+  @apply bg-blue-700 hover:bg-blue-800 focus:ring focus:ring-blue-900 outline-none motion-safe:transition;
 }
 
 .btn:disabled {
@@ -39,4 +39,37 @@ body {
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .slide-enter-active,
+  .slide-back-enter-active {
+    transition:
+      opacity 0.25s,
+      transform 0.25s theme(transitionTimingFunction.out);
+  }
+
+  .slide-leave-active,
+  .slide-back-leave-active {
+    transition:
+      opacity 0.25s,
+      transform 0.25s theme(transitionTimingFunction.in);
+  }
+
+  .slide-leave-to,
+  .slide-enter-from,
+  .slide-back-leave-to,
+  .slide-back-enter-from {
+    opacity: 0;
+  }
+
+  .slide-leave-to,
+  .slide-back-enter-from {
+    transform: translateX(-20%);
+  }
+
+  .slide-enter-from,
+  .slide-back-leave-to {
+    transform: translateX(20%);
+  }
 }
