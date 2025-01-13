@@ -34,8 +34,8 @@ jobs:
         run: pnpm install
       - name: Write secret files
         run: |
-          echo $ENV_FILE > .env
-          echo $SERVICE_ACCOUNT > service-account.json
+          echo "$ENV_FILE" > .env
+          echo "$SERVICE_ACCOUNT" > service-account.json
         env:
           ENV_FILE: ${{ secrets.ENV }}
           SERVICE_ACCOUNT: ${{ secrets.SERVICE_ACCOUNT }}
