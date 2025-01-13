@@ -1,5 +1,7 @@
 body {
-  font-feature-settings: 'cv05', 'cv07', 'ss03';
+  background-image: url('./bg.svg');
+  background-size: 105%;
+  background-repeat: no-repeat;
 }
 
 .btn {

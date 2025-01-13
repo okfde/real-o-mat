@@ -1,0 +1,20 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 595.3 491.9'>
+  <linearGradient id='a' gradientUnits='userSpaceOnUse' x1='411.103' y1='493.854' x2='411.103'
+    y2='57.054' gradientTransform='matrix(1 0 0 -1 0 491.89)'>
+    <stop offset='0' stop-color='#f0f4ff' />
+    <stop offset='.136' stop-color='#dee8ff' stop-opacity='.932' />
+    <stop offset='.412' stop-color='#b8ceff' stop-opacity='.794' />
+    <stop offset='.697' stop-color='#719dff' stop-opacity='.652' />
+    <stop offset='1' stop-color='#286bfc' stop-opacity='.5' />
+  </linearGradient>
+  <path opacity='.7' fill='url(#a)' d='M379.4-.6L226.3 434.8l369-255.1.6-181.7z' />
+  <linearGradient id='b' gradientUnits='userSpaceOnUse' x1='-.421' y1='384.69' x2='593.879'
+    y2='384.69' gradientTransform='matrix(1 0 0 -1 0 491.89)'>
+    <stop offset='0' stop-color='#f0f4ff' />
+    <stop offset='.136' stop-color='#dee8ff' stop-opacity='.932' />
+    <stop offset='.412' stop-color='#b8ceff' stop-opacity='.794' />
+    <stop offset='.697' stop-color='#719dff' stop-opacity='.652' />
+    <stop offset='1' stop-color='#286bfc' stop-opacity='.5' />
+  </linearGradient>
+  <path d='M-.4 73.2l594.3 141.1V.1H.4s.9 74.8-.8 73.1z' opacity='.7' fill='url(#b)' />
+</svg>
