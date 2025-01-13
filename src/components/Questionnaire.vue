@@ -104,6 +104,7 @@ watch(currentQuestion, () => {
         <div class="flex flex-col md:flex-row max-md:space-y-3 md:space-x-2">
           <AnswerButton
             answer="zu weit"
+            label="nein, das geht zu weit"
             :party-answer-exists="partyAnswerExists('zu weit')"
             @save="saveAnswer"
             accesskey="1"
@@ -112,6 +113,7 @@ watch(currentQuestion, () => {
           </AnswerButton>
           <AnswerButton
             answer="richtig"
+            label="ja, das ist richtig"
             :party-answer-exists="partyAnswerExists('richtig')"
             @save="saveAnswer"
             accesskey="2"
@@ -120,6 +122,7 @@ watch(currentQuestion, () => {
           </AnswerButton>
           <AnswerButton
             answer="nicht weit genug"
+            label="nein, das reicht nicht aus"
             :party-answer-exists="partyAnswerExists('nicht weit genug')"
             @save="saveAnswer"
             accesskey="3"

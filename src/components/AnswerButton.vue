@@ -4,6 +4,7 @@ import type { Answer } from '../content.config'
 
 defineProps<{
   answer: Answer
+  label: string
   partyAnswerExists: boolean
 }>()
 
@@ -28,7 +29,7 @@ const emit = defineEmits<{
         :disabled="!partyAnswerExists"
       >
         <slot class="me-1" />
-        {{ answer }}
+        {{ label }}
       </button>
     </Popper>
   </div>
