@@ -34,8 +34,9 @@ jobs:
         run: pnpm install
       - name: Write secret files
         run: |
-          echo "${{ secrets.ENV }}" > .env
-          echo "${{ secrets.SERVICE_ACCOUNT }}" > service-account.json
+          pwd
+          echo "${{ secrets.ENV }}" > ./.env
+          echo "${{ secrets.SERVICE_ACCOUNT }}" > ./service-account.json
       - name: Build
         run: pnpm run build
       - name: Delete secrets
