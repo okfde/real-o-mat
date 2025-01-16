@@ -8,6 +8,7 @@ import IconScale from '~icons/material-symbols/balance-rounded'
 import IconComment from '~icons/material-symbols/comment-outline-rounded'
 import ResultMatches from '../components/ResultMatches.vue'
 import ResultComparison from '../components/ResultComparison.vue'
+import ResultComments from '../components/ResultComments.vue'
 
 const props = defineProps<{
   questions: Question[]
@@ -87,7 +88,7 @@ const partyMatches = computed(() => {
         <TabPanel>
           <ResultComparison :questions="questions" />
         </TabPanel>
-        <TabPanel>Content 3</TabPanel>
+        <TabPanel><ResultComments :questions="questions" /></TabPanel>
       </TabPanels>
     </TabGroup>
   </div>

@@ -6,15 +6,19 @@ body {
 
 .btn {
   @apply inline-flex items-center px-4 py-2 text-white font-medium;
-  @apply bg-blue-700 hover:bg-blue-800 focus:ring focus:ring-blue-900 outline-none motion-safe:transition;
+  @apply bg-blue-700 hover:bg-blue-800 focus:ring focus:ring-blue-600/50 outline-none motion-safe:transition;
 }
 
 .btn:disabled {
-  @apply bg-gray-700 hover:bg-gray-800 focus:ring-gray-900 cursor-not-allowed;
+  @apply bg-gray-700 hover:bg-gray-800 focus:ring-gray-600/50 cursor-not-allowed;
 }
 
 .btn-text {
-  @apply inline-flex items-center;
+  @apply text-blue-900 inline-flex items-center focus:ring focus:ring-blue-600/50 focus:ring-offset-1 outline-none motion-safe:transition rounded;
+}
+
+.btn-text:disabled {
+  @apply text-gray-600 cursor-not-allowed;
 }
 
 @font-face {

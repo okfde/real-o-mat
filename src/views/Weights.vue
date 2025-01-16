@@ -69,7 +69,7 @@ const categories = computed(() => {
 input[type='checkbox'] {
   appearance: none;
 
-  @apply appearance-none relative w-8 h-8 border-2 border-gray-500 rounded-full motion-safe:transition-all motion-safe:duration-300 focus:ring focus:ring-blue-600 focus:border-blue-600 outline-transparent;
+  @apply appearance-none relative w-8 h-8 border-2 border-gray-500 rounded-full motion-safe:transition-all motion-safe:duration-300 focus:ring focus:ring-blue-600/75 outline-none;
 }
 
 input[type='checkbox']::before {

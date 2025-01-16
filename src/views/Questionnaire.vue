@@ -165,7 +165,7 @@ watch(currentQuestion, () => {
         </Transition>
       </article>
     </div>
-    <div class="flex mt-4 text-blue-900">
+    <div class="flex mt-4">
       <button @click="previousQuestion" class="btn-text">
         <IconBack class="me-1" />
         Zurück

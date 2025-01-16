@@ -80,7 +80,7 @@ const previousStage = () => {
   </Transition>
 
   <div
-    class="flex mt-4 text-blue-900 motion-safe:transition-all"
+    class="flex mt-4 motion-safe:transition-all"
     v-if="[Stage.Weights, Stage.Results].includes(currentStage)"
   >
     <button @click="previousStage" class="btn-text">
