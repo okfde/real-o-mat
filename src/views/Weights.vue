@@ -40,18 +40,18 @@ const setWeight = (questionId: string, e: Event) => {
       Zurück zu den Fragen
     </button>
   </div>
-  <form class="p-4 bg-white" @submit.prevent="emit('done')" v-else>
+  <form @submit.prevent="emit('done')" v-else>
     <h2 class="text-xl mb-4">Welche Themen sind Ihnen besonders wichtig?</h2>
     <p class="mb-4">
       Markieren Sie die Themen, um diese mit doppelter Gewichtung in die
       Berechnung einfließen zu lassen.
     </p>
 
-    <div class="grid md:grid-cols-2 gap-4">
+    <div class="grid md:grid-cols-1 gap-4">
       <div
         v-for="({ answer, questionId, question }, i) in sortedAnswers"
         :key="questionId"
-        class="flex items-start space-x-2"
+        class="flex items-start space-x-2 bg-white p-4"
       >
         <div>
           <input
@@ -63,12 +63,12 @@ const setWeight = (questionId: string, e: Event) => {
         </div>
 
         <div>
-          <details class="inline">
-            <summary class="font-medium text-lg" :id="`category-${i}`">
+          <div class="inline">
+            <p class="font-medium text-lg" :id="`category-${i}`">
               {{ i + 1 }}. {{ question.category }}
-            </summary>
+            </p>
             <p>{{ question.thesis }}</p>
-          </details>
+          </div>
         </div>
       </div>
     </div>
@@ -76,6 +76,8 @@ const setWeight = (questionId: string, e: Event) => {
     <button type="submit" class="btn mt-4">
       Weiter <IconForward class="ms-1" />
     </button>
+
+    <hr class="border-gray-200 mt-6" />
   </form>
 </template>
 
@@ -89,7 +91,7 @@ input[type='checkbox'] {
 
 input[type='checkbox']::before {
   content: 'x2';
-  @apply flex motion-safe:transition motion-safe:duration-150 absolute inset-0 rounded-full items-center justify-center text-gray-500 opacity-0;
+  @apply flex motion-safe:transition motion-safe:duration-200 absolute inset-0 rounded-full items-center justify-center text-gray-500 opacity-0;
 }
 
 input[type='checkbox']:checked::before,

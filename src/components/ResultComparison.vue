@@ -21,12 +21,13 @@ defineProps<{
 </script>
 
 <template>
-  <h2 class="text-4xl font-medium">Vergleich</h2>
-  <p class="mt-4">
-    Scrollen Sie durch die Tabelle, um Ihre Ergebnisse des Real-O-Mat mit den
-    Positionen der Parteien vergleichen.
-  </p>
-
+  <div class="p-4">
+    <h2 class="text-4xl font-medium">Vergleich</h2>
+    <p class="mt-4">
+      Scrollen Sie durch die Tabelle, um Ihre Ergebnisse des Real-O-Mat mit den
+      Positionen der Parteien vergleichen.
+    </p>
+  </div>
   <div class="overflow-x-auto" ref="table-container">
     <table :class="{ scrolled: tableScroll > 0 }">
       <thead>
@@ -62,7 +63,12 @@ td {
 
 th:first-child,
 td:first-child {
-  @apply sticky left-0 z-10 min-w-32 bg-white;
+  @apply sticky left-0 z-10 min-w-32 bg-white ps-4 max-md:pe-4;
+}
+
+tr:nth-child(even),
+tr:nth-child(even) td:first-child {
+  @apply bg-gray-50;
 }
 
 .scrolled th:first-child,

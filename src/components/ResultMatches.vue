@@ -5,29 +5,30 @@ defineProps<{
 </script>
 
 <template>
-  <h2 class="text-4xl font-medium">Ihr Real-O-Mat Ergebnis</h2>
-  <div class="my-4">
-    <dl class="grid items-center mt-2 gap-x-4 gap-y-8">
-      <template v-for="{ party, percentage } in partyMatches" :key="party">
-        <dt class="md:text-xl font-medium text-nowrap">
-          {{ party }}
-        </dt>
-        <dd class="flex items-center space-x-4">
-          <div class="flex-1">
-            <div class="bg-blue-100 rounded-full overflow-hidden">
-              <div
-                class="h-3 bg-blue-900 progress-result"
-                :style="{
-                  width: `${percentage}%`,
-                }"
-              />
+  <div class="p-4">
+    <h2 class="text-4xl font-medium">Ihr Real-O-Mat Ergebnis</h2>
+    <div class="my-4">
+      <dl class="grid items-center mt-2 gap-x-4 gap-y-8">
+        <template v-for="{ party, percentage } in partyMatches" :key="party">
+          <dt class="md:text-xl font-medium text-nowrap">
+            {{ party }}
+          </dt>
+          <dd class="flex items-center space-x-4">
+            <div class="flex-1">
+              <div class="bg-blue-100 rounded-full overflow-hidden">
+                <div
+                  class="h-3 bg-blue-900 progress-result"
+                  :style="{
+                    width: `${percentage}%`,
+                  }"
+                />
+              </div>
             </div>
-          </div>
-
-          <span>{{ Math.round(percentage) }}%</span>
-        </dd>
-      </template>
-    </dl>
+            <span>{{ Math.round(percentage) }}%</span>
+          </dd>
+        </template>
+      </dl>
+    </div>
   </div>
 </template>
 

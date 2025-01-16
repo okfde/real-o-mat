@@ -33,7 +33,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div>
+  <div class="p-4">
     <h2 class="text-4xl font-medium">Begründung der Thesen</h2>
     <p class="mt-4 mb-6">
       Wie begründen die Parteien ihre Positionen? Wählen Sie eine These aus und
@@ -46,7 +46,7 @@ const props = defineProps<{
       <button
         @click="previousQuestion"
         :disabled="currentQuestionIndex === 0"
-        class="btn-text place-self-start"
+        class="btn-text"
       >
         <IconBack class="me-1" />
         Zurück
@@ -68,7 +68,7 @@ const props = defineProps<{
       </div>
       <button
         @click="nextQuestion"
-        class="btn-text place-self-end"
+        class="btn-text justify-self-end"
         :disabled="currentQuestionIndex === props.questions.length - 1"
       >
         Weiter
@@ -81,7 +81,7 @@ const props = defineProps<{
         <h3 class="text-xl md:text-2xl my-8 font-medium">
           {{ currentQuestion.thesis }}
         </h3>
-        <ul class="mt-8 md:grid grid-cols-2 gap-4">
+        <ul class="mt-8 grid md:grid-cols-2 gap-4">
           <li
             v-for="({ party, comment }, i) in currentQuestion.answers"
             :key="party"
