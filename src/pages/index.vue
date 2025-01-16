@@ -4,13 +4,7 @@ import Questionnaire from '../views/Questionnaire.vue'
 import Results from '../views/Results.vue'
 import Weights from '../views/Weights.vue'
 import type { Question } from '../content.config'
-import {
-  answers,
-  currentQuestionIndex,
-  currentStage,
-  Stage,
-  weightedTopics,
-} from '../store'
+import { useStore, Stage } from '../store'
 import IconBack from '~icons/material-symbols/arrow-back'
 import IconRestart from '~icons/material-symbols/restart-alt-rounded'
 
@@ -18,9 +12,13 @@ defineProps<{
   questions: Question[]
 }>()
 
+const { answers, currentQuestionIndex, currentStage, weightedTopics } =
+  useStore()
+
 const transitionName = ref('slide')
 
 const reset = () => {
+  transitionName.value = 'slide-back'
   answers.value = {}
   weightedTopics.value = []
   currentQuestionIndex.value = 0
@@ -75,6 +73,7 @@ const previousStage = () => {
       v-else-if="currentStage === Stage.Weights"
       :questions="questions"
       @done="nextStage"
+      @previous="previousStage"
     />
 
     <Results v-else :questions="questions" />

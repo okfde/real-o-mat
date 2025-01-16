@@ -1,5 +1,4 @@
 import { defineCollection, z } from 'astro:content'
-import { file } from 'astro/loaders'
 import { importGoogleSheet, cachedImportGoogleSheet } from './importGoogleSheet'
 import { getSecret } from 'astro:env/server'
 

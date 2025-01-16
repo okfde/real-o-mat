@@ -1,14 +1,10 @@
+import { computed } from 'vue'
 import { useStorage } from '@vueuse/core'
 import type { Answer, Party } from './content.config.ts'
 
 type UserPosition = {
   answer: Answer
 }
-
-export const answers = useStorage(
-  'realomat-answers',
-  {} as Record<string, UserPosition>,
-)
 
 export const answerLabels: Record<Answer, string> = {
   'zu weit': 'nein, geht mir zu weit',
@@ -18,18 +14,12 @@ export const answerLabels: Record<Answer, string> = {
   '-': 'neutral',
 }
 
-export const weightedTopics = useStorage('realomat-weights', [] as string[])
-
-export const currentQuestionIndex = useStorage('realomat-current-question', 0)
-
 export enum Stage {
   Intro,
   Questionnaire,
   Weights,
   Results,
 }
-
-export const currentStage = useStorage<Stage>('realomat-stage', Stage.Intro)
 
 export const partyNames: Record<Party, string> = {
   spd: 'SPD',
@@ -42,3 +32,26 @@ export const partyNames: Record<Party, string> = {
 }
 
 export const parties = Object.keys(partyNames) as Party[]
+
+export function useStore() {
+  const answers = useStorage(
+    'realomat-answers',
+    {} as Record<string, UserPosition>,
+  )
+
+  const answerCount = computed(() => Object.values(answers.value).length)
+
+  const weightedTopics = useStorage('realomat-weights', [] as string[])
+
+  const currentQuestionIndex = useStorage('realomat-current-question', 0)
+
+  const currentStage = useStorage<Stage>('realomat-stage', Stage.Intro)
+
+  return {
+    answers,
+    answerCount,
+    weightedTopics,
+    currentQuestionIndex,
+    currentStage,
+  }
+}

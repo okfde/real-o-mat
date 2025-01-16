@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import type { Question, Answer } from '../content.config.ts'
-import { answers, currentQuestionIndex } from '../store.ts'
+import { useStore } from '../store.ts'
 import IconBack from '~icons/material-symbols/arrow-back'
 import IconForward from '~icons/material-symbols/arrow-forward'
 import IconRestart from '~icons/material-symbols/restart-alt-rounded'
@@ -15,6 +15,8 @@ const props = defineProps<{
 }>()
 
 const emit = defineEmits(['done', 'reset', 'previous'])
+
+const { answers, answerCount, currentQuestionIndex } = useStore()
 
 if (currentQuestionIndex.value > props.questions.length) {
   currentQuestionIndex.value = 0
@@ -97,8 +99,8 @@ watch(currentQuestion, () => {
 
 <template>
   <div>
-    <div class="pb-4 bg-white">
-      <article v-if="currentQuestion" class="overflow-hidden">
+    <div class="bg-white">
+      <article v-if="currentQuestion" class="overflow-hidden pb-4">
         <div
           class="bg-blue-200"
           role="progressbar"

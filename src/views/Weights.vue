@@ -2,13 +2,15 @@
 import { computed, ref } from 'vue'
 import type { Question } from '../content.config'
 import IconForward from '~icons/material-symbols/arrow-forward'
-import { weightedTopics } from '../store'
+import { useStore } from '../store'
 
 const props = defineProps<{
   questions: Question[]
 }>()
 
-const emit = defineEmits(['done'])
+const emit = defineEmits(['done', 'previous'])
+
+const { answerCount, weightedTopics } = useStore()
 
 const categories = computed(() => {
   return Object.groupBy(props.questions, (q) => q.category)
@@ -16,7 +18,18 @@ const categories = computed(() => {
 </script>
 
 <template>
-  <form class="p-4 bg-white" @submit.prevent="emit('done')">
+  <div class="p-4 bg-white" v-if="answerCount < 5">
+    <h2 class="text-4xl font-medium">
+      Sie haben leider zu wenig Fragen beantwortet.
+    </h2>
+    <p class="mt-4">
+      Beantworten Sie mindestens fünf Fragen, um Ihr Ergebnis zu sehen.
+    </p>
+    <button @click="emit('previous')" class="btn mt-4">
+      Zurück zu den Fragen
+    </button>
+  </div>
+  <form class="p-4 bg-white" @submit.prevent="emit('done')" v-else>
     <h2 class="text-xl mb-4">Welche Themen sind Ihnen besonders wichtig?</h2>
     <p class="mb-4">
       Markieren Sie die Themen, um diese mit doppelter Gewichtung in die

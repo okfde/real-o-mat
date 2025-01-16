@@ -22,7 +22,7 @@ const styles: Record<Answer, any> = {
 </script>
 
 <template>
-  <Popper arrow :hover="true" placement="top" :content="answerLabels[answer]">
+  <Popper arrow hover placement="top" :content="answerLabels[answer]">
     <div
       class="w-8 h-8 text-white rounded-full flex items-center justify-center"
       :class="[styles[answer].class]"
