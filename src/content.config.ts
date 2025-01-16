@@ -31,6 +31,7 @@ export type Position = z.infer<typeof positionSchema>
 
 const questionSchema = z.object({
   id: z.string(),
+  index: z.number(),
   thesis: z.string(),
   category: z.string(),
   answers: z.array(positionSchema),

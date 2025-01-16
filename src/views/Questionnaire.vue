@@ -58,7 +58,11 @@ const nextQuestion = () => {
 }
 
 const saveAnswer = (answer: Answer) => {
-  answers.value[currentQuestion.value!.id] = { answer }
+  answers.value[currentQuestion.value!.id] = {
+    answer,
+    questionId: currentQuestion.value!.id,
+    weight: 1,
+  }
 
   nextQuestion()
 }

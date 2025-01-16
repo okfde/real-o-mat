@@ -1,6 +1,7 @@
 body {
   background-image: url('./bg.svg');
-  background-size: 105%;
+  background-size: cover;
+  background-position: 0;
   background-repeat: no-repeat;
 }
 

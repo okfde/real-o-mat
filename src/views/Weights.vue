@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed } from 'vue'
 import type { Question } from '../content.config'
 import IconForward from '~icons/material-symbols/arrow-forward'
 import { useStore } from '../store'
@@ -10,11 +10,22 @@ const props = defineProps<{
 
 const emit = defineEmits(['done', 'previous'])
 
-const { answerCount, weightedTopics } = useStore()
+const { answers, answerCount } = useStore()
 
-const categories = computed(() => {
-  return Object.groupBy(props.questions, (q) => q.category)
+const sortedAnswers = computed(() => {
+  return Object.values(answers.value)
+    .map((answer) => ({
+      ...answer,
+      question: props.questions.find((q) => q.id === answer.questionId)!,
+    }))
+    .sort((a, b) => a.question.index - b.question.index)
 })
+
+const setWeight = (questionId: string, e: Event) => {
+  answers.value[questionId].weight = (e.target as HTMLInputElement).checked
+    ? 2
+    : 1
+}
 </script>
 
 <template>
@@ -36,25 +47,29 @@ const categories = computed(() => {
       Berechnung einfließen zu lassen.
     </p>
 
-    <div class="grid gap-2 md:grid-cols-3">
+    <div class="grid md:grid-cols-2 gap-4">
       <div
-        v-for="(questions, categoryName, i) in categories"
-        :key="categoryName"
+        v-for="({ answer, questionId, question }, i) in sortedAnswers"
+        :key="questionId"
         class="flex items-start space-x-2"
       >
-        <input
-          type="checkbox"
-          :id="`category-${i}`"
-          v-model="weightedTopics"
-          :value="categoryName"
-        />
+        <div>
+          <input
+            type="checkbox"
+            :id="`category-${i}`"
+            @change="(e) => setWeight(questionId, e)"
+            :aria-labelledby="`category-${i}`"
+          />
+        </div>
 
-        <label
-          :for="`category-${i}`"
-          class="inline font-medium text-lg hyphens-auto"
-        >
-          {{ categoryName }}
-        </label>
+        <div>
+          <details class="inline">
+            <summary class="font-medium text-lg" :id="`category-${i}`">
+              {{ i + 1 }}. {{ question.category }}
+            </summary>
+            <p>{{ question.thesis }}</p>
+          </details>
+        </div>
       </div>
     </div>
 
@@ -69,13 +84,12 @@ const categories = computed(() => {
 input[type='checkbox'] {
   appearance: none;
 
-  @apply appearance-none relative w-8 h-8 border-2 border-gray-500 rounded-full motion-safe:transition-all motion-safe:duration-300 focus:ring focus:ring-blue-600/75 outline-none;
+  @apply appearance-none relative w-8 h-8 border border-gray-500 rounded-full motion-safe:transition-all motion-safe:duration-300 focus:ring focus:ring-blue-600/75 outline-none;
 }
 
 input[type='checkbox']::before {
   content: 'x2';
   @apply flex motion-safe:transition motion-safe:duration-150 absolute inset-0 rounded-full items-center justify-center text-gray-500 opacity-0;
-  background-size: 100%;
 }
 
 input[type='checkbox']:checked::before,
@@ -84,7 +98,11 @@ input[type='checkbox']:focus::before {
   @apply opacity-100;
 }
 
+input[type='checkbox']:checked {
+  @apply border-transparent;
+}
+
 input[type='checkbox']::before:checked {
-  @apply text-white bg-gray-800;
+  @apply text-white bg-gray-600;
 }
 </style>

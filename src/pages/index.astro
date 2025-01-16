@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content'
 import Layout from '../layouts/Layout.astro'
-import App from './index.vue'
+import App from './_index.vue'
 
 const questions = (await getCollection('questions')).map((q) => q.data)
 ---

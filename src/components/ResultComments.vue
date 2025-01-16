@@ -35,12 +35,14 @@ const props = defineProps<{
 <template>
   <div>
     <h2 class="text-4xl font-medium">Begründung der Thesen</h2>
-    <p class="mt-4">
+    <p class="mt-4 mb-6">
       Wie begründen die Parteien ihre Positionen? Wählen Sie eine These aus und
       finden Sie heraus, warum die Parteien zustimmen oder ablehnen.
     </p>
 
-    <nav class="grid grid-cols-3 grid-r mt-12 justify-center">
+    <hr class="border-gray-200" />
+
+    <nav class="grid grid-cols-3 grid-r mt-6 justify-center">
       <button
         @click="previousQuestion"
         :disabled="currentQuestionIndex === 0"
@@ -91,7 +93,8 @@ const props = defineProps<{
               <h4 class="text-lg">{{ partyNames[party] }}</h4>
             </div>
             <div class="p-4 bg-blue-50 rounded-b-lg flex-1">
-              {{ comment }}
+              <div class="comment" v-if="comment" v-html="comment" />
+              <em v-else>keine Begründung angegeben</em>
             </div>
           </li>
         </ul>
@@ -99,3 +102,9 @@ const props = defineProps<{
     </Transition>
   </div>
 </template>
+
+<style scoped>
+.comment:deep(a) {
+  @apply text-blue-600 underline;
+}
+</style>

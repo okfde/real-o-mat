@@ -12,15 +12,13 @@ defineProps<{
   questions: Question[]
 }>()
 
-const { answers, currentQuestionIndex, currentStage, weightedTopics } =
-  useStore()
+const { answers, currentQuestionIndex, currentStage } = useStore()
 
 const transitionName = ref('slide')
 
 const reset = () => {
   transitionName.value = 'slide-back'
   answers.value = {}
-  weightedTopics.value = []
   currentQuestionIndex.value = 0
   currentStage.value = Stage.Intro
 }

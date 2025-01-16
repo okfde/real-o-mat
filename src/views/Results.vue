@@ -14,7 +14,7 @@ const props = defineProps<{
   questions: Question[]
 }>()
 
-const { answers, answerCount, weightedTopics } = useStore()
+const { answers, answerCount } = useStore()
 
 const partyMatches = computed(() => {
   const results: Record<Party, number> = {
@@ -30,20 +30,16 @@ const partyMatches = computed(() => {
   let denominator = 0
 
   for (const question of props.questions) {
-    const userAnswer = answers.value[question.id]?.answer
+    const { answer: userAnswer, weight } = answers.value[question.id] ?? {}
     if (!userAnswer) continue
 
     for (const { answer: partyAnswer, party } of question.answers) {
       if (userAnswer === partyAnswer) {
-        if (weightedTopics.value.includes(question.category)) {
-          results[party] += 2
-        } else {
-          results[party] += 1
-        }
+        results[party] += weight
       }
     }
 
-    denominator += weightedTopics.value.includes(question.category) ? 2 : 1
+    denominator += weight
   }
 
   console.log(answerCount.value, denominator)

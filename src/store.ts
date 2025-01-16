@@ -2,8 +2,10 @@ import { computed } from 'vue'
 import { useStorage } from '@vueuse/core'
 import type { Answer, Party } from './content.config.ts'
 
-type UserPosition = {
+export type UserPosition = {
   answer: Answer
+  weight: number
+  questionId: string
 }
 
 export const answerLabels: Record<Answer, string> = {
@@ -41,8 +43,6 @@ export function useStore() {
 
   const answerCount = computed(() => Object.values(answers.value).length)
 
-  const weightedTopics = useStorage('realomat-weights', [] as string[])
-
   const currentQuestionIndex = useStorage('realomat-current-question', 0)
 
   const currentStage = useStorage<Stage>('realomat-stage', Stage.Intro)
@@ -50,7 +50,6 @@ export function useStore() {
   return {
     answers,
     answerCount,
-    weightedTopics,
     currentQuestionIndex,
     currentStage,
   }

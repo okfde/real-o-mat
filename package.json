@@ -15,7 +15,7 @@
     "@headlessui/vue": "^1.7.23",
     "@iconify-json/material-symbols": "^1.2.12",
     "@vueuse/core": "^12.3.0",
-    "astro": "^5.1.4",
+    "astro": "^5.1.7",
     "memoize-fs": "^4.1.1",
     "tailwindcss": "^3.4.17",
     "unplugin-icons": "^0.22.0",

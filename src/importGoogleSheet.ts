@@ -1,4 +1,4 @@
-import { sheets, auth } from '@googleapis/sheets'
+import { sheets, auth, type sheets_v4 } from '@googleapis/sheets'
 import memoizeFs from 'memoize-fs'
 
 export async function importGoogleSheet(
@@ -16,20 +16,25 @@ export async function importGoogleSheet(
     auth: authClient,
   })
 
-  const values = await service.spreadsheets.values.get({
+  const values = await service.spreadsheets.get({
     spreadsheetId,
-    range,
+    ranges: [range],
+    includeGridData: true,
   })
 
-  if (!values.data.values) {
+  if (values.data.sheets?.[0] === undefined) {
     throw new Error('No values found in Google Sheet')
   }
 
-  const data = values.data.values.slice(2)
+  const data = values.data.sheets[0].data?.[0]
+    .rowData!.map((row) => {
+      return row.values!.map((cell) => linkifyCell(cell))
+    })
+    .slice(2)
 
   let lastCategory = ''
 
-  return data
+  return data!
     .filter(([_, thesis]) => thesis) // filter out empty rows
     .map(
       (
@@ -57,6 +62,7 @@ export async function importGoogleSheet(
       ) => {
         const item = {
           id: `question-${i}`,
+          index: i,
           thesis,
           category: category || lastCategory,
           answers: [
@@ -83,3 +89,44 @@ const memoizer = memoizeFs({ cachePath: '.cache/google-sheet' })
 export const cachedImportGoogleSheet = await memoizer.fn(importGoogleSheet, {
   maxAge: 60 * 60 * 1000,
 })
+
+function linkifyCell(cell: sheets_v4.Schema$CellData): string {
+  let text = cell.formattedValue!
+  if (!cell.textFormatRuns) return text
+
+  let offset = 0
+
+  const formatting = cell.textFormatRuns
+
+  cell.textFormatRuns?.forEach((formatObj, index) => {
+    const { startIndex, format } = formatObj
+    const adjustedIndex = startIndex! + offset
+
+    if (format?.link?.uri) {
+      // Find the end index for the link
+      const endIndex =
+        index + 1 < formatting.length
+          ? formatting[index + 1].startIndex!
+          : text.length
+      let adjustedEndIndex = endIndex + offset
+
+      // Insert the opening anchor tag
+      const anchor = `<a href="${format.link.uri}" target="_blank" rel="noopener noreferrer">`
+      text = text.slice(0, adjustedIndex) + anchor + text.slice(adjustedIndex)
+      offset += anchor.length
+
+      adjustedEndIndex += anchor.length
+
+      const anchorClose = '</a>'
+
+      // Insert the closing anchor tag
+      text =
+        text.slice(0, adjustedEndIndex) +
+        anchorClose +
+        text.slice(adjustedEndIndex)
+      offset += anchorClose.length
+    }
+  })
+
+  return text
+}
