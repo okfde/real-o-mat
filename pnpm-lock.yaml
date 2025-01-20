@@ -14,6 +14,12 @@ importers:
       '@astrojs/vue':
         specifier: ^5.0.4
         version: 5.0.4(@types/node@22.10.5)(astro@5.1.7(@types/node@22.10.5)(jiti@1.21.7)(rollup@4.30.1)(typescript@5.7.3)(yaml@2.7.0))(jiti@1.21.7)(rollup@4.30.1)(vue@3.5.13(typescript@5.7.3))(yaml@2.7.0)
+      '@fontsource-variable/montserrat':
+        specifier: ^5.1.1
+        version: 5.1.1
+      '@fontsource/montserrat':
+        specifier: ^5.1.1
+        version: 5.1.1
       '@googleapis/sheets':
         specifier: ^9.3.1
         version: 9.3.1
@@ -398,6 +404,12 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource-variable/montserrat@5.1.1':
+    resolution: {integrity: sha512-eHmSruS3B+4wVaHk6ShNUJj1MbWEohOuriwN/oYR2VY8jRS83a5SKQeG1wu4Eku3v3f5cXTIbfd1tHeQ7GXkiA==}
+
+  '@fontsource/montserrat@5.1.1':
+    resolution: {integrity: sha512-myTQCo0XWf5AXc3Pm5GFFTstueYTacE+gpL3G8Vf5ELpr/rBfW+zr7dKLPYXlq2r21HHwfyw6yueKWccWUtKBA==}
 
   '@googleapis/sheets@9.3.1':
     resolution: {integrity: sha512-nPgzOiDs/FSFhE+dX2KfkmsmkXM3WfXYP06FoW8cXvHshwxHSI3FbXwe5XJYstDAWXP9YA7AMSvmwnuD4OAl2w==}
@@ -2904,6 +2916,10 @@ snapshots:
 
   '@esbuild/win32-x64@0.24.2':
     optional: true
+
+  '@fontsource-variable/montserrat@5.1.1': {}
+
+  '@fontsource/montserrat@5.1.1': {}
 
   '@googleapis/sheets@9.3.1':
     dependencies:

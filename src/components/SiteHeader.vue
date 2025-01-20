@@ -17,8 +17,10 @@ const toIntro = (e: Event) => {
 <template>
   <header class="container mx-auto py-12 px-4">
     <a href="/" @click="toIntro">
-      <h1 class="text-6xl font-extrabold mb-1">Real-O-Mat</h1>
+      <h1 class="text-6xl md:text-8xl font-bold mb-1">Real-O-Mat</h1>
     </a>
-    <span class="text-xl font-medium text-blue-800"> Bundestagswahl 2025 </span>
+    <span class="text-xl font-medium text-purple-800">
+      Bundestagswahl 2025
+    </span>
   </header>
 </template>

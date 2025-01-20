@@ -5,12 +5,17 @@ body {
 }
 
 .btn {
-  @apply inline-flex items-center px-4 py-2 text-white font-medium;
+  @apply inline-flex items-center px-4 py-2 text-white font-medium rounded-full font-bold;
   @apply bg-blue-700 hover:bg-blue-800 focus:ring focus:ring-blue-600/50 outline-none motion-safe:transition;
 }
 
 .btn:disabled {
   @apply bg-gray-700 hover:bg-gray-800 focus:ring-gray-600/50 cursor-not-allowed;
+}
+
+.btn-outline {
+  @apply inline-flex items-center px-4 py-2 text-white rounded-full text-blue-700 font-bold;
+  @apply border border-blue-700 hover:bg-blue-800 hover:text-white focus:ring focus:ring-blue-600/50 outline-none motion-safe:transition;
 }
 
 .btn-text {

@@ -90,7 +90,7 @@ const previousQuestion = () => {
     <div class="bg-white">
       <article v-if="currentQuestion" class="overflow-hidden pb-4">
         <div
-          class="bg-blue-200"
+          class="bg-purple-200"
           role="progressbar"
           aria-label="Fortschritt"
           aria-valuemin="1"
@@ -98,7 +98,7 @@ const previousQuestion = () => {
           :aria-valuenow="currentQuestionProgress"
         >
           <div
-            class="h-2 bg-blue-900 motion-safe:transition-all duration-300 ease-out"
+            class="h-2 bg-purple-900 motion-safe:transition-all duration-300 ease-out"
             :style="{
               width: `${(currentQuestionProgress / questionsCount) * 100}%`,
             }"
@@ -112,21 +112,20 @@ const previousQuestion = () => {
             mode="out-in"
           >
             <div
-              class="px-4 mt-4 text-gray-600 flex"
+              class="px-4 mt-4 text-gray-700 text-2xl font-medium flex"
               :key="currentQuestionIndex"
             >
-              <span> {{ currentQuestion.category }} </span>
-              <div
-                class="max-md:hidden ms-auto whitespace-nowrap"
-                aria-hidden="true"
-              >
-                Frage {{ currentQuestionProgress }} / {{ questionsCount }}
-              </div>
+              <span>
+                <span aria-hidden="false">
+                  {{ currentQuestionProgress }} / {{ questionsCount }}
+                </span>
+                {{ currentQuestion.category }}
+              </span>
             </div>
           </Transition>
           <Transition mode="out-in" :name="transitionName">
             <div class="px-4" :key="currentQuestionIndex">
-              <h2 class="my-8 text-xl md:text-2xl">
+              <h2 class="my-4 text-xl font-semibold md:text-5xl">
                 {{ currentQuestion.thesis }}
               </h2>
             </div>
@@ -140,7 +139,6 @@ const previousQuestion = () => {
             <AnswerButton
               :answer="answer as Answer"
               @save="saveAnswer"
-              :accesskey="i + 1"
               :disabled="disabled"
               v-for="({ disabled, icon }, answer, i) in answerButtons"
             >
@@ -148,7 +146,7 @@ const previousQuestion = () => {
             </AnswerButton>
 
             <div class="!ms-auto self-center max-md:pt-4">
-              <button @click="skipQuestion" class="btn-text">
+              <button @click="skipQuestion" class="btn-outline">
                 These überspringen
                 <IconForward aria-hidden="true" class="ms-1" />
               </button>

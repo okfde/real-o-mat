@@ -21,6 +21,7 @@ const partners = await getCollection('partners')
               <Image
                 src={partner.data.logo}
                 alt={partner.data.name}
+                loading="eager"
                 class="w-full h-20 object-contain aspect-[3/2]"
               />
             </li>

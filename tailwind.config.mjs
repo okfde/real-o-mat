@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Creato Display'],
+        sans: ['Montserrat Variable'],
       },
     },
   },
