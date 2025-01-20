@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { Question } from '../content.config'
-import { useStore, parties, partyNames } from '../store'
+import { useStore, parties, partyNames, answerLabels } from '../store'
 import AnswerIndicator from '../components/AnswerIndicator.vue'
 import { onMounted, ref, useTemplateRef } from 'vue'
 
@@ -21,13 +21,14 @@ defineProps<{
 </script>
 
 <template>
-  <div class="p-4">
+  <div class="bg-white p-4">
     <h2 class="text-4xl font-medium">Vergleich</h2>
     <p class="mt-4">
       Scrollen Sie durch die Tabelle, um Ihre Ergebnisse des Real-O-Mat mit den
       Positionen der Parteien vergleichen.
     </p>
   </div>
+  
   <div class="overflow-x-auto" ref="table-container">
     <table :class="{ scrolled: tableScroll > 0 }">
       <thead>
@@ -54,26 +55,31 @@ defineProps<{
       </tbody>
     </table>
   </div>
+
+  <div class="bg-white p-4">
+    <h3 class="text-lg mb-2">Legende</h3>
+    <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 items-center">
+      <li v-for="(label, answer) in answerLabels" class="flex items-center space-y-2">
+        <AnswerIndicator :answer="answer" :popup="false" class="me-4"  />
+        {{ label }}
+      </li>
+    </ul>
+  </div>
 </template>
 
 <style scoped>
-td {
-  @apply py-4;
+td,
+th {
+  @apply py-4 bg-white;
 }
 
 th:first-child,
 td:first-child {
-  @apply sticky left-0 z-10 min-w-32 bg-white ps-4 max-md:pe-4;
+  @apply sticky left-0 z-10 min-w-32 ps-4 max-md:pe-4 max-md:shadow-xl;
 }
 
-tr:nth-child(even),
-tr:nth-child(even) td:first-child {
+tr:nth-child(odd) td {
   @apply bg-gray-50;
-}
-
-.scrolled th:first-child,
-.scrolled td:first-child {
-  @apply shadow-xl;
 }
 
 tr td:not(:first-child),
