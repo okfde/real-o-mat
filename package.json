@@ -17,6 +17,7 @@
     "@vueuse/core": "^12.3.0",
     "astro": "^5.1.7",
     "memoize-fs": "^4.1.1",
+    "sharp": "^0.33.5",
     "tailwindcss": "^3.4.17",
     "unplugin-icons": "^0.22.0",
     "vue": "^3.5.13",
