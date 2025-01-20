@@ -41,14 +41,16 @@ const setWeight = (questionId: string, e: Event) => {
     </button>
   </div>
   <form @submit.prevent="emit('done')" v-else>
-    <h2 class="text-xl mb-4">Welche Themen sind Ihnen besonders wichtig?</h2>
-    <p class="mb-4">
-      Markieren Sie die Themen, um diese mit doppelter Gewichtung in die
-      Berechnung einfließen zu lassen.
-    </p>
+    <div class="p-4 bg-white mb-4">
+      <h2 class="text-xl mb-4">Welche Themen sind Ihnen besonders wichtig?</h2>
+      <p>
+        Markieren Sie die Themen, um diese mit doppelter Gewichtung in die
+        Berechnung einfließen zu lassen.
+      </p>
+    </div>
 
     <div class="grid md:grid-cols-1 gap-4">
-      <div
+      <label
         v-for="({ answer, questionId, question }, i) in sortedAnswers"
         :key="questionId"
         class="flex items-start space-x-2 bg-white p-4"
@@ -64,13 +66,13 @@ const setWeight = (questionId: string, e: Event) => {
 
         <div>
           <div class="inline">
-            <p class="font-medium text-lg" :id="`category-${i}`">
+            <h3 class="font-medium text-lg" :id="`category-${i}`">
               {{ i + 1 }}. {{ question.category }}
-            </p>
+            </h3>
             <p>{{ question.thesis }}</p>
           </div>
         </div>
-      </div>
+      </label>
     </div>
 
     <button type="submit" class="btn mt-4">

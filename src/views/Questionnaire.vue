@@ -132,7 +132,7 @@ watch(currentQuestion, () => {
               :key="currentQuestionIndex"
             >
               <span> {{ currentQuestion.category }} </span>
-              <div class="max-md:hidden ms-auto text-nowrap" aria-hidden="true">
+              <div class="max-md:hidden ms-auto whitespace-nowrap" aria-hidden="true">
                 Frage {{ currentQuestionProgress }} / {{ questionsCount }}
               </div>
             </div>

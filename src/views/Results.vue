@@ -77,7 +77,7 @@ const partyMatches = computed(() => {
           </button>
         </Tab>
       </TabList>
-      <TabPanels class="bg-white">
+      <TabPanels>
         <TabPanel>
           <ResultMatches :partyMatches="partyMatches" />
         </TabPanel>
