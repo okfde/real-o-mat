@@ -116,7 +116,10 @@ const previousQuestion = () => {
               :key="currentQuestionIndex"
             >
               <span> {{ currentQuestion.category }} </span>
-              <div class="max-md:hidden ms-auto whitespace-nowrap" aria-hidden="true">
+              <div
+                class="max-md:hidden ms-auto whitespace-nowrap"
+                aria-hidden="true"
+              >
                 Frage {{ currentQuestionProgress }} / {{ questionsCount }}
               </div>
             </div>
@@ -146,7 +149,8 @@ const previousQuestion = () => {
 
             <div class="!ms-auto self-center max-md:pt-4">
               <button @click="skipQuestion" class="btn-text">
-                These überspringen <IconForward class="ms-1" />
+                These überspringen
+                <IconForward aria-hidden="true" class="ms-1" />
               </button>
             </div>
           </div>
@@ -155,7 +159,7 @@ const previousQuestion = () => {
     </div>
     <div class="flex mt-4">
       <button @click="previousQuestion" class="btn-text">
-        <IconBack class="me-1" />
+        <IconBack aria-hidden="true" class="me-1" />
         Zurück
       </button>
       <button
@@ -163,7 +167,7 @@ const previousQuestion = () => {
         class="btn-text ms-auto"
         v-if="currentQuestionIndex > 0"
       >
-        <IconRestart class="me-1" />
+        <IconRestart aria-hidden="true" class="me-1" />
         Neustarten
       </button>
     </div>

@@ -50,13 +50,14 @@ const props = defineProps<{
         :disabled="currentQuestionIndex === 0"
         class="btn-text justify-self-start"
       >
-        <IconBack class="me-1" />
+        <IconBack aria-hidden="true" class="me-1" />
         Zurück
       </button>
       <div class="text-center">
         <select
           class="rounded-md bg-blue-100 px-4 py-1 w-24 border-gray-300 shadow-sm focus:ring focus:ring-blue-600/50 outline-none motion-safe:transition"
           v-model="currentQuestionIndex"
+          aria-label="Springe zur These"
           @change="transitionName = undefined"
         >
           <option
@@ -74,7 +75,7 @@ const props = defineProps<{
         :disabled="currentQuestionIndex === props.questions.length - 1"
       >
         Weiter
-        <IconForward class="me-1" />
+        <IconForward aria-hidden="true" class="me-1" />
       </button>
     </nav>
 
@@ -92,13 +93,14 @@ const props = defineProps<{
         >
           <DisclosureButton
             class="flex w-full justify-between items-center rounded bg-blue-100 px-4 py-2 focus:ring focus:ring-blue-600/50 outline-none motion-safe:transition"
-            :class="{'rounded-b-none': open}"
+            :class="{ 'rounded-b-none': open }"
           >
             <h4 class="text-lg">{{ partyNames[party] }}</h4>
             <IconChevron
-            class="h-5 w-5 text-blue-900 transform motion-safe:transition-transform"
+              aria-hidden="true"
+              class="h-5 w-5 text-blue-900 transform motion-safe:transition-transform"
               :class="{
-                'rotate-180': open
+                'rotate-180': open,
               }"
             />
           </DisclosureButton>

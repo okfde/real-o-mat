@@ -28,7 +28,7 @@ defineProps<{
       Positionen der Parteien vergleichen.
     </p>
   </div>
-  
+
   <div class="overflow-x-auto" ref="table-container">
     <table :class="{ scrolled: tableScroll > 0 }">
       <thead>
@@ -56,11 +56,16 @@ defineProps<{
     </table>
   </div>
 
-  <div class="bg-white p-4">
+  <div class="bg-white p-4" aria-hidden="true">
     <h3 class="text-lg mb-2">Legende</h3>
-    <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 items-center">
-      <li v-for="(label, answer) in answerLabels" class="flex items-center space-y-2">
-        <AnswerIndicator :answer="answer" :popup="false" class="me-4"  />
+    <ul
+      class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 items-center"
+    >
+      <li
+        v-for="(label, answer) in answerLabels"
+        class="flex items-center space-y-2"
+      >
+        <AnswerIndicator :answer="answer" :popup="false" class="me-4" />
         {{ label }}
       </li>
     </ul>

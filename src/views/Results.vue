@@ -42,8 +42,6 @@ const partyMatches = computed(() => {
     denominator += weight
   }
 
-  console.log(answerCount.value, denominator)
-
   return Object.entries(results)
     .map(([party, score]) => ({
       party: partyNames[party as Party],
@@ -60,19 +58,19 @@ const partyMatches = computed(() => {
       <TabList class="flex rounded-t-lg bg-blue-900/50 p-1 space-x-1">
         <Tab as="template" v-slot="{ selected }">
           <button class="tab-button" :class="{ selected: selected }">
-            <IconChart />
+            <IconChart aria-hidden="true" />
             Ergebnis
           </button>
         </Tab>
         <Tab as="template" v-slot="{ selected }">
           <button class="tab-button" :class="{ selected: selected }">
-            <IconScale />
+            <IconScale aria-hidden="true" />
             Parteienvergleich
           </button>
         </Tab>
         <Tab as="template" v-slot="{ selected }">
           <button class="tab-button" :class="{ selected: selected }">
-            <IconComment />
+            <IconComment aria-hidden="true" />
             Begründungen
           </button>
         </Tab>

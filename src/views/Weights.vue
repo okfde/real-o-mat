@@ -76,7 +76,7 @@ const setWeight = (questionId: string, e: Event) => {
     </div>
 
     <button type="submit" class="btn mt-4">
-      Weiter <IconForward class="ms-1" />
+      Weiter <IconForward aria-hidden="true" class="ms-1" />
     </button>
 
     <hr class="border-gray-200 mt-6" />

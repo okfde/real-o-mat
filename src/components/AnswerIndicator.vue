@@ -23,13 +23,20 @@ const styles: Record<Answer, any> = {
 </script>
 
 <template>
-  <Popper arrow hover placement="top" :content="answerLabels[answer]" :disabled="popup !== false">
+  <Popper
+    arrow
+    hover
+    placement="top"
+    :content="answerLabels[answer]"
+    :disabled="popup !== false"
+  >
     <div
       class="w-10 h-10 text-white rounded-full flex items-center justify-center"
       :class="[styles[answer].class]"
       v-bind="$attrs"
+      :aria-label="answerLabels[answer]"
     >
-      <component :is="styles[answer].icon" class="w-6 h-6" />
+      <component :is="styles[answer].icon" class="w-6 h-6" aria-hidden="true" />
     </div>
   </Popper>
 </template>
