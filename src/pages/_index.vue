@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { computed, ref } from 'vue'
+import { computed, onMounted, ref, watch } from 'vue'
 import Questionnaire from '../views/Questionnaire.vue'
 import Results from '../views/Results.vue'
 import Weights from '../views/Weights.vue'
@@ -41,6 +41,23 @@ const previousStage = () => {
   transitionName.value = 'slide-back'
   if (hasPreviousStage.value) currentStage.value -= 1
 }
+
+const beforeUnload = (event: BeforeUnloadEvent) => {
+  event.preventDefault()
+  event.returnValue = '' // legacy browsers
+}
+
+const updateBeforeUnload = () => {
+  if ([Stage.Questionnaire, Stage.Weights].includes(currentStage.value)) {
+    window.addEventListener('beforeunload', beforeUnload)
+  } else {
+    window.removeEventListener('beforeunload', beforeUnload)
+  }
+}
+
+watch(currentStage, () => updateBeforeUnload())
+
+onMounted(() => updateBeforeUnload())
 </script>
 
 <template>

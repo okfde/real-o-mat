@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue'
+import { computed, ref } from 'vue'
 import type { Question, Answer } from '../content.config.ts'
 import { useStore } from '../store.ts'
 import IconBack from '~icons/material-symbols/arrow-back'
@@ -83,22 +83,6 @@ const previousQuestion = () => {
     emit('previous')
   }
 }
-
-const partyAnswerExists = (answer: Answer): boolean =>
-  currentQuestion.value!.answers.some((a) => a.answer === answer)
-
-const beforeUnload = (event: BeforeUnloadEvent) => {
-  event.preventDefault()
-  event.returnValue = '' // legacy browsers
-}
-
-watch(currentQuestion, () => {
-  if (currentQuestion.value && currentQuestionIndex.value !== 0) {
-    window.addEventListener('beforeunload', beforeUnload)
-  } else {
-    window.removeEventListener('beforeunload', beforeUnload)
-  }
-})
 </script>
 
 <template>
