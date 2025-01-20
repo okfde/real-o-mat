@@ -1,6 +1,11 @@
 ---
 import '../assets/style.css'
+import SiteHeader from '../components/SiteHeader.vue'
 import logo from '../assets/fragdenstaat.svg'
+
+interface Props {
+  isApp?: boolean
+}
 ---
 
 <!doctype html>
@@ -12,12 +17,7 @@ import logo from '../assets/fragdenstaat.svg'
     <title>Real-O-Mat</title>
   </head>
   <body class="bg-blue-50 flex flex-col min-h-screen">
-    <header class="container mx-auto py-12 px-4">
-      <h1 class="text-6xl font-extrabold mb-1">Real-O-Mat</h1>
-      <span class="text-xl font-medium text-blue-800">
-        Bundestagswahl 2025
-      </span>
-    </header>
+    <SiteHeader isApp={!!Astro.props.isApp} client:load />
 
     <div class="container mx-auto px-4">
       <main>
@@ -36,6 +36,9 @@ import logo from '../assets/fragdenstaat.svg'
             </a>
           </div>
           <ul class="flex space-x-6 max-md:mt-6 md:space-x-12 md:ms-auto">
+            <li>
+              <a href="methodik"> Methodik </a>
+            </li>
             <li>
               <a href="https://fragdenstaat.de/impressum" target="_blank">
                 Impressum

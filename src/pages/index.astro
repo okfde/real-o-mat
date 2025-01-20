@@ -8,10 +8,10 @@ const questions = (await getCollection('questions')).map((q) => q.data)
 const partners = await getCollection('partners')
 ---
 
-<Layout>
+<Layout isApp={true}>
   <div class="overflow-x-hidden">
     <App questions={questions} client:only="vue">
-      <h2 class="text-xl mt-8">Unsere Partner*innen</h2>
+      <h2 class="mt-8">Unsere Partner*innen</h2>
       <ul
         class="partners grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-8"
       >
@@ -28,5 +28,9 @@ const partners = await getCollection('partners')
         }
       </ul>
     </App>
+
+    <noscript>
+      Bitte aktivieren Sie JavaScript, um diese Seite zu nutzen.
+    </noscript>
   </div>
 </Layout>

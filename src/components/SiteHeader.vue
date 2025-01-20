@@ -1,0 +1,24 @@
+<script setup lang="ts">
+import { useStore, Stage } from '../store'
+
+const props = defineProps<{ isApp: boolean }>()
+
+const { currentStage, viewTransition } = useStore()
+
+const toIntro = (e: Event) => {
+  if (props.isApp) {
+    e.preventDefault()
+    viewTransition.value = 'slide-back'
+    currentStage.value = Stage.Intro
+  }
+}
+</script>
+
+<template>
+  <header class="container mx-auto py-12 px-4">
+    <a href="/" @click="toIntro">
+      <h1 class="text-6xl font-extrabold mb-1">Real-O-Mat</h1>
+    </a>
+    <span class="text-xl font-medium text-blue-800"> Bundestagswahl 2025 </span>
+  </header>
+</template>

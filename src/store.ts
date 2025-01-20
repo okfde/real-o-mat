@@ -1,4 +1,4 @@
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { useStorage } from '@vueuse/core'
 import type { Answer, Party } from './content.config.ts'
 
@@ -47,10 +47,13 @@ export function useStore() {
 
   const currentStage = useStorage<Stage>('realomat-stage', Stage.Intro)
 
+  const viewTransition = ref('slide' as 'slide' | 'slide-back')
+
   return {
     answers,
     answerCount,
     currentQuestionIndex,
     currentStage,
+    viewTransition,
   }
 }

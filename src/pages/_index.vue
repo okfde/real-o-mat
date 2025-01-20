@@ -12,12 +12,11 @@ defineProps<{
   questions: Question[]
 }>()
 
-const { answers, currentQuestionIndex, currentStage } = useStore()
-
-const transitionName = ref('slide')
+const { answers, currentQuestionIndex, currentStage, viewTransition } =
+  useStore()
 
 const reset = () => {
-  transitionName.value = 'slide-back'
+  viewTransition.value = 'slide-back'
   answers.value = {}
   currentQuestionIndex.value = 0
   currentStage.value = Stage.Intro
@@ -33,12 +32,12 @@ const hasPreviousStage = computed(() => currentStage.value !== Stage.Intro)
 const hasNextStage = computed(() => currentStage.value !== Stage.Results)
 
 const nextStage = () => {
-  transitionName.value = 'slide'
+  viewTransition.value = 'slide'
   if (hasNextStage.value) currentStage.value += 1
 }
 
 const previousStage = () => {
-  transitionName.value = 'slide-back'
+  viewTransition.value = 'slide-back'
   if (hasPreviousStage.value) currentStage.value -= 1
 }
 
@@ -61,7 +60,7 @@ onMounted(() => updateBeforeUnload())
 </script>
 
 <template>
-  <Transition :name="transitionName" mode="out-in">
+  <Transition :name="viewTransition" mode="out-in">
     <div v-if="currentStage === Stage.Intro" class="bg-white p-4">
       <p class="text-xl mb-4">
         Alle 7 Parteien, die in der letzten Legislaturperiode im Bundestag
