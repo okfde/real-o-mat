@@ -74,6 +74,8 @@ onMounted(() => updateBeforeUnload())
         über Parteien und ihr Abstimmungsverhalten.
       </p>
       <button class="btn text-4xl mt-4" @click="nextStage">Los geht's!</button>
+
+      <slot />
     </div>
 
     <Questionnaire
@@ -99,12 +101,12 @@ onMounted(() => updateBeforeUnload())
     v-if="[Stage.Weights, Stage.Results].includes(currentStage)"
   >
     <button @click="previousStage" class="btn-text">
-      <IconBack class="me-1" />
+      <IconBack aria-hidden="true" class="me-1" />
       Zurück
     </button>
 
     <button @click="confirmReset" class="btn-text ms-auto">
-      <IconRestart class="me-1" />
+      <IconRestart aria-hidden="true" class="me-1" />
       Neustarten
     </button>
   </div>

@@ -1,6 +1,7 @@
 import { defineCollection, z } from 'astro:content'
 import { importGoogleSheet, cachedImportGoogleSheet } from './importGoogleSheet'
 import { getSecret } from 'astro:env/server'
+import { file } from 'astro/loaders'
 
 export const answerSchema = z.enum([
   'nicht weit genug',
@@ -51,4 +52,13 @@ const questions = defineCollection({
   schema: questionSchema,
 })
 
-export const collections = { questions }
+const partners = defineCollection({
+  loader: file("src/assets/partners.yaml"),
+  schema: ({ image }) => z.object({
+    name: z.string(),
+    logo: image()
+  }),
+})
+export type PartnersSchema = typeof partners.schema
+
+export const collections = { questions, partners }

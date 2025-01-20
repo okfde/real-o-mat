@@ -1,13 +1,32 @@
 ---
+import { Image } from 'astro:assets'
 import { getCollection } from 'astro:content'
 import Layout from '../layouts/Layout.astro'
 import App from './_index.vue'
 
 const questions = (await getCollection('questions')).map((q) => q.data)
+const partners = await getCollection('partners')
 ---
 
 <Layout>
   <div class="overflow-x-hidden">
-    <App questions={questions} client:only="vue" />
+    <App questions={questions} client:only="vue">
+      <h2 class="text-xl mt-8">Unsere Partner*innen</h2>
+      <ul
+        class="partners grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-8"
+      >
+        {
+          partners.map((partner) => (
+            <li>
+              <Image
+                src={partner.data.logo}
+                alt={partner.data.name}
+                class="w-full h-20 object-contain aspect-[3/2]"
+              />
+            </li>
+          ))
+        }
+      </ul>
+    </App>
   </div>
 </Layout>
