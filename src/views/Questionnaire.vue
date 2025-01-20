@@ -126,7 +126,7 @@ const previousQuestion = () => {
           </Transition>
           <Transition mode="out-in" :name="transitionName">
             <div class="px-4" :key="currentQuestionIndex">
-              <h2 class="my-8 text-xl md:text-2xl font-medium">
+              <h2 class="my-8 text-xl md:text-2xl">
                 {{ currentQuestion.thesis }}
               </h2>
             </div>

@@ -22,7 +22,7 @@ defineProps<{
 
 <template>
   <div class="bg-white p-4">
-    <h2 class="text-4xl font-medium">Vergleich</h2>
+    <h2>Vergleich</h2>
     <p class="mt-4">
       Scrollen Sie durch die Tabelle, um Ihre Ergebnisse des Real-O-Mat mit den
       Positionen der Parteien vergleichen.

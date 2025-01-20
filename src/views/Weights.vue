@@ -30,9 +30,7 @@ const setWeight = (questionId: string, e: Event) => {
 
 <template>
   <div class="p-4 bg-white" v-if="answerCount < 5">
-    <h2 class="text-4xl font-medium">
-      Sie haben leider zu wenig Fragen beantwortet.
-    </h2>
+    <h2>Sie haben leider zu wenig Fragen beantwortet.</h2>
     <p class="mt-4">
       Beantworten Sie mindestens fünf Fragen, um Ihr Ergebnis zu sehen.
     </p>
@@ -42,7 +40,7 @@ const setWeight = (questionId: string, e: Event) => {
   </div>
   <form @submit.prevent="emit('done')" v-else>
     <div class="p-4 bg-white mb-4">
-      <h2 class="text-xl mb-4">Welche Themen sind Ihnen besonders wichtig?</h2>
+      <h2>Welche Themen sind Ihnen besonders wichtig?</h2>
       <p>
         Markieren Sie die Themen, um diese mit doppelter Gewichtung in die
         Berechnung einfließen zu lassen.

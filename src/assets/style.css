@@ -21,6 +21,10 @@ body {
   @apply text-gray-600 cursor-not-allowed;
 }
 
+h2 {
+  @apply text-4xl font-medium;
+}
+
 @font-face {
   font-family: 'Creato Display';
   src: url('./CreatoDisplay-Medium.woff2') format('woff2');

@@ -36,7 +36,7 @@ const props = defineProps<{
 
 <template>
   <div class="bg-white p-4">
-    <h2 class="text-4xl font-medium">Begründung der Thesen</h2>
+    <h2>Begründung der Thesen</h2>
     <p class="mt-4 mb-6">
       Wie begründen die Parteien ihre Positionen? Wählen Sie eine These aus und
       finden Sie heraus, warum die Parteien zustimmen oder ablehnen.

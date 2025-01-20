@@ -6,7 +6,7 @@ defineProps<{
 
 <template>
   <div class="p-4 backdrop-blur bg-white/75">
-    <h2 class="text-4xl font-medium">Ihr Real-O-Mat Ergebnis</h2>
+    <h2>Ihr Real-O-Mat Ergebnis</h2>
     <div class="my-4">
       <dl class="grid items-center mt-2 gap-x-4 gap-y-8">
         <template v-for="{ party, percentage } in partyMatches" :key="party">
