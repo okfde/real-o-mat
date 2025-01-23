@@ -51,29 +51,39 @@ interface Props {
 
     <footer>
       <div class="bg-gray-50">
-        <div
-          class="container mx-auto py-12 px-4 text-gray-600 flex max-md:flex-col items-center"
-        >
-          <div>
-            <a href="https://fragdenstaat.de" target="_blank">
-              <img src={logo.src} alt="Ein Projekt von FragDenStaat" />
-            </a>
+        <div class="container mx-auto py-12 px-4 text-gray-600">
+          <div class="flex max-md:flex-col items-center">
+            <div>
+              <a href="https://fragdenstaat.de" target="_blank">
+                <img src={logo.src} alt="Ein Projekt von FragDenStaat" />
+              </a>
+            </div>
+            <ul class="flex space-x-6 max-md:mt-6 md:space-x-12 md:ms-auto">
+              <li>
+                <a href="methodik"> Methodik </a>
+              </li>
+              <li>
+                <a href="https://fragdenstaat.de/impressum" target="_blank">
+                  Impressum
+                </a>
+              </li>
+              <li>
+                <a href="https://fragdenstaat.de/datenschutz" target="_blank">
+                  Datenschutz
+                </a>
+              </li>
+            </ul>
           </div>
-          <ul class="flex space-x-6 max-md:mt-6 md:space-x-12 md:ms-auto">
-            <li>
-              <a href="methodik"> Methodik </a>
-            </li>
-            <li>
-              <a href="https://fragdenstaat.de/impressum" target="_blank">
-                Impressum
-              </a>
-            </li>
-            <li>
-              <a href="https://fragdenstaat.de/datenschutz" target="_blank">
-                Datenschutz
-              </a>
-            </li>
-          </ul>
+
+          <p class="text-xs text-center md:text-end mt-2">
+            <a
+              href="https://traffic.okfn.de/index.php?module=CoreAdminHome&action=optOut&language=de"
+              class="text-gray-500"
+              target="_blank"
+            >
+              Datenschutz-Einstellungen
+            </a>
+          </p>
         </div>
       </div>
     </footer>
