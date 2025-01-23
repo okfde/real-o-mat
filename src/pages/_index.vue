@@ -61,20 +61,24 @@ onMounted(() => updateBeforeUnload())
 
 <template>
   <Transition :name="viewTransition" mode="out-in">
-    <div v-if="currentStage === Stage.Intro" class="bg-white p-4">
-      <p class="text-xl mb-4">
-        Alle 7 Parteien, die in der letzten Legislaturperiode im Bundestag
-        saßen, haben über Anträge und Gesetzesentwürfe abgestimmt. Jetzt sind
-        Sie an der Reihe: Vergleichen Sie Ihre Standpunkte mit dem
-        Abstimmungsverhalten der Parteien.
-      </p>
-      <p>
-        Der Real-O-Mat ist keine Wahlempfehlung, sondern ein Informationsangebot
-        über Parteien und ihr Abstimmungsverhalten.
-      </p>
-      <button class="btn text-4xl mt-4" @click="nextStage">Los geht's!</button>
+    <div v-if="currentStage === Stage.Intro">
+      <div class="bg-white p-8 md:p-16 md:text-center">
+        <p class="text-xl font-medium md:text-2xl mb-4">
+          Alle 7 Parteien, die in der letzten Legislaturperiode im Bundestag
+          saßen, haben über Anträge und Gesetzesentwürfe abgestimmt. Jetzt sind
+          Sie an der Reihe: Vergleichen Sie Ihre Standpunkte mit dem
+          Abstimmungsverhalten der Parteien.
+        </p>
+        <p>
+          Der Real-O-Mat ist keine Wahlempfehlung, sondern ein
+          Informationsangebot über Parteien und ihr Abstimmungsverhalten.
+        </p>
+        <button class="btn btn-lg mt-4" @click="nextStage">Los geht's!</button>
+      </div>
 
-      <slot />
+      <div class="bg-white/50 backdrop-blur-sm text-center mt-8 p-8">
+        <slot />
+      </div>
     </div>
 
     <Questionnaire
@@ -99,12 +103,12 @@ onMounted(() => updateBeforeUnload())
     class="flex mt-4 motion-safe:transition-all"
     v-if="[Stage.Weights, Stage.Results].includes(currentStage)"
   >
-    <button @click="previousStage" class="btn-text">
+    <button @click="previousStage" class="btn-text !text-white">
       <IconBack aria-hidden="true" class="me-1" />
       Zurück
     </button>
 
-    <button @click="confirmReset" class="btn-text ms-auto">
+    <button @click="confirmReset" class="btn-text ms-auto !text-white">
       <IconRestart aria-hidden="true" class="me-1" />
       Neustarten
     </button>

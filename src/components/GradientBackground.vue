@@ -5,14 +5,13 @@ const { currentStage } = useStore()
 </script>
 
 <template>
-  <div class="background" :class="{ linear: currentStage !== Stage.Intro }">
-    <slot />
-  </div>
+  <div class="conic"></div>
+  <div class="linear" :class="{ visible: currentStage >= Stage.Weights }"></div>
 </template>
 
 <style>
-.background {
-  @apply relative;
+.conic {
+  @apply fixed inset-0 -z-10;
   background: conic-gradient(
     from 180deg at 50% 50%,
     theme(colors.primary.purple) 0deg,
@@ -22,13 +21,9 @@ const { currentStage } = useStore()
   );
 }
 
-.background > * {
-  z-index: 10;
-}
-
-.background::after {
-  content: '';
-  @apply transition-opacity opacity-0 absolute inset-0;
+.linear {
+  @apply fixed inset-0 -z-10;
+  @apply transition-opacity opacity-0;
   background: linear-gradient(
     to bottom,
     theme(colors.primary.cyan),
@@ -36,7 +31,7 @@ const { currentStage } = useStore()
   );
 }
 
-.background.linear::after {
+.linear.visible {
   @apply opacity-100 duration-500;
 }
 </style>

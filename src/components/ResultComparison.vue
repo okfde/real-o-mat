@@ -21,9 +21,9 @@ defineProps<{
 </script>
 
 <template>
-  <div class="bg-white p-4">
+  <div class="bg-white p-4 md:p-8">
     <h2>Vergleich</h2>
-    <p class="mt-4">
+    <p>
       Scrollen Sie durch die Tabelle, um Ihre Ergebnisse des Real-O-Mat mit den
       Positionen der Parteien vergleichen.
     </p>
@@ -56,7 +56,7 @@ defineProps<{
     </table>
   </div>
 
-  <div class="bg-white p-4" aria-hidden="true">
+  <div class="bg-white p-4 md:p-8" aria-hidden="true">
     <h3 class="text-lg mb-2">Legende</h3>
     <ul
       class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 items-center"
@@ -73,14 +73,27 @@ defineProps<{
 </template>
 
 <style scoped>
+table {
+  @apply w-full;
+}
+
 td,
 th {
   @apply py-4 bg-white;
 }
 
+th {
+  @apply font-medium;
+}
+
+td {
+  @apply text-sm;
+  hyphens: auto;
+}
+
 th:first-child,
 td:first-child {
-  @apply sticky left-0 z-10 min-w-32 ps-4 max-md:pe-4 max-md:shadow-xl;
+  @apply sticky left-0 z-10 min-w-56 ps-4 md:ps-8 max-md:pe-4 max-md:shadow-xl;
 }
 
 tr:nth-child(odd) td {
@@ -89,6 +102,6 @@ tr:nth-child(odd) td {
 
 tr td:not(:first-child),
 tr th:not(:first-child) {
-  @apply min-w-24;
+  @apply min-w-28;
 }
 </style>

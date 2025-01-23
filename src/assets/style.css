@@ -1,6 +1,10 @@
 .btn {
   @apply inline-flex items-center px-4 py-2 text-white font-medium rounded-full font-bold;
-  @apply bg-blue-700 hover:bg-blue-800 focus:ring focus:ring-blue-600/50 outline-none motion-safe:transition;
+  @apply bg-purple-700 hover:bg-purple-800 focus:ring focus:ring-purple-600/50 outline-none motion-safe:transition;
+}
+
+.btn.btn-lg {
+  @apply text-xl px-6 py-3;
 }
 
 .btn:disabled {
@@ -8,8 +12,8 @@
 }
 
 .btn-outline {
-  @apply inline-flex items-center px-4 py-2 text-white rounded-full text-blue-700 font-bold;
-  @apply border border-blue-700 hover:bg-blue-800 hover:text-white focus:ring focus:ring-blue-600/50 outline-none motion-safe:transition;
+  @apply inline-flex items-center px-4 py-2 text-white rounded-full text-purple-700 font-bold;
+  @apply border border-purple-700 hover:bg-purple-800 hover:text-white focus:ring focus:ring-purple-600/50 outline-none motion-safe:transition;
 }
 
 .btn-text {
@@ -21,7 +25,7 @@
 }
 
 h2 {
-  @apply text-4xl font-medium;
+  @apply text-xl md:text-4xl mb-2 font-medium;
 }
 
 @font-face {

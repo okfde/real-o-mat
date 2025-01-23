@@ -5,9 +5,9 @@ defineProps<{
 </script>
 
 <template>
-  <div class="p-4 backdrop-blur bg-white/75">
+  <div class="p-4 md:p-8 backdrop-blur bg-white/75">
     <h2>Ihr Real-O-Mat Ergebnis</h2>
-    <div class="my-4">
+    <div class="mt-6">
       <dl class="grid items-center mt-2 gap-x-4 gap-y-8">
         <template v-for="{ party, percentage } in partyMatches" :key="party">
           <dt class="md:text-xl font-medium whitespace-nowrap">
@@ -17,7 +17,7 @@ defineProps<{
             <div class="flex-1">
               <div class="bg-white rounded-full overflow-hidden">
                 <div
-                  class="h-3 bg-blue-900 progress-result"
+                  class="h-3 bg-purple-900 progress-result"
                   :style="{
                     width: `${percentage}%`,
                   }"

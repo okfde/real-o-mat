@@ -18,16 +18,17 @@ interface Props {
     <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
     <title>Real-O-Mat</title>
   </head>
-  <body class="bg-blue-50 flex flex-col min-h-screen">
-    <GradientBackground class="flex flex-col flex-1 pb-12" client:load>
-      <SiteHeader isApp={!!Astro.props.isApp} client:load />
+  <body class="bg-purple-50">
+    <GradientBackground class="flex flex-col flex-1 pb-12" client:load />
 
+    <div class="min-h-screen pb-12">
+      <SiteHeader isApp={!!Astro.props.isApp} client:load />
       <div class="container mx-auto px-4 z-10">
         <main>
           <slot />
         </main>
       </div>
-    </GradientBackground>
+    </div>
 
     <footer>
       <div class="bg-gray-50">

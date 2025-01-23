@@ -14,9 +14,9 @@ defineProps<{
 }>()
 
 const styles: Record<Answer, any> = {
-  'zu weit': { icon: IconLess, class: 'bg-red-500' },
-  richtig: { icon: IconRight, class: 'bg-green-500' },
-  'nicht weit genug': { icon: IconMore, class: 'bg-orange-500' },
+  'zu weit': { icon: IconLess, class: 'bg-primary-red' },
+  richtig: { icon: IconRight, class: 'bg-primary-green' },
+  'nicht weit genug': { icon: IconMore, class: 'bg-primary-orange' },
   '/': { icon: IconUnknown, class: 'bg-gray-600' },
   '-': { icon: IconNeutral, class: 'bg-gray-700' },
 }
@@ -36,7 +36,7 @@ const styles: Record<Answer, any> = {
       v-bind="$attrs"
       :aria-label="answerLabels[answer]"
     >
-      <component :is="styles[answer].icon" class="w-6 h-6" aria-hidden="true" />
+      <component :is="styles[answer].icon" class="w-7 h-7" aria-hidden="true" />
     </div>
   </Popper>
 </template>

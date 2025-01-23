@@ -55,7 +55,7 @@ const partyMatches = computed(() => {
 <template>
   <div>
     <TabGroup>
-      <TabList class="flex rounded-t-lg bg-blue-900/50 p-1 space-x-1">
+      <TabList class="flex rounded-t-lg bg-primary-purple/30 p-1 space-x-1">
         <Tab as="template" v-slot="{ selected }">
           <button class="tab-button" :class="{ selected: selected }">
             <IconChart aria-hidden="true" />
@@ -76,13 +76,15 @@ const partyMatches = computed(() => {
         </Tab>
       </TabList>
       <TabPanels>
-        <TabPanel>
+        <TabPanel :unmount="false">
           <ResultMatches :partyMatches="partyMatches" />
         </TabPanel>
-        <TabPanel>
+        <TabPanel :unmount="false">
           <ResultComparison :questions="questions" />
         </TabPanel>
-        <TabPanel><ResultComments :questions="questions" /></TabPanel>
+        <TabPanel :unmount="false"
+          ><ResultComments :questions="questions"
+        /></TabPanel>
       </TabPanels>
     </TabGroup>
   </div>
@@ -92,7 +94,7 @@ const partyMatches = computed(() => {
 .tab-button {
   @apply flex flex-col md:flex-row justify-center items-center flex-1 w-full py-2;
   @apply bg-transparent text-white text-xs md:text-xl border-2 border-transparent rounded;
-  @apply focus:ring focus:ring-blue-900 outline-none motion-safe:transition duration-200;
+  @apply focus:ring focus:ring-purple-900 outline-none motion-safe:transition duration-200;
 }
 
 .tab-button:deep(svg) {
@@ -100,7 +102,7 @@ const partyMatches = computed(() => {
 }
 
 .tab-button.selected {
-  @apply bg-white text-blue-800;
+  @apply bg-white text-purple-800;
 }
 
 .tab-button:not(.selected) {

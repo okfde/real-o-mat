@@ -39,7 +39,7 @@ const setWeight = (questionId: string, e: Event) => {
     </button>
   </div>
   <form @submit.prevent="emit('done')" v-else>
-    <div class="p-4 bg-white mb-4">
+    <div class="p-4 md:p-8 bg-white mb-4">
       <h2>Welche Themen sind Ihnen besonders wichtig?</h2>
       <p>
         Markieren Sie die Themen, um diese mit doppelter Gewichtung in die
@@ -73,9 +73,11 @@ const setWeight = (questionId: string, e: Event) => {
       </label>
     </div>
 
-    <button type="submit" class="btn mt-4">
-      Weiter <IconForward aria-hidden="true" class="ms-1" />
-    </button>
+    <div class="bg-white p-4 mt-4">
+      <button type="submit" class="btn">
+        Weiter <IconForward aria-hidden="true" class="ms-1" />
+      </button>
+    </div>
 
     <hr class="border-gray-200 mt-6" />
   </form>
@@ -86,7 +88,7 @@ const setWeight = (questionId: string, e: Event) => {
 input[type='checkbox'] {
   appearance: none;
 
-  @apply appearance-none relative w-8 h-8 border border-gray-500 rounded-full motion-safe:transition-all motion-safe:duration-300 focus:ring focus:ring-blue-600/75 outline-none;
+  @apply appearance-none relative w-8 h-8 border border-gray-500 rounded-full motion-safe:transition-all motion-safe:duration-300 focus:ring focus:ring-purple-600/75 outline-none;
 }
 
 input[type='checkbox']::before {
