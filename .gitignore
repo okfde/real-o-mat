@@ -16,9 +16,10 @@ pnpm-debug.log*
 # cache
 .cache
 
-# environment variables
+# environment variables, secrets
 .env
 .env.production
+service-account.json
 
 # macOS-specific files
 .DS_Store
@@ -26,4 +27,8 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 
-service-account.json
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
