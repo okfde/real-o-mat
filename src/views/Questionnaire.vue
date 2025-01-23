@@ -155,19 +155,20 @@ const previousQuestion = () => {
         </Transition>
       </div>
     </article>
-  </div>
-  <div class="flex mt-4">
-    <button @click="previousQuestion" class="btn-text">
-      <IconBack aria-hidden="true" class="me-1" />
-      Zurück
-    </button>
-    <button
-      @click="emit('reset')"
-      class="btn-text ms-auto"
-      v-if="currentQuestionIndex > 0"
-    >
-      <IconRestart aria-hidden="true" class="me-1" />
-      Neustarten
-    </button>
+
+    <div class="flex mt-4">
+      <button @click="previousQuestion" class="btn-text">
+        <IconBack aria-hidden="true" class="me-1" />
+        Zurück
+      </button>
+      <button
+        @click="emit('reset')"
+        class="btn-text ms-auto"
+        v-if="currentQuestionIndex > 0"
+      >
+        <IconRestart aria-hidden="true" class="me-1" />
+        Neustarten
+      </button>
+    </div>
   </div>
 </template>
