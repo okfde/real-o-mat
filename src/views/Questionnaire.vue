@@ -87,23 +87,24 @@ const previousQuestion = () => {
 
 <template>
   <div>
-    <div class="bg-white">
-      <article v-if="currentQuestion" class="overflow-hidden pb-4 md:pb-8">
+    <article v-if="currentQuestion" class="overflow-hidden">
+      <div
+        class="bg-white/50"
+        role="progressbar"
+        aria-label="Fortschritt"
+        aria-valuemin="1"
+        :aria-valuemax="questionsCount"
+        :aria-valuenow="currentQuestionProgress"
+      >
         <div
-          class="bg-purple-200"
-          role="progressbar"
-          aria-label="Fortschritt"
-          aria-valuemin="1"
-          :aria-valuemax="questionsCount"
-          :aria-valuenow="currentQuestionProgress"
-        >
-          <div
-            class="h-2 bg-purple-900 motion-safe:transition-all duration-300 ease-out"
-            :style="{
-              width: `${(currentQuestionProgress / questionsCount) * 100}%`,
-            }"
-          />
-        </div>
+          class="h-2 bg-purple-900 motion-safe:transition-all duration-300 ease-out"
+          :style="{
+            width: `${(currentQuestionProgress / questionsCount) * 100}%`,
+          }"
+        />
+      </div>
+
+      <div class="p-4 md:p-8 bg-white">
         <div class="min-h-72 md:min-h-42">
           <Transition
             class="motion-safe:transition-opacity duration-250 ease-linear"
@@ -112,7 +113,7 @@ const previousQuestion = () => {
             mode="out-in"
           >
             <div
-              class="px-4 md:px-8 mt-4 md:mt-8 text-gray-700 text-2xl flex"
+              class="md:mt-4 text-gray-700 text-2xl flex"
               :key="currentQuestionIndex"
             >
               <span>
@@ -124,14 +125,14 @@ const previousQuestion = () => {
             </div>
           </Transition>
           <Transition mode="out-in" :name="transitionName">
-            <div class="px-4 md:px-8" :key="currentQuestionIndex">
+            <div class="" :key="currentQuestionIndex">
               <h2 class="my-4 text-xl font-medium md:text-4xl">
                 {{ currentQuestion.thesis }}
               </h2>
             </div>
           </Transition>
         </div>
-        <Transition :name="transitionName" mode="out-in" class="px-4 md:px-8">
+        <Transition :name="transitionName" mode="out-in">
           <div
             class="flex flex-col md:flex-row max-md:space-y-3 md:space-x-2"
             :key="currentQuestionIndex"
@@ -144,7 +145,6 @@ const previousQuestion = () => {
             >
               <component :is="icon" />
             </AnswerButton>
-
             <div class="!ms-auto self-center max-md:pt-4">
               <button @click="skipQuestion" class="btn-outline">
                 These überspringen
@@ -153,21 +153,21 @@ const previousQuestion = () => {
             </div>
           </div>
         </Transition>
-      </article>
-    </div>
-    <div class="flex mt-4">
-      <button @click="previousQuestion" class="btn-text">
-        <IconBack aria-hidden="true" class="me-1" />
-        Zurück
-      </button>
-      <button
-        @click="emit('reset')"
-        class="btn-text ms-auto"
-        v-if="currentQuestionIndex > 0"
-      >
-        <IconRestart aria-hidden="true" class="me-1" />
-        Neustarten
-      </button>
-    </div>
+      </div>
+    </article>
+  </div>
+  <div class="flex mt-4">
+    <button @click="previousQuestion" class="btn-text">
+      <IconBack aria-hidden="true" class="me-1" />
+      Zurück
+    </button>
+    <button
+      @click="emit('reset')"
+      class="btn-text ms-auto"
+      v-if="currentQuestionIndex > 0"
+    >
+      <IconRestart aria-hidden="true" class="me-1" />
+      Neustarten
+    </button>
   </div>
 </template>
