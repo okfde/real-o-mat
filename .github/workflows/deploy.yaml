@@ -41,6 +41,8 @@ jobs:
         run: pnpm run build
       - name: Delete secrets
         run: rm .env service-account.json
+      - name: Add CNAME
+        run: echo real-o-mat.de > dist/CNAME
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
