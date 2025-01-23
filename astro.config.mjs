@@ -6,7 +6,6 @@ import Icons from 'unplugin-icons/vite'
 
 // https://astro.build/config
 export default defineConfig({
-  base: '/real-o-mat/',
   output: 'static',
   integrations: [tailwind(), vue()],
   vite: {
