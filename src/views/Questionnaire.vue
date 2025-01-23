@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed, nextTick, ref } from 'vue'
 import type { Question, Answer } from '../content.config.ts'
 import { useStore } from '../store.ts'
 import IconBack from '~icons/material-symbols/arrow-back'
@@ -64,7 +64,7 @@ const saveAnswer = (answer: Answer) => {
     weight: 1,
   }
 
-  nextQuestion()
+  nextTick().then(() => nextQuestion())
 }
 
 const skipQuestion = () => {
@@ -88,7 +88,7 @@ const previousQuestion = () => {
 <template>
   <div>
     <div class="bg-white">
-      <article v-if="currentQuestion" class="overflow-hidden pb-4">
+      <article v-if="currentQuestion" class="overflow-hidden pb-4 md:pb-8">
         <div
           class="bg-purple-200"
           role="progressbar"
@@ -112,7 +112,7 @@ const previousQuestion = () => {
             mode="out-in"
           >
             <div
-              class="px-4 mt-4 text-gray-700 text-2xl font-medium flex"
+              class="px-4 md:px-8 mt-4 md:mt-8 text-gray-700 text-2xl flex"
               :key="currentQuestionIndex"
             >
               <span>
@@ -124,14 +124,14 @@ const previousQuestion = () => {
             </div>
           </Transition>
           <Transition mode="out-in" :name="transitionName">
-            <div class="px-4" :key="currentQuestionIndex">
-              <h2 class="my-4 text-xl font-semibold md:text-5xl">
+            <div class="px-4 md:px-8" :key="currentQuestionIndex">
+              <h2 class="my-4 text-xl font-medium md:text-4xl">
                 {{ currentQuestion.thesis }}
               </h2>
             </div>
           </Transition>
         </div>
-        <Transition :name="transitionName" mode="out-in" class="px-4">
+        <Transition :name="transitionName" mode="out-in" class="px-4 md:px-8">
           <div
             class="flex flex-col md:flex-row max-md:space-y-3 md:space-x-2"
             :key="currentQuestionIndex"
