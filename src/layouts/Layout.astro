@@ -3,6 +3,7 @@ import '../assets/style.css'
 import '@fontsource-variable/montserrat'
 import SiteHeader from '../components/SiteHeader.vue'
 import logo from '../assets/fragdenstaat.svg'
+import GradientBackground from '../components/GradientBackground.vue'
 
 interface Props {
   isApp?: boolean
@@ -18,15 +19,17 @@ interface Props {
     <title>Real-O-Mat</title>
   </head>
   <body class="bg-blue-50 flex flex-col min-h-screen">
-    <SiteHeader isApp={!!Astro.props.isApp} client:load />
+    <GradientBackground class="flex flex-col flex-1 pb-12" client:load>
+      <SiteHeader isApp={!!Astro.props.isApp} client:load />
 
-    <div class="container mx-auto px-4">
-      <main>
-        <slot />
-      </main>
-    </div>
+      <div class="container mx-auto px-4 z-10">
+        <main>
+          <slot />
+        </main>
+      </div>
+    </GradientBackground>
 
-    <footer class="mt-auto pt-12">
+    <footer>
       <div class="bg-gray-50">
         <div
           class="container mx-auto py-12 px-4 text-gray-600 flex max-md:flex-col items-center"

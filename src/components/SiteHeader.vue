@@ -15,7 +15,7 @@ const toIntro = (e: Event) => {
 </script>
 
 <template>
-  <header class="container mx-auto py-12 px-4">
+  <header class="container mx-auto py-12 px-4 z-10">
     <a href="/" @click="toIntro">
       <h1 class="text-6xl md:text-8xl font-bold mb-1">Real-O-Mat</h1>
     </a>
