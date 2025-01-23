@@ -1,15 +1,23 @@
 <script setup lang="ts">
+import { computed, getCurrentInstance, onMounted } from 'vue'
 import { useStore, Stage } from '../store'
 
 const { currentStage } = useStore()
+
+const visible = computed(() => currentStage.value >= Stage.Weights)
+
+onMounted(() => {
+  const instance = getCurrentInstance()
+  instance?.update()
+})
 </script>
 
 <template>
   <div class="conic"></div>
-  <div class="linear" :class="{ visible: currentStage >= Stage.Weights }"></div>
+  <div class="linear" :class="{ visible }"></div>
 </template>
 
-<style>
+<style scoped>
 .conic {
   @apply fixed inset-0 -z-10;
   background: conic-gradient(
