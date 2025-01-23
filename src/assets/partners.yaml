@@ -1,6 +1,6 @@
-- name: FragDenStaat
-  slug: fragdenstaat
-  logo: ./fragdenstaat.svg
+- name: Amadeu Antonio Stiftung
+  slug: aas
+  logo: ./logos/aas.svg
 - name: Abgeordnetenwatch
   slug: aw
   logo: ./logos/aw.svg
