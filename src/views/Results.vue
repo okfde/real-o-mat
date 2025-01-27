@@ -1,14 +1,15 @@
 <script lang="ts" setup>
-import { computed } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue'
 import type { Party, Question } from '../content.config'
 import { partyNames, useStore } from '../store'
-import IconChart from '~icons/material-symbols/bar-chart-4-bars-rounded'
-import IconScale from '~icons/material-symbols/balance-rounded'
-import IconComment from '~icons/material-symbols/comment-outline-rounded'
 import ResultMatches from '../components/ResultMatches.vue'
 import ResultComparison from '../components/ResultComparison.vue'
 import ResultComments from '../components/ResultComments.vue'
+import IconChart from '~icons/material-symbols/bar-chart-4-bars-rounded'
+import IconScale from '~icons/material-symbols/balance-rounded'
+import IconComment from '~icons/material-symbols/comment-outline-rounded'
+import IconShare from '~icons/material-symbols/ios-share-rounded'
 
 const props = defineProps<{
   questions: Question[]
@@ -50,6 +51,20 @@ const partyMatches = computed(() => {
     }))
     .sort((a, b) => b.score - a.score)
 })
+
+const canShare = ref(false)
+const shareData = {
+  title: 'Real-O-Mat',
+  url: 'https://real-o-mat.de',
+}
+
+onMounted(() => {
+  canShare.value = navigator.canShare(shareData)
+})
+
+const share = () => {
+  navigator.share(shareData)
+}
 </script>
 
 <template>
@@ -87,6 +102,15 @@ const partyMatches = computed(() => {
         /></TabPanel>
       </TabPanels>
     </TabGroup>
+
+    <Teleport to="main" v-if="canShare">
+      <div class="sticky mt-12 bottom-12 inset-x-0 flex justify-center z-20">
+        <button class="btn btn-lg" @click="share">
+          <IconShare aria-hidden="true" class="me-1" />
+          Teile den Real-O-Mat!
+        </button>
+      </div>
+    </Teleport>
   </div>
 </template>
 
