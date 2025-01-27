@@ -68,10 +68,7 @@ const answerButtons = computed(() => {
       </Transition>
     </div>
     <Transition :name="transitionName" mode="out-in">
-      <div
-        class="flex flex-col flex-wrap gap-x-2 gap-y-3"
-        :key="currentQuestionIndex"
-      >
+      <div class="flex flex-wrap gap-x-2 gap-y-3" :key="currentQuestionIndex">
         <AnswerButton
           :answer="answer"
           @save="$emit('saveAnswer', answer)"
