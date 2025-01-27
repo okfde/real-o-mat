@@ -42,6 +42,9 @@ export function useStore() {
   )
 
   const answerCount = computed(() => Object.values(answers.value).length)
+  const deleteAnswer = (questionId: string) => {
+    if (answers.value[questionId]) delete answers.value[questionId]
+  }
 
   const currentQuestionIndex = useStorage('realomat-current-question', 0)
   const currentQuestionProgress = computed(() => currentQuestionIndex.value + 1)
@@ -52,6 +55,7 @@ export function useStore() {
 
   return {
     answers,
+    deleteAnswer,
     answerCount,
     currentQuestionIndex,
     currentQuestionProgress,

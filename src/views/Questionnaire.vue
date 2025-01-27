@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, nextTick, ref } from 'vue'
+import { computed, nextTick, ref, toRaw } from 'vue'
 import type { Question, Answer } from '../content.config.ts'
 import { useStore } from '../store.ts'
 import QuestionCard from '../components/QuestionCard.vue'
@@ -12,7 +12,8 @@ const props = defineProps<{
 
 const emit = defineEmits(['done', 'reset', 'previous'])
 
-const { answers, currentQuestionIndex, currentQuestionProgress } = useStore()
+const { answers, deleteAnswer, currentQuestionIndex, currentQuestionProgress } =
+  useStore()
 
 if (currentQuestionIndex.value > props.questions.length) {
   currentQuestionIndex.value = 0
@@ -36,19 +37,17 @@ const nextQuestion = () => {
 }
 
 const saveAnswer = (answer: Answer) => {
-  answers.value[currentQuestion.value!.id] = {
+  const questionId = toRaw(currentQuestion.value!.id)
+  nextQuestion()
+  answers.value[questionId] = {
     answer,
-    questionId: currentQuestion.value!.id,
+    questionId,
     weight: 1,
   }
-
-  nextTick().then(() => nextQuestion())
 }
 
 const skipQuestion = () => {
-  if (answers.value[currentQuestion.value!.id]) {
-    delete answers.value[currentQuestion.value!.id]
-  }
+  deleteAnswer(currentQuestion.value!.id)
   nextQuestion()
 }
 

@@ -6,6 +6,7 @@ import { answerLabels } from '../store'
 defineProps<{
   answer: Answer
   disabled: boolean
+  selected: boolean
 }>()
 
 const emit = defineEmits<{
@@ -14,18 +15,31 @@ const emit = defineEmits<{
 </script>
 
 <template>
-  <div class="answer-button">
+  <div class="answer-button" v-once>
     <Popper
-      :disabled="!disabled"
+      :disabled="!selected && !disabled"
       arrow
       :hover="true"
       placement="top"
-      content="Diese Option ist nicht verfügbar, da keine Partei so abgestimmt hat."
+      :content="
+        selected
+          ? 'Ihre Auswahl'
+          : 'Diese Option ist nicht verfügbar, da keine Partei so abgestimmt hat.'
+      "
     >
-      <button class="btn" @click="emit('save', answer)" :disabled="disabled">
+      <button
+        class="btn"
+        :class="{ 'ring-3 ring-primary-yellow': selected }"
+        @click="emit('save', answer)"
+        :disabled="disabled"
+      >
         <slot class="me-1" />
         {{ answerLabels[answer] }}
       </button>
     </Popper>
   </div>
 </template>
+
+<style scoped>
+@reference '../assets/style.css';
+</style>

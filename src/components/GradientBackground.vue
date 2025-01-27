@@ -1,15 +1,10 @@
 <script setup lang="ts">
-import { computed, getCurrentInstance, onMounted } from 'vue'
+import { computed } from 'vue'
 import { useStore, Stage } from '../store'
 
 const { currentStage } = useStore()
 
 const visible = computed(() => currentStage.value >= Stage.Weights)
-
-onMounted(() => {
-  const instance = getCurrentInstance()
-  instance?.update()
-})
 </script>
 
 <template>
