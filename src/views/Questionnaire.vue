@@ -32,18 +32,19 @@ const nextQuestion = () => {
   if (currentQuestionIndex.value < props.questions.length - 1) {
     currentQuestionIndex.value++
   } else {
-    emit('done')
+    nextTick(() => emit('done'))
   }
 }
 
 const saveAnswer = (answer: Answer) => {
   const questionId = toRaw(currentQuestion.value!.id)
-  nextQuestion()
   answers.value[questionId] = {
     answer,
     questionId,
     weight: 1,
   }
+
+  nextQuestion()
 }
 
 const skipQuestion = () => {
