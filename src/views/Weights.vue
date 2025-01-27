@@ -45,6 +45,9 @@ const setWeight = (questionId: string, e: Event) => {
         Markieren Sie die Thesen, um diese mit doppelter Gewichtung in die
         Berechnung einfließen zu lassen.
       </p>
+      <button type="submit" class="btn mt-4">
+        Weiter <IconForward aria-hidden="true" class="ms-1" />
+      </button>
     </div>
 
     <div class="grid md:grid-cols-1 gap-4">
