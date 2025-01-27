@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig, envField } from 'astro/config'
 import tailwindcss from '@tailwindcss/vite'
+
 import vue from '@astrojs/vue'
 import Icons from 'unplugin-icons/vite'
 
@@ -10,7 +11,7 @@ export default defineConfig({
   integrations: [vue()],
   vite: {
     plugins: [
-      tailwindcss(),
+      // tailwindcss(),
       Icons({
         compiler: 'vue3',
       }),

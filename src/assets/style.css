@@ -11,57 +11,33 @@
 }
 
 .btn {
-  @apply inline-flex items-center px-4 py-2 text-white font-medium rounded-full font-bold cursor-pointer;
-  @apply bg-purple-700 hover:bg-purple-800 focus:ring-3 focus:ring-purple-600/50 outline-none motion-safe:transition;
+  @apply inline-flex cursor-pointer items-center rounded-full px-4 py-2 font-bold font-medium text-white;
+  @apply bg-purple-700 outline-none hover:bg-purple-800 focus:ring-3 focus:ring-purple-600/50 motion-safe:transition;
 }
 
 .btn.btn-lg {
-  @apply text-xl px-6 py-3;
+  @apply px-6 py-3 text-xl;
 }
 
 .btn:disabled {
-  @apply bg-gray-700 hover:bg-gray-800 focus:ring-gray-600/50 cursor-not-allowed;
+  @apply cursor-not-allowed bg-gray-700 hover:bg-gray-800 focus:ring-gray-600/50;
 }
 
 .btn-outline {
-  @apply inline-flex items-center px-4 py-2 hover:text-white rounded-full text-purple-700 font-bold cursor-pointer;
-  @apply border border-purple-700 hover:bg-purple-800 hover:text-white focus:ring-3 focus:ring-purple-600/50 outline-none motion-safe:transition;
+  @apply inline-flex cursor-pointer items-center rounded-full px-4 py-2 font-bold text-purple-700 hover:text-white;
+  @apply border border-purple-700 outline-none hover:bg-purple-800 hover:text-white focus:ring-3 focus:ring-purple-600/50 motion-safe:transition;
 }
 
 .btn-text {
-  @apply text-purple-900 inline-flex items-center focus:ring-3 focus:ring-purple-600/50 focus:ring-offset-1 outline-none motion-safe:transition rounded cursor-pointer;
+  @apply inline-flex cursor-pointer items-center rounded text-purple-900 outline-none focus:ring-3 focus:ring-purple-600/50 focus:ring-offset-1 motion-safe:transition;
 }
 
 .btn-text:disabled {
-  @apply text-gray-600 cursor-not-allowed;
+  @apply cursor-not-allowed text-gray-600;
 }
 
 h2 {
-  @apply text-xl md:text-4xl mb-2 font-medium;
-}
-
-@font-face {
-  font-family: 'Creato Display';
-  src: url('./CreatoDisplay-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Creato Display';
-  src: url('./CreatoDisplay-Bold.woff2') format('woff2');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Creato Display';
-  src: url('./CreatoDisplay-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+  @apply mb-2 text-xl font-medium md:text-4xl;
 }
 
 @media (prefers-reduced-motion: no-preference) {
