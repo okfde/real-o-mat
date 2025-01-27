@@ -7,8 +7,7 @@ export const answerSchema = z.enum([
   'nicht weit genug',
   'richtig',
   'zu weit',
-  '/', // neutral
-  '-', // undefined
+  '/', // unklar
 ])
 export type Answer = z.infer<typeof answerSchema>
 
@@ -53,11 +52,12 @@ const questions = defineCollection({
 })
 
 const partners = defineCollection({
-  loader: file("src/assets/partners.yaml"),
-  schema: ({ image }) => z.object({
-    name: z.string(),
-    logo: image()
-  }),
+  loader: file('src/assets/partners.yaml'),
+  schema: ({ image }) =>
+    z.object({
+      name: z.string(),
+      logo: image(),
+    }),
 })
 export type PartnersSchema = typeof partners.schema
 

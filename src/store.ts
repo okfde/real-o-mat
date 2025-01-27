@@ -12,8 +12,7 @@ export const answerLabels: Record<Answer, string> = {
   'zu weit': 'nein, geht mir zu weit',
   richtig: 'ja, finde ich auch',
   'nicht weit genug': 'nein, reicht mir nicht aus',
-  '/': 'keine Antwort vorhanden',
-  '-': 'neutral',
+  '/': 'Position nicht wertbar',
 }
 
 export enum Stage {

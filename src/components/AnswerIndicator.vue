@@ -5,7 +5,6 @@ import IconLess from '~icons/material-symbols/stat-minus-2-rounded'
 import IconMore from '~icons/material-symbols/stat-2-rounded'
 import IconRight from '~icons/material-symbols/check-rounded'
 import IconUnknown from './IconUnknown.vue'
-import IconNeutral from '~icons/material-symbols/circle-outline'
 import { answerLabels } from '../store'
 
 defineProps<{
@@ -18,7 +17,6 @@ const styles: Record<Answer, any> = {
   richtig: { icon: IconRight, class: 'bg-primary-green' },
   'nicht weit genug': { icon: IconMore, class: 'bg-primary-orange' },
   '/': { icon: IconUnknown, class: 'bg-gray-600' },
-  '-': { icon: IconNeutral, class: 'bg-gray-700' },
 }
 </script>
 
