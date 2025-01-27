@@ -3,6 +3,7 @@ import { computed, onMounted, ref } from 'vue'
 import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue'
 import type { Party, Question } from '../content.config'
 import { partyNames, useStore } from '../store'
+import { publicUrl, shareText } from '../const'
 import ResultMatches from '../components/ResultMatches.vue'
 import ResultComparison from '../components/ResultComparison.vue'
 import ResultComments from '../components/ResultComments.vue'
@@ -54,8 +55,8 @@ const partyMatches = computed(() => {
 
 const canShare = ref(false)
 const shareData = {
-  title: 'Real-O-Mat',
-  url: 'https://real-o-mat.de',
+  title: shareText,
+  url: publicUrl,
 }
 
 onMounted(() => {
