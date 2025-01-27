@@ -15,7 +15,7 @@ const props = defineProps<{
   questions: Question[]
 }>()
 
-const { answers, answerCount } = useStore()
+const { answers } = useStore()
 
 const partyMatches = computed(() => {
   const results: Record<Party, number> = {
@@ -59,7 +59,7 @@ const shareData = {
 }
 
 onMounted(() => {
-  canShare.value = navigator.canShare(shareData)
+  canShare.value = navigator.canShare?.(shareData)
 })
 
 const share = () => {
