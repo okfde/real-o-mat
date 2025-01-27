@@ -11,7 +11,10 @@ test('test', async ({ page }) => {
   await page.waitForTimeout(500)
 
   await page.getByRole('button', { name: 'ja, finde ich auch' }).click()
+  await page.waitForTimeout(500)
   await page.getByRole('button', { name: 'These überspringen' }).click()
+  await page.waitForTimeout(500)
+
   await expect(page.getByRole('progressbar')).toHaveAttribute(
     'aria-valuenow',
     '3',
