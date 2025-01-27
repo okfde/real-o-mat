@@ -101,16 +101,28 @@ onMounted(() => updateBeforeUnload())
     <div v-if="currentStage === Stage.Intro">
       <div class="bg-white p-8 md:p-16 md:text-center">
         <p class="mb-4 text-xl font-medium md:text-2xl">
-          Alle 7 Parteien, die in der letzten Legislaturperiode im Bundestag
-          saßen, haben über Anträge und Gesetzesentwürfe abgestimmt. Jetzt sind
-          Sie an der Reihe: Vergleichen Sie Ihre Standpunkte mit dem
-          Abstimmungsverhalten der Parteien.
+          Alle Parteien, die in der letzten Legislaturperiode im Bundestag
+          saßen, haben zuvor viele Versprechen gemacht. Auf dieser Basis haben
+          wir sie gewählt. Aber: Was bleibt davon übrig und wie haben sie
+          wirklich gehandelt?
         </p>
-        <p>
-          Der Real-O-Mat ist keine Wahlempfehlung, sondern ein
-          Informationsangebot über Parteien und ihr Abstimmungsverhalten.
-        </p>
-        <button class="btn btn-lg start-button mt-4" @click="start">
+        <div class="text:lg space-y-4 md:text-xl">
+          <p>
+            Der Real-O-Mat schaut nicht auf die Wahlversprechen, sondern gleicht
+            das tatsächliche Abstimmungsverhalten der Parteien zu aktuellen
+            politischen Themen mit Ihrer persönlichen Position ab. Grundlage
+            sind dabei Anträge und Gesetztentwürfe im Bundestag.
+          </p>
+          <p>
+            Jetzt sind Sie an der Reihe: Vergleichen Sie Ihre Standpunkte mit
+            dem Abstimmungsverhalten der Parteien.
+          </p>
+          <p class="text-sm">
+            Der Real-O-Mat ist keine Wahlempfehlung, sondern ein
+            Informationsangebot über Parteien und ihr Abstimmungsverhalten.
+          </p>
+        </div>
+        <button class="btn btn-lg start-button mt-8" @click="start">
           <IconForward aria-hidden="true" class="me-1" />
           Los geht's!
         </button>
