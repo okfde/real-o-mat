@@ -20,15 +20,15 @@ const exampleQuestion: Question = {
 </script>
 
 <template>
-  <div class="bg-white p-8 md:p-16">
-    <h2 class="text-lg">Wie funktioniert der Real-O-Mat?</h2>
+  <div class="bg-white p-4 md:p-8">
+    <h2 class="!text-lg">Wie funktioniert der Real-O-Mat?</h2>
     <p>
       Der Real-O-Mat hat das Abstimmungsverhalten der Parteien zu 20 Thesen
       ausgewertet. Die Parteien haben für oder gegen Anträge und
       Gesetzesentwürfe gestimmt oder sich enthalten.
     </p>
 
-    <h2 class="text-lg">Wie werden die Positionen bewertet?</h2>
+    <h2 class="mt-4 !text-lg">Wie werden die Positionen bewertet?</h2>
     <p>
       Eine Zustimmung entspricht der Option „ja, finde ich auch“. Eine Ablehnung
       und Enthaltung wird nach Begründung der Fraktion in Beschlussempfehlungen
@@ -36,7 +36,7 @@ const exampleQuestion: Question = {
       mir nicht aus“ geteilt.
     </p>
 
-    <h2 class="mt-8 text-lg">Beispiel</h2>
+    <h2 class="mt-8 !text-lg">Beispiel</h2>
     <QuestionCard
       :currentQuestionIndex="1"
       :currentQuestionProgress="1"
