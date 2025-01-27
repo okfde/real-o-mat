@@ -16,28 +16,21 @@ interface Props {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Real-O-Mat</title>
-
-    <script>
-      // @ts-nocheck
-      var _paq = (window._paq = window._paq || [])
-      _paq.push(['disableCookies'])
-      _paq.push(['trackPageView'])
-      _paq.push(['enableLinkTracking'])
-      ;(function () {
-        var u = 'https://traffic.okfn.de/'
-        _paq.push(['setTrackerUrl', u + 'matomo.php'])
-        _paq.push(['setSiteId', '58'])
-        var d = document,
-          g = d.createElement('script'),
-          s = d.getElementsByTagName('script')[0]
-        g.async = true
-        g.src = u + 'matomo.js'
-        s.parentNode.insertBefore(g, s)
-      })()
-    </script>
   </head>
 
   <body class="bg-purple-50">
+    <!-- Matomo Image Tracker-->
+    {
+      import.meta.env.PROD && (
+        <img
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://traffic.okfn.de/matomo.php?idsite=58&rec=1"
+          class="absolute -z-10"
+          alt=""
+        />
+      )
+    }
+
     <GradientBackground class="flex flex-col flex-1 pb-12" client:load />
 
     <div class="min-h-screen pb-12">
@@ -60,7 +53,7 @@ interface Props {
             </div>
             <ul class="flex space-x-6 max-md:mt-6 md:space-x-12 md:ms-auto">
               <li>
-                <a href="methodik"> Methodik </a>
+                <a href="methodik">Methodik</a>
               </li>
               <li>
                 <a href="https://fragdenstaat.de/impressum" target="_blank">
@@ -74,16 +67,6 @@ interface Props {
               </li>
             </ul>
           </div>
-
-          <p class="text-xs text-center md:text-end mt-2">
-            <a
-              href="https://traffic.okfn.de/index.php?module=CoreAdminHome&action=optOut&language=de"
-              class="text-gray-500"
-              target="_blank"
-            >
-              Datenschutz-Einstellungen
-            </a>
-          </p>
         </div>
       </div>
     </footer>
