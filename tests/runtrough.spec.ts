@@ -6,6 +6,7 @@ test('test', async ({ page }) => {
   await page.goto('/')
   await page.getByRole('button', { name: "Los geht's!" }).click()
 
+  await page.waitForTimeout(500)
   await page.getByRole('button', { name: 'Weiter' }).click()
 
   await page.waitForTimeout(500)
