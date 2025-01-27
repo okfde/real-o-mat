@@ -6,7 +6,9 @@ import Weights from '../views/Weights.vue'
 import type { Question } from '../content.config'
 import { useStore, Stage } from '../store'
 import IconBack from '~icons/material-symbols/arrow-back'
+import IconForward from '~icons/material-symbols/arrow-forward'
 import IconRestart from '~icons/material-symbols/restart-alt-rounded'
+import FdsLogo from '../assets/fragdenstaat.svg'
 
 defineProps<{
   questions: Question[]
@@ -73,7 +75,21 @@ onMounted(() => updateBeforeUnload())
           Der Real-O-Mat ist keine Wahlempfehlung, sondern ein
           Informationsangebot über Parteien und ihr Abstimmungsverhalten.
         </p>
-        <button class="btn btn-lg mt-4" @click="nextStage">Los geht's!</button>
+        <button class="btn btn-lg mt-4 start-button" @click="nextStage">
+          <IconForward aria-hidden="true" class="me-1" />
+          Los geht's!
+        </button>
+
+        <div class="flex md:justify-center items-end mt-8">
+          <p aria-hidden="true" class="text-sm text-gray-600">
+            Ein Projekt von
+          </p>
+          <img
+            :src="FdsLogo.src"
+            alt="Ein Projekt von FragDenStaat"
+            class="inline-block ms-4 w-32 mt-2"
+          />
+        </div>
       </div>
 
       <div class="bg-white/50 backdrop-blur-sm text-center mt-8 p-8">
