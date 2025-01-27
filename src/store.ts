@@ -17,6 +17,7 @@ export const answerLabels: Record<Answer, string> = {
 
 export enum Stage {
   Intro,
+  Tutorial,
   Questionnaire,
   Weights,
   Results,
@@ -43,6 +44,7 @@ export function useStore() {
   const answerCount = computed(() => Object.values(answers.value).length)
 
   const currentQuestionIndex = useStorage('realomat-current-question', 0)
+  const currentQuestionProgress = computed(() => currentQuestionIndex.value + 1)
 
   const currentStage = useStorage<Stage>('realomat-stage', Stage.Intro)
 
@@ -52,6 +54,7 @@ export function useStore() {
     answers,
     answerCount,
     currentQuestionIndex,
+    currentQuestionProgress,
     currentStage,
     viewTransition,
   }

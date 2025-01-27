@@ -5,6 +5,11 @@ test('test', async ({ page }) => {
 
   await page.goto('/')
   await page.getByRole('button', { name: "Los geht's!" }).click()
+
+  await page.getByRole('button', { name: 'Weiter' }).click()
+
+  await page.waitForTimeout(500)
+
   await page.getByRole('button', { name: 'ja, finde ich auch' }).click()
   await page.getByRole('button', { name: 'These überspringen' }).click()
   await expect(page.getByRole('progressbar')).toHaveAttribute(
@@ -30,7 +35,7 @@ test('test', async ({ page }) => {
 
   await expect(page.locator('form input[type="checkbox"]')).toHaveCount(19)
 
-  await page.getByRole('button', { name: 'Weiter' }).click()
+  await page.getByRole('button', { name: 'Weiter' }).first().click()
 
   await expect(page.getByLabel('Ergebnis').getByRole('heading')).toContainText(
     'Ihr Real-O-Mat Ergebnis',
@@ -46,7 +51,7 @@ test('test', async ({ page }) => {
   ).toHaveAttribute('aria-label', 'ja, finde ich auch')
   await expect(
     page.locator('tr:nth-child(2) > td:nth-child(2) div[aria-label]'),
-  ).toHaveAttribute('aria-label', 'keine Antwort vorhanden')
+  ).toHaveAttribute('aria-label', 'Position nicht wertbar')
 
   await page.getByRole('tab', { name: 'Begründungen' }).click()
   await expect(page.getByLabel('Begründungen').locator('h2')).toContainText(
@@ -61,6 +66,7 @@ test('test', async ({ page }) => {
   await expect(page.getByRole('button', { name: "Los geht's!" })).toBeVisible()
 
   await page.getByRole('button', { name: "Los geht's!" }).click()
+  await page.getByRole('button', { name: 'Weiter' }).click()
   await expect(page.getByRole('article')).toContainText('20 / 20')
 
   page.on('dialog', (dialog) => dialog.accept())

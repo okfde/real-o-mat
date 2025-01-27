@@ -9,6 +9,7 @@ import IconBack from '~icons/material-symbols/arrow-back'
 import IconForward from '~icons/material-symbols/arrow-forward'
 import IconRestart from '~icons/material-symbols/restart-alt-rounded'
 import FdsLogo from '../assets/fragdenstaat.svg'
+import Tutorial from '../views/Tutorial.vue'
 
 defineProps<{
   questions: Question[]
@@ -96,6 +97,8 @@ onMounted(() => updateBeforeUnload())
         <slot />
       </div>
     </div>
+
+    <Tutorial v-else-if="currentStage === Stage.Tutorial" @done="nextStage" />
 
     <Questionnaire
       v-else-if="currentStage === Stage.Questionnaire"
