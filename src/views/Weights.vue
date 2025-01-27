@@ -52,7 +52,7 @@ const setWeight = (questionId: string, e: Event) => {
 
     <div class="grid gap-4 md:grid-cols-1">
       <label
-        v-for="({ answer, questionId, question }, i) in sortedAnswers"
+        v-for="({ answer, weight, questionId, question }, i) in sortedAnswers"
         :key="questionId"
         class="flex items-start space-x-2 bg-white p-4"
       >
@@ -60,6 +60,7 @@ const setWeight = (questionId: string, e: Event) => {
           <input
             type="checkbox"
             :id="`category-${i}`"
+            :checked="weight === 2"
             @change="(e) => setWeight(questionId, e)"
             :aria-labelledby="`category-${i}`"
           />
@@ -89,7 +90,6 @@ const setWeight = (questionId: string, e: Event) => {
 <style scoped>
 @reference "../assets/style.css";
 
-/* create a checkbox that is a circle, and when checked displays "2x" within it */
 input[type='checkbox'] {
   appearance: none;
 
@@ -111,7 +111,7 @@ input[type='checkbox']:checked {
   @apply border-transparent;
 }
 
-input[type='checkbox']::before:checked {
+input[type='checkbox']:checked::before {
   @apply bg-gray-600 text-white;
 }
 </style>
