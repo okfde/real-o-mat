@@ -25,3 +25,6 @@
 - name: Wikimedia Deutschland
   slug: wmde
   logo: ./logos/wmde.svg
+- name: Open Knowledge Foundation Deutschland
+  slug: okfde
+  logo: ./logos/okfde.svg
