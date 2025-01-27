@@ -40,7 +40,7 @@ const answerButtons = computed(() => {
 
 <template>
   <div class="@container bg-white p-4 md:p-8">
-    <div :class="compact ? 'mb-6' : 'min-h-72 @md:min-h-42'">
+    <div :class="compact ? 'mb-6' : 'min-h-72'">
       <Transition
         class="duration-250 ease-linear motion-safe:transition-opacity"
         enter-from-class="motion-safe:opacity-0"
