@@ -70,7 +70,7 @@ const hasAnswer = computed(
       </Transition>
       <Transition mode="out-in" :name="transitionName">
         <div class="" :key="currentQuestionIndex">
-          <h2 class="my-4 text-xl font-medium @md:text-4xl">
+          <h2 class="my-4 text-xl font-medium max-md:hyphens-auto @md:text-4xl">
             {{ currentQuestion.thesis }}
           </h2>
         </div>
