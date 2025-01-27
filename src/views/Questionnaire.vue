@@ -75,7 +75,7 @@ const previousQuestion = () => {
         :aria-valuenow="currentQuestionProgress"
       >
         <div
-          class="h-2 bg-purple-900 motion-safe:transition-all duration-300 ease-out"
+          class="h-2 bg-purple-900 duration-300 ease-out motion-safe:transition-all"
           :style="{
             width: `${(currentQuestionProgress / questionsCount) * 100}%`,
           }"
@@ -93,7 +93,7 @@ const previousQuestion = () => {
       />
     </article>
 
-    <div class="flex mt-4">
+    <div class="mt-4 flex">
       <button @click="previousQuestion" class="btn-text">
         <IconBack aria-hidden="true" class="me-1" />
         Zurück

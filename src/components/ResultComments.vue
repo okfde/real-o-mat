@@ -44,7 +44,7 @@ const props = defineProps<{
 
     <hr class="border-gray-200" />
 
-    <nav class="grid grid-cols-3 grid-r mt-6 justify-center">
+    <nav class="grid-r mt-6 grid grid-cols-3 justify-center">
       <button
         @click="previousQuestion"
         :disabled="currentQuestionIndex === 0"
@@ -55,7 +55,7 @@ const props = defineProps<{
       </button>
       <div class="text-center">
         <select
-          class="rounded-md bg-purple-100 px-4 py-1 w-24 border-gray-300 shadow-sm focus:ring focus:ring-purple-600/50 outline-none motion-safe:transition"
+          class="w-24 rounded-md border-gray-300 bg-purple-100 px-4 py-1 shadow-sm outline-none focus:ring-3 focus:ring-purple-600/50 motion-safe:transition"
           v-model="currentQuestionIndex"
           aria-label="Springe zur These"
           @change="transitionName = undefined"
@@ -81,10 +81,10 @@ const props = defineProps<{
 
     <Transition mode="out-in" :name="transitionName">
       <article :key="currentQuestionIndex">
-        <h3 class="text-xl md:text-2xl my-8 font-medium">
+        <h3 class="my-8 text-xl font-medium md:text-2xl">
           {{ currentQuestion.thesis }}
         </h3>
-        <ul class="mt-8 grid md:grid-cols-2 gap-4">
+        <ul class="mt-8 grid gap-4 md:grid-cols-2">
           <Disclosure
             as="li"
             v-slot="{ open }"
@@ -93,19 +93,19 @@ const props = defineProps<{
             class="flex flex-col"
           >
             <DisclosureButton
-              class="flex w-full justify-between items-center rounded bg-purple-100 px-4 py-2 focus:ring focus:ring-purple-600/50 outline-none motion-safe:transition"
+              class="flex w-full items-center justify-between rounded bg-purple-100 px-4 py-2 outline-none focus:ring-3 focus:ring-purple-600/50 motion-safe:transition"
               :class="{ 'rounded-b-none': open }"
             >
               <h4 class="text-lg">{{ partyNames[party] }}</h4>
               <IconChevron
                 aria-hidden="true"
-                class="h-5 w-5 text-purple-900 transform motion-safe:transition-transform"
+                class="h-5 w-5 transform text-purple-900 motion-safe:transition-transform"
                 :class="{
                   'rotate-180': open,
                 }"
               />
             </DisclosureButton>
-            <DisclosurePanel class="p-4 bg-purple-50 rounded-b-lg flex-1">
+            <DisclosurePanel class="flex-1 rounded-b-lg bg-purple-50 p-4">
               <div class="comment" v-if="comment" v-html="comment" />
               <em v-else>keine Begründung angegeben</em>
             </DisclosurePanel>
@@ -117,7 +117,9 @@ const props = defineProps<{
 </template>
 
 <style scoped>
+@reference "../assets/style.css";
+
 .comment:deep(a) {
-  @apply text-purple-600 hover:text-purple-700 underline;
+  @apply text-purple-600 underline hover:text-purple-700;
 }
 </style>

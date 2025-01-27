@@ -57,9 +57,9 @@ defineProps<{
   </div>
 
   <div class="bg-white p-4 md:p-8" aria-hidden="true">
-    <h3 class="text-lg mb-2">Legende</h3>
+    <h3 class="mb-2 text-lg">Legende</h3>
     <ul
-      class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 items-center"
+      class="grid grid-cols-2 items-center gap-4 md:grid-cols-3 lg:grid-cols-5"
     >
       <li
         v-for="(label, answer) in answerLabels"
@@ -73,13 +73,15 @@ defineProps<{
 </template>
 
 <style scoped>
+@reference "../assets/style.css";
+
 table {
   @apply w-full;
 }
 
 td,
 th {
-  @apply py-4 bg-white;
+  @apply bg-white py-4;
 }
 
 th {
@@ -93,7 +95,7 @@ td {
 
 th:first-child,
 td:first-child {
-  @apply sticky left-0 z-10 min-w-56 ps-4 md:ps-8 max-md:pe-4 max-md:shadow-xl;
+  @apply sticky left-0 z-10 min-w-56 ps-4 max-md:pe-4 max-md:shadow-xl md:ps-8;
 }
 
 tr:nth-child(odd) td {

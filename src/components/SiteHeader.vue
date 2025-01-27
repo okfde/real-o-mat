@@ -18,9 +18,9 @@ const toIntro = (e: Event) => {
 </script>
 
 <template>
-  <header class="container mx-auto py-12 px-4 z-10">
+  <header class="z-10 container mx-auto px-4 py-12">
     <a href="/" @click="toIntro">
-      <h1 class="text-5xl md:text-8xl font-bold mb-1">Real-O-Mat</h1>
+      <h1 class="mb-1 text-5xl font-bold md:text-8xl">Real-O-Mat</h1>
     </a>
     <span class="text-xl font-medium text-purple-800">
       Bundestagswahl 2025

@@ -39,16 +39,16 @@ const answerButtons = computed(() => {
 </script>
 
 <template>
-  <div class="p-4 md:p-8 bg-white @container">
+  <div class="@container bg-white p-4 md:p-8">
     <div :class="compact ? 'mb-6' : 'min-h-72 @md:min-h-42'">
       <Transition
-        class="motion-safe:transition-opacity duration-250 ease-linear"
+        class="duration-250 ease-linear motion-safe:transition-opacity"
         enter-from-class="motion-safe:opacity-0"
         leave-to-class="motion-safe:opacity-0"
         mode="out-in"
       >
         <div
-          class="@md:mt-4 text-gray-700 @md:text-2xl flex"
+          class="flex text-gray-700 @md:mt-4 @md:text-2xl"
           :key="currentQuestionIndex"
         >
           <span>
@@ -69,7 +69,7 @@ const answerButtons = computed(() => {
     </div>
     <Transition :name="transitionName" mode="out-in">
       <div
-        class="flex flex-col flex-wrap gap-y-3 gap-x-2"
+        class="flex flex-col flex-wrap gap-x-2 gap-y-3"
         :key="currentQuestionIndex"
       >
         <AnswerButton

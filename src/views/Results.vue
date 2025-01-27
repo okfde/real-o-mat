@@ -70,7 +70,7 @@ const share = () => {
 <template>
   <div>
     <TabGroup>
-      <TabList class="flex rounded-t-lg bg-primary-purple/30 p-1 space-x-1">
+      <TabList class="flex space-x-1 rounded-t-lg bg-primary-purple/30 p-1">
         <Tab as="template" v-slot="{ selected }">
           <button class="tab-button" :class="{ selected: selected }">
             <IconChart aria-hidden="true" />
@@ -104,7 +104,7 @@ const share = () => {
     </TabGroup>
 
     <Teleport to="main" v-if="canShare">
-      <div class="sticky mt-12 bottom-12 inset-x-0 flex justify-center z-20">
+      <div class="sticky inset-x-0 bottom-12 z-20 mt-12 flex justify-center">
         <button class="btn btn-lg" @click="share">
           <IconShare aria-hidden="true" class="me-1" />
           Teile den Real-O-Mat!
@@ -115,14 +115,16 @@ const share = () => {
 </template>
 
 <style scoped>
+@reference "../assets/style.css";
+
 .tab-button {
-  @apply flex flex-col md:flex-row justify-center items-center flex-1 w-full py-2;
-  @apply bg-transparent text-white text-xs md:text-xl border-2 border-transparent rounded;
-  @apply focus:ring focus:ring-purple-900 outline-none motion-safe:transition duration-200;
+  @apply flex w-full flex-1 flex-col items-center justify-center py-2 md:flex-row;
+  @apply rounded border-2 border-transparent bg-transparent text-xs text-white md:text-xl;
+  @apply duration-200 outline-none focus:ring-3 focus:ring-purple-900 motion-safe:transition;
 }
 
 .tab-button:deep(svg) {
-  @apply max-md:w-8 max-md:h-8 md:me-1;
+  @apply max-md:h-8 max-md:w-8 md:me-1;
 }
 
 .tab-button.selected {

@@ -5,19 +5,19 @@ defineProps<{
 </script>
 
 <template>
-  <div class="p-4 md:p-8 backdrop-blur bg-white/75">
+  <div class="bg-white/75 p-4 backdrop-blur md:p-8">
     <h2>Ihr Real-O-Mat Ergebnis</h2>
     <div class="mt-6">
-      <dl class="grid items-center mt-2 gap-x-4 gap-y-8">
+      <dl class="mt-2 grid items-center gap-x-4 gap-y-8">
         <template v-for="{ party, percentage } in partyMatches" :key="party">
-          <dt class="md:text-xl font-medium whitespace-nowrap">
+          <dt class="font-medium whitespace-nowrap md:text-xl">
             {{ party }}
           </dt>
           <dd class="flex items-center space-x-4">
             <div class="flex-1">
-              <div class="bg-white rounded-full overflow-hidden">
+              <div class="overflow-hidden rounded-full bg-white">
                 <div
-                  class="h-3 bg-purple-900 progress-result"
+                  class="progress-result h-3 bg-purple-900"
                   :style="{
                     width: `${percentage}%`,
                   }"
@@ -33,6 +33,8 @@ defineProps<{
 </template>
 
 <style scoped>
+@reference "../assets/style.css";
+
 dl {
   grid-template-columns: min-content auto;
 }

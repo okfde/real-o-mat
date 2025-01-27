@@ -66,7 +66,7 @@ onMounted(() => updateBeforeUnload())
   <Transition :name="viewTransition" mode="out-in">
     <div v-if="currentStage === Stage.Intro">
       <div class="bg-white p-8 md:p-16 md:text-center">
-        <p class="text-xl font-medium md:text-2xl mb-4">
+        <p class="mb-4 text-xl font-medium md:text-2xl">
           Alle 7 Parteien, die in der letzten Legislaturperiode im Bundestag
           saßen, haben über Anträge und Gesetzesentwürfe abgestimmt. Jetzt sind
           Sie an der Reihe: Vergleichen Sie Ihre Standpunkte mit dem
@@ -76,24 +76,24 @@ onMounted(() => updateBeforeUnload())
           Der Real-O-Mat ist keine Wahlempfehlung, sondern ein
           Informationsangebot über Parteien und ihr Abstimmungsverhalten.
         </p>
-        <button class="btn btn-lg mt-4 start-button" @click="nextStage">
+        <button class="btn btn-lg start-button mt-4" @click="nextStage">
           <IconForward aria-hidden="true" class="me-1" />
           Los geht's!
         </button>
 
-        <div class="flex md:justify-center items-end mt-8">
+        <div class="mt-8 flex items-end md:justify-center">
           <p aria-hidden="true" class="text-sm text-gray-600">
             Ein Projekt von
           </p>
           <img
             :src="FdsLogo.src"
             alt="Ein Projekt von FragDenStaat"
-            class="inline-block ms-4 w-32 mt-2"
+            class="ms-4 mt-2 inline-block w-32"
           />
         </div>
       </div>
 
-      <div class="bg-white/50 backdrop-blur-sm text-center mt-8 p-8">
+      <div class="mt-8 bg-white/50 p-8 text-center backdrop-blur-sm">
         <slot />
       </div>
     </div>
@@ -119,7 +119,7 @@ onMounted(() => updateBeforeUnload())
   </Transition>
 
   <div
-    class="flex mt-4 motion-safe:transition-all"
+    class="mt-4 flex motion-safe:transition-all"
     v-if="[Stage.Weights, Stage.Results].includes(currentStage)"
   >
     <button @click="previousStage" class="btn-text !text-white">

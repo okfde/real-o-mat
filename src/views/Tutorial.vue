@@ -36,7 +36,7 @@ const exampleQuestion: Question = {
       mir nicht aus“ geteilt.
     </p>
 
-    <h2 class="text-lg mt-8">Beispiel</h2>
+    <h2 class="mt-8 text-lg">Beispiel</h2>
     <QuestionCard
       :currentQuestionIndex="1"
       :currentQuestionProgress="1"

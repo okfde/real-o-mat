@@ -1,6 +1,18 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Montserrat Variable', sans-serif;
+  --color-primary-purple: #b68ef8;
+  --color-primary-red: #ec4f46;
+  --color-primary-orange: #febd59;
+  --color-primary-green: #7ed956;
+  --color-primary-yellow: #fae357;
+  --color-primary-cyan: #b6eef2;
+}
+
 .btn {
-  @apply inline-flex items-center px-4 py-2 text-white font-medium rounded-full font-bold;
-  @apply bg-purple-700 hover:bg-purple-800 focus:ring focus:ring-purple-600/50 outline-none motion-safe:transition;
+  @apply inline-flex items-center px-4 py-2 text-white font-medium rounded-full font-bold cursor-pointer;
+  @apply bg-purple-700 hover:bg-purple-800 focus:ring-3 focus:ring-purple-600/50 outline-none motion-safe:transition;
 }
 
 .btn.btn-lg {
@@ -12,12 +24,12 @@
 }
 
 .btn-outline {
-  @apply inline-flex items-center px-4 py-2 text-white rounded-full text-purple-700 font-bold;
-  @apply border border-purple-700 hover:bg-purple-800 hover:text-white focus:ring focus:ring-purple-600/50 outline-none motion-safe:transition;
+  @apply inline-flex items-center px-4 py-2 hover:text-white rounded-full text-purple-700 font-bold cursor-pointer;
+  @apply border border-purple-700 hover:bg-purple-800 hover:text-white focus:ring-3 focus:ring-purple-600/50 outline-none motion-safe:transition;
 }
 
 .btn-text {
-  @apply text-purple-900 inline-flex items-center focus:ring focus:ring-purple-600/50 focus:ring-offset-1 outline-none motion-safe:transition rounded;
+  @apply text-purple-900 inline-flex items-center focus:ring-3 focus:ring-purple-600/50 focus:ring-offset-1 outline-none motion-safe:transition rounded cursor-pointer;
 }
 
 .btn-text:disabled {
@@ -57,14 +69,14 @@ h2 {
   .slide-back-enter-active {
     transition:
       opacity 0.25s,
-      transform 0.25s theme(transitionTimingFunction.out);
+      transform 0.25s var(--ease-out);
   }
 
   .slide-leave-active,
   .slide-back-leave-active {
     transition:
       opacity 0.25s,
-      transform 0.25s theme(transitionTimingFunction.in);
+      transform 0.25s var(--ease-in);
   }
 
   .slide-leave-to,
@@ -86,12 +98,12 @@ h2 {
 }
 
 :root {
-  --popper-theme-background-color: theme(colors.gray.800);
-  --popper-theme-background-color-hover: theme(colors.gray.800);
-  --popper-theme-text-color: theme(colors.white);
+  --popper-theme-background-color: var(--color-gray-800);
+  --popper-theme-background-color-hover: var(--color-gray-800);
+  --popper-theme-text-color: var(--color-white);
   --popper-theme-border-width: 0px;
   --popper-theme-border-style: solid;
-  --popper-theme-border-radius: theme(borderRadius.md);
-  --popper-theme-padding: theme(spacing.4);
-  --popper-theme-box-shadow: theme(boxShadow.sm);
+  --popper-theme-border-radius: var(--radius-md);
+  --popper-theme-padding: calc(var(--spacing) * 4);
+  --popper-theme-box-shadow: var(--box-shadow-sm);
 }

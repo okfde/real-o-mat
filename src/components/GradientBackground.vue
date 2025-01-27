@@ -18,24 +18,26 @@ onMounted(() => {
 </template>
 
 <style scoped>
+@reference "../assets/style.css";
+
 .conic {
   @apply fixed inset-0 -z-10;
   background: conic-gradient(
     from 180deg at 50% 50%,
-    theme(colors.primary.purple) 0deg,
-    theme(colors.primary.yellow) 95deg,
-    theme(colors.primary.cyan) 267deg,
-    theme(colors.primary.purple) 360deg
+    var(--color-primary-purple) 0deg,
+    var(--color-primary-yellow) 95deg,
+    var(--color-primary-cyan) 267deg,
+    var(--color-primary-purple) 360deg
   );
 }
 
 .linear {
   @apply fixed inset-0 -z-10;
-  @apply transition-opacity opacity-0;
+  @apply opacity-0 transition-opacity;
   background: linear-gradient(
     to bottom,
-    theme(colors.primary.cyan),
-    theme(colors.primary.purple)
+    var(--color-primary-cyan),
+    var(--color-primary-purple)
   );
 }
 

@@ -11,7 +11,6 @@
     "test:headed": "playwright test --headed"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^5.1.4",
     "@astrojs/vue": "^5.0.4",
     "@fontsource-variable/montserrat": "^5.1.1",
     "@googleapis/sheets": "^9.3.1",
@@ -21,7 +20,7 @@
     "astro": "^5.1.7",
     "memoize-fs": "^4.1.1",
     "sharp": "^0.33.5",
-    "tailwindcss": "^3.4.17",
+    "tailwindcss": "^4.0.0",
     "unplugin-icons": "^0.22.0",
     "vue": "^3.5.13",
     "vue3-popper": "^1.5.0",
@@ -29,13 +28,11 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.50.0",
+    "@tailwindcss/vite": "^4.0.0",
     "@types/node": "^22.10.5",
     "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.11",
     "typescript": "^5.7.3"
-  },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true
   },
   "packageManager": "pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0"
 }

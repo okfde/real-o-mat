@@ -29,12 +29,12 @@ const styles: Record<Answer, any> = {
     :disabled="popup !== false"
   >
     <div
-      class="w-10 h-10 text-white rounded-full flex items-center justify-center"
+      class="flex h-10 w-10 items-center justify-center rounded-full text-white"
       :class="[styles[answer].class]"
       v-bind="$attrs"
       :aria-label="answerLabels[answer]"
     >
-      <component :is="styles[answer].icon" class="w-7 h-7" aria-hidden="true" />
+      <component :is="styles[answer].icon" class="h-7 w-7" aria-hidden="true" />
     </div>
   </Popper>
 </template>
