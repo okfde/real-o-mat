@@ -3,6 +3,8 @@ import '../assets/style.css'
 import '@fontsource-variable/montserrat'
 import SiteHeader from '../components/SiteHeader.vue'
 import logo from '../assets/fragdenstaat.svg'
+import Favicon from '../assets/favicon.png'
+import OgImage from '../assets/og-image.jpg'
 import GradientBackground from '../components/GradientBackground.vue'
 
 interface Props {
@@ -16,6 +18,15 @@ interface Props {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Real-O-Mat</title>
+    <link rel="icon" href={Favicon.src} type="image/png" />
+    <meta property="og:title" content="Real-O-Mat" />
+    <meta
+      property="og:description"
+      content="Mach den Real-O-Mat und finde heraus, welche Partei wie abstimmt!"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://real-o-mat.de" />
+    <meta name="og:image" content={OgImage.src} />
   </head>
 
   <body class="bg-purple-50">
