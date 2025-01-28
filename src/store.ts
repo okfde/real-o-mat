@@ -25,7 +25,7 @@ export enum Stage {
 
 export const partyNames: Record<Party, string> = {
   spd: 'SPD',
-  cdu: 'CDU',
+  cdu: 'CDU/CSU',
   fdp: 'FDP',
   gruene: 'Die Grünen',
   bsw: 'BSW',
