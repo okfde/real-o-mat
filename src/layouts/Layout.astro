@@ -5,7 +5,7 @@ import SiteHeader from '../components/SiteHeader.vue'
 import logo from '../assets/fragdenstaat.svg'
 import Favicon from '../assets/favicon.png'
 import OgImage from '../assets/og-image.jpg'
-import GradientBackground from '../components/GradientBackground.vue'
+import GradientBackground from '../components/GradientBackground.astro'
 import { shareText, publicUrl } from '../const'
 
 interface Props {
@@ -41,7 +41,7 @@ interface Props {
       )
     }
 
-    <GradientBackground client:load />
+    <GradientBackground />
 
     <div class="flex flex-col min-h-screen pb-12">
       <SiteHeader isApp={!!Astro.props.isApp} client:load />

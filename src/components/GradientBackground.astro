@@ -1,0 +1,32 @@
+<div class="conic"></div>
+<div class="linear"></div>
+
+<style>
+  @reference "../assets/style.css";
+
+  .conic {
+    @apply fixed -inset-12 -z-10 blur-2xl;
+    background: conic-gradient(
+      from 180deg at 50% 50%,
+      var(--color-primary-purple) 0deg,
+      var(--color-primary-yellow) 95deg,
+      var(--color-primary-cyan) 267deg,
+      var(--color-primary-purple) 360deg
+    );
+  }
+
+  .linear {
+    @apply fixed inset-0 -z-10;
+    @apply opacity-0 transition-opacity duration-500;
+    background: linear-gradient(
+      to bottom,
+      var(--color-primary-cyan),
+      var(--color-primary-purple)
+    );
+  }
+
+  body:has([data-stage='3']) .linear,
+  body:has([data-stage='4']) .linear {
+    @apply opacity-100;
+  }
+</style>

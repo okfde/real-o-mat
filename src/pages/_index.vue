@@ -97,7 +97,7 @@ onMounted(() => updateBeforeUnload())
 </script>
 
 <template>
-  <Transition :name="viewTransition" mode="out-in">
+  <Transition :name="viewTransition" mode="out-in" :data-stage="currentStage">
     <div v-if="currentStage === Stage.Intro">
       <div class="bg-white p-8 md:p-16 md:text-center">
         <p class="mb-4 text-xl font-medium md:text-2xl">
