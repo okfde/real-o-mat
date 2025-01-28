@@ -16,6 +16,9 @@
 - name: Sanktionsfrei
   slug: sanktionsfrei
   logo: ./logos/sanktionsfrei.svg
+- name: Sea-Eye
+  slug: sea-eye
+  logo: ./logos/sea-eye.svg
 - name: SeaWatch
   slug: seawatch
   logo: ./logos/seawatch.svg

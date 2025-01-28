@@ -13,7 +13,7 @@ const partners = await getCollection('partners')
     <App questions={questions} client:only="vue">
       <h2 class="text-lg mb-4">Unsere Partner*innen</h2>
       <ul
-        class="partners grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-8"
+        class="partners grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-8"
       >
         {
           partners.map((partner) => (
