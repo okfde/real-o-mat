@@ -11,7 +11,7 @@
 }
 
 .btn {
-  @apply inline-flex cursor-pointer items-center rounded-full px-4 py-2 font-bold font-medium text-white;
+  @apply inline-flex items-center rounded-full px-4 py-2 font-bold font-medium text-white;
   @apply bg-purple-700 outline-none hover:bg-purple-800 focus:ring-3 focus:ring-purple-600/50 motion-safe:transition;
 }
 
@@ -24,16 +24,20 @@
 }
 
 .btn-outline {
-  @apply inline-flex cursor-pointer items-center rounded-full px-4 py-2 font-bold text-purple-700 hover:text-white;
+  @apply inline-flex items-center rounded-full px-4 py-2 font-bold text-purple-700 hover:text-white;
   @apply border border-purple-700 outline-none hover:bg-purple-800 hover:text-white focus:ring-3 focus:ring-purple-600/50 motion-safe:transition;
 }
 
 .btn-text {
-  @apply inline-flex cursor-pointer items-center rounded text-purple-900 outline-none focus:ring-3 focus:ring-purple-600/50 focus:ring-offset-1 motion-safe:transition;
+  @apply inline-flex items-center rounded text-purple-900 outline-none focus:ring-3 focus:ring-purple-600/50 focus:ring-offset-1 motion-safe:transition;
 }
 
 .btn-text:disabled {
   @apply cursor-not-allowed text-gray-600;
+}
+
+button {
+  @apply cursor-pointer;
 }
 
 h2 {
