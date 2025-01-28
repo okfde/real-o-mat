@@ -1,5 +1,9 @@
 ---
+import DownloadData from '../components/DownloadData.vue'
 import Layout from '../layouts/Layout.astro'
+import { getCollection } from 'astro:content'
+
+const questions = (await getCollection('questions')).map((q) => q.data)
 ---
 
 <Layout>
@@ -202,6 +206,18 @@ import Layout from '../layouts/Layout.astro'
       Fraktion zu vielen Thesen keine wertbare Positionierung. Eine 100%ige
       Übereinstimmung mit dem BSW ist deswegen nicht möglich.
     </p>
+
+    <h3>Daten herunterladen</h3>
+    <p>
+      Sie können hier die Thesen des Real-O-Mat im JSON-Format herunterladen.
+      Die Daten stehen unter der Lizenz <a
+        href="https://creativecommons.org/licenses/by-sa/4.0/deed.de"
+        target="_blank"
+        class="text-purple-600 underline hover:text-purple-700">CC-BY-SA 4.0</a
+      >.
+    </p>
+
+    <DownloadData questions={questions} client:only="vue" />
   </div>
 </Layout>
 
