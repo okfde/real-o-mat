@@ -32,9 +32,9 @@ const styles: Record<Answer, any> = {
       class="flex h-10 w-10 items-center justify-center rounded-full text-white"
       :class="[styles[answer].class]"
       v-bind="$attrs"
-      :aria-label="answerLabels[answer]"
     >
-      <component :is="styles[answer].icon" class="h-7 w-7" aria-hidden="true" />
+    <span class="sr-only">{{ answerLabels[answer] }}</span>
+    <component :is="styles[answer].icon" class="h-7 w-7" aria-hidden="true" />
     </div>
   </Popper>
 </template>

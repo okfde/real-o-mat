@@ -39,6 +39,7 @@ onMounted(() => {
         :class="{ 'ring-3 ring-primary-yellow': selected }"
         @click="emit('save', answer)"
         :disabled="disabled"
+        tabindex="0"
       >
         <slot class="me-1" />
         {{ answerLabels[answer] }}
