@@ -73,6 +73,7 @@ const previousQuestion = () => {
         aria-valuemin="1"
         :aria-valuemax="questionsCount"
         :aria-valuenow="currentQuestionProgress"
+        aria-hidden="true"
       >
         <div
           class="h-2 bg-purple-900 duration-300 ease-out motion-safe:transition-all"
