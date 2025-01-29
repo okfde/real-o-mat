@@ -73,19 +73,19 @@ const share = () => {
     <TabGroup>
       <TabList class="flex space-x-1 rounded-t-lg bg-primary-purple/30 p-1">
         <Tab as="template" v-slot="{ selected }">
-          <button class="tab-button" :class="{ selected: selected }">
+          <button role="tab" class="tab-button" :class="{ selected: selected }">
             <IconChart aria-hidden="true" />
             Ergebnis
           </button>
         </Tab>
         <Tab as="template" v-slot="{ selected }">
-          <button class="tab-button" :class="{ selected: selected }">
+          <button role="tab" class="tab-button" :class="{ selected: selected }">
             <IconScale aria-hidden="true" />
             Parteienvergleich
           </button>
         </Tab>
         <Tab as="template" v-slot="{ selected }">
-          <button class="tab-button" :class="{ selected: selected }">
+          <button role="tab" class="tab-button" :class="{ selected: selected }">
             <IconComment aria-hidden="true" />
             Begründungen
           </button>
