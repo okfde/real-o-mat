@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { Question } from '../content.config'
-import { useStore, parties, partyNames, answerLabels } from '../store'
+import { useStore, parties, partyNames, answerOptions } from '../store'
 import AnswerIndicator from '../components/AnswerIndicator.vue'
 import { onMounted, ref, useTemplateRef } from 'vue'
 
@@ -62,7 +62,7 @@ defineProps<{
       class="grid grid-cols-2 items-center gap-4 md:grid-cols-3 lg:grid-cols-5"
     >
       <li
-        v-for="(label, answer) in answerLabels"
+        v-for="({ label }, answer) in answerOptions"
         class="flex items-center space-y-2"
       >
         <AnswerIndicator :answer="answer" :popup="false" class="me-4" />

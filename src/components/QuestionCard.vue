@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import { answerLabels, useStore } from '../store'
+import { computed, onMounted, useTemplateRef, nextTick } from 'vue'
+import { answerOptions, useStore } from '../store'
 import type { Answer, Question } from '../content.config'
 import AnswerIndicator from './AnswerIndicator.vue'
 import AnswerButton from './AnswerButton.vue'
@@ -27,6 +27,8 @@ defineEmits<{
 
 const { answers, deleteAnswer } = useStore()
 
+const buttonContainer = useTemplateRef<HTMLDivElement>('button-container')
+
 const answerButtons = computed(() => {
   const buttons: Record<string, any> = {
     'zu weit': { icon: IconLess },
@@ -46,6 +48,17 @@ const answerButtons = computed(() => {
 const hasAnswer = computed(
   () => answers.value[props.currentQuestion.id] !== undefined,
 )
+
+const focusFirstButton = () => {
+  buttonContainer.value?.querySelector?.('button')?.focus()
+}
+
+const editAnswer = () => {
+  deleteAnswer(props.currentQuestion.id)
+  nextTick(focusFirstButton)
+}
+
+onMounted(focusFirstButton)
 </script>
 
 <template>
@@ -77,14 +90,18 @@ const hasAnswer = computed(
         </div>
       </Transition>
     </div>
-    <Transition :name="transitionName" mode="out-in">
-      <div :key="currentQuestionIndex">
+    <Transition
+      :name="transitionName"
+      mode="out-in"
+      @after-enter="focusFirstButton"
+    >
+      <div :key="currentQuestionIndex" ref="button-container">
         <div v-if="hasAnswer" class="flex flex-wrap items-center gap-4">
           Ihre Auswahl:
           <AnswerIndicator :answer="answers[currentQuestion.id].answer" />
-          {{ answerLabels[answers[currentQuestion.id].answer] }}
+          {{ answerOptions[answers[currentQuestion.id].answer].label }}
 
-          <button class="btn-text" @click="deleteAnswer(currentQuestion.id)">
+          <button class="btn-text" @click="editAnswer">
             <IconEdit aria-hidden="true" class="me-1" />
             Ändern
           </button>
@@ -99,12 +116,11 @@ const hasAnswer = computed(
 
         <div class="flex flex-wrap gap-x-2 gap-y-3" v-else>
           <AnswerButton
-            :answer="answer"
-            :selected="answers[currentQuestion.id]?.answer === answer"
-            @save="$emit('saveAnswer', answer)"
-            :disabled="disabled"
             v-for="({ disabled, icon }, answer, i) in answerButtons"
             :key="i"
+            :answer="answer"
+            :disabled="disabled"
+            @save="$emit('saveAnswer', answer)"
           >
             <component :is="icon" />
           </AnswerButton>

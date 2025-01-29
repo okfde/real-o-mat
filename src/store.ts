@@ -1,6 +1,10 @@
 import { computed, ref } from 'vue'
 import { useStorage } from '@vueuse/core'
 import type { Answer, Party } from './content.config.ts'
+import IconLess from '~icons/material-symbols/stat-minus-2-rounded'
+import IconMore from '~icons/material-symbols/stat-2-rounded'
+import IconRight from '~icons/material-symbols/check-rounded'
+import IconUnknown from './components/IconUnknown.vue'
 
 export type UserPosition = {
   answer: Answer
@@ -8,11 +12,27 @@ export type UserPosition = {
   questionId: string
 }
 
-export const answerLabels: Record<Answer, string> = {
-  'zu weit': 'nein, geht mir zu weit',
-  richtig: 'ja, finde ich auch',
-  'nicht weit genug': 'nein, reicht mir nicht aus',
-  '/': 'Position nicht wertbar',
+export const answerOptions = {
+  'zu weit': {
+    label: 'nein, geht mir zu weit',
+    icon: IconLess,
+    class: 'bg-primary-red',
+  },
+  richtig: {
+    label: 'ja, finde ich auch',
+    icon: IconRight,
+    class: 'bg-primary-green',
+  },
+  'nicht weit genug': {
+    label: 'nein, reicht mir nicht aus',
+    icon: IconMore,
+    class: 'bg-primary-orange',
+  },
+  '/': {
+    label: 'Position nicht wertbar',
+    icon: IconUnknown,
+    class: 'bg-gray-600',
+  },
 }
 
 export enum Stage {

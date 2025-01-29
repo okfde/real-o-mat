@@ -1,12 +1,11 @@
 <script setup lang="ts">
 import Popper from 'vue3-popper'
 import type { Answer } from '../content.config'
-import { answerLabels } from '../store'
+import { answerOptions } from '../store'
 
 defineProps<{
   answer: Answer
   disabled: boolean
-  selected: boolean
 }>()
 
 const emit = defineEmits<{
@@ -17,29 +16,16 @@ const emit = defineEmits<{
 <template>
   <div class="answer-button" v-once>
     <Popper
-      :disabled="!selected && !disabled"
-      arrow
+      :disabled="!disabled"
       :hover="true"
+      arrow
       placement="top"
-      :content="
-        selected
-          ? 'Ihre Auswahl'
-          : 'Diese Option ist nicht verfügbar, da keine Partei so abgestimmt hat.'
-      "
+      content="Diese Option ist nicht verfügbar, da keine Partei so abgestimmt hat."
     >
-      <button
-        class="btn"
-        :class="{ 'ring-3 ring-primary-yellow': selected }"
-        @click="emit('save', answer)"
-        :disabled="disabled"
-      >
+      <button class="btn" @click="emit('save', answer)" :disabled="disabled">
         <slot class="me-1" />
-        {{ answerLabels[answer] }}
+        {{ answerOptions[answer].label }}
       </button>
     </Popper>
   </div>
 </template>
-
-<style scoped>
-@reference '../assets/style.css';
-</style>
