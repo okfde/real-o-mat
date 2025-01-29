@@ -74,12 +74,8 @@ onMounted(focusFirstButton)
           class="flex text-gray-700 @md:mt-4 @md:text-2xl"
           :key="currentQuestionIndex"
         >
-          <span>
-            <span aria-hidden="false">
-              {{ currentQuestionProgress }} / {{ questionsCount }}
-            </span>
-            {{ currentQuestion.category }}
-          </span>
+          {{ currentQuestionProgress }} / {{ questionsCount }}
+          {{ currentQuestion.category }}
         </div>
       </Transition>
       <Transition mode="out-in" :name="transitionName">

@@ -66,14 +66,7 @@ const previousQuestion = () => {
 <template>
   <div>
     <article v-if="currentQuestion" class="overflow-hidden">
-      <div
-        class="bg-white/50"
-        role="progressbar"
-        aria-label="Fortschritt"
-        aria-valuemin="1"
-        :aria-valuemax="questionsCount"
-        :aria-valuenow="currentQuestionProgress"
-      >
+      <div class="bg-white/50" aria-hidden="true">
         <div
           class="h-2 bg-purple-900 duration-300 ease-out motion-safe:transition-all"
           :style="{
@@ -90,7 +83,7 @@ const previousQuestion = () => {
         :transitionName="transitionName"
         @saveAnswer="saveAnswer"
         @skipQuestion="skipQuestion"
-        @nextQuestion="nextQuestion" 
+        @nextQuestion="nextQuestion"
       />
     </article>
 
