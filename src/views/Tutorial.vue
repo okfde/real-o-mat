@@ -1,22 +1,7 @@
 <script setup lang="ts">
-import type { Question } from '../content.config'
-import QuestionCard from '../components/QuestionCard.vue'
 import IconForward from '~icons/material-symbols/arrow-forward'
 
 const emit = defineEmits(['done'])
-
-const exampleQuestion: Question = {
-  id: 'example',
-  index: 1,
-  thesis:
-    'Bürgergeldempfänger*innen, die wiederholt eine existenzsichernde Arbeit ablehnen, soll für zwei Monate der komplette Regelsatz des Bürgergelds gestrichen werden.',
-  category: 'Arbeit',
-  answers: [
-    { party: 'spd', answer: 'nicht weit genug' },
-    { party: 'linke', answer: 'zu weit' },
-    { party: 'gruene', answer: 'richtig' },
-  ],
-}
 </script>
 
 <template>
@@ -37,16 +22,13 @@ const exampleQuestion: Question = {
     </p>
 
     <h2 class="mt-8 !text-lg">Beispiel</h2>
-    <QuestionCard
-      :currentQuestionIndex="1"
-      :currentQuestionProgress="1"
-      :questionsCount="20"
-      :currentQuestion="exampleQuestion"
-      :compact="true"
-      class="border-2 border-primary-purple shadow-lg"
-    />
+    <p>
+      „Bürgergeldempfänger*innen, die wiederholt eine existenzsichernde Arbeit
+      ablehnen, soll für zwei Monate der komplette Regelsatz des Bürgergelds
+      gestrichen werden.“
+    </p>
 
-    <div class="mt-8 space-y-2">
+    <div class="mt-2 space-y-2">
       <p>
         <strong>Ja, finde ich auch</strong>: Die Fraktion hat dem Antrag
         zugestimmt
