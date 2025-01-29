@@ -22,7 +22,12 @@ const emit = defineEmits<{
       placement="top"
       content="Diese Option ist nicht verfügbar, da keine Partei so abgestimmt hat."
     >
-      <button class="btn" @click="emit('save', answer)" :disabled="disabled">
+      <button
+        class="btn"
+        @click="emit('save', answer)"
+        :disabled="disabled"
+        tabindex="0"
+      >
         <slot class="me-1" />
         {{ answerOptions[answer].label }}
       </button>

@@ -21,8 +21,8 @@ defineProps<{
       class="flex h-10 w-10 items-center justify-center rounded-full text-white"
       :class="answerOptions[answer].class"
       v-bind="$attrs"
-      :aria-label="answerOptions[answer].label"
     >
+      <span class="sr-only">{{ answerOptions[answer].label }}</span>
       <component
         :is="answerOptions[answer].icon"
         class="h-7 w-7"
