@@ -40,8 +40,13 @@ dl {
 }
 
 .progress-result {
-  animation: result-bar 1s cubic-bezier(0, 0, 0.2, 1);
   transform-origin: left;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .progress-result {
+    animation: result-bar 1s cubic-bezier(0, 0, 0.2, 1);
+  }
 }
 
 @keyframes result-bar {
