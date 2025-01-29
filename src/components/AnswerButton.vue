@@ -2,6 +2,7 @@
 import Popper from 'vue3-popper'
 import type { Answer } from '../content.config'
 import { answerLabels } from '../store'
+import { onMounted } from 'vue';
 
 defineProps<{
   answer: Answer
@@ -12,6 +13,12 @@ defineProps<{
 const emit = defineEmits<{
   save: [Answer]
 }>()
+
+onMounted(() => {
+  // For accessibility reason, we always want to focus the first button
+  const button = document.querySelector('.answer-button button')
+  button?.focus()
+})
 </script>
 
 <template>
