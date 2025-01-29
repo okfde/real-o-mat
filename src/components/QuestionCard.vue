@@ -22,6 +22,7 @@ const props = defineProps<{
 defineEmits<{
   (e: 'saveAnswer', answer: Answer): void
   (e: 'skipQuestion'): void
+  (e: 'nextQuestion'): void
 }>()
 
 const { answers, deleteAnswer } = useStore()
@@ -89,7 +90,7 @@ const hasAnswer = computed(
           </button>
 
           <div class="ms-auto self-center">
-            <button @click="$emit('skipQuestion')" class="btn-outline">
+            <button @click="$emit('nextQuestion')" class="btn-outline">
               Weiter
               <IconForward aria-hidden="true" class="ms-1" />
             </button>

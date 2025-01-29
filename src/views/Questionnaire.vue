@@ -90,6 +90,7 @@ const previousQuestion = () => {
         :transitionName="transitionName"
         @saveAnswer="saveAnswer"
         @skipQuestion="skipQuestion"
+        @nextQuestion="nextQuestion" 
       />
     </article>
 
