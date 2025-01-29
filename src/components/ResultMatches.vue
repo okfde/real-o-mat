@@ -24,7 +24,7 @@ defineProps<{
                 />
               </div>
             </div>
-            <span>{{ Math.round(percentage) }}%</span>
+            <span>{{ percentage }}%</span>
           </dd>
         </template>
       </dl>

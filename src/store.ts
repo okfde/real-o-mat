@@ -1,6 +1,6 @@
 import { computed, ref } from 'vue'
 import { useStorage } from '@vueuse/core'
-import type { Answer, Party } from './content.config.ts'
+import type { Answer, Party, Question } from './content.config.ts'
 import IconLess from '~icons/material-symbols/stat-minus-2-rounded'
 import IconMore from '~icons/material-symbols/stat-2-rounded'
 import IconRight from '~icons/material-symbols/check-rounded'
@@ -73,6 +73,41 @@ export function useStore() {
 
   const viewTransition = ref('slide' as 'slide' | 'slide-back')
 
+  const getPartyMatches = (questions: Question[]) => {
+    const results: Record<Party, number> = {
+      spd: 0,
+      cdu: 0,
+      fdp: 0,
+      gruene: 0,
+      bsw: 0,
+      linke: 0,
+      afd: 0,
+    }
+
+    let denominator = 0
+
+    for (const question of questions) {
+      const { answer: userAnswer, weight } = answers.value[question.id] ?? {}
+      if (!userAnswer) continue
+
+      for (const { answer: partyAnswer, party } of question.answers) {
+        if (userAnswer === partyAnswer) {
+          results[party] += weight
+        }
+      }
+
+      denominator += weight
+    }
+
+    return Object.entries(results)
+      .map(([party, score]) => ({
+        party: partyNames[party as Party],
+        score,
+        percentage: Math.round((score / denominator) * 100),
+      }))
+      .sort((a, b) => b.score - a.score)
+  }
+
   return {
     answers,
     deleteAnswer,
@@ -81,5 +116,6 @@ export function useStore() {
     currentQuestionProgress,
     currentStage,
     viewTransition,
+    getPartyMatches,
   }
 }

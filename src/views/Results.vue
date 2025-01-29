@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { computed, onMounted, ref } from 'vue'
 import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue'
-import type { Party, Question } from '../content.config'
+import type { Question } from '../content.config'
 import { partyNames, useStore } from '../store'
 import { publicUrl, shareText } from '../const'
 import ResultMatches from '../components/ResultMatches.vue'
@@ -16,48 +16,15 @@ const props = defineProps<{
   questions: Question[]
 }>()
 
-const { answers } = useStore()
-
-const partyMatches = computed(() => {
-  const results: Record<Party, number> = {
-    spd: 0,
-    cdu: 0,
-    fdp: 0,
-    gruene: 0,
-    bsw: 0,
-    linke: 0,
-    afd: 0,
-  }
-
-  let denominator = 0
-
-  for (const question of props.questions) {
-    const { answer: userAnswer, weight } = answers.value[question.id] ?? {}
-    if (!userAnswer) continue
-
-    for (const { answer: partyAnswer, party } of question.answers) {
-      if (userAnswer === partyAnswer) {
-        results[party] += weight
-      }
-    }
-
-    denominator += weight
-  }
-
-  return Object.entries(results)
-    .map(([party, score]) => ({
-      party: partyNames[party as Party],
-      score,
-      percentage: (score / denominator) * 100,
-    }))
-    .sort((a, b) => b.score - a.score)
-})
+const { getPartyMatches } = useStore()
 
 const canShare = ref(false)
 const shareData = {
   title: shareText,
   url: publicUrl,
 }
+
+const partyMatches = computed(() => getPartyMatches(props.questions))
 
 onMounted(() => {
   canShare.value = navigator.canShare?.(shareData)

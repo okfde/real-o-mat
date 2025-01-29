@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { Question } from '../content.config'
+import type { Answer, Party, Question } from '../content.config'
 import { useStore, parties, partyNames, answerOptions } from '../store'
 import AnswerIndicator from '../components/AnswerIndicator.vue'
 import { onMounted, ref, useTemplateRef } from 'vue'
@@ -18,6 +18,9 @@ onMounted(() => {
 defineProps<{
   questions: Question[]
 }>()
+
+const getPartyAnswer = (question: Question, party: Party): Answer | undefined =>
+  question.answers.find((a) => a.party === party)?.answer
 </script>
 
 <template>
@@ -48,7 +51,8 @@ defineProps<{
           </td>
           <td class="text-center" v-for="party in parties" :key="party">
             <AnswerIndicator
-              :answer="question.answers.find((a) => a.party === party)!.answer"
+              v-if="getPartyAnswer(question, party)"
+              :answer="getPartyAnswer(question, party)!"
             />
           </td>
         </tr>
