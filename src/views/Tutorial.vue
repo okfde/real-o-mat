@@ -41,7 +41,7 @@ const emit = defineEmits(['done'])
       <p>
         <strong>Nein, reicht mir nicht aus</strong>: Die Fraktion hat den Antrag
         abgelehnt oder sich enthalten und begründet dies damit, dass diese
-        Sanktionierung von Bürgergeldempfänger*innen zu weit geht. Es sollen
+        Sanktionierung von Bürgergeldempfänger*innen nicht weit genug geht. Es sollen
         stärkere Maßnahmen ergriffen werden.
       </p>
       <p>
