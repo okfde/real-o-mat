@@ -92,7 +92,7 @@ const setWeight = (questionId: string, e: Event) => {
 input[type='checkbox'] {
   appearance: none;
 
-  @apply relative h-8 w-8 appearance-none rounded-full border border-gray-500 outline-none focus:ring-purple-600/75 motion-safe:transition-all motion-safe:duration-300;
+  @apply relative h-8 w-8 appearance-none rounded-full border border-solid border-gray-500 outline-none focus:ring-purple-600/75 motion-safe:transition-all motion-safe:duration-300;
 }
 
 input[type='checkbox']::before {
