@@ -218,6 +218,21 @@ const questions = (await getCollection('questions')).map((q) => q.data)
     </p>
 
     <DownloadData questions={questions} client:only="vue" />
+
+    <h3>Team</h3>
+
+    <p>
+      Recherche: Anna-Lena Disterheft, Matthias Tasser, Katharina Ziegler (frei)
+    </p>
+    <p>Redaktion: Michelle Trimborn, Mattea Weihe (FragDenStaat)</p>
+    <p>Technische Umsetzung: Max Kronmüller (FragDenStaat)</p>
+    <p>
+      Design und Kommunikation: <a
+        href="https://kellerundlieder.de"
+        target="_blank"
+        class="text-purple-600 underline hover:text-purple-700"
+        >Keller und Lieder</a>
+    </p>
   </div>
 </Layout>
 
