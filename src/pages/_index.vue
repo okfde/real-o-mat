@@ -137,6 +137,18 @@ onMounted(() => updateBeforeUnload())
             class="ms-4 mt-2 inline-block w-32"
           />
         </div>
+        <div
+          class="mt-2 flex items-end text-sm text-gray-600 md:justify-center"
+        >
+          <p>
+            FragDenStaat ist gemeinnützig und
+            <a
+              class="text-purple-600 underline hover:text-purple-700"
+              href="https://fragdenstaat.de/spenden/?pk_campaign=realomat"
+              >spendenfinanziert.</a
+            >
+          </p>
+        </div>
       </div>
 
       <div class="mt-8 bg-white/50 p-8 text-center backdrop-blur-sm">
