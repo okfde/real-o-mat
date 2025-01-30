@@ -4,6 +4,9 @@
 - name: Abgeordnetenwatch
   slug: aw
   logo: ./logos/aw.svg
+- name: Deutsche Umwelthilfe
+  slug: duh
+  logo: ./logos/duh.svg
 - name: ECCHR
   slug: ecchr
   logo: ./logos/ecchr.svg
