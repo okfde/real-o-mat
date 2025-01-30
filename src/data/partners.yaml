@@ -1,36 +1,36 @@
 - name: Amadeu Antonio Stiftung
   slug: aas
-  logo: ./logos/aas.svg
+  logo: ../assets/logos/aas.svg
 - name: Abgeordnetenwatch
   slug: aw
-  logo: ./logos/aw.svg
+  logo: ../assets/logos/aw.svg
 - name: Deutsche Umwelthilfe
   slug: duh
-  logo: ./logos/duh.svg
+  logo: ../assets/logos/duh.svg
 - name: ECCHR
   slug: ecchr
-  logo: ./logos/ecchr.svg
+  logo: ../assets/logos/ecchr.svg
 - name: Leave No One Behind
   slug: lnob
-  logo: ./logos/lnob.png
+  logo: ../assets/logos/lnob.png
 - name: Der Paritätische Gesamtverband
   slug: paritaetische
-  logo: ./logos/paritaet.svg
+  logo: ../assets/logos/paritaet.svg
 - name: Sanktionsfrei
   slug: sanktionsfrei
-  logo: ./logos/sanktionsfrei.svg
+  logo: ../assets/logos/sanktionsfrei.svg
 - name: Sea-Eye
   slug: sea-eye
-  logo: ./logos/sea-eye.svg
+  logo: ../assets/logos/sea-eye.svg
 - name: SeaWatch
   slug: seawatch
-  logo: ./logos/seawatch.svg
+  logo: ../assets/logos/seawatch.svg
 - name: Volksverpetzer
   slug: volksverpetzer
-  logo: ./logos/volksverpetzer.png
+  logo: ../assets/logos/volksverpetzer.png
 - name: Wikimedia Deutschland
   slug: wmde
-  logo: ./logos/wmde.svg
+  logo: ../assets/logos/wmde.svg
 - name: Open Knowledge Foundation Deutschland
   slug: okfde
-  logo: ./logos/okfde.svg
+  logo: ../assets/logos/okfde.svg

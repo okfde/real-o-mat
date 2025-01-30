@@ -1,6 +1,5 @@
 // @ts-check
-import { defineConfig, envField } from 'astro/config'
-import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from 'astro/config'
 
 import vue from '@astrojs/vue'
 import Icons from 'unplugin-icons/vite'
@@ -16,17 +15,5 @@ export default defineConfig({
         compiler: 'vue3',
       }),
     ],
-  },
-  env: {
-    schema: {
-      GOOGLE_SPREADSHEET_ID: envField.string({
-        context: 'server',
-        access: 'secret',
-      }),
-      GOOGLE_SPREADSHEET_RANGE: envField.string({
-        context: 'server',
-        access: 'secret',
-      }),
-    },
   },
 })

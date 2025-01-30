@@ -1,6 +1,4 @@
 import { defineCollection, z } from 'astro:content'
-import { importGoogleSheet, cachedImportGoogleSheet } from './importGoogleSheet'
-import { getSecret } from 'astro:env/server'
 import { file } from 'astro/loaders'
 
 export const answerSchema = z.enum([
@@ -39,20 +37,12 @@ const questionSchema = z.object({
 export type Question = z.infer<typeof questionSchema>
 
 const questions = defineCollection({
-  loader: async () => {
-    const fn = import.meta.env.DEV ? cachedImportGoogleSheet : importGoogleSheet
-
-    return await fn(
-      process.cwd() + '/service-account.json',
-      getSecret('GOOGLE_SPREADSHEET_ID')!,
-      getSecret('GOOGLE_SPREADSHEET_RANGE')!,
-    )
-  },
+  loader: file('src/data/theses.yaml'),
   schema: questionSchema,
 })
 
 const partners = defineCollection({
-  loader: file('src/assets/partners.yaml'),
+  loader: file('src/data/partners.yaml'),
   schema: ({ image }) =>
     z.object({
       name: z.string(),

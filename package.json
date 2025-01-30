@@ -15,18 +15,15 @@
   "dependencies": {
     "@astrojs/vue": "^5.0.4",
     "@fontsource-variable/montserrat": "^5.1.1",
-    "@googleapis/sheets": "^9.3.1",
     "@headlessui/vue": "^1.7.23",
     "@iconify-json/material-symbols": "^1.2.12",
     "@vueuse/core": "^12.3.0",
     "astro": "^5.1.7",
-    "memoize-fs": "^4.1.1",
     "sharp": "^0.33.5",
     "tailwindcss": "^4.0.0",
     "unplugin-icons": "^0.22.0",
     "vue": "^3.5.13",
-    "vue3-popper": "^1.5.0",
-    "zod": "^3.24.1"
+    "vue3-popper": "^1.5.0"
   },
   "devDependencies": {
     "@playwright/test": "^1.50.0",
