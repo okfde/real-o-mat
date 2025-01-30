@@ -19,7 +19,7 @@ test('test', async ({ page }) => {
 
   expect(page.getByRole('heading', { name: '1. Arbeit' })).toBeVisible()
   expect(
-    page.getByRole('heading', { name: '19. Landwirtschaft' }),
+    page.getByRole('heading', { name: '20. Landwirtschaft' }),
   ).toBeVisible()
 
   await expect(page.locator('form input[type="checkbox"]')).toHaveCount(19)

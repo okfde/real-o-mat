@@ -52,24 +52,23 @@ const setWeight = (questionId: string, e: Event) => {
 
     <div class="grid gap-4 md:grid-cols-1">
       <label
-        v-for="({ answer, weight, questionId, question }, i) in sortedAnswers"
+        v-for="{ answer, weight, questionId, question } in sortedAnswers"
         :key="questionId"
         class="flex items-start space-x-2 bg-white p-4"
       >
         <div>
           <input
             type="checkbox"
-            :id="`category-${i}`"
             :checked="weight === 2"
             @change="(e) => setWeight(questionId, e)"
-            :aria-labelledby="`category-${i}`"
+            :aria-labelledby="`label-${questionId}`"
           />
         </div>
 
         <div>
           <div class="inline">
-            <h3 class="text-lg font-medium" :id="`category-${i}`">
-              {{ i + 1 }}. {{ question.category }}
+            <h3 class="text-lg font-medium" :id="`label-${questionId}`">
+              {{ question.index + 1 }}. {{ question.category }}
             </h3>
             <p>{{ question.thesis }}</p>
           </div>
