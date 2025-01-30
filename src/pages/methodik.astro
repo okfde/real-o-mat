@@ -204,7 +204,12 @@ const questions = (await getCollection('questions')).map((q) => q.data)
     <p>
       Da das BSW erst ab Ende 2023 bzw. Februar 2024 aktiv war, gibt es von der
       Fraktion zu vielen Thesen keine wertbare Positionierung. Eine 100%ige
-      Übereinstimmung mit dem BSW ist deswegen nicht möglich.
+      Übereinstimmung mit einer Partei ist nur dann möglich, wenn man
+      ausschließlich zu Forderungen abstimmt, bei denen auch die jeweilige
+      Partei eine wertbare Position hat (und nicht wertbare übersprungen
+      werden). Da das BSW erst ab Ende 2023 bzw. Februar 2024 im Bundestag aktiv
+      war, gibt es von der Gruppe zu vielen Thesen keine wertbare
+      Positionierung.
     </p>
 
     <h3>Daten herunterladen</h3>
@@ -231,7 +236,8 @@ const questions = (await getCollection('questions')).map((q) => q.data)
         href="https://kellerundlieder.de"
         target="_blank"
         class="text-purple-600 underline hover:text-purple-700"
-        >Keller und Lieder</a>
+        >Keller und Lieder</a
+      >
     </p>
   </div>
 </Layout>
