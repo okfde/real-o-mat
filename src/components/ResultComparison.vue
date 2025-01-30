@@ -32,7 +32,7 @@ const getPartyAnswer = (question: Question, party: Party): Answer | undefined =>
     </p>
   </div>
 
-  <div class="overflow-x-auto" ref="table-container">
+  <div class="relative overflow-x-auto" ref="table-container">
     <table :class="{ scrolled: tableScroll > 0 }">
       <thead>
         <tr>
