@@ -41,8 +41,6 @@ jobs:
           SERVICE_ACCOUNT: ${{ secrets.SERVICE_ACCOUNT }}
       - name: Build
         run: pnpm run build
-      - name: Clean up after Tailwind
-        run: sed -i 's/@reference "\.\.\/assets\/style.css";//g' ./dist/_astro/*.css
       - name: Delete secrets
         run: rm .env service-account.json
       # - name: Run Playwright tests
