@@ -1,4 +1,5 @@
 ---
+import 'tailwindcss'
 import '../assets/style.css'
 import '@fontsource-variable/montserrat'
 import SiteHeader from '../components/SiteHeader.vue'
@@ -9,6 +10,7 @@ import GradientBackground from '../components/GradientBackground.astro'
 import { shareText, publicUrl } from '../const'
 
 interface Props {
+  title?: string
   isApp?: boolean
 }
 ---
@@ -18,7 +20,9 @@ interface Props {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Real-O-Mat</title>
+    <title>
+      {Astro.props.title ? `${Astro.props.title} – Real-O-Mat` : 'Real-O-Mat'}
+    </title>
     <link rel="icon" href={Favicon.src} type="image/png" />
     <meta name="description" content={shareText} />
     <meta property="og:title" content="Real-O-Mat" />
@@ -72,9 +76,7 @@ interface Props {
                 </a>
               </li>
               <li>
-                <a href="https://fragdenstaat.de/datenschutz" target="_blank">
-                  Datenschutz
-                </a>
+                <a href="/datenschutz"> Datenschutz </a>
               </li>
             </ul>
           </nav>
