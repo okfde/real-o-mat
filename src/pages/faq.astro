@@ -1,0 +1,23 @@
+---
+import Content from '../layouts/Content.astro'
+import { getCollection } from 'astro:content'
+import { Markdown } from '@astropub/md'
+
+const items = (await getCollection('faq')).map((q) => q.data)
+---
+
+<Content title="FAQ">
+  <h2>FAQ</h2>
+  <p>
+    {
+      items.map((x) => (
+        <>
+          <h3>
+            <Markdown.Inline of={x.question} />
+          </h3>
+          <Markdown of={x.answer} />
+        </>
+      ))
+    }
+  </p>
+</Content>

@@ -36,9 +36,20 @@ const questionSchema = z.object({
 })
 export type Question = z.infer<typeof questionSchema>
 
+const faqItemSchema = z.object({
+  question: z.string(),
+  answer: z.string(),
+})
+export type FAQItem = z.infer<typeof faqItemSchema>
+
 const questions = defineCollection({
   loader: file('src/data/theses.yaml'),
   schema: questionSchema,
+})
+
+const faq = defineCollection({
+  loader: file('src/data/faq.yaml'),
+  schema: faqItemSchema,
 })
 
 const partners = defineCollection({
@@ -51,4 +62,4 @@ const partners = defineCollection({
 })
 export type PartnersSchema = typeof partners.schema
 
-export const collections = { questions, partners }
+export const collections = { questions, partners, faq }

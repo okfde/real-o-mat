@@ -1,0 +1,50 @@
+# this data is licensed under cc-by-sa 4.0
+# https://creativecommons.org/licenses/by-sa/4.0/
+# (c) 2025, Open Knowledge Foundation Deutschland e.V.
+- id: 0
+  question: 'Wie wurden die Themen für den *Real-o-Mat* ausgewählt?'
+  answer: |
+    Der *Real-o-Mat* fragt Positionen zu 20 politischen Forderungen aus der vergangenen Legislaturperiode ab. Die Thesen des *Real-o-Mat* wurden aus Gesetzentwürfen und Anträgen abgeleitet, über die in der Legislaturperiode von September 2021 bis Dezember 2024 im Bundestag abgestimmt wurde. Bei hunderten Anträgen im Bundestag ist diese Auswahl natürlich nicht vollständig, sondern bildet nur einen Teil der im Bundestag diskutierten Themen ab.
+
+    Dabei wurden Themen ausgewählt, die für breite Teile der Bevölkerung relevant sind und öffentlich breit diskutiert wurden. So ist davon auszugehen, dass ein großer Teil der Nutzer\*innen mit den Themen vertraut ist und eine Position zu den ausgewählten Themen hat.
+
+    Darüber hinaus spielte die Datenlage eine wichtige Rolle: Nur Themen, zu denen es a) entsprechende Anträge oder Gesetzesentwürfe, über die im Bundestag abgestimmt wurde und b) ausreichend inhaltliche Positionierung der Fraktionen, etwa in Beschlussempfehlungen und Plenarprotokollen gibt, konnten einbezogen werden.
+- id: 1
+  question: Warum sind einige Parteien im *Real-o-Mat* nicht vertreten?
+  answer: |
+    Der *Real-o-Mat* informiert über das Abstimmungsverhalten der Fraktionen im Bundestag. In der vergangenen Legislaturperiode waren dies SPD, FDP, Bündnis 90/Die Grünen, CDU/CSU (Unionsfraktion), Die Linke, die AfD und später auch das BSW.
+
+    Nur von diesen Fraktionen gibt es Abstimmungen im Bundestag, die die Datengrundlage für den *Real-o-Mat* bilden. Parteien, die in der vergangenen Legislaturperiode nicht im Bundestag vertreten waren, können darum im *Real-o-Mat* nicht erfasst werden.
+
+- id: 2
+  question: Warum habe ich mit dem BSW nur eine geringe Übereinstimmung/erscheint das BSW zu vielen Forderungen als „nicht auswertbar“?
+  answer: |
+    Da das BSW erst ab Ende 2023 bzw. Februar 2024 aktiv war, gibt es von der Fraktion zu vielen Thesen keine auswertbare Positionierung, da über die entsprechenden Anträge und Gesetzentwürfe früher in der Legislaturperiode abgestimmt wurde.
+
+    Im Dezember 2023 löste sich die Fraktion Die Linke auf. Die Abgeordneten waren bis Januar 2024 fraktionslos im Bundestag vertreten. Ab dem 2. Februar 2024 bildete sich im Bundestag die Gruppe Die Linke und das Bündnis Sahra Wagenknecht (BSW). Bei Abstimmungen, die zwischen dem 7. Dezember 2023 und dem 31. Januar 2024 stattfanden, wurden die Abgeordneten der Partei zugeordnet, der sie ab Februar 2024 angehörten.Eine Rückwirkende Abfrage, wie das BSW über entsprechenden Anträgen und Gesetzesentwürfen abgestimmt hätte, würde nicht der für alle Parteien einheitliche Methodik entsprechen. Ebenfalls haben wir uns dagegen entschieden, das BSW komplett aus dem *Real-o-Mat* auszuschließen und bilden stattdessen das Abstimmverhalten für Anträge ab Ende 2023 ab.
+
+    Eine 100%ige Übereinstimmung mit einer Partei ist nur dann möglich, wenn man ausschließlich zu Forderungen abstimmt, bei denen auch die jeweilige Partei eine wertbare Position hat (und nicht wertbare übersprungen werden), dies ist so auch für das BSW möglich.
+- id: 3
+  question: Warum erhalte ich bei FDP, SPD und den Grünen ein sehr ähnliches Ergebnis?
+  answer: |
+    Das Abstimmungsergebnis bei FDP, SPD und Grünen ist oft ähnlich, weil diese Parteien sich als Teil der gemeinsamen Ampel-Koalition oft auf Kompromisse geeinigt und gemeinsam und als Einheit abgestimmt haben. Dies ist nicht ungewöhnlich für Koalitionsregierungen in Deutschland. Dadurch weicht das Abstimmungsverhalten im Bundestag auch von den Wahlversprechen ab – genau dies kann der *Real-o-Mat* sichtbar machen.
+
+    Im *Real-o-Mat* sind darum zu allen Abstimmungen auch – soweit vorhanden – die Begründungen der Parteien einsehbar. Hier wird deutlich, dass auch die Ampel-Parteien teilweise unterschiedliche Positionen haben, auch wenn sie gemeinsam abgestimmt haben. Wir empfehlen darum, dass sich Nutzer\*innen auch die Begründungen zum Abstimmungsverhalten anschauen.
+
+- id: 4
+  question: Wie unterscheiden sich der *Real-o-Mat* und der *Wahl-o-Mat*?
+  answer: |
+    Während der *Wahl-o-Mat* auf eigenen Aussagen der Parteien basiert, wertet der *Real-o-Mat* das tatsächliche Abstimmungsverhalten der Fraktionen aus, die in der letzten Legislaturperiode im Bundestag vertreten waren. Darüber hinaus liefert er die Begründungen für das Abstimmungsverhalten der Fraktionen.
+
+    Der *Real-o-Mat* bezieht sich auf Abstimmungen zu Anträgen und Gesetzentwürfen im Bundestag, die Begründungen wurden aus Plenardebatten und Beschlussempfehlungen herausgearbeitet. Die Datenbasis bilden die auf <www.bundestag.de> verfügbaren Dokumente, sie sind im *Real-o-Mat* als Belege zu den Aussagen verlinkt.
+
+- id: 5
+  question: Wer steckt hinter dem *Real-o-Mat*?
+  answer: |
+    Der *Real-o-Mat* wurde von [FragDenStaat](https://fragdenstaat.de) mit Unterstützung eines externen Recherche- und Analyseteams erstellt.
+
+    FragDenStaat ist eine Transparenz- und Rechercheplattform. Seit 2011 setzen wir uns für Informationsfreiheit in Deutschland ein, vor allem mithilfe des Informationsfreiheitsgesetzes (IFG). Wir ermöglichen Nutzer\*innen, ihr Recht auf Information wahrzunehmen, zum Beispiel über Anfragen nach dem IFG auf unserer Plattform FragDenStaat.de. Darüber hinaus setzen wir mit investigativen Recherchen, strategischen Klagen und Kampagnen das Recht auf Information durch.
+
+    FragDenStaat ist ein Projekt der gemeinnützigen [Open Knowledge Foundation Deutschland e.V.](https://okfn.de) und [spendenfinanziert](https://fragdenstaat.de/spenden).
+
+    Der *Real-o-Mat* wird unterstützt von: Amadeau Antonio Stiftung, Abgeordnetenwatch, Der Paritätische Gesamtverband, Deutsche Umwelthilfe, European Center for Constitutional and Human Rights, LeaveNooneBehind, Open Knowledge Foundation, Sanktionsfrei, Sea-Eye, Sea-Watch, Volksverpetzer, Wikimedia Deutschland.

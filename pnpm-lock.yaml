@@ -11,6 +11,9 @@ importers:
       '@astrojs/vue':
         specifier: ^5.0.4
         version: 5.0.4(@types/node@22.10.5)(astro@5.1.7(@types/node@22.10.5)(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.30.1)(typescript@5.7.3)(yaml@2.7.0))(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.30.1)(vue@3.5.13(typescript@5.7.3))(yaml@2.7.0)
+      '@astropub/md':
+        specifier: ^1.0.0
+        version: 1.0.0(@astrojs/markdown-remark@6.0.2)
       '@fontsource-variable/montserrat':
         specifier: ^5.1.1
         version: 5.1.1
@@ -26,6 +29,9 @@ importers:
       astro:
         specifier: ^5.1.7
         version: 5.1.7(@types/node@22.10.5)(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.30.1)(typescript@5.7.3)(yaml@2.7.0)
+      install:
+        specifier: ^0.13.0
+        version: 0.13.0
       sharp:
         specifier: ^0.33.5
         version: 0.33.5
@@ -118,6 +124,11 @@ packages:
     peerDependencies:
       astro: ^5.0.0
       vue: ^3.2.30
+
+  '@astropub/md@1.0.0':
+    resolution: {integrity: sha512-++urcyulQogbLAF0VC2rEp6qLUfnRX9iaDREAkN1su9fF8V84DVaMHbQXn7qqQ27wYT5AVVeoK+4+vggYYVbQg==}
+    peerDependencies:
+      '@astrojs/markdown-remark': ^5
 
   '@babel/code-frame@7.26.2':
     resolution: {integrity: sha512-RJlIHRueQgwWitWgF8OdFYGZX328Ax5BCemNGlqHfplnRT9ESi8JkFlvaVYbS+UubVY6dpv87Fs2u5M29iNFVQ==}
@@ -1463,6 +1474,10 @@ packages:
   import-meta-resolve@4.1.0:
     resolution: {integrity: sha512-I6fiaX09Xivtk+THaMfAwnA3MVA5Big1WHF1Dfx9hFuvNIWpXnorlkzhcQf6ehrqQiiZECRt1poOAkPmer3ruw==}
 
+  install@0.13.0:
+    resolution: {integrity: sha512-zDml/jzr2PKU9I8J/xyZBQn8rPCAY//UOYNmR01XwNwyfhEWObo2SWfSl1+0tm1u6PhxLwDnfsT/6jB7OUxqFA==}
+    engines: {node: '>= 0.10'}
+
   iron-webcrypto@1.2.1:
     resolution: {integrity: sha512-feOM6FaSr6rEABp/eDfVseKyTMDt+KGpeB35SkVn9Tyn0CqvVsY3EwI0v5i8nMHyJnzCIQf7nsy3p41TPkJZhg==}
 
@@ -2805,6 +2820,10 @@ snapshots:
       - terser
       - tsx
       - yaml
+
+  '@astropub/md@1.0.0(@astrojs/markdown-remark@6.0.2)':
+    dependencies:
+      '@astrojs/markdown-remark': 6.0.2
 
   '@babel/code-frame@7.26.2':
     dependencies:
@@ -4258,6 +4277,8 @@ snapshots:
     optional: true
 
   import-meta-resolve@4.1.0: {}
+
+  install@0.13.0: {}
 
   iron-webcrypto@1.2.1: {}
 

@@ -14,11 +14,13 @@
   },
   "dependencies": {
     "@astrojs/vue": "^5.0.4",
+    "@astropub/md": "^1.0.0",
     "@fontsource-variable/montserrat": "^5.1.1",
     "@headlessui/vue": "^1.7.23",
     "@iconify-json/material-symbols": "^1.2.12",
     "@vueuse/core": "^12.3.0",
     "astro": "^5.1.7",
+    "install": "^0.13.0",
     "sharp": "^0.33.5",
     "tailwindcss": "^4.0.3",
     "unplugin-icons": "^0.22.0",
