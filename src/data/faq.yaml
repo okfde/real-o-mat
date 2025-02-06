@@ -12,7 +12,7 @@
 - id: 1
   question: Warum sind einige Parteien im *Real-o-Mat* nicht vertreten?
   answer: |
-    Der *Real-o-Mat* informiert über das Abstimmungsverhalten der Fraktionen im Bundestag. In der vergangenen Legislaturperiode waren dies SPD, FDP, Bündnis 90/Die Grünen, CDU/CSU (Unionsfraktion), Die Linke, die AfD und später auch das BSW.
+    Der *Real-o-Mat* informiert über das Abstimmungsverhalten der Fraktionen und parlamentarischen Gruppen im Bundestag. In der vergangenen Legislaturperiode waren dies SPD, FDP, Bündnis 90/Die Grünen, CDU/CSU (Unionsfraktion), Die Linke, die AfD und später auch das BSW.
 
     Nur von diesen Fraktionen gibt es Abstimmungen im Bundestag, die die Datengrundlage für den *Real-o-Mat* bilden. Parteien, die in der vergangenen Legislaturperiode nicht im Bundestag vertreten waren, können darum im *Real-o-Mat* nicht erfasst werden.
 
@@ -39,6 +39,13 @@
     Der *Real-o-Mat* bezieht sich auf Abstimmungen zu Anträgen und Gesetzentwürfen im Bundestag, die Begründungen wurden aus Plenardebatten und Beschlussempfehlungen herausgearbeitet. Die Datenbasis bilden die auf www.bundestag.de verfügbaren Dokumente, sie sind im *Real-o-Mat* als Belege zu den Aussagen verlinkt.
 
 - id: 5
+  question: Warum bildet der *Real-O-Mat* nicht die fraktionslosen Abgeordneten im Bundestag ab?
+  answer: |
+    Der *Real-O-Mat* gibt Auskunft über das Abstimmungsverhalten der Fraktionen und parlamentarischen Gruppen im Bundestag. Fraktionslose Abgeordnete, einschließlich der Abgeordneten des Südschleswigschen Wählerverbands, bildet der Real-O-Mat nicht gesondert ab. Die Gruppe der fraktionslosen Abgeordneten zusammengefasst abzubilden, wäre darüber hinaus nicht repräsentativ oder methodisch korrekt, da diese Abgeordneten keine gemeinsamen Abstimmungen treffen.
+
+    Auf der [Website des Bundestags](https://www.bundestag.de/abstimmung) oder bei [Abgeordnetenwatch](https://abgeordnetenwatch.de) können Sie das Abstimmungsverhalten aller einzelnen Bundestagsabgeordneten – auch der fraktionslosen – zu allen namentlichen Abstimmungen einsehen.
+
+- id: 6
   question: Wer steckt hinter dem *Real-o-Mat*?
   answer: |
     Der *Real-o-Mat* wurde von [FragDenStaat](https://fragdenstaat.de) mit Unterstützung eines externen Recherche- und Analyseteams erstellt.
