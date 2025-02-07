@@ -8,9 +8,9 @@ const emit = defineEmits(['done'])
   <div class="bg-white p-4 md:p-8">
     <h2 class="!text-lg">Wie funktioniert der Real-O-Mat?</h2>
     <p>
-      Der Real-O-Mat hat das Abstimmungsverhalten der Parteien zu 20 Thesen
-      ausgewertet. Die Parteien haben für oder gegen Anträge und
-      Gesetzesentwürfe gestimmt oder sich enthalten.
+      Der Real-O-Mat hat das Abstimmungsverhalten der Fraktionen und Gruppen im
+      Bundestag zu 20 politischen Forderungen ausgewertet. Sie haben für oder
+      gegen Anträge und Gesetzentwürfe gestimmt oder sich enthalten.
     </p>
 
     <h2 class="mt-4 !text-lg">Wie werden die Positionen bewertet?</h2>
@@ -41,8 +41,8 @@ const emit = defineEmits(['done'])
       <p>
         <strong>Nein, reicht mir nicht aus</strong>: Die Fraktion hat den Antrag
         abgelehnt oder sich enthalten und begründet dies damit, dass diese
-        Sanktionierung von Bürgergeldempfänger*innen nicht weit genug geht. Es sollen
-        stärkere Maßnahmen ergriffen werden.
+        Sanktionierung von Bürgergeldempfänger*innen nicht weit genug geht. Es
+        sollen stärkere Maßnahmen ergriffen werden.
       </p>
       <p>
         Die genaue Begründung des Abstimmungsverhaltens jeder Fraktion können
