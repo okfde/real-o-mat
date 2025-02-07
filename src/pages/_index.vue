@@ -109,9 +109,9 @@ onMounted(() => updateBeforeUnload())
         <div class="text:lg space-y-4 md:text-xl">
           <p>
             Der Real-O-Mat schaut nicht auf die Wahlversprechen, sondern gleicht
-            das tatsächliche Abstimmungsverhalten der Parteien zu aktuellen
-            politischen Themen mit Ihrer persönlichen Position ab. Grundlage
-            sind dabei Anträge und Gesetzentwürfe im Bundestag.
+            das tatsächliche Abstimmungsverhalten der Fraktionen und Gruppen zu
+            aktuellen politischen Themen mit Ihrer persönlichen Position ab.
+            Grundlage sind dabei Anträge und Gesetzentwürfe im Bundestag.
           </p>
           <p>
             Jetzt sind Sie an der Reihe: Vergleichen Sie Ihre Standpunkte mit
