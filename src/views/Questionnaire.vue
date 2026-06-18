@@ -1,35 +1,35 @@
 <script setup lang="ts">
 import { computed, nextTick, ref, toRaw } from 'vue'
-import type { Question, Answer } from '../content.config.ts'
+import type { Question, Answer, Election } from '../content.config.ts'
 import { useStore } from '../store.ts'
 import QuestionCard from '../components/QuestionCard.vue'
 import IconBack from '~icons/material-symbols/arrow-back'
 import IconRestart from '~icons/material-symbols/restart-alt-rounded'
 
 const props = defineProps<{
-  questions: Question[]
+  election: Election
 }>()
 
 const emit = defineEmits(['done', 'reset', 'previous'])
 
 const { answers, deleteAnswer, currentQuestionIndex, currentQuestionProgress } =
-  useStore()
+  useStore(props.election.slug)
 
-if (currentQuestionIndex.value > props.questions.length) {
+if (currentQuestionIndex.value > props.election.questions.length) {
   currentQuestionIndex.value = 0
 }
 
 const currentQuestion = computed(
-  (): Question | undefined => props.questions[currentQuestionIndex.value],
+  (): Question | undefined => props.election.questions[currentQuestionIndex.value],
 )
-const questionsCount = computed(() => props.questions.length)
+const questionsCount = computed(() => props.election.questions.length)
 
 const transitionName = ref('slide')
 
 const nextQuestion = () => {
   transitionName.value = 'slide'
 
-  if (currentQuestionIndex.value < props.questions.length - 1) {
+  if (currentQuestionIndex.value < props.election.questions.length - 1) {
     currentQuestionIndex.value++
   } else {
     nextTick(() => emit('done'))
@@ -76,6 +76,7 @@ const previousQuestion = () => {
       </div>
 
       <QuestionCard
+        :election="election"
         :currentQuestionIndex="currentQuestionIndex"
         :currentQuestionProgress="currentQuestionProgress"
         :questionsCount="questionsCount"

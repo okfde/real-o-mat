@@ -1,6 +1,11 @@
 import { expect, test } from 'vitest'
-import type { Question } from '../../src/content.config'
-import { partyNames, useStore, type UserPosition } from '../../src/store'
+import type { Party, Question } from '../../src/content.config'
+import { useStore, type UserPosition } from '../../src/store'
+
+const parties: Party[] = [
+  { name: 'SPD', slug: 'spd', color: '#ff0000' },
+  { name: 'Die Linke', slug: 'linke', color: '#be3075' },
+]
 
 const questions: Question[] = [
   {
@@ -42,20 +47,14 @@ test('calculate correct results', async () => {
     'test-3': { answer: 'zu weit', weight: 1, questionId: 'test-3' },
   }
 
-  const { answers, getPartyMatches } = useStore()
+  const { answers, getPartyMatches } = useStore('test')
   answers.value = exampleAnswers
 
-  const matches = getPartyMatches(questions)
-  expect(matches[0].party).toBe(partyNames['linke'])
+  const matches = getPartyMatches(questions, parties)
+  expect(matches[0].party).toBe('Die Linke')
   expect(matches[0].percentage).toBe(67)
-  expect(matches[1].party).toBe(partyNames['spd'])
+  expect(matches[1].party).toBe('SPD')
   expect(matches[1].percentage).toBe(33)
-
-  matches.slice(2).forEach((match) => {
-    expect(match.percentage).toBe(0)
-  })
-
-  expect.assertions(matches.length + 2)
 })
 
 test('calculate correct results with weights', async () => {
@@ -65,18 +64,12 @@ test('calculate correct results with weights', async () => {
     'test-3': { answer: 'zu weit', weight: 1, questionId: 'test-3' },
   }
 
-  const { answers, getPartyMatches } = useStore()
+  const { answers, getPartyMatches } = useStore('test')
   answers.value = exampleAnswers
 
-  const matches = getPartyMatches(questions)
-  expect(matches[0].party).toBe(partyNames['spd'])
+  const matches = getPartyMatches(questions, parties)
+  expect(matches[0].party).toBe('SPD')
   expect(matches[0].percentage).toBe(50)
-  expect(matches[1].party).toBe(partyNames['linke'])
+  expect(matches[1].party).toBe('Die Linke')
   expect(matches[1].percentage).toBe(50)
-
-  matches.slice(2).forEach((match) => {
-    expect(match.percentage).toBe(0)
-  })
-
-  expect.assertions(matches.length + 2)
 })

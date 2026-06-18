@@ -1,16 +1,16 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
-import type { Question } from '../content.config'
+import type { Election } from '../content.config'
 import IconDownload from '~icons/material-symbols/download-rounded'
 
 const props = defineProps<{
-  questions: Question[]
+  election: Election
 }>()
 
 const blob = computed(() => {
   const data = JSON.stringify({
     timestamp: new Date(),
-    data: props.questions,
+    data: props.election,
   })
 
   const blob = new Blob([data], { type: 'application/json' })
@@ -19,7 +19,7 @@ const blob = computed(() => {
 </script>
 
 <template>
-  <a class="btn" :href="blob" download="real-o-mat.json">
+  <a class="btn" :href="blob" :download="`real-o-mat-${election.slug}.json`">
     <IconDownload aria-hidden="true" class="me-1" />
     Daten herunterladen
   </a>

@@ -1,3 +1,7 @@
+# generated election data (test data for now; commit real files with `git add -f`)
+src/data/elections/*.yaml
+!src/data/elections/.gitkeep
+
 # build output
 dist/
 

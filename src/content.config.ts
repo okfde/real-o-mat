@@ -1,5 +1,5 @@
 import { defineCollection, z } from 'astro:content'
-import { file } from 'astro/loaders'
+import { file, glob } from 'astro/loaders'
 
 export const answerSchema = z.enum([
   'nicht weit genug',
@@ -9,19 +9,15 @@ export const answerSchema = z.enum([
 ])
 export type Answer = z.infer<typeof answerSchema>
 
-export const partySchema = z.enum([
-  'spd',
-  'cdu',
-  'fdp',
-  'gruene',
-  'bsw',
-  'linke',
-  'afd',
-])
+export const partySchema = z.object({
+  name: z.string(),
+  slug: z.string(),
+  color: z.string(),
+})
 export type Party = z.infer<typeof partySchema>
 
 export const positionSchema = z.object({
-  party: partySchema,
+  party: z.string(),
   answer: answerSchema,
   comment: z.string().optional(),
 })
@@ -36,15 +32,30 @@ const questionSchema = z.object({
 })
 export type Question = z.infer<typeof questionSchema>
 
+const electionSchema = z.object({
+  title: z.string(),
+  archived: z.boolean(),
+  date: z.coerce.date(),
+  slug: z.string(),
+  questions: z.array(questionSchema),
+  parties: z.array(partySchema),
+})
+export type Election = z.infer<typeof electionSchema>
+
 const faqItemSchema = z.object({
   question: z.string(),
   answer: z.string(),
 })
 export type FAQItem = z.infer<typeof faqItemSchema>
 
-const questions = defineCollection({
-  loader: file('src/data/theses.yaml'),
-  schema: questionSchema,
+// const questions = defineCollection({
+//   loader: file('src/data/theses.yaml'),
+//   schema: questionSchema,
+// })
+
+const elections = defineCollection({
+  loader: glob({ base: 'src/data/elections/', pattern: '*.yaml' }),
+  schema: electionSchema,
 })
 
 const faq = defineCollection({
@@ -62,4 +73,4 @@ const partners = defineCollection({
 })
 export type PartnersSchema = typeof partners.schema
 
-export const collections = { questions, partners, faq }
+export const collections = { elections, partners, faq }

@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from 'astro/config'
+import { defineConfig, envField } from 'astro/config'
 
 import vue from '@astrojs/vue'
 import Icons from 'unplugin-icons/vite'
@@ -15,5 +15,11 @@ export default defineConfig({
         compiler: 'vue3',
       }),
     ],
+  },
+  env: {
+    schema: {
+      NOCODB_URL: envField.string({ context: 'server', access: 'secret' }),
+      NOCODB_TOKEN: envField.string({ context: 'server', access: 'secret' }),
+    },
   },
 })

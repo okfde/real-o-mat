@@ -1,0 +1,26 @@
+---
+import type { GetStaticPaths } from 'astro'
+import type { GetStaticPaths } from 'astro'
+import { Image } from 'astro:assets'
+import { getEntry, getCollection } from 'astro:content'
+import Layout from '../../layouts/Layout.astro'
+import App from './_election.vue'
+
+const election = (await getEntry('elections', Astro.params.slug))!.data
+
+export async function getStaticPaths() {
+  return (await getCollection('elections')).map((q) => ({
+    params: {
+      slug: q.id,
+    },
+  }))
+}
+---
+
+<Layout election={election}>
+  <div class="overflow-x-hidden">
+    <App election={election} client:only="vue" />
+
+    <noscript> Bitte aktivieren Sie JavaScript, um diese Seite zu nutzen. </noscript>
+  </div>
+</Layout>

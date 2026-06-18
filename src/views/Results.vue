@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import { computed, onMounted, ref } from 'vue'
 import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue'
-import type { Question } from '../content.config'
-import { partyNames, useStore } from '../store'
+import type { Election } from '../content.config'
+import { useStore } from '../store'
 import { publicUrl, shareText } from '../const'
 import ResultMatches from '../components/ResultMatches.vue'
 import ResultComparison from '../components/ResultComparison.vue'
@@ -13,10 +13,10 @@ import IconComment from '~icons/material-symbols/comment-outline-rounded'
 import IconShare from '~icons/material-symbols/ios-share-rounded'
 
 const props = defineProps<{
-  questions: Question[]
+  election: Election
 }>()
 
-const { getPartyMatches } = useStore()
+const { getPartyMatches } = useStore(props.election.slug)
 
 const canShare = ref(false)
 const shareData = {
@@ -24,7 +24,9 @@ const shareData = {
   url: publicUrl,
 }
 
-const partyMatches = computed(() => getPartyMatches(props.questions))
+const partyMatches = computed(() =>
+  getPartyMatches(props.election.questions, props.election.parties),
+)
 
 onMounted(() => {
   canShare.value = navigator.canShare?.(shareData)
@@ -63,10 +65,10 @@ const share = () => {
           <ResultMatches :partyMatches="partyMatches" />
         </TabPanel>
         <TabPanel :unmount="false">
-          <ResultComparison :questions="questions" />
+          <ResultComparison :election="election" />
         </TabPanel>
         <TabPanel :unmount="false"
-          ><ResultComments :questions="questions"
+          ><ResultComments :election="election"
         /></TabPanel>
       </TabPanels>
     </TabGroup>

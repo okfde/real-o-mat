@@ -3,7 +3,11 @@ import DownloadData from '../components/DownloadData.vue'
 import Content from '../layouts/Content.astro'
 import { getCollection } from 'astro:content'
 
-const questions = (await getCollection('questions')).map((q) => q.data)
+const elections = (await getCollection('elections'))
+  .map((election) => election.data)
+  .sort((a, b) => b.date.getTime() - a.date.getTime())
+
+const dateFormat = new Intl.DateTimeFormat('de-DE', { dateStyle: 'medium' })
 ---
 
 <Content title="Methodik">
@@ -214,7 +218,28 @@ const questions = (await getCollection('questions')).map((q) => q.data)
     >.
   </p>
 
-  <DownloadData questions={questions} client:only="vue" />
+  <table class="border-collapse my-4">
+    <thead>
+      <tr>
+        <th class="text-start">Datum</th>
+        <th class="text-start">Wahl</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        elections.map((election) => (
+          <tr>
+            <td>{dateFormat.format(election.date)}</td>
+            <td>{election.title}</td>
+            <td>
+              <DownloadData election={election} client:only="vue" />
+            </td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
 
   <h3>Team</h3>
 

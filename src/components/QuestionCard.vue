@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, onMounted, useTemplateRef, nextTick } from 'vue'
 import { answerOptions, useStore } from '../store'
-import type { Answer, Question } from '../content.config'
+import type { Answer, Election, Question } from '../content.config'
 import AnswerIndicator from './AnswerIndicator.vue'
 import AnswerButton from './AnswerButton.vue'
 import IconForward from '~icons/material-symbols/arrow-forward'
@@ -11,6 +11,7 @@ import IconRight from '~icons/material-symbols/check-rounded'
 import IconEdit from '~icons/material-symbols/edit-rounded'
 
 const props = defineProps<{
+  election: Election
   questionsCount: number
   currentQuestionIndex: number
   currentQuestionProgress: number
@@ -25,7 +26,7 @@ defineEmits<{
   (e: 'nextQuestion'): void
 }>()
 
-const { answers, deleteAnswer } = useStore()
+const { answers, deleteAnswer } = useStore(props.election.slug)
 
 const buttonContainer = useTemplateRef<HTMLDivElement>('button-container')
 

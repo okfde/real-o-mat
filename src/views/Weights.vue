@@ -1,22 +1,22 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import type { Question } from '../content.config'
+import type { Election, Question } from '../content.config'
 import IconForward from '~icons/material-symbols/arrow-forward'
 import { useStore } from '../store'
 
 const props = defineProps<{
-  questions: Question[]
+  election: Election
 }>()
 
 const emit = defineEmits(['done', 'previous'])
 
-const { answers, answerCount } = useStore()
+const { answers, answerCount } = useStore(props.election.slug)
 
 const sortedAnswers = computed(() => {
   return Object.values(answers.value)
     .map((answer) => ({
       ...answer,
-      question: props.questions.find((q) => q.id === answer.questionId)!,
+      question: props.election.questions.find((q) => q.id === answer.questionId)!,
     }))
     .sort((a, b) => a.question.index - b.question.index)
 })

@@ -7,6 +7,12 @@ pnpm install
 pnpm dev
 ```
 
+## Update data from nocoDB
+
+```bash
+pnpx ts-node src/updateData.ts
+```
+
 ## Building for production
 
 ```bash
