@@ -1,10 +1,17 @@
 <script lang="ts" setup>
-import type { Answer, Party, Question } from '../content.config'
-import { useStore, parties, partyNames, answerOptions } from '../store'
+import type { Answer, Election, Party, Question } from '../content.config'
+import { useStore, answerOptions } from '../store'
 import AnswerIndicator from '../components/AnswerIndicator.vue'
-import { onMounted, ref, useTemplateRef } from 'vue'
+import { computed, onMounted, ref, useTemplateRef } from 'vue'
 
-const { answers } = useStore()
+const props = defineProps<{
+  election: Election
+}>()
+
+const questions = computed(() => props.election.questions)
+const parties = computed(() => props.election.parties)
+
+const { answers } = useStore(props.election.slug)
 
 const tableContainer = useTemplateRef<HTMLTableElement>('table-container')
 const tableScroll = ref(0)
@@ -15,12 +22,8 @@ onMounted(() => {
   })
 })
 
-defineProps<{
-  questions: Question[]
-}>()
-
 const getPartyAnswer = (question: Question, party: Party): Answer | undefined =>
-  question.answers.find((a) => a.party === party)?.answer
+  question.answers.find((a) => a.party === party.slug)?.answer
 </script>
 
 <template>
@@ -38,8 +41,8 @@ const getPartyAnswer = (question: Question, party: Party): Answer | undefined =>
         <tr>
           <th class="text-start">These</th>
           <th class="text-center">Ihre Position</th>
-          <th class="text-center" v-for="party in partyNames" :key="party">
-            {{ party }}
+          <th class="text-center" v-for="party in parties" :key="party.slug">
+            {{ party.name }}
           </th>
         </tr>
       </thead>
@@ -49,7 +52,7 @@ const getPartyAnswer = (question: Question, party: Party): Answer | undefined =>
           <td class="text-center">
             <AnswerIndicator :answer="answers[question.id]?.answer ?? '/'" />
           </td>
-          <td class="text-center" v-for="party in parties" :key="party">
+          <td class="text-center" v-for="party in parties" :key="party.slug">
             <AnswerIndicator
               v-if="getPartyAnswer(question, party)"
               :answer="getPartyAnswer(question, party)!"

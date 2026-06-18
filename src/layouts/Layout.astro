@@ -8,10 +8,11 @@ import Favicon from '../assets/favicon.png'
 import OgImage from '../assets/og-image.jpg'
 import GradientBackground from '../components/GradientBackground.astro'
 import { shareText, publicUrl } from '../const'
+import type { Election } from '../content.config'
 
 interface Props {
   title?: string
-  isApp?: boolean
+  election?: Election
 }
 ---
 
@@ -34,21 +35,12 @@ interface Props {
 
   <body class="bg-purple-50">
     <!-- Matomo Image Tracker-->
-    {
-      import.meta.env.PROD && (
-        <img
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://traffic.okfn.de/matomo.php?idsite=58&rec=1"
-          class="absolute -z-10"
-          alt=""
-        />
-      )
-    }
+    {import.meta.env.PROD && <img referrerpolicy="no-referrer-when-downgrade" src="https://traffic.okfn.de/matomo.php?idsite=58&rec=1" class="absolute -z-10" alt="" />}
 
     <GradientBackground />
 
     <div class="flex flex-col min-h-screen pb-12">
-      <SiteHeader isApp={!!Astro.props.isApp} client:load />
+      <SiteHeader election={Astro.props.election} client:load />
 
       <main class="container mx-auto px-4 z-10 flex-1">
         <slot />
@@ -64,9 +56,7 @@ interface Props {
                 <img src={logo.src} alt="Ein Projekt von FragDenStaat" />
               </a>
             </div>
-            <ul
-              class="flex flex-col items-center md:flex-row gap-4 max-md:mt-8 md:gap-12 md:ms-auto"
-            >
+            <ul class="flex flex-col items-center md:flex-row gap-4 max-md:mt-8 md:gap-12 md:ms-auto">
               <li>
                 <a href="/methodik/">Methodik</a>
               </li>
@@ -74,9 +64,7 @@ interface Props {
                 <a href="/faq/">FAQ</a>
               </li>
               <li>
-                <a href="https://fragdenstaat.de/impressum" target="_blank">
-                  Impressum
-                </a>
+                <a href="https://fragdenstaat.de/impressum" target="_blank"> Impressum </a>
               </li>
               <li>
                 <a href="/datenschutz"> Datenschutz </a>

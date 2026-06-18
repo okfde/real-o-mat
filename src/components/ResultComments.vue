@@ -1,15 +1,22 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
-import type { Question } from '../content.config'
+import type { Election } from '../content.config'
 import IconBack from '~icons/material-symbols/arrow-back'
 import IconForward from '~icons/material-symbols/arrow-forward'
 import IconChevron from '~icons/material-symbols/keyboard-arrow-down-rounded'
-import { partyNames } from '../store'
+import { partyMap } from '../store'
+
+const props = defineProps<{
+  election: Election
+}>()
+
+const questions = computed(() => props.election.questions)
+const partyBySlug = computed(() => partyMap(props.election.parties))
 
 const currentQuestionIndex = ref(0)
 const currentQuestion = computed(
-  () => props.questions[currentQuestionIndex.value],
+  () => questions.value[currentQuestionIndex.value],
 )
 
 const transitionName = ref<string | undefined>('slide')
@@ -24,14 +31,10 @@ const previousQuestion = () => {
 const nextQuestion = () => {
   transitionName.value = 'slide'
 
-  if (currentQuestionIndex.value < props.questions.length - 1) {
+  if (currentQuestionIndex.value < questions.value.length - 1) {
     currentQuestionIndex.value++
   }
 }
-
-const props = defineProps<{
-  questions: Question[]
-}>()
 </script>
 
 <template>
@@ -61,7 +64,7 @@ const props = defineProps<{
           @change="transitionName = undefined"
         >
           <option
-            v-for="(question, index) in props.questions"
+            v-for="(question, index) in questions"
             :key="index"
             :value="index"
           >
@@ -72,7 +75,7 @@ const props = defineProps<{
       <button
         @click="nextQuestion"
         class="btn-text justify-self-end"
-        :disabled="currentQuestionIndex === props.questions.length - 1"
+        :disabled="currentQuestionIndex === questions.length - 1"
       >
         Weiter
         <IconForward aria-hidden="true" class="me-1" />
@@ -96,7 +99,7 @@ const props = defineProps<{
               class="flex w-full items-center justify-between rounded bg-purple-100 px-4 py-2 outline-none focus:ring-3 focus:ring-purple-600/50 motion-safe:transition"
               :class="{ 'rounded-b-none': open }"
             >
-              <h4 class="text-lg">{{ partyNames[party] }}</h4>
+              <h4 class="text-lg">{{ partyBySlug.get(party)?.name }}</h4>
               <IconChevron
                 aria-hidden="true"
                 class="h-5 w-5 transform text-purple-900 motion-safe:transition-transform"
