@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import ResultShare from './ResultShare.vue'
+
 defineProps<{
   partyMatches: { party: string; score: number; percentage: number }[]
 }>()
@@ -17,10 +19,10 @@ defineProps<{
             <div class="flex-1">
               <div class="overflow-hidden rounded-full bg-white">
                 <div
-                  class="progress-result h-3 bg-purple-900"
-                  :style="{
-                    width: `${percentage}%`,
-                  }"
+                class="progress-result h-3 bg-purple-900"
+                :style="{
+                  width: `${percentage}%`,
+                }"
                 />
               </div>
             </div>
@@ -28,6 +30,9 @@ defineProps<{
           </dd>
         </template>
       </dl>
+    </div>
+    <div class="mt-8">
+      <ResultShare :partyMatches="partyMatches" />
     </div>
   </div>
 </template>
