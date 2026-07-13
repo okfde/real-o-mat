@@ -3,7 +3,7 @@
 
 import "dotenv/config";
 import fs from "fs/promises";
-import yaml from "js-yaml";
+import * as yaml from "js-yaml";
 import util from "util";
 const NOCODB_URL = process.env.NOCODB_URL!;
 
