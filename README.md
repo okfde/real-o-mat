@@ -10,7 +10,7 @@ pnpm dev
 ## Update data from nocoDB
 
 ```bash
-pnpx ts-node src/updateData.ts
+pnpm update-data
 ```
 
 ## Building for production
@@ -18,6 +18,14 @@ pnpx ts-node src/updateData.ts
 ```bash
 pnpm build
 ```
+
+## Testing
+
+```bash
+pnpm run test
+```
+
+
 
 ## License
 
