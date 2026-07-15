@@ -1,5 +1,6 @@
 import { defineCollection, z } from 'astro:content'
 import { file, glob } from 'astro/loaders'
+import { TESTING } from 'astro:env/server'
 
 export const answerSchema = z.enum([
   'nicht weit genug',
@@ -54,7 +55,7 @@ export type FAQItem = z.infer<typeof faqItemSchema>
 // })
 
 const elections = defineCollection({
-  loader: glob({ base: 'src/data/elections/', pattern: '*.yaml' }),
+  loader: glob({ base: TESTING ? 'tests/fixtures/' : 'src/data/elections/', pattern: '*.yaml' }),
   schema: electionSchema,
 })
 
