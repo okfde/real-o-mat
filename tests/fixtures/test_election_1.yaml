@@ -1,0 +1,110 @@
+title: Test Election 1
+slug: test_election_1
+date: '2026-09-20'
+archived: false
+questions:
+  - id: question-0
+    index: 0
+    category: Arbeit
+    thesis: >-
+      These 1
+    answers:
+      - party: party1
+        answer: richtig
+        comment: >-
+          Comment <a href="https://example.com" target="_blank" rel="noopener noreferrer">Example</a>
+      - party: party2
+        answer: nicht weit genug
+        comment: >-
+          Comment
+  - id: question-1
+    index: 1
+    category: Energie
+    thesis: >-
+      These 2
+    answers:
+      - party: party1
+        answer: richtig
+        comment: >-
+          Comment
+      - party: party2
+        answer: zu weit
+        comment: >-
+          Comment
+  - id: question-2
+    index: 2
+    category: Landwirtschaft
+    thesis: >-
+      These 3
+    answers:
+      - party: party1
+        answer: zu weit
+        comment: >-
+          Comment
+      - party: party2
+        answer: zu weit
+        comment: >-
+          Comment
+      - party: party3
+        answer: zu weit
+        comment: >-
+          Comment
+      - party: party4
+        answer: richtig
+        comment: >-
+          Comment
+  - id: question-3
+    index: 3
+    category: Wirtschaft
+    thesis: >-
+      These 4
+    answers:
+      - party: party1
+        answer: zu weit
+        comment: >-
+          Comment
+      - party: party4
+        answer: richtig
+        comment: >-
+          Comment
+  - id: question-4
+    index: 4
+    category: Finanzen
+    thesis: >-
+      These 5
+    answers:
+      - party: party1
+        answer: zu weit
+        comment: >-
+          Comment
+      - party: party4
+        answer: richtig
+        comment: >-
+          Comment
+  - id: question-5
+    index: 5
+    category: Finanzen
+    thesis: >-
+      These 6
+    answers:
+      - party: party1
+        answer: zu weit
+        comment: >-
+          Comment
+      - party: party4
+        answer: richtig
+        comment: >-
+          Comment
+parties:
+  - name: Party 1
+    slug: party1
+    color: '#ff0000'
+  - name: Party 2
+    slug: party2
+    color: '#8888ff'
+  - name: Party 3
+    slug: party3
+    color: '#ffff00'
+  - name: Party 4
+    slug: party4
+    color: '#ffffff'

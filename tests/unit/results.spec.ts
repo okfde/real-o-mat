@@ -1,6 +1,7 @@
 import { expect, test } from 'vitest'
 import type { Party, Question } from '../../src/content.config'
 import { useStore, type UserPosition } from '../../src/store'
+import { getShareResultText } from '../../src/share'
 
 const parties: Party[] = [
   { name: 'SPD', slug: 'spd', color: '#ff0000' },
@@ -72,4 +73,19 @@ test('calculate correct results with weights', async () => {
   expect(matches[0].percentage).toBe(50)
   expect(matches[1].party).toBe('Die Linke')
   expect(matches[1].percentage).toBe(50)
+})
+
+test('build share result text with emoji bars', () => {
+  const text = getShareResultText([
+    { party: 'Partei 1', percentage: 100 },
+    { party: 'Partei 2', percentage: 67 },
+    { party: 'Partei 3', percentage: 33 },
+    { party: 'Partei 4', percentage: 0 },
+
+  ])
+
+  expect(text).toContain('🟪🟪🟪🟪🟪🟪🟪🟪 100% Partei 1')
+  expect(text).toContain('🟪🟪🟪🟪🟪⬜⬜⬜ 67% Partei 2')
+  expect(text).toContain('🟪🟪🟪⬜⬜⬜⬜⬜ 33% Partei 3')
+  expect(text).toContain('⬜⬜⬜⬜⬜⬜⬜⬜ 0% Partei 4')
 })

@@ -8,7 +8,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "update-data": "tsx src/updateData.ts",
-    "test": "pnpm run build && pnpm run test:unit && pnpm run test:e2e",
+    "test": "pnpm run build --mode testing && pnpm run test:unit && pnpm run test:e2e",
     "test:unit": "vitest",
     "test:e2e": "playwright test",
     "test:e2e:headed": "playwright test --headed"
