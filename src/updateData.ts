@@ -48,7 +48,18 @@ async function fetchTable(url: string) {
   const partySlug = (party: any) =>
     party.fields.Title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 
+  // delete all yaml files in data/elections
+  const electionFiles = await fs.readdir('./src/data/elections');
+  for (const file of electionFiles) {
+    if (file.endsWith('.yaml')) {
+      await fs.unlink(`./src/data/elections/${file}`);
+    }
+  }
+
   for (const election of elections) {
+
+    if (!election.fields.Veröffentlicht) continue;
+
     const electionQuestions = questions.filter((q) => q.fields.Wahl.id === election.id).map((question, index) => {
       return {
         id: `question-${index}`,
