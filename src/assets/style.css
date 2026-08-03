@@ -78,6 +78,7 @@ h2 {
 }
 
 @media (prefers-reduced-motion: no-preference) {
+
   .slide-enter-active,
   .slide-back-enter-active {
     transition:

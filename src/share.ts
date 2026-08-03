@@ -17,5 +17,5 @@ export function getShareResultText(
       shareResultEmojiEmpty.repeat(barCells - filled)
     return `${bar} ${percentage}% ${party}`
   })
-  return `${shareResultTitle}\n\n${lines.join('\n')}\n\n${publicUrl}`
+  return `${shareResultTitle}\n\n${lines.join('\n')}`
 }
