@@ -40,5 +40,5 @@ jobs:
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
           git add src/data/elections
-          git commit -m "🍱 Update election data [skip ci]"
+          git diff-index --quiet HEAD || git commit -m "🍱 Update election data [skip ci]" # only commit if there are changes
           git push
