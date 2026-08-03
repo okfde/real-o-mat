@@ -7,7 +7,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "update-data": "tsx src/updateData.ts",
+    "update-data": "node src/updateData.ts",
     "test": "pnpm run build --mode testing && pnpm run test:unit && pnpm run test:e2e",
     "test:unit": "vitest",
     "test:e2e": "playwright test",
@@ -38,7 +38,6 @@
     "postcss": "^8.5.19",
     "prettier": "^3.9.5",
     "prettier-plugin-tailwindcss": "^0.8.0",
-    "tsx": "^4.23.1",
     "typescript": "^7.0.2",
     "vitest": "^4.1.10"
   },
