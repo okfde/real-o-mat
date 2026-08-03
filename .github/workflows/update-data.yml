@@ -13,7 +13,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  update-data:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -40,5 +40,5 @@ jobs:
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
           git add src/data/elections
-          git commit -m "🍱 Update election data"
+          git commit -m "🍱 Update election data [skip ci]"
           git push
