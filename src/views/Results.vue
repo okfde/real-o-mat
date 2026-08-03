@@ -11,6 +11,7 @@ import IconChart from '~icons/material-symbols/bar-chart-4-bars-rounded'
 import IconScale from '~icons/material-symbols/balance-rounded'
 import IconComment from '~icons/material-symbols/comment-outline-rounded'
 import IconShare from '~icons/material-symbols/ios-share-rounded'
+import IconHeart from '~icons/material-symbols/favorite'
 
 const props = defineProps<{
   election: Election
@@ -40,7 +41,7 @@ const share = () => {
 <template>
   <div>
     <TabGroup>
-      <TabList class="flex space-x-1 rounded-t-lg bg-primary-purple/30 p-1">
+      <TabList class="flex space-x-2 rounded-t-lg mb-2">
         <Tab as="template" v-slot="{ selected }">
           <button class="tab-button" :class="{ selected: selected }">
             <IconChart aria-hidden="true" />
@@ -67,18 +68,22 @@ const share = () => {
         <TabPanel :unmount="false">
           <ResultComparison :election="election" />
         </TabPanel>
-        <TabPanel :unmount="false"
-          ><ResultComments :election="election"
-        /></TabPanel>
+        <TabPanel :unmount="false">
+          <ResultComments :election="election" />
+        </TabPanel>
       </TabPanels>
     </TabGroup>
 
     <Teleport to="main" v-if="canShare">
-      <div class="sticky inset-x-0 bottom-12 z-20 mt-12 flex justify-center">
-        <button class="btn btn-lg" @click="share">
+      <div class="sticky inset-x-0 bottom-12 z-20 mt-12 flex max-md:flex-col max-md:items-center gap-4 justify-center">
+        <button class="btn btn-lg inline" @click="share">
           <IconShare aria-hidden="true" class="me-1" />
           Teile den Real-O-Mat!
         </button>
+        <a class="btn btn-lg inline" href="//fragdenstaat.de/spenden/?pk_campaign=realomat" target="_blank">
+          <IconHeart aria-hidden="true" class="me-1" />
+          Jetzt spenden!
+        </a>
       </div>
     </Teleport>
   </div>
@@ -88,9 +93,9 @@ const share = () => {
 @reference "../assets/style.css";
 
 .tab-button {
-  @apply flex w-full flex-1 flex-col items-center justify-center py-2 md:flex-row;
-  @apply rounded border-2 border-transparent bg-transparent text-xs text-white md:text-xl;
-  @apply duration-200 outline-none focus:ring-3 focus:ring-purple-900 motion-safe:transition;
+  @apply flex w-full flex-1 flex-col items-center justify-center py-3 md:flex-row;
+  @apply rounded inset-ring-2 inset-ring-transparent bg-transparent text-xs text-purple-800 md:text-xl;
+  @apply duration-200 outline-none focus:inset-ring-4 focus:inset-ring-purple-900 motion-safe:transition;
 }
 
 .tab-button:deep(svg) {
@@ -102,6 +107,6 @@ const share = () => {
 }
 
 .tab-button:not(.selected) {
-  @apply border-white;
+  @apply inset-ring-purple-800;
 }
 </style>
