@@ -1,0 +1,42 @@
+name: Update data in repo
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: 'update-data'
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install
+      - name: Build
+        run: pnpm run update-data
+        env:
+          NOCODB_ELECTIONS_URL: ${{ secrets.NOCODB_ELECTIONS_URL }}
+          NOCODB_QUESTIONS_URL: ${{ secrets.NOCODB_QUESTIONS_URL }}
+          NOCODB_ANSWERS_URL: ${{ secrets.NOCODB_ANSWERS_URL }}
+          NOCODB_PARTIES_URL: ${{ secrets.NOCODB_PARTIES_URL }}
+          NOCODB_TOKEN: ${{ secrets.NOCODB_TOKEN }}
+      - name: Commit data
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git add src/data/elections
+          git commit -m "🍱 Update election data"
+          git push
