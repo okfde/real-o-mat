@@ -1,0 +1,238 @@
+title: Bundestagswahl 2025
+slug: btw25
+date: '2025-02-23'
+archived: true
+questions:
+  - id: question-0
+    index: 0
+    category: Arbeit
+    thesis: >-
+      Bürgergeldempfänger*innen, die wiederholt eine existenzsichernde Arbeit
+      ablehnen, soll für zwei Monate der komplette Regelsatz des Bürgergelds
+      gestrichen werden.
+    answers:
+      - party: spd
+        answer: richtig
+        comment: >-
+          Die SPD-Fraktion stimmt dem <a
+          href="https://dserver.bundestag.de/btd/20/099/2009999.pdf"
+          target="_blank" rel="noopener noreferrer">Gesetzentwurf</a> zu. Mit
+          den Sanktionen beim Bürgergeld solle auch der <a
+          href="https://dserver.bundestag.de/btd/20/101/2010150.pdf"
+          target="_blank" rel="noopener noreferrer">Bundeshaushalt entlastet
+          werden</a>. Die Maßnahme solle aber zunächst auf zwei Jahre befristet
+          und dann ihre Wirkung geprüft werden. Die SPD betont, dass es zwar nur
+          wenige Menschen gäbe, die sich einer zumutbaren Arbeit komplett
+          verweigern, an dieser Stelle zu handeln sei jedoch eine <a
+          href="https://dserver.bundestag.de/btp/20/20146.pdf#P.18570"
+          target="_blank" rel="noopener noreferrer">Frage der Gerechtigkeit</a>.
+      - party: cdu-csu
+        answer: nicht weit genug
+        comment: >-
+          Die Unionsfraktion lehnt den <a
+          href="https://dserver.bundestag.de/btd/20/099/2009999.pdf"
+          target="_blank" rel="noopener noreferrer">Gesetzentwurf</a> ab. Zwar
+          gehe die <a
+          href="https://dserver.bundestag.de/btp/20/20146.pdf#P.18568"
+          target="_blank" rel="noopener noreferrer">Kehrtwende beim Bürgergeld
+          in die richtige Richtung</a>, das Bürgergeld müsse jedoch komplett neu
+          aufgestellt und das Lohnabstandsgebot wiederhergestellt werden.
+  - id: question-1
+    index: 1
+    category: Energie
+    thesis: >-
+      Für besseren Klimaschutz soll jede neu installierte Heizung in
+      Neubaugebieten zu mindestens 65 Prozent mit erneuerbaren Energien
+      betrieben werden.
+    answers:
+      - party: spd
+        answer: richtig
+        comment: >-
+          Die SPD-Fraktion stimmt dem <a
+          href="https://dserver.bundestag.de/btd/20/068/2006875.pdf"
+          target="_blank" rel="noopener noreferrer">Gesetzentwurf</a> zu. Er sei
+          ein <a
+          href="https://www.spdfraktion.de/system/files/documents/position-bezahlbares-wohnen-zukunftsgerechtes-bauen.pdf"
+          target="_blank" rel="noopener noreferrer">wichtiger Beitrag zur
+          Erreichung der Klimaziele und zur Energiewende</a>. Die verpflichtende
+          Nutzung erneuerbarer Energien bei Neubauten sei eine zentrale
+          Maßnahme, um die CO₂-Emissionen im Gebäudebereich deutlich zu
+          reduzieren.
+      - party: cdu-csu
+        answer: zu weit
+        comment: >-
+          Die Unionsfraktion lehnt den <a
+          href="https://dserver.bundestag.de/btd/20/068/2006875.pdf"
+          target="_blank" rel="noopener noreferrer">Gesetzentwurf</a> ab. Sie
+          unterstütze das Ziel, klimaneutral zu heizen, allerdings machen die
+          Ampelfraktionen im Gesetzentwurf keine Angaben zur genauen
+          CO2-Einsparung, die notwendig wären, um die vorgeschlagenen <a
+          href="https://dserver.bundestag.de/btd/20/076/2007619.pdf"
+          target="_blank" rel="noopener noreferrer">Eingriffe in die
+          Eigentumsrechte der Bürger*innen zu legitimieren</a>.
+  - id: question-2
+    index: 2
+    category: Landwirtschaft
+    thesis: >-
+      Mit der Subventionierung von Agrardiesel sollen Landwirtschaftsbetriebe
+      weiter entlastet werden.
+    answers:
+      - party: spd
+        answer: zu weit
+        comment: >-
+          Die SPD-Fraktion lehnt den ersten <a
+          href="https://dserver.bundestag.de/btd/20/018/2001849.pdf"
+          target="_blank" rel="noopener noreferrer">Antrag</a> und den zweiten
+          <a href="https://dserver.bundestag.de/btd/20/043/2004307.pdf"
+          target="_blank" rel="noopener noreferrer">Antrag</a> ab. Die
+          Abschöpfung der Extragewinne von Energiekonzernen stehe im <a
+          href="https://dserver.bundestag.de/btd/20/096/2009676.pdf"
+          target="_blank" rel="noopener noreferrer">Widerspruch zu den
+          Prinzipien der Sozialen Marktwirtschaft</a>. Sie fordert stattdessen
+          eine <a href="https://dserver.bundestag.de/btp/20/20066.pdf#P.7558"
+          target="_blank" rel="noopener noreferrer">gerechtere Besteuerung von
+          Vermögen und Erbschaften</a>, um die soziale Ungleichheit zu
+          verringern. Die SPD unterstütze grundsätzlich eine Vermögensabgabe,
+          lehnt sie jedoch aufgrund politischer Realitäten in der Koalition ab
+          und fordert kreative Lösungen zur Eindämmung von Übergewinnen, um
+          soziale Gerechtigkeit und die Krisenbewältigung zu fördern
+      - party: cdu-csu
+        answer: zu weit
+        comment: >-
+          Die Unionsfraktion lehnt den ersten <a
+          href="https://dserver.bundestag.de/btd/20/018/2001849.pdf"
+          target="_blank" rel="noopener noreferrer">Antrag</a> und den zweiten
+          <a href="https://dserver.bundestag.de/btd/20/043/2004307.pdf"
+          target="_blank" rel="noopener noreferrer">Antrag</a> ab. Es gäbe <a
+          href="https://dserver.bundestag.de/btp/20/20066.pdf#P.7558"
+          target="_blank" rel="noopener noreferrer">verfassungsrechtliche
+          Bedenken</a> und praktische Probleme. Auch die zeitliche Abgrenzung
+          seien zu unkonkret und undetailliert hinsichtlich Steuersatz,
+          Freibeträge oder Geltungsbereich problematisch
+      - party: fdp
+        answer: zu weit
+        comment: >-
+          Die FDP-Fraktion lehnt den ersten <a
+          href="https://dserver.bundestag.de/btd/20/018/2001849.pdf"
+          target="_blank" rel="noopener noreferrer">Antrag</a> und den zweiten
+          <a href="https://dserver.bundestag.de/btd/20/043/2004307.pdf"
+          target="_blank" rel="noopener noreferrer">Antrag</a> ab. Eine
+          Übergewinnsteuer könne zu Fehlanreizen führen, die
+          Geschäftsaktivitäten gefährden könnten. Zudem gäbe es <a
+          href="https://dserver.bundestag.de/btd/20/024/2002450.pdf"
+          target="_blank" rel="noopener noreferrer">verfassungsrechtliche
+          Bedenken</a>. Auch eine Vermögenssteuer schaffe Rechtsunsicherheit.
+          Stattdessen ginge es vielmehr darum, <a
+          href="https://dserver.bundestag.de/btp/20/20066.pdf#P.7556"
+          target="_blank" rel="noopener noreferrer">Investitionsanreize zu
+          setzen</a>.
+      - party: die-linke
+        answer: richtig
+        comment: >-
+          Die Fraktion Die Linke stimmt dem ersten <a
+          href="https://dserver.bundestag.de/btd/20/018/2001849.pdf"
+          target="_blank" rel="noopener noreferrer">Antrag</a> und dem zweiten
+          <a href="https://dserver.bundestag.de/btd/20/043/2004307.pdf"
+          target="_blank" rel="noopener noreferrer">Antrag</a> zu. Sie betont,
+          dass eine Übergewinnsteuer rechtlich möglich sei und nach einem
+          Vorschlag der EU-Kommission erstellt worden sei, der es
+          Mitgliedstaaten<a
+          href="https://dserver.bundestag.de/btd/20/024/2002450.pdf"
+          target="_blank" rel="noopener noreferrer"> ermögliche, Zufallsgewinne
+          von Energieunternehmen</a> abzuschöpfen. Eine Vermögensabgabe sei
+          zudem angesichts der <a
+          href="https://dserver.bundestag.de/btp/20/20066.pdf#P.7550"
+          target="_blank" rel="noopener noreferrer">angespannten finanziellen
+          Lage durch die Corona-Pandemie,</a> Energiekrise und den Krieg in der
+          Ukraine notwendig, um Umverteilung und finanzielle Gerechtigkeit zu
+          schaffen. 
+  - id: question-3
+    index: 3
+    category: Wirtschaft
+    thesis: >-
+      Das deutsche Lieferkettengesetz zum Schutz von Menschenrechten und der
+      Umwelt in globalen Lieferketten soll ausgesetzt werden.
+    answers:
+      - party: spd
+        answer: zu weit
+        comment: >-
+          Die SPD-Fraktion lehnt den <a
+          href="https://dserver.bundestag.de/btd/20/117/2011752.pdf"
+          target="_blank" rel="noopener noreferrer">Gesetzentwurf </a>ab. Mit
+          dem Lieferkettengesetz sei Deutschland zum Vorreiter geworden, um
+          Menschenrechte international zu stärken soll. Eine Aussetzung würde zu
+          einem internationalen Glaubwürdigkeitsverlust führen und <a
+          href="https://dserver.bundestag.de/btd/20/130/2013044.pdf"
+          target="_blank" rel="noopener noreferrer">sei nicht zielführend
+      - party: die-linke
+        answer: zu weit
+        comment: >-
+          Die Gruppe Die Linke lehnt den <a
+          href="https://dserver.bundestag.de/btd/20/117/2011752.pdf"
+          target="_blank" rel="noopener noreferrer">Gesetzentwurf</a> ab. Eine
+          Aufhebung des deutschen Lieferkettengesetzes ohne beschleunigte
+          Umsetzung der europäischen Richtlinien führe zu einem <a
+          href="https://dserver.bundestag.de/btd/20/130/2013044.pdf"
+          target="_blank" rel="noopener noreferrer">bürokratischen Chaos und
+          einem rechtsfreien Raum</a>, was gesetzestreue Unternehmen
+          benachteilige.
+  - id: question-4
+    index: 4
+    category: Finanzen
+    thesis: >-
+      Um gesellschaftliche Herausforderungen zu bewältigen, sollen die
+      vermögendsten Privatpersonen und Unternehmen einmalige Sonderabgaben
+      leisten.
+    answers:
+      - party: spd
+        answer: zu weit
+        comment: >-
+          Die SPD-Fraktion lehnt den ersten <a
+          href="https://dserver.bundestag.de/btd/20/018/2001849.pdf"
+          target="_blank" rel="noopener noreferrer">Antrag</a> und den zweiten
+          <a href="https://dserver.bundestag.de/btd/20/043/2004307.pdf"
+          target="_blank" rel="noopener noreferrer">Antrag</a> ab. Die
+          Abschöpfung der Extragewinne von Energiekonzernen stehe im <a
+          href="https://dserver.bundestag.de/btd/20/096/2009676.pdf"
+          target="_blank" rel="noopener noreferrer">Widerspruch zu den
+          Prinzipien der Sozialen Marktwirtschaft</a>. Sie fordert stattdessen
+          eine <a href="https://dserver.bundestag.de/btp/20/20066.pdf#P.7558"
+          target="_blank" rel="noopener noreferrer">gerechtere Besteuerung von
+          Vermögen und Erbschaften</a>, um die soziale Ungleichheit zu
+          verringern. Die SPD unterstütze grundsätzlich eine Vermögensabgabe,
+          lehnt sie jedoch aufgrund politischer Realitäten in der Koalition ab
+          und fordert kreative Lösungen zur Eindämmung von Übergewinnen, um
+          soziale Gerechtigkeit und die Krisenbewältigung zu fördern
+      - party: die-linke
+        answer: richtig
+        comment: >-
+          Die Fraktion Die Linke stimmt dem ersten <a
+          href="https://dserver.bundestag.de/btd/20/018/2001849.pdf"
+          target="_blank" rel="noopener noreferrer">Antrag</a> und dem zweiten
+          <a href="https://dserver.bundestag.de/btd/20/043/2004307.pdf"
+          target="_blank" rel="noopener noreferrer">Antrag</a> zu. Sie betont,
+          dass eine Übergewinnsteuer rechtlich möglich sei und nach einem
+          Vorschlag der EU-Kommission erstellt worden sei, der es
+          Mitgliedstaaten<a
+          href="https://dserver.bundestag.de/btd/20/024/2002450.pdf"
+          target="_blank" rel="noopener noreferrer"> ermögliche, Zufallsgewinne
+          von Energieunternehmen</a> abzuschöpfen. Eine Vermögensabgabe sei
+          zudem angesichts der <a
+          href="https://dserver.bundestag.de/btp/20/20066.pdf#P.7550"
+          target="_blank" rel="noopener noreferrer">angespannten finanziellen
+          Lage durch die Corona-Pandemie,</a> Energiekrise und den Krieg in der
+          Ukraine notwendig, um Umverteilung und finanzielle Gerechtigkeit zu
+          schaffen.
+parties:
+  - name: SPD
+    slug: spd
+    color: '#ff0000'
+  - name: CDU/CSU
+    slug: cdu-csu
+    color: '#8888ff'
+  - name: FDP
+    slug: fdp
+    color: '#ffff00'
+  - name: Die Linke
+    slug: die-linke
+    color: '#ffffff'
