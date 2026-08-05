@@ -7,6 +7,7 @@ import { publicUrl, shareText } from '../const'
 import ResultMatches from '../components/ResultMatches.vue'
 import ResultComparison from '../components/ResultComparison.vue'
 import ResultComments from '../components/ResultComments.vue'
+import FurtherInfo from '../components/FurtherInfo.vue'
 import IconChart from '~icons/material-symbols/bar-chart-4-bars-rounded'
 import IconScale from '~icons/material-symbols/balance-rounded'
 import IconComment from '~icons/material-symbols/comment-outline-rounded'
@@ -73,14 +74,14 @@ const share = () => {
         </TabPanel>
       </TabPanels>
     </TabGroup>
-
+    <FurtherInfo />
     <Teleport to="main" v-if="canShare">
-      <div class="sticky inset-x-0 bottom-12 z-20 mt-12 flex max-md:flex-col max-md:items-center gap-4 justify-center">
-        <button class="btn btn-lg inline" @click="share">
+      <div class="inset-x-0 bottom-12 z-20 mt-12 flex max-md:flex-col max-md:items-center gap-4 justify-center">
+        <button class="btn btn-lg inline shadow-md" @click="share">
           <IconShare aria-hidden="true" class="me-1" />
           Teile den Real-O-Mat!
         </button>
-        <a class="btn btn-lg inline" href="//fragdenstaat.de/spenden/?pk_campaign=realomat" target="_blank">
+        <a class="btn btn-lg inline shadow-md" href="//fragdenstaat.de/spenden/?pk_campaign=realomat" target="_blank">
           <IconHeart aria-hidden="true" class="me-1" />
           Jetzt spenden!
         </a>

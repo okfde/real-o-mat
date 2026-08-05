@@ -18,12 +18,9 @@ defineProps<{
           <dd class="flex items-center space-x-4">
             <div class="flex-1">
               <div class="overflow-hidden rounded-full bg-white">
-                <div
-                class="progress-result h-3 bg-purple-900"
-                :style="{
+                <div class="progress-result h-3 bg-purple-900" :style="{
                   width: `${percentage}%`,
-                }"
-                />
+                }" />
               </div>
             </div>
             <span>{{ percentage }}%</span>
@@ -31,7 +28,7 @@ defineProps<{
         </template>
       </dl>
     </div>
-    <div class="mt-8">
+    <div class="mt-8 max-md:text-center">
       <ResultShare :partyMatches="partyMatches" />
     </div>
   </div>
