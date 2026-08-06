@@ -36,6 +36,7 @@ async function fetchTable(url: string) {
 //   - id: question-0
 //     index: 0
 //     thesis: 'BTW Bürgergeldempfänger*innen, die wiederholt eine existenzsichernde Arbeit ablehnen, soll für zwei Monate der komplette Regelsatz des Bürgergelds gestrichen werden. '
+//     info: Further info
 //     category: Arbeit
 //     answers:
 //       - party: spd
@@ -87,6 +88,7 @@ async function fetchTable(url: string) {
         index,
         category: question.fields.Kategorie,
         thesis: question.fields.Title,
+        info: question.fields.Infos,
         answers: answers.filter((a) => a.fields.These.id === question.id).map((answer) => {
           return {
             party: partySlug(parties.find((p) => p.id === answer.fields.Partei.id)),

@@ -12,6 +12,9 @@ export type UserPosition = {
   questionId: string
 }
 
+const sample = <T,>(items: T[]): T | undefined =>
+  items[Math.floor(Math.random() * items.length)]
+
 export const answerOptions = {
   'zu weit': {
     label: 'nein, geht mir zu weit',
@@ -95,6 +98,19 @@ export function useStore(slug: string) {
       .sort((a, b) => b.score - a.score)
   }
 
+  const getFurtherInfo = (questions: Question[]) => {
+    const answeredQuestionsWithInfo = questions.filter(
+      (question) => answers.value[question.id] && question.info?.trim(),
+    )
+    const weightedQuestionsWithInfo = answeredQuestionsWithInfo.filter(
+      (question) => answers.value[question.id].weight === 2,
+    )
+    const sampledQuestion =
+      sample(weightedQuestionsWithInfo) || sample(answeredQuestionsWithInfo)
+
+    return sampledQuestion?.info?.trim()
+  }
+
   return {
     answers,
     deleteAnswer,
@@ -104,5 +120,6 @@ export function useStore(slug: string) {
     currentStage,
     viewTransition,
     getPartyMatches,
+    getFurtherInfo,
   }
 }
