@@ -1,87 +1,41 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import type { Election } from '../content.config'
+import { useStore } from '../store'
 
 import FdsLogo from '../assets/fragdenstaat.svg'
 import IconForward from '~icons/material-symbols/arrow-forward'
 
-// import { computed, onMounted, useTemplateRef, nextTick } from 'vue'
-// import { answerOptions, useStore } from '../store.ts'
-// import type { Answer, Election, Question } from '../content.config.ts'
-// import AnswerIndicator from './AnswerIndicator.vue'
-// import AnswerButton from './AnswerButton.vue'
-// import IconForward from '~icons/material-symbols/arrow-forward'
-// import IconLess from '~icons/material-symbols/stat-minus-2-rounded'
-// import IconMore from '~icons/material-symbols/stat-2-rounded'
-// import IconRight from '~icons/material-symbols/check-rounded'
-// import IconEdit from '~icons/material-symbols/edit-rounded'
+const props = defineProps<{
+  election: Election
+}>()
 
-// const props = defineProps<{
-//   election: Election
-//   questionsCount: number
-//   currentQuestionIndex: number
-//   currentQuestionProgress: number
-//   currentQuestion: Question
-//   transitionName?: string
-//   compact?: boolean
-// }>()
+const { getFurtherInfo } = useStore(props.election.slug)
 
-// defineEmits<{
-//   (e: 'saveAnswer', answer: Answer): void
-//   (e: 'skipQuestion'): void
-//   (e: 'nextQuestion'): void
-// }>()
+const furtherInfo = computed(() => getFurtherInfo(props.election.questions))
 
-// const { answers, deleteAnswer } = useStore(props.election.slug)
-
-// const buttonContainer = useTemplateRef<HTMLDivElement>('button-container')
-
-// const answerButtons = computed(() => {
-//   const buttons: Record<string, any> = {
-//     'zu weit': { icon: IconLess },
-//     richtig: { icon: IconRight },
-//     'nicht weit genug': { icon: IconMore },
-//   }
-
-//   for (const button in buttons) {
-//     buttons[button].disabled = !props.currentQuestion.answers.some(
-//       (a) => a.answer === button,
-//     )
-//   }
-
-//   return buttons as Record<Answer, any>
-// })
-
-// const hasAnswer = computed(
-//   () => answers.value[props.currentQuestion.id] !== undefined,
-// )
-
-// const focusFirstButton = () => {
-//   buttonContainer.value?.querySelector?.('button')?.focus()
-// }
-
-// const editAnswer = () => {
-//   deleteAnswer(props.currentQuestion.id)
-//   nextTick(focusFirstButton)
-// }
-
-// onMounted(focusFirstButton)
 </script>
 
 <template>
-  <div
+  <div v-if="furtherInfo"
     class="w-full md:w-1/2 md:-rotate-2 md:-mt-6 flex flex-col justify-between align-right bg-yellow-200 mt-6 p-4 md:p-8 md:mr-16 ml-auto shadow-lg">
     <span class="text-xl font-semibold mb-3">Mehr von FragDenStaat</span>
-    <p class="mb-5">
-      FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative Recherchen, Klagen und Community-Aktionen.
-      Du möchtest mehr über das Informationsfreiheitsgesetz erfahren? Lies jetzt weiter auf <a
-        href="https://fragdenstaat.de/artikel/klagen/2025/10/entwurf-transparenzgesetz-klage/">FragDenStaat.de</a>!
-    </p>
+    <p class="info mb-5" v-html="furtherInfo" />
     <div class="flex flex-row justify-end text-right items-center">
-      <a href="https://fragdenstaat.de" target="_blank">
+      <a href="http://fragdenstaat.de/newsletter?pk_campaign=realomat" target="_blank">
         Jetzt den
-        <img :src="FdsLogo.src" alt="Ein Projekt von FragDenStaat" class="ms-2 -mt-3 inline-block w-32" />
+        <img :src="FdsLogo.src" alt="Ein Projekt von FragDenStaat" class="ms-1 -mt-3 inline-block w-32" />
         Newsletter abonnieren!
       </a>
       <IconForward aria-hidden="true" class="ms-1 shrink-0 max-md:ms-4" />
     </div>
   </div>
 </template>
+
+<style scoped>
+@reference "../assets/style.css";
+
+.info:deep(a) {
+  @apply text-purple-600 underline hover:text-purple-700;
+}
+</style>

@@ -1,4 +1,5 @@
-import { defineCollection, z } from 'astro:content'
+import { defineCollection } from 'astro:content'
+import { z } from 'astro/zod'
 import { file, glob } from 'astro/loaders'
 import { TESTING } from 'astro:env/server'
 
@@ -28,6 +29,7 @@ const questionSchema = z.object({
   id: z.string(),
   index: z.number(),
   thesis: z.string(),
+  info: z.string().nullish(),
   category: z.string(),
   answers: z.array(positionSchema),
 })

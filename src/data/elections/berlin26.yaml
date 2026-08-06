@@ -1,0 +1,333 @@
+title: Landtagswahl Berlin
+slug: berlin26
+date: '2026-09-20'
+archived: false
+questions:
+  - id: question-0
+    index: 0
+    category: Demokratie & Institutionen
+    thesis: >-
+      Menschen aus Nicht-EU-Ländern mit festem Wohnsitz in Deutschland sollen
+      nach fünf Jahren bei Landes- und Kommunalwahlen wählen dürfen.
+    answers:
+      - party: cdu-csu
+        answer: zu weit
+        comment: >-
+          Die CDU hat den
+          [Antrag[(https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-0989.pdf)
+          der Fraktion Bündnis 90/Die Grünen und der Linken abgelehnt, da das
+          Wahlrecht für alle mit der Verfassungsordnung und den Grundprinzipien
+          der demokratischen Ordnung aus ihrer Sicht nicht [vereinbar
+          sei](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-049-wp.pdf#page=93). 
+      - party: spd
+        answer: zu weit
+        comment: >-
+          Die SPD-Fraktion hat gegen den
+          [Antrag](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-0989.pdf)
+          gestimmt. Es sei zwar keine gute Situation, dass so viele Menschen in
+          Berlin an den Wahlen nicht teilnehmen können. Die
+          [verfassungsrechtlichen Hürden seien aber zu
+          hoch](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-049-wp.pdf#page=96)
+          und die Aussichten sehr gering, dass Menschen aus Nicht-EU-Ländern
+          nach fünf Jahren in Deutschland wählen dürfen. Aus diesem Grund würde
+          die SPD [lieber Änderungen am Erteilen der
+          Staatsangehörigkeit](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-049-wp.pdf#page=96)
+          vornehmen und nicht am Wahlrecht.   
+      - party: die-linke
+        answer: richtig
+        comment: >-
+          Die Linke hat für den eigenen
+          [Antrag](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-0989.pdf)
+          gestimmt, [da 17 % der
+          Menschen](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-049-wp.pdf#page=92)
+          in Berlin von den Wahlen ausgeschlossen sind, obwohl viele davon schon
+          lange in Deutschland leben. Die Linke setze sich für "[Mehr Teilhabe,
+          mehr Gerechtigkeit, mehr Demokratie und für das Wahlrecht für
+          alle](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-049-wp.pdf#page=93)"
+          ein. 
+      - party: die-gr-nen
+        answer: richtig
+        comment: >-
+          Die Fraktion Bündnis 90/Die Grünen hat für den [eigenen
+          Antrag](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-0989.pdf)
+          gestimmt, da es ein [Demokratiedefizit
+          sei](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-049-wp.pdf#page=95),
+          dass so viele Menschen in Berlin ihren Lebensmittelpunkt haben, aber
+          nicht wählen dürfen. Sie seinen von der Politik betroffen aber [hätten
+          kein
+          Mitspracherecht](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-049-wp.pdf#page=95). 
+      - party: afd
+        answer: zu weit
+        comment: >-
+          Die AfD hat den
+          [Antrag](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-0989.pdf)
+          abgelehnt, da dieser ein "[direkter Angriff auf die Volkssouveränität
+          und unser
+          Grundgesetz](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-049-wp.pdf#page=96)"
+          sei. Die Fraktion bezeichnet den Antrag als [verfassungwidrig und
+          verfassungsfeindlich](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-049-wp.pdf#page=96). 
+  - id: question-1
+    index: 1
+    category: Mobilität
+    thesis: >-
+      Um den städtischen Raum besser zu nutzen, sollen in Berlin in Zukunft
+      weniger private Autos fahren.
+    answers: []
+  - id: question-2
+    index: 2
+    category: Wohnen
+    thesis: 'Das Land Berlin soll sich für einen bundesweiten Mietendeckel einsetzen. '
+    answers:
+      - party: cdu-csu
+        answer: zu weit
+        comment: >-
+          Die CDU-Fraktion stimmte gegen den [Antrag der
+          Linken](https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2058.pdf),
+          da der Mietendeckel eine [Fehlentscheidung der
+          Vergangenheit](https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-078-pp.pdf#page=55)
+          gewesen sei, welcher zu einer Senkung der angebotenen Wohnungen
+          geführt habe. Man solle sich stattdessen darauf fokussieren, den
+          Wohnungsbau zu fördern. 
+      - party: spd
+        answer: nicht weit genug
+        comment: >-
+          Die SPD stimmte gegen den
+          [Antrag](https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2058.pdf),
+          obwohl der Mietendeckel auf eine [Idee der
+          SPD](https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-078-pp.pdf#page=58)
+          zurückzuführen sei. Die Partei fordert [eine Länderöffnungsklausel im
+          Mietrecht](https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-078-pp.pdf#page=58),
+          damit Bundesländer mit angespannten Wohnungsmärkten handlungsfähig
+          seien, eine Reform des Mietwucherparagrafen und die Begrenzung der
+          Index-Mieten.
+      - party: die-linke
+        answer: richtig
+        comment: >-
+          Die Fraktion der Linken stimmte [für ihren eigenen
+          Antrag](https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2058.pdf),
+          da [hohe Miete die größte
+          Existenzangst](https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-078-pp.pdf#page=54)
+          für Berlinerinnen und Berliner sei und die Mieten explosionsartig
+          angestiegen seien. 
+      - party: die-gr-nen
+        answer: richtig
+        comment: >-
+          Die Fraktion der Grünen stimmte für den
+          [Antrag](https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2058.pdf),
+          da viele Menschen [mehr als ein Drittel ihres Einkommens für die
+          Miete](https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-078-pp.pdf#page=56)
+          ausgeben und es nun endlich Zeit sei, die Notbremse zu ziehen. 
+      - party: afd
+        answer: zu weit
+        comment: >-
+          Die AfD hat gegen den
+          [Antrag](https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2058.pdf)
+          der Linken gestimmt, da Berlin keinen "[verfassungswidrigen
+          Mietendeckel](https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-078-pp.pdf#page=60)"
+          brauche, sondern Entbürokratisierung. 
+  - id: question-3
+    index: 3
+    category: Demokratie & Institutionen
+    thesis: >-
+      Das Berliner Informationsfreiheitsgesetz soll durch ein Transparenzgesetz
+      ersetzt werden, das Behörden verpflichtet, wichtige Informationen und
+      Dokumente proaktiv, kostenlos und digital in einem Transparenzportal zu
+      veröffentlichen.
+    info: >-
+      FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
+      Recherchen, Klagen und Community-Aktionen. Du möchtest mehr über das
+      Informationsfreiheitsgesetz erfahren? Lies jetzt weiter auf <a
+      href="https://fragdenstaat.de/artikel/klagen/2025/10/entwurf-transparenzgesetz-klage/">FragDenStaat.de</a>!
+    answers:
+      - party: cdu-csu
+        answer: zu weit
+        comment: >-
+          Der
+          [Antrag](https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-1014.pdf)
+          für ein Berliner Transparenzgesetz wurde von der CDU-Fraktion
+          abgelehnt. Als [Gründe nannte die
+          Partei](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=59)
+          u.a. den [Schutz kritischer
+          Bereiche](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=59),
+          der im Gesetz nicht ausreichend abgebildet sei, sowie hohe
+          Personalkosten bei der Bereitstellung. 
+      - party: spd
+        answer: zu weit
+        comment: >-
+          Das [Berliner
+          Transparenzgesetz](https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-1014.pdf)
+          wurde von der SPD in seiner jetzigen Form abgelehnt, da das
+          "[Verhältnis von Informationsfreiheit und
+          Sicherheit](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=62)
+          in der vergangenen Zeit in die Richtung zu mehr Sicherheit verschoben
+          worden sei". Der Gesetzentwurf sei "[veraltet und eine
+          verhältnismäßige Änderung zum Schutz der kritischen
+          Infrastruktur](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=62)"
+          sei notwendig. 
+      - party: die-linke
+        answer: richtig
+        comment: >-
+          Die Fraktion die Linke stimmte für den [gemeinsamen
+          Antrag](https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-1014.pdf)
+          mit den Grünen damit alle, die Informationen erhalten wollen, nicht
+          mehr mühsam Anträge stellen müssen, sondern diese [zugänglich im
+          Internet
+          finden](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=58).
+      - party: die-gr-nen
+        answer: richtig
+        comment: >-
+          Die Grünen stimmten für den [gemeinsamen
+          Antrag](https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-1014.pdf)
+          mit den Linken, da das Berliner Transparenzgesetz [Ausdruck einer
+          modernen öffentlichen
+          Verwaltung](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=60)
+          sei, die Potenziale und Chancen der Digitalisierung nutze.
+      - party: afd
+        answer: /
+        comment: >-
+          Die AfD-Fraktion hat das [Berliner
+          Transparenzgesetz](https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-1014.pdf)
+          abgelehnt. Der [bürokratische
+          Aufwand](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=62)
+          hierfür würde die Verwaltung überfordern und sei damit nicht
+          praxistauglich.   
+  - id: question-4
+    index: 4
+    category: Gesellschaft
+    thesis: >-
+      Die Stadt Berlin soll sich für die Olympischen und Paralympischen Spiele
+      bewerben. 
+    answers:
+      - party: cdu-csu
+        answer: richtig
+        comment: >-
+          Die CDU stimmte für die [Volksinitiative „Die Spiele für
+          Berlin“](https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2962-1.pdf),
+          da sie darin eine "[enorme Chancen für unsere Sportmetropole, für
+          unsere Stadt
+          Berlin](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-086-wp.pdf#page=14)"
+          sieht.
+      - party: spd
+        answer: richtig
+        comment: >-
+          Die SPD stimmte für den [eigenen
+          Antrag](https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2962-1.pdf).
+          Man wollte dem Sport [mehr finanzielle Aufmerksamkeit
+          schenken](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-086-wp.pdf#page=18)
+          und die finanzielle Unterstützung für Olympia nutzen, um in Berlin
+          Sportanlagen zu sanieren.  
+      - party: die-linke
+        answer: zu weit
+        comment: >-
+          Die Linke lehnt eine [Bewerbung für die Olympischen
+          Spiele](https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2962-1.pdf)
+          ab, da man sich diese [nicht leisten
+          könne](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-086-wp.pdf#page=21).
+          Die echten Kosten würden bei solchen Projekten die geplanten deutlich
+          übersteigen und die [Kostenrechnung der
+          Landesregierung](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-076-wp.pdf#page=18)
+          enthalte nicht alle anfallenden Kostenpunkte. 
+      - party: die-gr-nen
+        answer: zu weit
+        comment: >-
+          Die Grünen lehnen eine [Bewerbung für
+          Olympia](https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2962-1.pdf)
+          ab, mit der Begründung, dass die Stadt Berlin [viele andere Probleme
+          habe](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-086-wp.pdf#page=16),
+          die gelöst werden müssen. Zudem seien die Sportstätten in Berlin in
+          einem schlechten Zustand und die [Kostenschätzung für das
+          Projekt](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-076-wp.pdf#page=11)
+          sei intransparent. 
+      - party: afd
+        answer: richtig
+        comment: >-
+          Die AfD-Fraktion stimmte für den [Antrag von CDU und
+          SPD](https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2962-1.pdf).
+          Olympia sei eine Chancem den [Sanierungsstau der Sportinfrastruktur zu
+          lösen](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-086-wp.pdf#page=23)
+          und könne Menschen begeistern und der Stadt ein [gemeinsames, endlich
+          positives
+          Ziel](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-086-wp.pdf#page=22)
+          geben. 
+  - id: question-5
+    index: 5
+    category: Innere Sicherheit
+    thesis: >-
+      Die Polizei darf Gesichter im Internet abgleichen, um nach als
+      gefährlichen geltenden Verdächtigen sowie deren Kontakt- und
+      Begleitpersonen zu suchen. 
+    answers:
+      - party: cdu-csu
+        answer: richtig
+        comment: >-
+          Die CDU stimmte für den [eigenen
+          Antrag](https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2553.pdf).
+          Das Gesetz mache [die liberale Demokratie
+
+          wehrhaft](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-076-wp.pdf#page=15)
+          gegen die bestehenden Gefahren und solle die [Sicherheit, Freiheit
+          und 
+
+          körperliche
+          Unversehrtheit](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-076-wp.pdf#page=16)
+          der Bürgerinnen und Bürger schützen.
+      - party: spd
+        answer: richtig
+        comment: >-
+          Die SPD hat für das [Gesetz zur Reform des Berliner Polizei- und
+          Ordnungsrechts](https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2553.pdf)
+          gestimmt. Die Polizei brauche [zeitgemäße
+          Instrumente](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-076-wp.pdf#page=10),
+          um ihrer Aufgabe gerecht zu werden. Man habe sich sehr genau überlegt,
+          wie man das Verhältnis zwischen dem "[Einsatz moderner Techniken und
+          der Wahrung von
+          Bürgerrechten](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-076-wp.pdf#page=11)"
+          ausgestaltet. 
+      - party: die-linke
+        answer: zu weit
+        comment: >-
+          Die Linke lehnt die
+          [Polizeireform](https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2553.pdf)
+          entschiede ab, da es kaum noch eine Kontrolle darüber gäbe, [wer im
+          polizeilichen Datenbestand
+          lande](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-076-wp.pdf#page=17)
+          und für wie lange. Es seien zwar auch einige sinnvolle Maßnahmen
+          enthalten, [viele würden aber weit über das Ziel
+          hinausschießen](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-076-wp.pdf#page=18). 
+      - party: die-gr-nen
+        answer: zu weit
+        comment: >-
+          Die Fraktion der Grünen stimmte gegen den [Gesetzentwurf von CDU und
+          SPD](https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2553.pdf).
+          Das Gesetz sei ein [Einfallstor für einen
+          Überwachsungsstaat](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-076-wp.pdf#page=11),
+          inbesondere dann, wenn Personen überwacht werden, von denen [noch
+          keine Gefahr
+          ausginge](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-076-wp.pdf#page=11). 
+      - party: afd
+        answer: richtig
+        comment: >-
+          Die AfD stimmte für die Reform des [Polizei- und
+          Ordnungsgesetzes](https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2553.pdf).
+          Die Novelle schaffe [richtige und längst überfällige
+          Befugnisse](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-076-wp.pdf#page=18)
+          für die Sicherheitskräfte, sie löse aber nicht das
+          Kriminalitätsproblem der Stadt. "[Mehr Sicherheit für Berlin bedeute
+          Remigration statt illegaler
+          Massenmigration](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-076-wp.pdf#page=20)." 
+parties:
+  - name: SPD
+    slug: spd
+    color: '#ff0000'
+  - name: CDU/CSU
+    slug: cdu-csu
+    color: '#8888ff'
+  - name: Die Grünen
+    slug: die-gr-nen
+    color: '#00ff00'
+  - name: Die Linke
+    slug: die-linke
+    color: '#ffffff'
+  - name: AfD
+    slug: afd
+    color: '#ffffff'
