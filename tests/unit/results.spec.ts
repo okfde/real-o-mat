@@ -13,6 +13,7 @@ const questions: Question[] = [
     id: 'test-1',
     index: 0,
     thesis: 'Test 1',
+    info: 'info for 1',
     category: 'Category',
     answers: [
       { party: 'spd', answer: 'zu weit' },
@@ -23,6 +24,7 @@ const questions: Question[] = [
     id: 'test-2',
     index: 1,
     thesis: 'Test 2',
+    info: 'info for 2',
     category: 'Category',
     answers: [
       { party: 'spd', answer: 'nicht weit genug' },
@@ -73,6 +75,45 @@ test('calculate correct results with weights', async () => {
   expect(matches[0].percentage).toBe(50)
   expect(matches[1].party).toBe('Die Linke')
   expect(matches[1].percentage).toBe(50)
+})
+
+test('prefers further info from a double-weighted thesis', () => {
+  const { answers, getFurtherInfo } = useStore('test')
+  answers.value = {
+    'test-1': { answer: 'richtig', weight: 2, questionId: 'test-1' },
+    'test-2': { answer: 'richtig', weight: 1, questionId: 'test-2' },
+  }
+
+  expect(getFurtherInfo(questions)).toBe('info for 1')
+})
+
+test('falls back to any answered thesis when no weighted one has info', () => {
+  const { answers, getFurtherInfo } = useStore('test')
+  // test-3 is weighted but has no info, so it must not win.
+  answers.value = {
+    'test-2': { answer: 'richtig', weight: 1, questionId: 'test-2' },
+    'test-3': { answer: 'richtig', weight: 2, questionId: 'test-3' },
+  }
+
+  expect(getFurtherInfo(questions)).toBe('info for 2')
+})
+
+test('ignores theses the user did not answer', () => {
+  const { answers, getFurtherInfo } = useStore('test')
+  answers.value = {
+    'test-1': { answer: 'richtig', weight: 1, questionId: 'test-1' },
+  }
+
+  expect(getFurtherInfo(questions)).toBe('info for 1')
+})
+
+test('returns undefined when no answered thesis has an info', () => {
+  const { answers, getFurtherInfo } = useStore('test')
+  answers.value = {
+    'test-3': { answer: 'richtig', weight: 2, questionId: 'test-3' },
+  }
+
+  expect(getFurtherInfo(questions)).toBeUndefined()
 })
 
 test('build share result text with emoji bars', () => {

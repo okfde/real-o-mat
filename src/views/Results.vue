@@ -74,7 +74,7 @@ const share = () => {
         </TabPanel>
       </TabPanels>
     </TabGroup>
-    <FurtherInfo />
+    <FurtherInfo :election="election" />
     <Teleport to="main" v-if="canShare">
       <div class="inset-x-0 bottom-12 z-20 mt-12 flex max-md:flex-col max-md:items-center gap-4 justify-center">
         <button class="btn btn-lg inline shadow-md" @click="share">
