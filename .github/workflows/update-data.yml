@@ -2,8 +2,8 @@ name: Update election data in repo
 
 on:
   workflow_dispatch:
-  push:
-    branches: ['update2026']
+  # push:
+  #   branches: ['update2026']
 
 permissions:
   contents: write
