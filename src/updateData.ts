@@ -4,8 +4,10 @@
 import "dotenv/config";
 import fs from "fs/promises";
 import * as yaml from "js-yaml";
+import { Marked } from "marked";
 import util from "util";
-const NOCODB_URL = process.env.NOCODB_URL!;
+
+const markdown = new Marked({ gfm: true });
 
 const elections_url = process.env.NOCODB_ELECTIONS_URL!;
 const questions_url = process.env.NOCODB_QUESTIONS_URL!;
@@ -45,8 +47,27 @@ async function fetchTable(url: string) {
   const answers = await fetchTable(answers_url);
   const parties = await fetchTable(parties_url);
 
-  const partySlug = (party: any) =>
-    party.fields.Title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  const normalizeSlug = (value: string) =>
+    value
+      .toLowerCase()
+      .replace(/ä/g, 'ae')
+      .replace(/ö/g, 'oe')
+      .replace(/ü/g, 'ue')
+      .replace(/ß/g, 'ss')
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '');
+
+  const partySlug = (party: any) => normalizeSlug(party.fields.Title);
+
+  const changeLinksToExternal = (html: string) =>
+    html.replace(/<a\s+href=/g, '<a target="_blank" rel="noopener noreferrer" href=');
+
+  const renderMarkdown = (value: string | null | undefined, inline = false) =>
+    value
+      ? changeLinksToExternal(
+          (inline ? markdown.parseInline(value) : markdown.parse(value)) as string,
+        ).trim()
+      : value;
 
   // delete all yaml files in data/elections
   const electionFiles = await fs.readdir('./src/data/elections');
@@ -70,7 +91,7 @@ async function fetchTable(url: string) {
           return {
             party: partySlug(parties.find((p) => p.id === answer.fields.Partei.id)),
             answer: answer.fields.Position,
-            comment: answer.fields.Kommentar,
+            comment: renderMarkdown(answer.fields.Kommentar, true),
           };
         })
       };
