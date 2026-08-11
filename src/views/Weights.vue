@@ -46,23 +46,17 @@ const setWeight = (questionId: string, e: Event) => {
         Berechnung einfließen zu lassen.
       </p>
       <button type="submit" class="btn mt-4">
-        Weiter <IconForward aria-hidden="true" class="ms-1" />
+        Weiter
+        <IconForward aria-hidden="true" class="ms-1" />
       </button>
     </div>
 
     <div class="grid gap-4 md:grid-cols-1">
-      <label
-        v-for="{ answer, weight, questionId, question } in sortedAnswers"
-        :key="questionId"
-        class="flex items-start space-x-2 bg-white p-4"
-      >
+      <label v-for="{ answer, weight, questionId, question } in sortedAnswers" :key="questionId"
+        class="flex items-start space-x-2 bg-white p-4">
         <div>
-          <input
-            type="checkbox"
-            :checked="weight === 2"
-            @change="(e) => setWeight(questionId, e)"
-            :aria-labelledby="`label-${questionId}`"
-          />
+          <input type="checkbox" :checked="weight === 2" @change="(e) => setWeight(questionId, e)"
+            :aria-labelledby="`label-${questionId}`" />
         </div>
 
         <div>
@@ -78,11 +72,10 @@ const setWeight = (questionId: string, e: Event) => {
 
     <div class="mt-4 bg-white p-4">
       <button type="submit" class="btn">
-        Weiter <IconForward aria-hidden="true" class="ms-1" />
+        Weiter
+        <IconForward aria-hidden="true" class="ms-1" />
       </button>
     </div>
-
-    <hr class="mt-6 border-gray-200" />
   </form>
 </template>
 

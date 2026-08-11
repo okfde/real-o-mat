@@ -17,17 +17,17 @@ const sample = <T,>(items: T[]): T | undefined =>
 
 export const answerOptions = {
   'zu weit': {
-    label: 'nein, geht mir zu weit',
+    label: 'Nein, geht mir zu weit',
     icon: IconLess,
     class: 'bg-primary-red',
   },
   richtig: {
-    label: 'ja, finde ich auch',
+    label: 'Ja, finde ich auch',
     icon: IconRight,
     class: 'bg-primary-green',
   },
   'nicht weit genug': {
-    label: 'nein, reicht mir nicht aus',
+    label: 'Nein, reicht mir nicht aus',
     icon: IconMore,
     class: 'bg-primary-orange',
   },
@@ -102,6 +102,8 @@ export function useStore(slug: string) {
     const answeredQuestionsWithInfo = questions.filter(
       (question) => answers.value[question.id] && question.info?.trim(),
     )
+    console.log("questions", questions)
+    console.log('answeredQuestionsWithInfo', answeredQuestionsWithInfo)
     const weightedQuestionsWithInfo = answeredQuestionsWithInfo.filter(
       (question) => answers.value[question.id].weight === 2,
     )

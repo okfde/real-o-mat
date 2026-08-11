@@ -65,33 +65,22 @@ onMounted(focusFirstButton)
 <template>
   <div class="@container bg-white p-4 md:p-8">
     <div :class="compact ? 'mb-6' : 'min-h-72'">
-      <Transition
-        class="duration-250 ease-linear motion-safe:transition-opacity"
-        enter-from-class="motion-safe:opacity-0"
-        leave-to-class="motion-safe:opacity-0"
-        mode="out-in"
-      >
-        <div
-          class="flex text-gray-700 @md:mt-4 @md:text-2xl"
-          :key="currentQuestionIndex"
-        >
+      <Transition class="duration-250 ease-linear motion-safe:transition-opacity"
+        enter-from-class="motion-safe:opacity-0" leave-to-class="motion-safe:opacity-0" mode="out-in">
+        <div class="flex text-gray-700 @md:mt-4 @md:text-2xl" :key="currentQuestionIndex">
           {{ currentQuestionProgress }} / {{ questionsCount }}
           {{ currentQuestion.category }}
         </div>
       </Transition>
       <Transition mode="out-in" :name="transitionName">
         <div aria-live="assertive" :key="currentQuestionIndex">
-          <h2 class="my-4 text-xl font-medium max-md:hyphens-auto @md:text-4xl">
+          <h2 class="my-4 text-xl font-medium max-md:hyphens-auto md:text-4xl md:leading-12">
             {{ currentQuestion.thesis }}
           </h2>
         </div>
       </Transition>
     </div>
-    <Transition
-      :name="transitionName"
-      mode="out-in"
-      @after-enter="focusFirstButton"
-    >
+    <Transition :name="transitionName" mode="out-in" @after-enter="focusFirstButton">
       <div :key="currentQuestionIndex" ref="button-container">
         <div v-if="hasAnswer" class="flex flex-wrap items-center gap-4">
           Ihre Auswahl:
@@ -112,14 +101,9 @@ onMounted(focusFirstButton)
         </div>
 
         <div class="flex flex-wrap gap-x-2 gap-y-3" v-else>
-          <AnswerButton
-            v-for="({ disabled, icon }, answer, i) in answerButtons"
-            :key="i"
-            :answer="answer"
-            :disabled="disabled"
-            @save="$emit('saveAnswer', answer)"
-          >
-            <component :is="icon" />
+          <AnswerButton v-for="({ disabled, icon }, answer, i) in answerButtons" :key="i" :answer="answer"
+            :disabled="disabled" @save="$emit('saveAnswer', answer)">
+            <component :is="icon" class="me-1" />
           </AnswerButton>
           <div class="!ms-auto self-center @max-md:pt-4">
             <button @click="$emit('skipQuestion')" class="btn-outline">

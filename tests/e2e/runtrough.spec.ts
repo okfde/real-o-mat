@@ -8,13 +8,13 @@ test('Use the app for one election and get a result', async ({ page, browserName
 
   await page.getByRole('button', { name: 'Weiter' }).click()
 
-  await page.getByRole('button', { name: 'ja, finde ich auch' }).click()
+  await page.getByRole('button', { name: 'Ja, finde ich auch' }).click()
   await page.getByRole('button', { name: 'These überspringen' }).click()
 
   await expect(page.getByText('3 /')).toBeVisible()
 
   for (let i = 0; i < 4; i++) {
-    await page.getByRole('button', { name: 'ja, finde ich auch' }).click()
+    await page.getByRole('button', { name: 'Ja, finde ich auch' }).click()
   }
 
   expect(page.getByRole('heading', { name: '1. Arbeit' })).toBeVisible()
@@ -49,7 +49,7 @@ test('Use the app for one election and get a result', async ({ page, browserName
 
   await expect(
     page.locator('tr:nth-child(1) > td:nth-child(2) span'),
-  ).toHaveText('ja, finde ich auch')
+  ).toHaveText('Ja, finde ich auch')
   await expect(
     page.locator('tr:nth-child(2) > td:nth-child(2) span'),
   ).toHaveText('Position nicht wertbar')
@@ -83,8 +83,8 @@ test('Switch between multiple elections', async ({ page }) => {
   await page.goto('/')
   await page.getByRole('link', { name: 'Test Election 1' }).click();
   await page.getByRole('button', { name: 'Weiter' }).click();
-  await page.getByRole('button', { name: 'ja, finde ich auch' }).click();
-  await page.getByRole('button', { name: 'nein, geht mir zu weit' }).click();
+  await page.getByRole('button', { name: 'Ja, finde ich auch' }).click();
+  await page.getByRole('button', { name: 'Nein, geht mir zu weit' }).click();
 
   // Switch to Election 2
   await page.getByRole('link', { name: 'Real-O-Mat' }).click();

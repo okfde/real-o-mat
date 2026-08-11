@@ -3,6 +3,7 @@ import { Image } from 'astro:assets'
 import { getCollection } from 'astro:content'
 import Layout from '../layouts/Layout.astro'
 import ElectionSelection from '../components/ElectionSelection.vue'
+import FdsLogo from '../assets/fragdenstaat.svg'
 
 const elections = (await getCollection('elections')).sort((a, b) => b.data.date.getTime() - a.data.date.getTime()).map((election) => election.data)
 const partners = await getCollection('partners')
@@ -10,35 +11,37 @@ const partners = await getCollection('partners')
 
 <Layout>
   <div class="overflow-x-hidden">
-    <div class="bg-white p-8 md:p-16 md:text-center">
-      <p class="mb-4 text-xl font-medium md:text-2xl">Alle Parteien, die in der letzten Legislaturperiode im Bundestag saßen, haben zuvor viele Versprechen gemacht. Auf dieser Basis haben wir sie gewählt. Aber: Was bleibt davon übrig und wie haben sie wirklich gehandelt?</p>
+    <div class="bg-white p-8 md:p-16 md:text-left">
+      <p class="mb-4 text-xl font-medium md:text-2xl">Alle Parteien, die in der letzten Legislaturperiode im Landtag bzw. Abgeordnetenhaus saßen, haben zuvor viele Versprechen gemacht. Auf dieser Basis haben wir sie gewählt. Aber: Was bleibt davon übrig und wie haben sie wirklich gehandelt?</p>
       <div class="text:lg space-y-4 md:text-xl">
-        <p>Der Real-O-Mat schaut nicht auf die Wahlversprechen, sondern gleicht das tatsächliche Abstimmungsverhalten der Fraktionen und Gruppen zu aktuellen politischen Themen mit Ihrer persönlichen Position ab. Grundlage sind dabei Anträge und Gesetzentwürfe im Bundestag.</p>
-        <p>Jetzt sind Sie an der Reihe: Vergleichen Sie Ihre Standpunkte mit dem Abstimmungsverhalten der Parteien.</p>
-        <p class="text-sm">Der Real-O-Mat ist keine Wahlempfehlung, sondern ein Informationsangebot über Parteien und ihr Abstimmungsverhalten.</p>
+        <p>Beim Real-O-Mat vergleichst Du Deine persönliche Position zu 14 Themen mit dem tatsächlichen Abstimmungsverhalten der Parteien.</p>
       </div>
 
       <ElectionSelection elections={elections} client:load />
 
-      <div class="mt-2 flex items-end text-sm text-gray-600 md:justify-center">
-        <p>
-          FragDenStaat ist gemeinnützig und <a class="text-purple-600 underline hover:text-purple-700" href="https://fragdenstaat.de/spenden/?pk_campaign=realomat">spendenfinanziert.</a>
-        </p>
+      <div class="mt-2 flex flex-col items-center text-center text-sm">
+        <div class="mt-8 flex items-end md:justify-center">
+          <p aria-hidden="true" class="text-sm text-gray-600">Ein Projekt von</p>
+          <a href="https://fragdenstaat.de" target="_blank">
+            <img src={FdsLogo.src} alt="Ein Projekt von FragDenStaat" class="ms-4 mt-2 inline-block w-32" />
+          </a>
+        </div>
+        <p class="mt-2">Der Real-O-Mat ist keine Wahlempfehlung, sondern ein Informationsangebot über Parteien und ihr Abstimmungsverhalten. FragDenStaat ist gemeinnützig und <a href="https://fragdenstaat.de/jetztspenden/?pk_campaign=realomat" target="_blank">spendenfinanziert</a>.</p>
       </div>
     </div>
 
-    <div class="mt-8 bg-white/50 p-8 text-center backdrop-blur-sm">
-      <h2 class="text-lg mb-4">Unsere Partner*innen</h2>
-      <ul class="partners grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-8">
+    <!-- <div class="mt-8 bg-white/50 p-8 text-center backdrop-blur-sm">
+      <h2 class="mb-4 text-lg">Unsere Partner*innen</h2>
+      <ul class="partners grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-8 lg:grid-cols-6">
         {
           partners.map((partner) => (
             <li>
-              <Image src={partner.data.logo} alt={partner.data.name} loading="eager" class="w-full h-20 object-contain aspect-[3/2]" />
+              <Image src={partner.data.logo} alt={partner.data.name} loading="eager" class="aspect-[3/2] h-20 w-full object-contain" />
             </li>
           ))
         }
       </ul>
-    </div>
+    </div> -->
 
     <noscript> Bitte aktivieren Sie JavaScript, um diese Seite zu nutzen. </noscript>
   </div>

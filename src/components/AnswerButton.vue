@@ -15,19 +15,9 @@ const emit = defineEmits<{
 
 <template>
   <div class="answer-button" v-once>
-    <Popper
-      :disabled="!disabled"
-      :hover="true"
-      arrow
-      placement="top"
-      content="Diese Option ist nicht verfügbar, da keine Partei so abgestimmt hat."
-    >
-      <button
-        class="btn"
-        @click="emit('save', answer)"
-        :disabled="disabled"
-        tabindex="0"
-      >
+    <Popper :disabled="!disabled" :hover="true" arrow placement="top"
+      content="Diese Option ist nicht verfügbar, da keine Partei so abgestimmt hat.">
+      <button class="btn" @click="emit('save', answer)" :disabled="disabled" tabindex="0">
         <slot class="me-1" />
         {{ answerOptions[answer].label }}
       </button>

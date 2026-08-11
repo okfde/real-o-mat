@@ -88,7 +88,7 @@ async function fetchTable(url: string) {
         index,
         category: question.fields.Kategorie,
         thesis: question.fields.Title,
-        info: question.fields.Infos,
+        info: renderMarkdown(question.fields.Infos),
         answers: answers.filter((a) => a.fields.These.id === question.id).map((answer) => {
           return {
             party: partySlug(parties.find((p) => p.id === answer.fields.Partei.id)),
