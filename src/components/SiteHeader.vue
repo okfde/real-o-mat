@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import type { Election } from '../content.config';
-import FdsLogo from '../assets/fragdenstaat_header.svg'
+import FdsLogo from '../assets/fragdenstaat_text.svg'
 import IconHeart from '~icons/material-symbols/favorite'
 
 const props = defineProps<{ election?: Election }>()
@@ -28,9 +28,9 @@ function closeMenu() {
     </div>
     <div class="col-start-2 row-start-1 flex flex-row xl:hidden gap-2 md:gap-6">
 
-      <a href="https://fragdenstaat.de/spenden/?pk_campaign=realomat" target="_blank"
+      <a href="https://fragdenstaat.de/jetzt-spenden/?pk_campaign=realomat" target="_blank"
         class="text-purple-600 hover:text-white bg-transparent hover:bg-purple-600 font-medium text-lg px-2 md:px-4 py-2 -mt-2.5 hover:border-transparent rounded">
-        <IconHeart aria-hidden="true" class="inline-block md:mr-2 text-2xl md:text-base" />
+        <IconHeart aria-hidden="true" class="inline-block max-sm:-mt-2 md:mr-2 text-2xl md:text-base" />
         <span class="sr-only">Spenden</span>
         <span class="hidden md:inline" aria-hidden="true">Spenden</span>
       </a>
@@ -54,10 +54,10 @@ function closeMenu() {
           <a href="/methodik/" class="hover:text-purple-800">Methodik</a>
         </li>
         <li>
-          <a href="#" class="hover:text-purple-800">Über uns</a>
+          <a href="/about/" class="hover:text-purple-800">Über uns</a>
         </li>
         <li>
-          <a href="https://fragdenstaat.de/spenden/?pk_campaign=realomat" target="_blank"
+          <a href="https://fragdenstaat.de/jetzt-spenden/?pk_campaign=realomat" target="_blank"
             class="text-purple-600 hover:text-purple-800">
             <IconHeart aria-hidden="true" class="inline-block mr-1" />Spenden
           </a>
@@ -68,10 +68,10 @@ function closeMenu() {
       <span class="text-lg md:text-xl font-medium text-purple-800" v-if="props.election">
         {{ props.election.title }}
       </span>
-      <div class="text-lg md:text-xl font-medium text-purple-800 flex items-end" v-else>
-        <p aria-hidden="true">Ein Projekt von</p>
+      <div class="text-lg md:text-xl font-medium text-purple-800 flex items-start" v-else>
+        <p>Ein Projekt von</p>
         <a href="https://fragdenstaat.de" target="_blank">
-          <img :src="FdsLogo.src" alt="Ein Projekt von FragDenStaat" class="ms-2 mb-1 inline-block w-32" />
+          <img :src="FdsLogo.src" alt="Ein Projekt von FragDenStaat" class="ms-2 inline-block w-32" />
         </a>
       </div>
 

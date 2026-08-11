@@ -81,7 +81,8 @@ const share = () => {
           <IconShare aria-hidden="true" class="me-1" />
           Teile den Real-O-Mat!
         </button>
-        <a class="btn btn-lg inline shadow-md" href="//fragdenstaat.de/spenden/?pk_campaign=realomat" target="_blank">
+        <a class="btn btn-lg inline shadow-md" href="//fragdenstaat.de/jetzt-spenden/?pk_campaign=realomat"
+          target="_blank">
           <IconHeart aria-hidden="true" class="me-1" />
           Jetzt spenden!
         </a>

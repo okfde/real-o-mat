@@ -8,6 +8,7 @@ import OgImage from '../assets/og-image.jpg'
 import GradientBackground from '../components/GradientBackground.astro'
 import { shareText, publicUrl } from '../const'
 import type { Election } from '../content.config'
+import IconLink from '~icons/material-symbols/open-in-new'
 
 interface Props {
   title?: string
@@ -38,24 +39,30 @@ interface Props {
 
     <GradientBackground />
 
-    <div class="flex flex-col min-h-screen pb-12">
+    <div class="flex min-h-screen flex-col pb-12">
       <SiteHeader election={Astro.props.election} client:load />
 
-      <main class="container mx-auto px-4 z-10 flex-1">
+      <main class="z-10 container mx-auto flex-1 px-4">
         <slot />
       </main>
     </div>
 
     <footer>
       <div class="bg-gray-50">
-        <div class="container mx-auto py-12 px-4 text-gray-600">
-          <nav class="flex max-md:flex-col items-center">
+        <div class="container mx-auto px-4 py-12 text-gray-600">
+          <nav class="flex items-center max-md:flex-col">
             <div>
               <a href="https://fragdenstaat.de" target="_blank">
                 <img src={logo.src} alt="Ein Projekt von FragDenStaat" />
               </a>
             </div>
-            <ul class="flex flex-col items-center md:flex-row gap-4 max-md:mt-8 md:gap-12 md:ms-auto">
+            <ul class="flex flex-col items-center gap-4 max-md:mt-8 md:ms-auto md:flex-row md:gap-12">
+              <li>
+                <a href="https://wahlbrief.de/" target="_blank" rel="noopener noreferrer" class="flex items-center">
+                  <IconLink aria-hidden="true" class="me-1" />
+                  Jetzt Briefwahl beantragen
+                </a>
+              </li>
               <li>
                 <a href="https://fragdenstaat.de/impressum" target="_blank"> Impressum </a>
               </li>

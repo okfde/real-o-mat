@@ -37,6 +37,7 @@
     "js-yaml": "^5.2.1",
     "postcss": "^8.5.19",
     "prettier": "^3.9.5",
+    "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.8.0",
     "typescript": "^7.0.2",
     "vitest": "^4.1.10"

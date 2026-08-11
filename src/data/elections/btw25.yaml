@@ -10,6 +10,7 @@ questions:
       Bürgergeldempfänger*innen, die wiederholt eine existenzsichernde Arbeit
       ablehnen, soll für zwei Monate der komplette Regelsatz des Bürgergelds
       gestrichen werden.
+    info: null
     answers:
       - party: spd
         answer: richtig
@@ -97,6 +98,7 @@ questions:
     thesis: >-
       Bei der Einwanderung von Fachkräften ohne EU-Staatsbürgerschaft sollen
       einige Hürden abgebaut werden.
+    info: null
     answers:
       - party: spd
         answer: richtig
@@ -186,6 +188,7 @@ questions:
     index: 2
     category: Arbeit
     thesis: Der gesetzliche Mindestlohn soll mindestens 12 Euro betragen.
+    info: null
     answers:
       - party: spd
         answer: richtig
@@ -266,6 +269,7 @@ questions:
     thesis: >-
       Schwangere, die sich zu einem Schwangerschaftsabbruch beraten lassen
       möchten, sollen besser vor Gehsteigbelästigung geschützt werden.
+    info: null
     answers:
       - party: spd
         answer: richtig
@@ -350,6 +354,7 @@ questions:
     thesis: >-
       Der Konsum und Besitz von Cannabis soll in Deutschland unter bestimmten
       Voraussetzungen erlaubt sein.
+    info: null
     answers:
       - party: spd
         answer: richtig
@@ -434,6 +439,7 @@ questions:
     thesis: >-
       Eine temporäre Impfpflicht für Beschäftigte in Alten- und Pflegeheimen
       soll die Corona-Pandemie eindämmen.
+    info: null
     answers:
       - party: spd
         answer: richtig
@@ -514,6 +520,7 @@ questions:
     thesis: >-
       Menschen sollen ohne psychologisches Gutachten ihren Geschlechtseintrag
       und Vornamen beim Standesamt ändern dürfen.
+    info: null
     answers:
       - party: spd
         answer: richtig
@@ -600,6 +607,7 @@ questions:
     thesis: >-
       Zur besseren Bekämpfung von schweren Verbrechen sollen IP-Adressen länger,
       nämlich für 3 Monate, gespeichert werden.
+    info: null
     answers:
       - party: spd
         answer: zu weit
@@ -689,6 +697,7 @@ questions:
       Organisationen oder Projekte, die das Existenzrecht Israels in Frage
       stellen, sollen in Deutschland keine staatliche finanzielle Förderung
       erhalten.
+    info: null
     answers:
       - party: spd
         answer: richtig
@@ -786,6 +795,7 @@ questions:
     thesis: >-
       Ein Sondervermögen von 100 Milliarden Euro für die Bundeswehr soll die
       Verteidigung stärken.
+    info: null
     answers:
       - party: spd
         answer: richtig
@@ -882,6 +892,7 @@ questions:
     thesis: >-
       Deutschland soll das weitreichende Waffensystem Taurus an die Ukraine
       liefern.
+    info: null
     answers:
       - party: spd
         answer: zu weit
@@ -985,6 +996,7 @@ questions:
     thesis: >-
       Die Bundesregierung soll sich für den Erhalt des individuellen Rechts auf
       Asyl in der EU aussprechen.
+    info: null
     answers:
       - party: spd
         answer: zu weit
@@ -1078,6 +1090,7 @@ questions:
     thesis: >-
       Anerkannte Schutzberechtigte sollen ihren Status verlieren, wenn sie in
       ihre Heimat reisen.
+    info: null
     answers:
       - party: spd
         answer: richtig
@@ -1157,6 +1170,7 @@ questions:
     thesis: >-
       Das Deutschlandticket für den öffentlichen Nahverkehr soll deutlich
       weniger als 49 Euro im Monat kosten.
+    info: null
     answers:
       - party: spd
         answer: zu weit
@@ -1238,6 +1252,7 @@ questions:
     thesis: >-
       Die BAföG-Sätze für Schüler*innen und Studierende sollen um 5 Prozent beim
       Grundbedarf bzw. 20 Euro beim Wohngeld angehoben werden.
+    info: null
     answers:
       - party: spd
         answer: richtig
@@ -1324,6 +1339,7 @@ questions:
     thesis: >-
       In nationalen Notlagen soll die im Grundgesetz verankerte Schuldenbremse
       ausgesetzt werden.
+    info: null
     answers:
       - party: spd
         answer: richtig
@@ -1425,6 +1441,7 @@ questions:
       Um gesellschaftliche Herausforderungen zu bewältigen, sollen die
       vermögendsten Privatpersonen und Unternehmen einmalige Sonderabgaben
       leisten.
+    info: null
     answers:
       - party: spd
         answer: zu weit
@@ -1542,6 +1559,7 @@ questions:
     thesis: >-
       Das deutsche Lieferkettengesetz zum Schutz von Menschenrechten und der
       Umwelt in globalen Lieferketten soll ausgesetzt werden.
+    info: null
     answers:
       - party: spd
         answer: zu weit
@@ -1633,6 +1651,7 @@ questions:
       Für besseren Klimaschutz soll jede neu installierte Heizung in
       Neubaugebieten zu mindestens 65 Prozent mit erneuerbaren Energien
       betrieben werden.
+    info: null
     answers:
       - party: spd
         answer: richtig
@@ -1712,6 +1731,7 @@ questions:
     thesis: >-
       Mit der Subventionierung von Agrardiesel sollen Landwirtschaftsbetriebe
       weiter entlastet werden.
+    info: null
     answers:
       - party: spd
         answer: /
