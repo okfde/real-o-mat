@@ -11,6 +11,7 @@ const election = (await getEntry('elections', Astro.params.slug))!.data
 export async function getStaticPaths() {
   return (await getCollection('elections')).map((q) => ({
     params: {
+      year: q.data.date.getFullYear().toString(),
       slug: q.id,
     },
   }))
