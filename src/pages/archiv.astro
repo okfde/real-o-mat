@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content'
+import Layout from '../layouts/Layout.astro'
+import IconBack from '~icons/material-symbols/arrow-back'
+import ElectionCard from '../components/ElectionCard.vue'
+
+const elections = (await getCollection('elections'))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .filter((election) => election.data.archived)
+  .map((election) => election.data)
+---
+
+<Layout>
+  <div class="overflow-x-hidden">
+    <div class="bg-white p-8 md:p-16 md:text-left">
+      <h2>Vergangene Wahlen</h2>
+
+      <nav class="mt-8">
+        <ul class="grid gap-4 md:grid-cols-2">
+          {
+            elections.map((election) => (
+              <li>
+                <ElectionCard election={election} />
+              </li>
+            ))
+          }
+        </ul>
+
+        <a href="/" class="btn-text mt-8">
+          <IconBack aria-hidden="true" class="me-1" />
+          Zurück
+        </a>
+      </nav>
+    </div>
+  </div>
+</Layout>
