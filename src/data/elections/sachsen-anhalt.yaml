@@ -1,5 +1,5 @@
 title: Landtagswahl Sachsen-Anhalt
-slug: sachsenanhalt26
+slug: sachsen-anhalt
 date: '2026-09-06'
 archived: false
 questions:
@@ -7,8 +7,8 @@ questions:
     index: 0
     category: Energie
     thesis: >-
-      Die Energiewende in Sachsen-Anhalt soll beschleunigt werden, ohne sich
-      jedoch auf feste Klimaziele festzulegen. 
+      Die Energiewende soll beschleunigt werden. Es ist nicht notwendig, dafür
+      feste Klimaziele festzulegen. 
     info: >-
       <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
       Recherchen, Klagen und Community-Aktionen. Du möchtest mehr über die
@@ -23,10 +23,9 @@ questions:
           href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d3708lge.pdf">Beschlussempfehlung</a>
           zu. Sie setze auf schnellere Genehmigungen, technologieoffene Lösungen
           und Vorteile für die Menschen vor Ort. Starre Flächenvorgaben und eine
-          Energiewende „[mit der Brechstange]“(<a target="_blank" rel="noopener
-          noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/068stzg.pdf#page=107">https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/068stzg.pdf#page=107</a>)
-          lehne sie ab.
+          Energiewende „<a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/068stzg.pdf#page=107">mit
+          der Brechstange</a>&quot; lehne sie ab.
       - party: spd
         answer: richtig
         comment: >-
@@ -171,8 +170,8 @@ questions:
     index: 2
     category: Energie & Klima
     thesis: >-
-      Das pauschale Verbot von Windenergieanlagen im Wald soll aufgehoben
-      werden, ohne zugleich zusätzliche Regelungen zum Naturschutz festzulegen. 
+      Ohne zusätzliche Regelungen zum Naturschutz zu erlassen, soll das
+      pauschale Verbot von Windenergieanlagen im Wald aufgehoben werden.
     info: >-
       <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
       Recherchen, Klagen und Community-Aktionen. Du möchtest mehr über die
@@ -253,7 +252,10 @@ questions:
   - id: question-3
     index: 3
     category: Strukturwandel
-    thesis: ' Um Jugendarbeit in ländlichen Regionen zu fördern, sollen die vorgesehenen Gelder besser zwischen Städten und dem ländlichen Raum verteilt werden. '
+    thesis: >-
+      Um Angebote für Jugendliche in ländlichen Regionen zu fördern, sollen die
+      dafür vorgesehenen Gelder nicht nur nach Einwohnerzahl, sondern auch nach
+      Fläche verteilt werden.
     info: >-
       <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern setzt sich mit
       investigativen Recherchen, Klagen und Community-Aktionen für mehr
@@ -347,9 +349,8 @@ questions:
     index: 4
     category: Verkehr & Infrastruktur
     thesis: >-
-      Sachsen-Anhalt soll den Radverkehr stärker fördern und bei der
-      Verkehrsplanung gleichberechtigt mit Auto und öffentlichem Nahverkehr
-      behandeln.
+      Der Radverkehr soll stärker gefördert und bei der Verkehrsplanung besser
+      berücksichtigt werden. 
     info: >-
       <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern setzt sich mit
       investigativen Recherchen, Klagen und Community-Aktionen für mehr
@@ -437,8 +438,8 @@ questions:
     index: 5
     category: Innere Sicherheit
     thesis: >-
-      Sachsen-Anhalt sollte sich auf Bundesebene für eine Überprüfung des
-      Waffenrechts einsetzen, jedoch nicht direkt für eine Verschärfung. 
+      Die Landesregierung soll sich auf Bundesebene für eine Überprüfung des
+      Waffenrechts einsetzen, jedoch nicht direkt für eine Verschärfung.
     info: >-
       <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
       Recherchen, Klagen und Community-Aktionen. Entdecke jetzt diese spannende
@@ -530,9 +531,9 @@ questions:
     category: Verkehr & Infrastruktur
     thesis: >-
       Auch für reimportierte Simson-Mopeds bis Baujahr 1992 soll die
-      Sonderregelung des Einigungsvertrags gelten. Sie dürften dann mit bis zu
-      60 km/h gefahren werden, obwohl für andere Kleinkrafträder niedrigere
-      Höchstgeschwindigkeiten vorgeschrieben sind.
+      Sonderregelung des Einigungsvertrags gelten. Sie sollen 60 km/h fahren
+      dürfen, auch wenn für Kleinkrafträder niedrigere Höchstgeschwindigkeiten
+      gelten. 
     info: >-
       <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern setzt sich mit
       investigativen Recherchen, Klagen und Community-Aktionen für mehr
@@ -623,7 +624,7 @@ questions:
     index: 7
     category: Migration
     thesis: >-
-      Sachsen-Anhalt soll sich auf Bundesebene dafür einsetzen, dass syrische
+      Die Landesregierung soll sich dafür einsetzen, dass syrische
       Staatsangehörige mit einer Aufenthaltserlaubnis nach Syrien reisen können,
       ohne dadurch ihr Aufenthaltsrecht in Deutschland zu gefährden.
     info: >-
@@ -722,8 +723,8 @@ questions:
     index: 8
     category: Justiz
     thesis: >-
-      Sachsen-Anhalt sollte sich auf Bundesebene dafür einsetzen, dass Fahren
-      ohne Fahrschein entkriminalisiert wird. 
+      Die Landesregierung soll sich dafür einsetzen, dass Fahren ohne Ticket
+      entkriminalisiert wird.
     info: >-
       <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern setzt sich mit
       investigativen Recherchen, Klagen und Community-Aktionen für mehr
@@ -896,7 +897,11 @@ questions:
   - id: question-10
     index: 10
     category: Demokratie & Institutionen
-    thesis: ' Verfassungsrichter*innen sollen auf Vorschlag des Landesverfassungsgerichts auch mit absoluter Mehrheit gewählt werden können, wenn  innerhalb von sechs Monaten keine Zweidrittelmehrheit zustandekommt. '
+    thesis: >-
+      Wenn die notwendige Zweidrittelmehrheit innerhalb von sechs Monaten nicht
+      zustande kommt, sollen Verfassungsrichter*innen auf Vorschlag des
+      Landesverfassungsgerichts auch mit absoluter Mehrheit gewählt werden
+      können.
     info: >-
       <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
       Recherchen, Klagen und Community-Aktionen. Entdecke, wie wir mit
@@ -979,10 +984,9 @@ questions:
     index: 11
     category: Bildung
     thesis: >-
-      Sachsen-Anhalt soll sich beim Bund dafür einsetzen, die angekündigte
-      BAföG-Reform nicht nur schnell umzusetzen, sondern - wie ursprünglich
-      vorgesehen - mit dem zentralen Element einer Leistungserhöhung für
-      Studierende. 
+      Die Landesregierung soll sich dafür einsetzen, dass die angekündigte
+      BAföG-Reform schnell umgesetzt wird. Eine Leistungserhöhung für
+      Studierende soll ein zentrales Element sein. 
     info: >-
       <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
       Recherchen, Klagen und Community-Aktionen. Lies jetzt diese spannende
