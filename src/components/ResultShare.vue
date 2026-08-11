@@ -31,6 +31,6 @@ const shareResult = () => {
 <template>
   <button class="btn" @click="shareResult">
     <IconShare aria-hidden="true" class="me-1" />
-    {{ copied ? 'Kopiert!' : 'Ihr Ergebnis teilen' }}
+    {{ copied ? 'Kopiert!' : 'Dein Ergebnis teilen' }}
   </button>
 </template>

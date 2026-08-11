@@ -30,9 +30,9 @@ const setWeight = (questionId: string, e: Event) => {
 
 <template>
   <div class="bg-white p-4" v-if="answerCount < 5">
-    <h2>Sie haben leider zu wenig Fragen beantwortet.</h2>
+    <h2>Du hast leider zu wenig Fragen beantwortet.</h2>
     <p class="mt-4">
-      Beantworten Sie mindestens fünf Fragen, um Ihr Ergebnis zu sehen.
+      Beantworte mindestens fünf Fragen, um Dein Ergebnis zu sehen.
     </p>
     <button @click="emit('previous')" class="btn mt-4">
       Zurück zu den Fragen
@@ -42,7 +42,7 @@ const setWeight = (questionId: string, e: Event) => {
     <div class="mb-4 bg-white p-4 md:p-8">
       <h2>Welche Thesen sind Ihnen besonders wichtig?</h2>
       <p>
-        Markieren Sie die Thesen, um diese mit doppelter Gewichtung in die
+        Markiere die Thesen, um diese mit doppelter Gewichtung in die
         Berechnung einfließen zu lassen.
       </p>
       <button type="submit" class="btn mt-4">

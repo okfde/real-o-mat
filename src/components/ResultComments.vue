@@ -41,8 +41,8 @@ const nextQuestion = () => {
   <div class="bg-white p-4 md:p-8">
     <h2>Begründung der Thesen</h2>
     <p class="mb-6">
-      Wie begründen die Parteien ihre Positionen? Wählen Sie eine These aus und
-      finden Sie heraus, warum die Parteien zustimmen oder ablehnen.
+      Wie begründen die Parteien ihre Positionen? Wähle eine These aus und
+      finde heraus, warum die Parteien zustimmen oder ablehnen.
     </p>
 
     <hr class="border-gray-200" />

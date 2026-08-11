@@ -147,8 +147,8 @@ onMounted(() => updateBeforeUnload())
               </div>
               <div class="mt-2">
                 <p>
-                  Sie haben den Real-O-Mat bereits begonnen. Möchten Sie dort
-                  weitermachen, wo Sie bisher aufgehört haben?
+                  Du hast den Real-O-Mat bereits begonnen. Möchtest du dort
+                  weitermachen, wo du bisher aufgehört hast?
                 </p>
               </div>
 
