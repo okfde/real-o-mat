@@ -27,14 +27,14 @@ test('Use the app for one election and get a result', async ({ page, browserName
   await page.getByRole('button', { name: 'Weiter' }).first().click()
 
   await expect(page.getByLabel('Ergebnis').getByRole('heading')).toContainText(
-    'Ihr Real-O-Mat Ergebnis',
+    'Dein Real-O-Mat Ergebnis',
   )
 
   // Share feature
   // Firefox does not support the clipboard-read permission
   if (browserName !== 'firefox') {
     await page.context().grantPermissions(["clipboard-read"]);
-    await page.getByRole('button', { name: 'Ihr Ergebnis teilen' }).click();
+    await page.getByRole('button', { name: 'Dein Ergebnis teilen' }).click();
     const handle = await page.evaluateHandle(() => navigator.clipboard.readText());
     const clipboardContent = await handle.jsonValue();
 

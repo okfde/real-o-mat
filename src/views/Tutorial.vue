@@ -55,9 +55,9 @@ const emit = defineEmits(['done'])
               sollen stärkere Maßnahmen ergriffen werden.
             </p>
             <p>
-              Die genaue Begründung des Abstimmungsverhaltens jeder Fraktion kannst Du im Detail in der Auswertung
+              Die genaue Begründung des Abstimmungsverhaltens jeder Fraktion kannst du im Detail in der Auswertung
               nachlesen.
-              Mehr Infos findest Du in der Methodik zum Real-O-Mat. 
+              Mehr Infos findest du in der Methodik zum Real-O-Mat.
             </p>
           </div>
 
