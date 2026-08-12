@@ -32,8 +32,8 @@ jobs:
         run: pnpm install
       - name: Build
         run: pnpm run build
-      - name: Delete secrets
-        run: rm .env service-account.json
+      # - name: Delete secrets
+      #   run: rm .env service-account.json
       # - name: Run Playwright tests
       #   run: pnpm run test
       # - uses: actions/upload-artifact@v4
