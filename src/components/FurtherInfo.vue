@@ -36,6 +36,6 @@ const furtherInfo = computed(() => getFurtherInfo(props.election.questions))
 @reference "../assets/style.css";
 
 .info:deep(a) {
-  @apply text-purple-600 underline hover:text-purple-700;
+  @apply text-purple-600 underline hover:text-purple-700 font-semibold;
 }
 </style>
