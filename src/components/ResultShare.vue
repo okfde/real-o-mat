@@ -14,7 +14,7 @@ const shareResultText = computed(() => getShareResultText(props.partyMatches))
 const { copy, copied } = useClipboard({ copiedDuring: 2000 })
 
 const shareResult = () => {
-  copy(shareResultText.value + `\n\n${publicUrl}`)
+  copy(shareResultText.value)
 
   const shareData = {
     title: shareResultText.value,
