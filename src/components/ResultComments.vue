@@ -57,7 +57,7 @@ const nextQuestion = () => {
           class="w-full rounded-md border-gray-300 bg-purple-100 px-4 py-1 shadow-sm outline-none focus:ring-3 focus:ring-purple-600/50 motion-safe:transition"
           v-model="currentQuestionIndex" aria-label="Springe zur These" @change="transitionName = undefined">
           <option v-for="(question, index) in questions" :key="index" :value="index">
-            These {{ index + 1 }}: {{ question.thesis }}
+            These {{ index + 1 }}: {{ question.keyword || question.thesis }}
           </option>
         </select>
       </div>
