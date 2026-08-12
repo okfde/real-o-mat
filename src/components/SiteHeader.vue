@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import type { Election } from '../content.config'
-import FdsLogo from '../assets/fragdenstaat_banner_grayscale.svg'
+import FdsLogo from '../assets/fragdenstaat.svg'
 import IconHeart from '~icons/material-symbols/favorite'
 
 const props = defineProps<{ election?: Election }>()
