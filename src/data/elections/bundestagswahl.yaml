@@ -11,6 +11,7 @@ questions:
       ablehnen, soll für zwei Monate der komplette Regelsatz des Bürgergelds
       gestrichen werden.
     info: null
+    keyword: null
     answers:
       - party: spd
         answer: richtig
@@ -99,6 +100,7 @@ questions:
       Bei der Einwanderung von Fachkräften ohne EU-Staatsbürgerschaft sollen
       einige Hürden abgebaut werden.
     info: null
+    keyword: null
     answers:
       - party: spd
         answer: richtig
@@ -189,6 +191,7 @@ questions:
     category: Arbeit
     thesis: Der gesetzliche Mindestlohn soll mindestens 12 Euro betragen.
     info: null
+    keyword: null
     answers:
       - party: spd
         answer: richtig
@@ -270,6 +273,7 @@ questions:
       Schwangere, die sich zu einem Schwangerschaftsabbruch beraten lassen
       möchten, sollen besser vor Gehsteigbelästigung geschützt werden.
     info: null
+    keyword: null
     answers:
       - party: spd
         answer: richtig
@@ -355,6 +359,7 @@ questions:
       Der Konsum und Besitz von Cannabis soll in Deutschland unter bestimmten
       Voraussetzungen erlaubt sein.
     info: null
+    keyword: null
     answers:
       - party: spd
         answer: richtig
@@ -440,6 +445,7 @@ questions:
       Eine temporäre Impfpflicht für Beschäftigte in Alten- und Pflegeheimen
       soll die Corona-Pandemie eindämmen.
     info: null
+    keyword: null
     answers:
       - party: spd
         answer: richtig
@@ -521,6 +527,7 @@ questions:
       Menschen sollen ohne psychologisches Gutachten ihren Geschlechtseintrag
       und Vornamen beim Standesamt ändern dürfen.
     info: null
+    keyword: null
     answers:
       - party: spd
         answer: richtig
@@ -608,6 +615,7 @@ questions:
       Zur besseren Bekämpfung von schweren Verbrechen sollen IP-Adressen länger,
       nämlich für 3 Monate, gespeichert werden.
     info: null
+    keyword: null
     answers:
       - party: spd
         answer: zu weit
@@ -698,6 +706,7 @@ questions:
       stellen, sollen in Deutschland keine staatliche finanzielle Förderung
       erhalten.
     info: null
+    keyword: null
     answers:
       - party: spd
         answer: richtig
@@ -796,6 +805,7 @@ questions:
       Ein Sondervermögen von 100 Milliarden Euro für die Bundeswehr soll die
       Verteidigung stärken.
     info: null
+    keyword: null
     answers:
       - party: spd
         answer: richtig
@@ -893,6 +903,7 @@ questions:
       Deutschland soll das weitreichende Waffensystem Taurus an die Ukraine
       liefern.
     info: null
+    keyword: null
     answers:
       - party: spd
         answer: zu weit
@@ -997,6 +1008,7 @@ questions:
       Die Bundesregierung soll sich für den Erhalt des individuellen Rechts auf
       Asyl in der EU aussprechen.
     info: null
+    keyword: null
     answers:
       - party: spd
         answer: zu weit
@@ -1091,6 +1103,7 @@ questions:
       Anerkannte Schutzberechtigte sollen ihren Status verlieren, wenn sie in
       ihre Heimat reisen.
     info: null
+    keyword: null
     answers:
       - party: spd
         answer: richtig
@@ -1171,6 +1184,7 @@ questions:
       Das Deutschlandticket für den öffentlichen Nahverkehr soll deutlich
       weniger als 49 Euro im Monat kosten.
     info: null
+    keyword: null
     answers:
       - party: spd
         answer: zu weit
@@ -1253,6 +1267,7 @@ questions:
       Die BAföG-Sätze für Schüler*innen und Studierende sollen um 5 Prozent beim
       Grundbedarf bzw. 20 Euro beim Wohngeld angehoben werden.
     info: null
+    keyword: null
     answers:
       - party: spd
         answer: richtig
@@ -1340,6 +1355,7 @@ questions:
       In nationalen Notlagen soll die im Grundgesetz verankerte Schuldenbremse
       ausgesetzt werden.
     info: null
+    keyword: null
     answers:
       - party: spd
         answer: richtig
@@ -1442,6 +1458,7 @@ questions:
       vermögendsten Privatpersonen und Unternehmen einmalige Sonderabgaben
       leisten.
     info: null
+    keyword: null
     answers:
       - party: spd
         answer: zu weit
@@ -1560,6 +1577,7 @@ questions:
       Das deutsche Lieferkettengesetz zum Schutz von Menschenrechten und der
       Umwelt in globalen Lieferketten soll ausgesetzt werden.
     info: null
+    keyword: null
     answers:
       - party: spd
         answer: zu weit
@@ -1652,6 +1670,7 @@ questions:
       Neubaugebieten zu mindestens 65 Prozent mit erneuerbaren Energien
       betrieben werden.
     info: null
+    keyword: null
     answers:
       - party: spd
         answer: richtig
@@ -1732,6 +1751,7 @@ questions:
       Mit der Subventionierung von Agrardiesel sollen Landwirtschaftsbetriebe
       weiter entlastet werden.
     info: null
+    keyword: null
     answers:
       - party: spd
         answer: /

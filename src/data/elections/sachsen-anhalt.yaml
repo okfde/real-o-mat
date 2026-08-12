@@ -5,85 +5,185 @@ archived: false
 questions:
   - id: question-0
     index: 0
-    category: Energie
+    category: Gesundheit
     thesis: >-
-      Die Energiewende soll beschleunigt werden. Es ist nicht notwendig, dafür
-      feste Klimaziele festzulegen. 
+      Pflegende Angehörige sollen in erster Linie durch weniger Bürokratie
+      entlastet werden. 
     info: >-
       <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
-      Recherchen, Klagen und Community-Aktionen. Du möchtest mehr über die
-      Energiewende erfahren? Entdecke jetzt unseren <a target="_blank"
-      rel="noopener noreferrer" href="https://fragdenstaat.de/climate">Climate
-      Helpdesk</a>! </p>
+      Recherchen, Klagen und Community-Aktionen. Lies jetzt diese spannende
+      Recherche zu den <a target="_blank" rel="noopener noreferrer"
+      href="https://fragdenstaat.de/artikel/exklusiv/2026/02/In-der-Gefaengnispsychiatrie-jahrelang-isoliert/">Zuständen
+      in der Gefängnispsychiatrie</a>.</p>
+    keyword: Pflege von Angehörigen
     answers:
       - party: cdu
         answer: richtig
         comment: >-
-          Die CDU stimmte der <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d3708lge.pdf">Beschlussempfehlung</a>
-          zu. Sie setze auf schnellere Genehmigungen, technologieoffene Lösungen
-          und Vorteile für die Menschen vor Ort. Starre Flächenvorgaben und eine
-          Energiewende „<a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/068stzg.pdf#page=107">mit
-          der Brechstange</a>&quot; lehne sie ab.
+          Die CDU stimmte dem gemeinsamen <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d7141ran.pdf">Antrag</a>
+          der Koalitionsfraktionen zu. Sie wollte pflegende Angehörige vor allem
+          durch <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/116stzg.pdf#page=181">einfachere
+          Antragswege, weniger Bürokratie</a> und verlässliche wohnortnahe
+          Angebote entlasten.
       - party: spd
         answer: richtig
         comment: >-
-          Die SPD stimmte der <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d1971vbe.pdf">Beschlussempfehlung</a>
-          zu. Sie wolle den Ausbau durch schnellere Genehmigungen, lokale
-          Wertschöpfung und eine finanzielle Beteiligung der Kommunen
-          voranbringen. <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/003stzg.pdf#page=36">Verbindliche
-          Ausbauzahlen und politischer Druck allein</a> reichten dafür nicht
-          aus.
+          Die SPD stimmte dem <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d7141ran.pdf">Antrag</a>
+          zu. Ein Hauptproblem sei, dass bestehende Unterstützungsangebote wegen
+          <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/116stzg.pdf#page=188">komplizierter
+          und kleinteiliger Verfahren</a> häufig nicht bei den Betroffenen
+          ankommen. Pflegende Angehörige sollten deshalb verlässlichere
+          Strukturen, einfachere Ansprechpartner, wohnortnahe Angebote und mehr
+          Mitsprache erhalten.
       - party: die-linke
         answer: nicht weit genug
         comment: >-
-          Die Linke enthielt sich der Abstimmung über die <a target="_blank"
-          rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d1971vbe.pdf">Beschlussempfehlung</a>.
-          Sie unterstütze die Energiewende grundsätzlich, notwendig sei aber <a
-          target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/003stzg.pdf#page=21">Klimaneutralität
-          bis 2035, konkrete Zwischenziele</a>, ein CO₂-Budget und eine
-          Solarpflicht. Die weniger verbindliche Beschlussempfehlung reiche ihr
-          daher nicht aus.
-      - party: afd
-        answer: zu weit
-        comment: >-
-          Die AfD lehnte die <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d1971vbe.pdf">Beschlussempfehlung</a>
-          ab. Die AfD lehnte die Beschlussempfehlung ab. Sie fürchtet eine
-          &quot;<a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/033stzg.pdf#page=110">nachträgliche
-          Legalisierung rechtswidriger Windräder</a>&quot; und eine
-          &quot;Verschandelung&quot; der Kulturlandschaft Sachsen-Anhalt.
-      - party: fdp
-        answer: richtig
-        comment: >-
-          Die FDP stimmte der <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d1971vbe.pdf">Beschlussempfehlung</a>
-          zu. Erneuerbare Energien seien grundsätzlich als möglicher Jobmotor zu
-          sehen, sie lehne aber <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/003stzg.pdf#page=30">starre
-          Flächenvorgaben beim Bau von Windrädern und eine verpflichtende
-          Installation</a> von Solaranlagen ab.
+          Die Linke lehnte den <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d7141ran.pdf">Antrag</a>
+          ab, obwohl sie dessen Ziele ausdrücklich für richtig hielt. Die
+          vorgesehenen Maßnahmen gingen <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/116stzg.pdf#page=187">jedoch
+          nicht weit genug</a>. Sie forderte zusätzlich Pflegelotsen zur
+          Orientierung im Hilfesystem, ein rund um die Uhr erreichbares
+          Servicetelefon, eine unabhängige Pflegeberatung und sechs Wochen
+          bezahlte Freistellung beim erstmaligen Auftreten eines familiären
+          Pflegefalls.
       - party: die-gruenen
         answer: nicht weit genug
         comment: >-
-          Die Grünen enthielten sich bei der Abstimmung, obwohl die <a
-          target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d1971vbe.pdf">Beschlussempfehlung</a>
-          auf einen Antrag der eigenen Fraktion zurückgeht. Doch <a
-          target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/003stzg.pdf#page=21">zentrale
-          Forderungen ihres ursprünglichen Antrags</a>, darunter
-          Klimaneutralität bis 2035, eine Solarpflicht und das
-          Zwei-Prozent-Flächenziel für Windenergie, wurden nicht in den
-          Beschluss übernommen.
+          Die Grünen enthielten sich bei der Abstimmung zum <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d7141ran.pdf">Antrag</a>.
+          Die Maßnahmen seien <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/116stzg.pdf#page=190">ambitionslos</a>.
+          Die Grünen forderten darum einen umfassenderen Ansatz. Neben „Pflege
+          im Quartier“ sollten unter anderem Tagespflege, flexible
+          Betreuungszeiten, Nachtcafés, finanzielle Hilfen und regionale
+          Gesundheitskonferenzen ausgebaut werden.
+      - party: afd
+        answer: nicht weit genug
+        comment: >-
+          Die AfD enthielt sich bei der Abstimmung zum <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d7141ran.pdf">Antrag</a>.
+          Sie erkannte die bisherigen Maßnahmen zur Unterstützung pflegender
+          Angehöriger grundsätzlich an, hielt den Antrag der
+          Koalitionsfraktionen aber <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/116stzg.pdf#page=184">für
+          keine ausreichende Antwort auf die existierenden Probleme</a> in der
+          Pflege Angehöriger. Nach mehreren Jahren politischer Initiativen seien
+          weitere Prüfaufträge zu wenig.
+      - party: fdp
+        answer: richtig
+        comment: >-
+          Die FDP stimmte dem <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d7141ran.pdf">Antrag</a>
+          zu. Bestehende Informationen und Hilfsangebote würden so leichter
+          zugänglich gemacht, <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/116stzg.pdf#page=186">niedrigschwellige
+          Anlaufstellen geschaffen und bürokratische Hürden</a> abgebaut.
+          Unterstützung müsse schnell, unbürokratisch und verlässlich bei
+          pflegenden Angehörigen ankommen.
   - id: question-1
     index: 1
+    category: Justiz
+    thesis: >-
+      Die Landesregierung soll sich dafür einsetzen, dass Fahren ohne Ticket
+      entkriminalisiert wird.
+    info: >-
+      <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern setzt sich mit
+      investigativen Recherchen, Klagen und Community-Aktionen für mehr
+      Transparenz ein. Du möchtest selbst spannende Informationen über
+      Politiker*innen und Behörden ans Licht bringen? Stelle jetzt eine <a
+      target="_blank" rel="noopener noreferrer"
+      href="https://fragdenstaat.de/informationsfreiheit/einsteiger-guide/">IFG-Anfrage</a>!</p>
+    keyword: Fahren ohne Ticket
+    answers:
+      - party: cdu
+        answer: zu weit
+        comment: >-
+          Die CDU lehnte den <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6851gan.pdf">Antrag
+          der Grünen</a> ab und stellte mit der Koalitionsfraktion einen <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6890raa.pdf">Alternativantrag
+          zu Sicherheit im Öffentlichen Personennahverkehr</a>, der keine
+          Entkriminalisierung des Fahrens ohne Fahrschein vorsieht. <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=109">In
+          ihrer Rede</a> begründete sie ihre Ablehnung dieser konkreten
+          Forderung nicht, sondern konzentrierte sich auf Sicherheitsmaßnahmen,
+          eine bessere Infrastruktur und mehr Investitionen in den öffentlichen
+          Nahverkehr.
+      - party: spd
+        answer: zu weit
+        comment: >-
+          Die SPD stimmt gegen den <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6851gan.pdf">Antrag
+          der Grünen</a> und für den <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6890raa.pdf">Alternativantrag</a>
+          der Koalitionsfraktionen, der die Entkriminalisierung nicht vorsieht.
+          In ihrer entsprechenden Rede positioniert sie sich nicht weiter zu dem
+          Thema, sondern stellt einen <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=104">sicheren
+          und bezahlbaren Nahverkehr</a> in den Mittelpunkt.
+      - party: die-linke
+        answer: richtig
+        comment: >-
+          Die Linke stimmt dem <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6851gan.pdf">Antrag
+          der Grünen</a> zu.  In der Plenardebatte begründete sie diese
+          Einzelposition nicht näher. In einer <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://www.dielinke-sachsen-anhalt.de/aktuell-1/detail/news/fahren-ohne-ticket-muss-entkriminalisiert-werden/">offiziellen
+          Stellungnahme</a> bezeichnete sie die strafrechtliche Verfolgung
+          jedoch als unverhältnismäßig und verwies darauf, dass die
+          Kriminalisierung des Fahrens ohne Ticket insbesondere Menschen in
+          schwierigen Lebenslagen treffe sowie Polizei, Justiz und Strafvollzug
+          unnötig belaste.
+      - party: die-gruenen
+        answer: richtig
+        comment: >-
+          Die Grünen stimmen ihrem <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6851gan.pdf">eigenen
+          Antrag</a> zu. Fahren ohne Fahrschein solle weiterhin sanktioniert
+          werden, eine strafrechtliche <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=115">Verfolgung
+          bis hin zur Haft</a> sei aber unverhältnismäßig. Ähnlich wie das
+          Parken ohne Parkschein solle es künftig als Ordnungswidrigkeit
+          behandelt werden.
+      - party: afd
+        answer: zu weit
+        comment: >-
+          Die AfD lehnte den <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6851gan.pdf">Antrag
+          der Grünen</a> ab. Fahren ohne Fahrschein sei kein Bagatelldelikt mit
+          geringer krimineller Energie, sondern &quot;<a target="_blank"
+          rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=108">asoziales
+          Verhalten</a>&quot;, das nichts mit Armut zu tun habe.
+      - party: fdp
+        answer: zu weit
+        comment: >-
+          Die FDP lehnt den <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6851gan.pdf">Antrag
+          der Grünen</a> ab. Es könne keine Lösung sein, Schwarzfahren zum
+          „Kavaliersdelikt“ zu machen. „<a target="_blank" rel="noopener
+          noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=114">Diejenigen,
+          die ihre Fahrkarte bezahlen, wären dann die Dummen</a>“ und dies käme
+          einer Bankrotterklärung des Staates gleich.
+  - id: question-2
+    index: 2
     category: Demokratie & Institutionen
     thesis: >-
       Sachsen-Anhalt soll im Alleingang alle Rundfunkstaatsverträge kündigen, um
@@ -94,6 +194,7 @@ questions:
       investigative Berichterstattung wichtig? Entdecke jetzt <a target="_blank"
       rel="noopener noreferrer" href="https://fragdenstaat.de/recherchen">unsere
       aktuellen Recherchen</a>! </p>
+    keyword: Rundfunkstaatsvertrag
     answers:
       - party: cdu
         answer: zu weit
@@ -112,12 +213,11 @@ questions:
         comment: >-
           Die SPD lehnte den <a target="_blank" rel="noopener noreferrer"
           href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6332aan.pdf">Antrag
-          der AfD</a> ab. (In der Plenardebatte)(<a target="_blank"
-          rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/103stzg.pdf#page=34">https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/103stzg.pdf#page=34</a>)
-          betont sie die Bedeutung von unabhängiger Journalismus, Vielfalt und
-          demokratische Kontrolle, die durch den öffentlich-rechtlichen Rundfunk
-          gesichert werde.
+          der AfD</a> ab. In der <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/103stzg.pdf#page=34">Plenardebatte</a>
+          betont sie die Bedeutung von unabhängigem Journalismus, Vielfalt und
+          demokratischer Kontrolle, die durch den öffentlich-rechtlichen
+          Rundfunk gesichert werde.
       - party: die-linke
         answer: zu weit
         comment: >-
@@ -137,13 +237,13 @@ questions:
         comment: >-
           Die AfD stimmte ihrem <a target="_blank" rel="noopener noreferrer"
           href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6332aan.pdf">eigenen
-          Antrag</a> zu. Sie kritisierte den Rundfunkbeitrag als &quot;<a
+          Antrag</a> zu. Sie kritisierte den Rundfunkbeitrag als „<a
           target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/103stzg.pdf#page=23">Zwangsabgabe</a>&quot;
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/103stzg.pdf#page=23">Zwangsabgabe</a>“
           und vertrat die Auffassung, dass man nicht für öffentlich-rechtliche
-          Angebote, die die Fraktion als &quot;<a target="_blank" rel="noopener
+          Angebote, die die Fraktion als „<a target="_blank" rel="noopener
           noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/103stzg.pdf#page=24">Desinformation</a>&quot;
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/103stzg.pdf#page=24">Desinformation</a>“
           bezeichnet, bezahlen solle, wenn man sie nicht konsumieren möchte.
       - party: fdp
         answer: zu weit
@@ -152,10 +252,10 @@ questions:
           href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6332aan.pdf">Antrag</a>
           der AfD ab. Der öffentlich-rechtlichen Rundfunk sei notwendig, um <a
           target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/103stzg.pdf#page=38">eine
-          unabhängige, neutrale und objektive Informations- und
-          Bildungsversorgung im Sinne des Grundgesetzes</a> sicherzustellen.
-          Zugleich sprach sie sich für eine Reform des bestehenden Systems aus.
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/103stzg.pdf#page=38">unabhängige,
+          neutrale und objektive Informationen im Sinne des Grundgesetzes</a> zu
+          sichern. Zugleich sprach sie sich für eine Reform des bestehenden
+          Systems aus.
       - party: die-gruenen
         answer: zu weit
         comment: >-
@@ -166,89 +266,6 @@ questions:
           href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/103stzg.pdf#page=41">Unabhängigkeit
           der Medien von der jeweiligen Regierung zu sichern</a> und eine
           politische Einflussnahme zu verhindern.
-  - id: question-2
-    index: 2
-    category: Energie & Klima
-    thesis: >-
-      Ohne zusätzliche Regelungen zum Naturschutz zu erlassen, soll das
-      pauschale Verbot von Windenergieanlagen im Wald aufgehoben werden.
-    info: >-
-      <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
-      Recherchen, Klagen und Community-Aktionen. Du möchtest mehr über die
-      Energiewende erfahren? Entdecke jetzt unseren <a target="_blank"
-      rel="noopener noreferrer"
-      href="https://fragdenstaat.de/aktionen/climate-helpdesk/">Climate
-      Helpdesk</a>! </p>
-    answers:
-      - party: cdu
-        answer: richtig
-        comment: >-
-          Die CDU stimmt <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d3708lge.pdf">dem
-          Gesetzentwurf</a> zu, da das vom Bundesverfassungsgericht beanstandete
-          Pauschalverbot von Windanlagen im Wald aufgehoben werden müsse.
-          Zugleich betonte sie, dass der Ausbau auf die gesetzlich notwendige
-          Fläche begrenzt und <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/068stzg.pdf#page=107">ein
-          unkontrollierter Ausbau verhindert werden solle</a>.
-      - party: spd
-        answer: richtig
-        comment: >-
-          Die SPD stimmt dem <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d2409dae.pdf">Gesetzentwurf</a>
-          zu. Aus ihrer Sicht würden <a target="_blank" rel="noopener
-          noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/068stzg.pdf#page=102">weitere
-          geeignete Flächen für Windenergie</a> benötigt, um die gesetzlichen
-          Ausbauziele zu erreichen.
-      - party: die-linke
-        answer: nicht weit genug
-        comment: >-
-          Die Linke enthielt sich bei der Abstimmung zum <a target="_blank"
-          rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d3708lge.pdf">Gesetzentwurf</a>.
-          Sie hielt die Aufhebung des Pauschalverbots grundsätzlich für richtig,
-          kritisierte jedoch, dass klare Regelungen fehlten, <a target="_blank"
-          rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/068stzg.pdf#page=104">um
-          eine Schwächung des Natur-, Arten- und Umweltschutzes zu
-          verhindern</a>.
-      - party: die-gruenen
-        answer: nicht weit genug
-        comment: >-
-          Die Grünen enthielten sich bei der Abstimmung zum <a target="_blank"
-          rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d3708lge.pdf">Gesetzentwurf</a>,
-          da zusätzliche Vorgaben fehlen, damit Windenergieanlagen nur
-          ausnahmsweise im Wald und möglichst auf <a target="_blank"
-          rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/060stzg.pdf#page=18">bereits
-          baumfreien Flächen</a> errichtet werden können.
-      - party: afd
-        answer: zu weit
-        comment: >-
-          Die AfD lehnte <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d3708lge.pdf">den
-          Gesetzentwurf</a> ab. Mit einem <a target="_blank" rel="noopener
-          noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d4267aae.pdf">Änderungsantrag</a>
-          wollte sie erreichen, dass &quot;<a target="_blank" rel="noopener
-          noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/068stzg.pdf#page=101">kein
-          einziges Windrad im Wald entstehen</a> solle; denn der Wald sei als
-          Naturgebiet wichtig und nicht als Energieerzeugungsgebiet.
-      - party: fdp
-        answer: richtig
-        comment: >-
-          Die FDP stimmt <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d3708lge.pdf">dem
-          Gesetzentwurf</a>, da die zuvor als verfassungswidrig bewertete
-          Regelung aufgehoben werden müsse. Die Streichung des Pauschalverbots
-          bedeute aus ihrer Sicht nicht, dass <a target="_blank" rel="noopener
-          noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/068stzg.pdf#page=104">Windenergieanlagen
-          künftig uneingeschränkt auf allen Waldflächen errichtet werden
-          dürften</a>.
   - id: question-3
     index: 3
     category: Strukturwandel
@@ -263,24 +280,24 @@ questions:
       Politiker*innen und Behörden ans Licht bringen? Stelle jetzt eine <a
       target="_blank" rel="noopener noreferrer"
       href="https://fragdenstaat.de/informationsfreiheit/einsteiger-guide/">IFG-Anfrage</a>!</p>
+    keyword: Jugendförderung
     answers:
       - party: cdu
         answer: richtig
         comment: >-
           Die CDU stimmt <a target="_blank" rel="noopener noreferrer"
           href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d1710ran.pdf">ihrem
-          eigenen Antrag</a> zu. 
-
-          Mit dem Flächenfaktor sollen die <a target="_blank" rel="noopener
-          noreferrer"
-          href="(https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/028stzg.pdf#page=93)">besonderen
+          eigenen Antrag</a> zu.<br>Mit dem Flächenfaktor sollen die <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/028stzg.pdf#page=93">besonderen
           Bedingungen ländlicher Regionen berücksichtigt</a> und die
           Lebensverhältnisse von jungen Menschen in Stadt und Land weiter
           angeglichen werden.
       - party: spd
         answer: richtig
         comment: >-
-          Die SPD stimmte dem <a target="_blank" rel="noopener noreferrer"
+          Die SPD stimmte dem eigenen <a target="_blank" rel="noopener
+          noreferrer"
           href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d1710ran.pdf">Antrag</a>
           zu, weil sich die Förderung der Jugendarbeit künftig nicht mehr allein
           nach der Zahl der Kinder und Jugendlichen richten sollte. Der
@@ -292,10 +309,10 @@ questions:
       - party: die-linke
         answer: nicht weit genug
         comment: >-
-          Die Linke enthält sich bei der Abstimmung <a target="_blank"
+          Die Linke enthielt sich bei der Abstimmung <a target="_blank"
           rel="noopener noreferrer"
           href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d1710ran.pdf">zum
-          Antrag der Koalitionsfraktionen</a>, da ihr ein andere Verteilung der
+          Antrag der Koalitionsfraktionen</a>, da ihr eine andere Verteilung der
           Gelder zwischen Städten und Landkreisen allein nicht ausreiche.
           Angesichts geschlossener Einrichtungen, steigender Personal- und
           Sachkosten sowie jahrelanger Unterfinanzierung forderte sie <a
@@ -308,11 +325,11 @@ questions:
         answer: richtig
         comment: >-
           Die Grünen stimmten dem <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/028stzg.pdf#page=98">Antrag</a>
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d1710ran.pdf">Antrag</a>
           zu und verwiesen darauf, den Flächenfaktor bereits zuvor selbst
           gefordert zu haben. Die bisherige Verteilung benachteilige Landkreise
           mit großen Entfernungen und wenigen Einwohner*innen. Die Reform sei
-          deshalb notwendig, um dem <a target="_blank" rel="noopener noreferrer"
+          deshalb notwendig, um den <a target="_blank" rel="noopener noreferrer"
           href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/028stzg.pdf#page=99">gleichwertigen
           Lebensverhältnissen in Stadt und Land näherzukommen</a>.
       - party: afd
@@ -335,18 +352,186 @@ questions:
         comment: >-
           Die FDP stimmt <a target="_blank" rel="noopener noreferrer"
           href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d1710ran.pdf">ihrem
-          eigenen Antrag</a> zu. Die FDP stimmte ihrem Antrag zu. Der
-          Flächenfaktor solle die <a target="_blank" rel="noopener noreferrer"
+          eigenen Antrag</a> zu. Der Flächenfaktor solle die <a target="_blank"
+          rel="noopener noreferrer"
           href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/028stzg.pdf#page=87">Jugendarbeit
           auf dem Land</a> stärken und das <a target="_blank" rel="noopener
           noreferrer"
           href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/028stzg.pdf#page=88">finanzielle
           Gefälle</a> zwischen Landkreisen und kreisfreien Städten verringern,
           ohne den Städten Mittel zu entziehen. Weitergehende Forderungen der
-          Linken lehnte sie in diesem Antrag als zu breit und ohne ausreichende
-          Gegenfinanzierung ab.
+          Linken lehnte sie in diesem Antrag als zu breit und aufgrund nicht
+          ausreichender Gegenfinanzierung ab.
   - id: question-4
     index: 4
+    category: Energie
+    thesis: >-
+      Sachsen-Anhalt soll die Energiewende beschleunigen, sich aber nicht auf
+      konkrete Klimaziele festlegen.
+    info: >-
+      <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
+      Recherchen, Klagen und Community-Aktionen. Du möchtest mehr über die
+      Energiewende erfahren? Entdecke jetzt unseren <a target="_blank"
+      rel="noopener noreferrer" href="https://fragdenstaat.de/climate">Climate
+      Helpdesk</a>! </p>
+    keyword: Energiewende
+    answers:
+      - party: cdu
+        answer: richtig
+        comment: >-
+          Die CDU stimmte der <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d1971vbe.pdf">Beschlussempfehlung</a>
+          zu. Sie setze auf schnellere Genehmigungen, technologieoffene Lösungen
+          und Vorteile für die Menschen vor Ort. Eine Energiewende „<a
+          target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/068stzg.pdf#page=107">mit
+          der Brechstange</a>&quot; lehne sie ab.
+      - party: spd
+        answer: richtig
+        comment: >-
+          Die SPD stimmte der <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d1971vbe.pdf">Beschlussempfehlung</a>
+          zu. Sie wolle den Ausbau durch schnellere Genehmigungen, lokale
+          Wertschöpfung und eine finanzielle Beteiligung der Kommunen
+          voranbringen. <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/003stzg.pdf#page=36">Verbindliche
+          Ausbauzahlen und politischer Druck allein</a> reichten dafür nicht
+          aus.
+      - party: die-linke
+        answer: nicht weit genug
+        comment: >-
+          Die Linke enthielt sich der Abstimmung über die <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d1971vbe.pdf">Beschlussempfehlung</a>.
+          Sie unterstütze die Energiewende grundsätzlich, notwendig seien aber
+          <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/003stzg.pdf#page=21">Klimaneutralität
+          bis 2035, konkrete Zwischenziele</a>, ein CO₂-Budget und eine
+          Solarpflicht. Die weniger verbindliche Beschlussempfehlung reiche ihr
+          daher nicht aus.
+      - party: afd
+        answer: zu weit
+        comment: >-
+          Die AfD lehnte die <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d1971vbe.pdf">Beschlussempfehlung</a>
+          ab. Sie fürchtet eine &quot;<a target="_blank" rel="noopener
+          noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/033stzg.pdf#page=110">nachträgliche
+          Legalisierung rechtswidriger Windräder</a>&quot; und eine
+          &quot;Verschandelung&quot; der Kulturlandschaft Sachsen-Anhalt.
+      - party: fdp
+        answer: richtig
+        comment: >-
+          Die FDP stimmte der <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d1971vbe.pdf">Beschlussempfehlung</a>
+          zu. Erneuerbare Energien seien grundsätzlich als möglicher Jobmotor zu
+          sehen, sie lehne aber „<a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/003stzg.pdf#page=30">starre
+          Vorgaben“ beim Bau von Windrädern</a> und eine verpflichtende
+          Installation von Solaranlagen ab.
+      - party: die-gruenen
+        answer: nicht weit genug
+        comment: >-
+          Die Grünen enthielten sich bei der Abstimmung, obwohl die <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d1971vbe.pdf">Beschlussempfehlung</a>
+          auf einen Antrag der eigenen Fraktion zurückgeht. Doch <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/003stzg.pdf#page=21">zentrale
+          Forderungen ihres ursprünglichen Antrags</a>, darunter
+          Klimaneutralität bis 2035, eine Solarpflicht und das
+          Zwei-Prozent-Flächenziel für Windenergie, wurden nicht in den
+          Beschluss übernommen.
+  - id: question-5
+    index: 5
+    category: Demokratie & Institutionen
+    thesis: >-
+      Der Fortbestand der Landeszentrale für politische Bildung soll gesetzlich
+      abgesichert werden.
+    info: >-
+      <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
+      Recherchen, Klagen und Community-Aktionen. Hier findest Du eine spannende
+      Recherche zur <a target="_blank" rel="noopener noreferrer"
+      href="https://fragdenstaat.de/artikel/exklusiv/2026/03/radikale-tochter/">Demokratieförderung</a>!</p>
+    keyword: Landeszentrale für politische Bildung
+    answers:
+      - party: cdu
+        answer: richtig
+        comment: >-
+          Die CDU stimmte dem <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6653wge.pdf">Gesetzentwurf</a>
+          zu. Sie bezeichnete die Landeszentrale für politische Bildung als
+          unverzichtbar, weil diese <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/109stzg.pdf#page=29">faktenbasierte
+          politische Bildung</a> vermittle, Extremismus entgegenwirke und
+          demokratische Werte verteidige. Eine Abschaffung würde die <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=9">Demokratie
+          schwächen und Desinformation sowie Radikalisierung</a> begünstigen.
+      - party: spd
+        answer: richtig
+        comment: >-
+          Die SPD stimmte der <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6653wge.pdf">Parlamentsreform</a>
+          und damit der gesetzlichen Verankerung der Landeszentrale zu. Sie
+          ordnete die Bestandsgarantie der Landeszentrale in das übergeordnete
+          Ziel ein, <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/109stzg.pdf#page=15">demokratische
+          Institutionen widerstandsfähiger gegen Missbrauch und
+          antidemokratische Angriffe</a> zu machen.
+      - party: die-linke
+        answer: richtig
+        comment: >-
+          Die Linke stimmte dem <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6653wge.pdf">Gesetzentwurf</a>
+          zu, weil es wichtig sei, dass die Landeszentrale eine <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=12">gesetzliche
+          Grundlage</a> bekomme. Jedoch hätte die Fraktion eine weitergehende
+          Absicherung der inhaltlichen Arbeit, nicht nur des Bestands der
+          Landeszentrale, gewünscht.
+      - party: die-gruenen
+        answer: richtig
+        comment: >-
+          Die Grünen stimmten der gesetzlichen <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6653wge.pdf">Bestandsgarantie</a>
+          der Landeszentrale zu. Dass die Landeszentrale nun eine gesetzliche
+          Grundlage erhielte, sei der <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/109stzg.pdf#page=26">Bedeutung
+          der Institution</a> angemessen. So müsse über eine mögliche
+          Abschaffung der Landeszentrale künftig der Landtag entscheiden.
+          Zugleich betrachteten sie die Regelung nur als Mindestlösung und
+          hätten die Aufgaben und die institutionelle Absicherung der
+          Landeszentrale lieber in einem eigenen Gesetz ausführlicher geregelt.
+      - party: afd
+        answer: zu weit
+        comment: >-
+          Die AfD lehnte den <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6653wge.pdf">Gesetzentwurf</a>
+          ab. Sie betrachtet die Landeszentrale als <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/109stzg.pdf#page=13">Instrument
+          politischer Indoktrination</a> und hatte wiederholt ihre Abschaffung
+          gefordert. Die gesetzliche Verpflichtung, eine Landeszentrale zu
+          unterhalten, wertete sie als gezielten Versuch, eine solche
+          Abschaffung <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=8">durch
+          eine künftige AfD-geführte Landesregierung</a> zu verhindern.
+      - party: fdp
+        answer: richtig
+        comment: >-
+          Die FDP stimmte dem <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6653wge.pdf">Gesetzentwurf</a>
+          zu. Sie begründete ihre Haltung zur Landeszentrale nicht gesondert,
+          sondern stellte vor allem die <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/109stzg.pdf#page=7">Funktionsfähigkeit
+          und institutionelle Absicherung der parlamentarischen Demokratie
+          insgesamt</a> in den Mittelpunkt.
+  - id: question-6
+    index: 6
     category: Verkehr & Infrastruktur
     thesis: >-
       Der Radverkehr soll stärker gefördert und bei der Verkehrsplanung besser
@@ -358,6 +543,7 @@ questions:
       Politiker*innen und Behörden ans Licht bringen? Stelle jetzt eine <a
       target="_blank" rel="noopener noreferrer"
       href="https://fragdenstaat.de/informationsfreiheit/einsteiger-guide/">IFG-Anfrage</a>!</p>
+    keyword: Radverkehr
     answers:
       - party: cdu
         answer: zu weit
@@ -370,7 +556,7 @@ questions:
           verbindliche Standards, neue Pflichten und weitergehende finanzielle
           Versprechen</a> angesichts ausgeschöpfter Fördermittel und fehlenden
           Fachpersonals für nicht realistisch. Stattdessen stellte sie mit der
-          Regierungskoalition einen Alternativantrag um Radwege schrittweise
+          Regierungskoalition einen Alternativantrag, um Radwege schrittweise
           auszubauen und <a target="_blank" rel="noopener noreferrer"
           href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/111stzg.pdf#page=201">Qualitätsstandards
           nur so weiterzuentwickeln</a>, dass die Kommunen dadurch nicht
@@ -434,194 +620,179 @@ questions:
           Verkehrspolitik geben, die das Auto zurückdrängt</a> oder einzelne
           Verkehrsmittel gegeneinander ausspielt; man setze auf einen
           pragmatischen Ausbau bestehender Radwege.
-  - id: question-5
-    index: 5
+  - id: question-7
+    index: 7
     category: Innere Sicherheit
     thesis: >-
       Die Landesregierung soll sich auf Bundesebene für eine Überprüfung des
-      Waffenrechts einsetzen, jedoch nicht direkt für eine Verschärfung.
+      Waffenrechts einsetzen – nicht für eine Verschärfung.
     info: >-
       <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
       Recherchen, Klagen und Community-Aktionen. Entdecke jetzt diese spannende
       <a target="_blank" rel="noopener noreferrer"
       href="https://fragdenstaat.de/artikel/exklusiv/2025/06/wer-afd-mitgliedern-die-waffen-wegnimmt-und-wer-nicht/">Recherche
       zum Waffenrecht</a>!</p>
+    keyword: Waffenrecht
     answers:
       - party: cdu
         answer: richtig
         comment: >-
-          Die CDU stimmte der [Beschlussempfehlung](<a target="_blank"
-          rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d4102vbs.pdf">https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d4102vbs.pdf</a>)
+          Die CDU stimmte dem <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d4102vbs.pdf">Beschluss</a>
           zu. Die Tötung einer Frau mit einer Schusswaffe, die dem Antrag
           vorausging, hätte möglicherweise verhindert werden können, wenn
-          Polizei und Waffenbehörde ihre [bestehenden rechtlichen Möglichkeiten
-          konsequent genutzt hätten](<a target="_blank" rel="noopener
+          Polizei und Waffenbehörde ihre <a target="_blank" rel="noopener
           noreferrer"
-          href="https://padoka.landtag.sachsen-anhal)t.de/files/plenum/wp8/066stzg.pdf#page=120">https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/066stzg.pdf#page=120</a>.
-          Deshalb brauche es einen verbesserten Informationsaustausch, die
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/066stzg.pdf#page=120">bestehenden
+          rechtlichen Möglichkeiten konsequent genutzt hätten</a>. Deshalb
+          brauche es einen verbesserten Informationsaustausch, die
           Fallkonferenzen und eine Überprüfung des Waffenrechts auf Bundesebene,
           jedoch keine generelle Verschärfung des Waffenrechts.
       - party: spd
         answer: richtig
         comment: >-
-          Die SPD stimmte der [Beschlussempfehlung](<a target="_blank"
-          rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d4102vbs.pdf">https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d4102vbs.pdf</a>)
-          zu. Sie betonte, dass Polizei, Waffenbehörden und Innenministerium
-          seit der Tat, die der Debatte vorausging, [Fortschritte beim Vollzug
-          des geltenden Waffenrechts](<a target="_blank" rel="noopener
-          noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/066stzg.pdf#page=117">https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/066stzg.pdf#page=117</a>)
-          erzielt hätten. Eine Verschärfung werde mit dem Beschluss ausdrücklich
-          nicht gefordert.
-      - party: die-linke
-        answer: nicht weit genug
-        comment: >-
-          Die Linke enthielt sich bei der Abstimmung zur
-          [Beschlussempfehlung](<a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d4102vbs.pdf">https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d4102vbs.pdf</a>).
-          Sie begrüßte zwar bspw. den konsequenteren Vollzug des bestehenden
-          Rechts. Eine bloße Überprüfung des Waffenrechts sei jedoch nicht
-          ausreichend: Die Linke [forderte zusätzlich eine Verschärfung des
-          Waffenrechts auf Bundesebene](<a target="_blank" rel="noopener
-          noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/066stzg.pdf#page=118">https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/066stzg.pdf#page=118</a>)
-          und insgesamt weniger Waffen in privatem Besitz.
-      - party: die-gruenen
-        answer: nicht weit genug
-        comment: >-
-          Die Grünen enthielten sich bei der Abstimmung zur
-          [Beschlussempfehlung](<a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d4102vbs.pdf">https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d4102vbs.pdf</a>).
-          Sie sahen das Hauptproblem im unzureichenden Vollzug des bestehenden
-          Waffenrechts und [forderten unter anderem bessere Kontrollen, mehr
-          Personal und eine engere Zusammenarbeit der Behörden](<a
-          target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/066stzg.pdf#page=121">https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/066stzg.pdf#page=121</a>).
-          Eine bloße Überprüfung ohne konkrete Konsequenzen ginge jedoch nicht
-          weit genug, an einzelnen Stellen seien gesetzliche Nachbesserungen
-          notwendig.
-      - party: afd
-        answer: zu weit
-        comment: >-
-          Die AfD lehnte die [Beschlussempfehlung](<a target="_blank"
-          rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d4102vbs.pdf">https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d4102vbs.pdf</a>)
-          ab. Sie sah bereits in der angekündigten Überprüfung des Waffenrechts
-          eine mögliche Vorbereitung weiterer Verschärfungen und warf den
-          übrigen Fraktionen vor, legale Waffenbesitzer unter Generalverdacht zu
-          stellen. Der Beschluss bedrohe etwa [die Interessen von Jägern und
-          Sportschützen](<a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/066stzg.pdf#page=116">https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/066stzg.pdf#page=116</a>).
-      - party: fdp
-        answer: richtig
-        comment: >-
-          Die FDP stimmte der [Beschlussempfehlung](<a target="_blank"
-          rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d4102vbs.pdf">https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d4102vbs.pdf</a>)
-          zu. Sie unterstütze einen konsequenteren Vollzug des bestehenden
-          Waffenrechts und dessen Überprüfung auf Bundesebene. [Zusätzliche
-          Einschränkungen](<a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/066stzg.pdf#page=122">https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/066stzg.pdf#page=122</a>)
-          werde es mit der FDP jedoch weder in der Bundes- noch in der
-          Landesregierung geben.
-  - id: question-6
-    index: 6
-    category: Verkehr & Infrastruktur
-    thesis: >-
-      Auch für reimportierte Simson-Mopeds bis Baujahr 1992 soll die
-      Sonderregelung des Einigungsvertrags gelten. Sie sollen 60 km/h fahren
-      dürfen, auch wenn für Kleinkrafträder niedrigere Höchstgeschwindigkeiten
-      gelten. 
-    info: >-
-      <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern setzt sich mit
-      investigativen Recherchen, Klagen und Community-Aktionen für mehr
-      Transparenz ein. Du möchtest selbst spannende Informationen über
-      Politiker*innen und Behörden ans Licht bringen? Stelle jetzt eine <a
-      target="_blank" rel="noopener noreferrer"
-      href="https://fragdenstaat.de/informationsfreiheit/einsteiger-guide/">IFG-Anfrage</a>!</p>
-    answers:
-      - party: cdu
-        answer: richtig
-        comment: >-
-          Die CDU stimmte dem gemeinsamen <a target="_blank" rel="noopener
-          noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6089ran.pdf">Antrag</a>
-          der Koalitionsfraktionen zu. Sie hob die Simson als <a target="_blank"
-          rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/101stzg.pdf#page=147">bezahlbares
-          Verkehrsmittel und als ostdeutsches Kulturgut</a> hervor, das bis
-          heute mehrere Generationen miteinander verbinde. Vor allem hielt sie
-          es für ungerecht, baugleiche Reimporte rechtlich anders zu behandeln.
-      - party: spd
-        answer: richtig
-        comment: >-
           Die SPD stimmte dem <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6089ran.pdf">Antrag</a>
-          zu. Die <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/101stzg.pdf#page=155">Simson
-          sei eine robuste und bezahlbare Form der Mobilität</a>, insbesondere
-          in Regionen mit wenigen Alternativen. Dass baugleiche Reimporte anders
-          behandelt würden als Fahrzeuge, die Deutschland nie verlassen hatten,
-          sei nicht nachvollziehbar; zugleich unterstützte sie einfachere
-          Zulassungen von Elektro-Umbauten.
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d4102vbs.pdf">Beschluss</a>
+          zu. Sie betonte, dass Polizei, Waffenbehörden und Innenministerium
+          seit der Tat, die der Debatte vorausging, <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/066stzg.pdf#page=117">Fortschritte
+          beim Vollzug des geltenden Waffenrechts</a> erzielt hätten. Eine
+          Verschärfung werde mit dem Beschluss ausdrücklich nicht gefordert.
       - party: die-linke
         answer: nicht weit genug
         comment: >-
-          Die Linke teilte zwar die grundsätzlichen Ziele, enthielt sich aber
-          bei der Abstimmung zum <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6089ran.pdf">Antrag</a>
-          der Koalitionsfraktionen. Sie legte einen weitergehenden
-          Alternativantrag vor. Statt lediglich einzelne nationale
-          Zulassungsprobleme zu prüfen, wollte sie eine <a target="_blank"
+          Die Linke enthielt sich bei der Abstimmung zum <a target="_blank"
           rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/101stzg.pdf#page=154">unbefristete
-          europaweite Anerkennung und Ausnahmeregelung für verkehrssichere
-          Simson-Kleinkrafträder</a> bis Baujahr 1992 erreichen. Außerdem sollte
-          sich das Land beim Bund für eine Verlängerung auslaufender
-          Übergangsregelungen einsetzen.
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d4102vbs.pdf">Beschluss</a>.
+          Sie begrüßte zwar etwa den konsequenteren Vollzug des bestehenden
+          Rechts. Eine bloße Überprüfung des Waffenrechts sei jedoch nicht
+          ausreichend: Die Linke <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/066stzg.pdf#page=118">forderte
+          zusätzlich eine Verschärfung des Waffenrechts auf Bundesebene</a> und
+          insgesamt weniger Waffen in privatem Besitz.
       - party: die-gruenen
-        answer: zu weit
+        answer: nicht weit genug
         comment: >-
           Die Grünen enthielten sich bei der Abstimmung zum <a target="_blank"
           rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6089ran.pdf">Antrag</a>
-          der Koalitionsfraktionen. Sie begrüßten zwar insbesondere die
-          Möglichkeit, Simson-Kleinkrafträder auf Elektroantrieb umzurüsten. Bei
-          einer erleichterten Zulassung von Reimporten müssten aus ihrer Sicht
-          jedoch die <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/101stzg.pdf#page=156">deutschen
-          Sicherheitsanforderungen</a> eingehalten werden; zugleich kritisierten
-          sie die <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/101stzg.pdf#page=156">Schadstoff-
-          und Feinstaubemissionen</a> der traditionellen Zweitaktmotoren.
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d4102vbs.pdf">Beschluss</a>.
+          Sie sahen das Hauptproblem im unzureichenden Vollzug des bestehenden
+          Waffenrechts und <a target="_blank" rel="noopener noreferrer"
+          href="(https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/066stzg.pdf#page=121">forderten
+          unter anderem bessere Kontrollen, mehr Personal und eine engere
+          Zusammenarbeit der Behörden</a>. Eine bloße Überprüfung ohne konkrete
+          Konsequenzen ginge jedoch nicht weit genug, an einzelnen Stellen seien
+          gesetzliche Nachbesserungen notwendig.
       - party: afd
-        answer: nicht weit genug
+        answer: zu weit
         comment: >-
-          Die AfD bezeichnete den <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6089ran.pdf">Antrag</a>
-          zwar als grundsätzlich richtig, enthielt sich jedoch und brachte einen
-          eigenen Alternativantrag ein. Ihr reichten die vorgesehenen
-          Zulassungserleichterungen nicht aus. Sie verlangte zusätzlich, die
-          Simson als <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/101stzg.pdf#page=151">immaterielles
-          Kulturerbe</a> anzuerkennen, um das Fahrzeug und seine Besonderheiten
-          auch gegenüber künftigen Abgas- und Geschwindigkeitsregelungen stärker
-          zu schützen.
+          Die AfD lehnte den <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d4102vbs.pdf">Beschluss</a>
+          ab. Sie sah bereits in der angekündigten Überprüfung des Waffenrechts
+          eine mögliche Vorbereitung weiterer Verschärfungen und warf den
+          übrigen Fraktionen vor, legale Waffenbesitzer unter Generalverdacht zu
+          stellen. Der Beschluss bedrohe etwa <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/066stzg.pdf#page=116">die
+          Interessen von Jägern und Sportschützen</a>.
       - party: fdp
         answer: richtig
         comment: >-
           Die FDP stimmte dem <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6089ran.pdf">Antrag</a>
-          zu. Es <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/101stzg.pdf#page=152">sei
-          nicht nachvollziehbar</a>, dass in Deutschland verbliebene
-          Simson-Kleinkrafträder aufgrund des Einigungsvertrags mit bis zu 60
-          km/h zugelassen sind, während baugleiche, später reimportierte Modelle
-          teilweise nur 45 km/h fahren dürfen.
-  - id: question-7
-    index: 7
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d4102vbs.pdf">Beschluss</a>
+          zu. Sie unterstütze einen konsequenteren Vollzug des bestehenden
+          Waffenrechts und dessen Überprüfung auf Bundesebene. <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/066stzg.pdf#page=122">Zusätzliche
+          Einschränkungen</a> werde es mit der FDP jedoch weder in der Bundes-
+          noch in der Landesregierung geben.
+  - id: question-8
+    index: 8
+    category: Energie & Klima
+    thesis: >-
+      Ohne zusätzliche Regelungen zum Naturschutz zu erlassen, soll das
+      pauschale Verbot von Windenergieanlagen im Wald aufgehoben werden.
+    info: >-
+      <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
+      Recherchen, Klagen und Community-Aktionen. Du möchtest mehr über die
+      Energiewende erfahren? Entdecke jetzt unseren <a target="_blank"
+      rel="noopener noreferrer"
+      href="https://fragdenstaat.de/aktionen/climate-helpdesk/">Climate
+      Helpdesk</a>! </p>
+    keyword: Windenergie
+    answers:
+      - party: cdu
+        answer: richtig
+        comment: >-
+          Die CDU stimmt <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d3708lge.pdf">dem
+          Gesetzentwurf</a> zu, da das vom Bundesverfassungsgericht beanstandete
+          Pauschalverbot von Windanlagen im Wald aufgehoben werden müsse.
+          Zugleich betonte sie, dass der Ausbau auf die gesetzlich notwendige
+          Fläche begrenzt und <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/068stzg.pdf#page=107">ein
+          unkontrollierter Ausbau verhindert werden solle</a>.
+      - party: spd
+        answer: richtig
+        comment: >-
+          Die SPD stimmt dem <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d3708lge.pdf">Gesetzentwurf</a>
+          zu. Aus ihrer Sicht würden <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/068stzg.pdf#page=102">weitere
+          geeignete Flächen für Windenergie</a> benötigt, um die gesetzlichen
+          Ausbauziele zu erreichen.
+      - party: die-linke
+        answer: nicht weit genug
+        comment: >-
+          Die Linke enthielt sich bei der Abstimmung zum <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d3708lge.pdf">Gesetzentwurf</a>.
+          Sie hielt die Aufhebung des Pauschalverbots grundsätzlich für richtig,
+          kritisierte jedoch, dass klare Regelungen fehlten, <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/068stzg.pdf#page=104">um
+          eine Schwächung des Natur-, Arten- und Umweltschutzes zu
+          verhindern</a>.
+      - party: die-gruenen
+        answer: nicht weit genug
+        comment: >-
+          Die Grünen enthielten sich bei der Abstimmung zum <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d3708lge.pdf">Gesetzentwurf</a>,
+          da zusätzliche Vorgaben fehlen, damit Windenergieanlagen nur
+          ausnahmsweise im Wald und möglichst auf <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/068stzg.pdf#page=106">bereits
+          baumfreien Flächen</a> errichtet werden können.
+      - party: afd
+        answer: zu weit
+        comment: >-
+          Die AfD lehnte <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d3708lge.pdf">den
+          Gesetzentwurf</a> ab. Mit einem <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d4267aae.pdf">Änderungsantrag</a>
+          wollte sie erreichen, dass „<a target="_blank" rel="noopener
+          noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/068stzg.pdf#page=101">kein
+          einziges Windrad im Wald entstehen</a>“ solle; denn der Wald sei als
+          Naturgebiet wichtig und nicht als Energieerzeugungsgebiet.
+      - party: fdp
+        answer: richtig
+        comment: >-
+          Die FDP stimmt <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d3708lge.pdf">dem
+          Gesetzentwurf</a> zu, da die zuvor als verfassungswidrig bewertete
+          Regelung aufgehoben werden müsse. Die Streichung des Pauschalverbots
+          bedeute aus ihrer Sicht nicht, dass <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/068stzg.pdf#page=104">Windenergieanlagen
+          künftig uneingeschränkt auf allen Waldflächen errichtet werden
+          dürften</a>.
+  - id: question-9
+    index: 9
     category: Migration
     thesis: >-
       Die Landesregierung soll sich dafür einsetzen, dass syrische
@@ -633,26 +804,19 @@ questions:
       target="_blank" rel="noopener noreferrer"
       href="https://fragdenstaat.de/artikel/exklusiv/2026/08/rechtsbruch-mit-ansage/">Recherche
       zur deutschen Migrationspolitik</a>! </p>
+    keyword: Aufenthaltsrecht
     answers:
       - party: cdu
         answer: zu weit
         comment: >-
           Die CDU lehnt den <a target="_blank" rel="noopener noreferrer"
           href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d5352gaa.pdf">Antrag
-          der Grünen</a> ab und betont, dass das Asylrecht
-
-          ein <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/087stzg.pdf#page=48">Recht
-          auf Zeit</a>) sei. Wenn der Fluchtgrund
-
-          wegfalle, müssten insbesondere
-
-          diejenigen Deutschland verlassen, die
-
-          ihren Lebensunterhalt nicht selbst bestreiten,
-
-          die sich nicht integriert haben und die nur auf
-
+          der Grünen</a> ab und betont, dass das Asylrecht ein <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/087stzg.pdf#page=49">Recht
+          auf Zeit</a> sei. Wenn der Fluchtgrund wegfalle, müssten insbesondere
+          diejenigen Deutschland verlassen, die ihren Lebensunterhalt nicht
+          selbst bestreiten, die sich nicht integriert haben und die nur auf
           Staatskosten leben.
       - party: spd
         answer: zu weit
@@ -711,7 +875,7 @@ questions:
         comment: >-
           Die FDP lehnt den <a target="_blank" rel="noopener noreferrer"
           href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d5352gaa.pdf">Antrag
-          der Grünen</a> ab. zwar rechtfertige die Sicherheitslage in Syrien
+          der Grünen</a> ab. Zwar rechtfertige die Sicherheitslage in Syrien
           noch keine pauschale Beendigung des Schutzstatus, jedoch sei der
           Schutzstatus eben nur temporär. <a target="_blank" rel="noopener
           noreferrer"
@@ -719,280 +883,19 @@ questions:
           freiwillig in sein Herkunftsland reisen könne</a>, müsse zumindest
           überprüfen lassen, ob die Voraussetzungen für den Schutz und den
           Aufenthaltstitel in Deutschland weiterhin bestehen.
-  - id: question-8
-    index: 8
-    category: Justiz
-    thesis: >-
-      Die Landesregierung soll sich dafür einsetzen, dass Fahren ohne Ticket
-      entkriminalisiert wird.
-    info: >-
-      <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern setzt sich mit
-      investigativen Recherchen, Klagen und Community-Aktionen für mehr
-      Transparenz ein. Du möchtest selbst spannende Informationen über
-      Politiker*innen und Behörden ans Licht bringen? Stelle jetzt eine <a
-      target="_blank" rel="noopener noreferrer"
-      href="https://fragdenstaat.de/informationsfreiheit/einsteiger-guide/">IFG-Anfrage</a>!</p>
-    answers:
-      - party: cdu
-        answer: zu weit
-        comment: >-
-          Die CDU lehnte den <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6851gan.pdf">Antrag
-          der Grünen</a> ab und stellte einen eigenen <a target="_blank"
-          rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6890raa.pdf">Alternativantrag
-          zu Sicherheit im Öffentlichen Personennahverkehr</a>, der keine
-          Entkriminalisierung des Fahrens ohne Fahrschein vorsieht. <a
-          target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=109">In
-          ihrer Rede</a> begründete sie ihre Ablehnung dieser konkreten
-          Forderung nicht, sondern konzentrierte sich auf Sicherheitsmaßnahmen,
-          eine bessere Infrastruktur und mehr Investitionen in den öffentlichen
-          Nahverkehr.
-      - party: spd
-        answer: zu weit
-        comment: >-
-          Die SPD stimmt gegen den <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6851gan.pdf">Antrag
-          der Grünen</a> und für ihren eigenen <a target="_blank" rel="noopener
-          noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6890raa.pdf">Alternativantrag</a>,
-          der die Entkriminalisierung nicht vorsieht. In ihrer entsprechenden
-          Rede positioniert sie sich nicht weiter zu dem Thema, sondern stellt
-          einen <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=104">sicheren
-          und bezahlbaren Nahverkehr</a> in den Mittelpunkt.
-      - party: die-linke
-        answer: richtig
-        comment: >-
-          Die Linke stimmt dem <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6851gan.pdf">Antrag
-          der Grünen</a> zu.  In der Plenardebatte begründete sie diese
-          Einzelposition nicht näher. In einer <a target="_blank" rel="noopener
-          noreferrer"
-          href="https://www.dielinke-sachsen-anhalt.de/aktuell-1/detail/news/fahren-ohne-ticket-muss-entkriminalisiert-werden/">offiziellen
-          Stellungnahme</a> bezeichnete sie die strafrechtliche Verfolgung
-          jedoch als unverhältnismäßig und verwies darauf, dass die
-          Kriminalisierung des Fahrens ohne Ticket insbesondere Menschen in
-          schwierigen Lebenslagen treffe sowie Polizei, Justiz und Strafvollzug
-          unnötig belaste.
-      - party: die-gruenen
-        answer: richtig
-        comment: >-
-          Die Grünen stimmen ihrem <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6851gan.pdf">eigenen
-          Antrag</a> zu. Fahren ohne Fahrschein solle weiterhin sanktioniert
-          werden, eine strafrechtliche <a target="_blank" rel="noopener
-          noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=115">Verfolgung
-          bis hin zur Haft</a> sei aber unverhältnismäßig. Ähnlich wie das
-          Parken ohne Parkschein solle es künftig als Ordnungswidrigkeit
-          behandelt werden.
-      - party: afd
-        answer: zu weit
-        comment: >-
-          Die AfD lehnte den <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6851gan.pdf">Antrag
-          der Grünen</a> ab. Fahren ohne Fahrschein sei kein Bagatelldelikt mit
-          geringer krimineller Energie, sondern &quot;<a target="_blank"
-          rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=108">asoziales
-          Verhalten</a>&quot;, das nichts mit Armut zu tun habe.
-      - party: fdp
-        answer: zu weit
-        comment: >-
-          Die FDP lehnt den <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6851gan.pdf">Antrag
-          der Grünen</a> ab. Es könne keine Lösung sein, Schwarzfahren zum
-          Kavaliersdelikt zu machen. &quot;<a target="_blank" rel="noopener
-          noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=114">Diejenigen,
-          die ihre Fahrkarte bezahlen, wären dann die Dummen</a>&quot; und dies
-          käme einer Bankrotterklärung des Staates gleich.
-  - id: question-9
-    index: 9
-    category: Demokratie & Institutionen
-    thesis: >-
-      Der Fortbestand der Landeszentrale für politische Bildung soll gesetzlich
-      abgesichert werden.
-    info: >-
-      <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
-      Recherchen, Klagen und Community-Aktionen. Hier findest Du eine spannende
-      Recherche zur <a target="_blank" rel="noopener noreferrer"
-      href="https://fragdenstaat.de/artikel/exklusiv/2026/03/radikale-tochter/">Demokratieförderung</a>!</p>
-    answers:
-      - party: cdu
-        answer: richtig
-        comment: >-
-          Die CDU stimmte dem <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6653wge.pdf">Gesetzentwurf</a>
-          zu. Sie bezeichnete die Landeszentrale für politische Bildung als
-          unverzichtbar, weil diese <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/109stzg.pdf#page=29">faktenbasierte
-          politische Bildung</a> vermittle, Extremismus entgegenwirke und
-          demokratische Werte verteidige. Eine Abschaffung würdedie <a
-          target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=9">Demokratie
-          schwächen und Desinformation sowie Radikalisierung</a> begünstigen.
-      - party: spd
-        answer: richtig
-        comment: >-
-          Die SPD stimmte der <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6653wge.pdf">Parlamentsreform</a>
-          und damit der gesetzlichen Verankerung der Landeszentrale zu. Sie
-          ordnete die Bestandsgarantie der Landeszentrale in das übergeordnete
-          Ziel ein, <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/109stzg.pdf#page=15">demokratische
-          Institutionen widerstandsfähiger gegen Missbrauch und
-          antidemokratische Angriffe</a> zu machen.
-      - party: die-linke
-        answer: richtig
-        comment: >-
-          Die Linke stimmte dem <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6653wge.pdf">Gesetzentwurf</a>
-          zu, weil es wichtig sei, dass die Landeszentrale eine <a
-          target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=12">gesetzliche
-          Grundlage</a> bekomme. Jedoch hätte die Fraktion eine weitergehende
-          Absicherung der Inhaltlichen Arbeit, nicht nur des Bestands der
-          Landeszentrale, gewünscht.
-      - party: die-gruenen
-        answer: richtig
-        comment: >-
-          Die Grünen stimmten der gesetzlichen <a target="_blank" rel="noopener
-          noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6653wge.pdf">Bestandsgarantie</a>
-          der Landeszentrale zu. Dass die Landeszentrale nun eine gesetzliche
-          Grundlage erhielte, sei der <a target="_blank" rel="noopener
-          noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/109stzg.pdf#page=26">Bedeutung
-          der Institution</a> angemessen. So müsse über eine mögliche
-          Abschaffung der Landeszentrale künftig der Landtag entscheiden.
-          Zugleich betrachteten sie die Regelung nur als Mindestlösung und
-          hätten die Aufgaben und die institutionelle Absicherung der
-          Landeszentrale lieber in einem eigenen Gesetz ausführlicher geregelt.
-      - party: afd
-        answer: zu weit
-        comment: >-
-          Die AfD lehnte den <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6653wge.pdf">Gesetzentwurf</a>
-          ab. Sie betrachtet die Landeszentrale als <a target="_blank"
-          rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/109stzg.pdf#page=13">Instrument
-          politischer Indoktrination</a> und hatte wiederholt ihre Abschaffung
-          gefordert. Die gesetzliche Verpflichtung, eine Landeszentrale zu
-          unterhalten, wertete sie als gezielten Versuch, eine solche
-          Abschaffung <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=8">durch
-          eine künftige AfD-geführte Landesregierung</a> zu verhindern.
-      - party: fdp
-        answer: richtig
-        comment: >-
-          Die FDP stimmtedem Gesetzesentwurf zu. Sie begründete ihre Haltung zur
-          Landeszentrale nicht gesondert, sondern stellte vor allem die <a
-          target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/109stzg.pdf#page=7">Funktionsfähigkeit
-          und institutionelle Absicherung der parlamentarischen Demokratie
-          insgesamt</a> in den Mittelpunkt.
   - id: question-10
     index: 10
-    category: Demokratie & Institutionen
-    thesis: >-
-      Wenn die notwendige Zweidrittelmehrheit innerhalb von sechs Monaten nicht
-      zustande kommt, sollen Verfassungsrichter*innen auf Vorschlag des
-      Landesverfassungsgerichts auch mit absoluter Mehrheit gewählt werden
-      können.
-    info: >-
-      <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
-      Recherchen, Klagen und Community-Aktionen. Entdecke, wie wir mit
-      strategischen Klagen für <a target="_blank" rel="noopener noreferrer"
-      href="https://fragdenstaat.de/klagen/">Transparenz und Pressefreiheit
-      kämpfen</a>!</p>
-    answers:
-      - party: cdu
-        answer: richtig
-        comment: >-
-          Die CDU stimmte dem <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6653wge.pdf">Gesetzentwurf</a>
-          zu. Die Regelung sei ein <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=9">Schutz
-          vor Blockaden und Handlungsunfähigkeit</a>; man wolle sicherstellen,
-          dass das Landesverfassungsgericht seine Aufgabe dauerhaft erfüllen
-          kann. Ein arbeitsfähiges Gericht stärke die Gewaltenteilung,
-          verhindere Machtmissbrauch und sichere die Kontrolle staatlichen
-          Handelns.
-      - party: spd
-        answer: richtig
-        comment: >-
-          Die SPD stimmte dem <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6653wge.pdf">Gesetzentwurf</a>
-          zu. Es müsse verhindert werden, dass <a target="_blank" rel="noopener
-          noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=14">demokratische
-          Institutionen durch gezielte Blockaden</a> handlungsunfähig werden.
-          Die Möglichkeit einer Wahl mit absoluter Mehrheit nach einem
-          gescheiterten sechsmonatigen Einigungsversuch solle deshalb die
-          dauerhafte Arbeitsfähigkeit des Landesverfassungsgerichts sichern.
-      - party: die-linke
-        answer: richtig
-        comment: >-
-          Die Linke stimmte dem [Gesetzentwurf] zu. Das Landesverfassungsgericht
-          sei ein <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/109stzg.pdf#page=16">zentraler
-          Schutz für Grund- und Freiheitsrechte</a> und eine Kontrollinstanz
-          gegenüber staatlicher Willkür. Die neue Wahlregel solle verhindern,
-          dass eine politische Blockade die Arbeitsfähigkeit des Gerichts und
-          damit die unabhängige Justiz gefährdet.
-      - party: die-gruenen
-        answer: richtig
-        comment: >-
-          Die Grünen stimmten der <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6653wge.pdf">Neuregelung</a>
-          zu. Eine jahrelange Blockade bei der Besetzung von Richterstellen
-          könne die <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=17">Verfassungsgerichtsbarkeit
-          und damit auch die Kontrolle der Landesregierung</a> gefährden. Die
-          Ersatzregelung mit absoluter Mehrheit solle deshalb gewährleisten,
-          dass das Gericht dauerhaft arbeitsfähig bleibt.
-      - party: afd
-        answer: zu weit
-        comment: >-
-          Die AfD lehnte den <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6653wge.pdf">Gesetzentwurf</a>
-          ab, denn mit ihm wolle man eine mögliche <a target="_blank"
-          rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=7">Sperrminorität
-          umgehen</a>, um Verfassungsrichter*innen künftig ohne Zustimmung der
-          AfD wählen zu können. Generell lehne man &quot;<a target="_blank"
-          rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/115stzg.pdf#page=181">politische
-          Richter mit Parteibüchern in Verfassungsgerichten</a>&quot; ab.
-      - party: fdp
-        answer: richtig
-        comment: >-
-          Die FDP stimmte der <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6653wge.pdf">Neuregelung</a>
-          zu. Es müsse zwar weiterhin eine breite Zweidrittelmehrheit gesucht
-          werden, es sei jedoch notwendig, für den Fall einer dauerhaften
-          Blockade vorzusorgen. Da Verfassungsrichter*innen die Verfassung und
-          auch die Rechte von Minderheiten schützen, dürfe ihre <a
-          target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=19">Wahl
-          nicht über Jahre scheitern</a> und dadurch die Arbeitsfähigkeit des
-          Gerichts gefährden.
-  - id: question-11
-    index: 11
     category: Bildung
     thesis: >-
-      Die Landesregierung soll sich dafür einsetzen, dass die angekündigte
-      BAföG-Reform schnell umgesetzt wird. Eine Leistungserhöhung für
-      Studierende soll ein zentrales Element sein. 
+      Die Landesregierung soll sich beim Bund dafür einsetzen, dass Studierende
+      höhere BAföG-Sätze erhalten. 
     info: >-
       <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
       Recherchen, Klagen und Community-Aktionen. Lies jetzt diese spannende
       Recherche zu <a target="_blank" rel="noopener noreferrer"
       href="https://fragdenstaat.de/artikel/exklusiv/2026/07/take-back-the-future/">politischem
       Druck</a> auf eine Berliner Uni. </p>
+    keyword: BAföG
     answers:
       - party: cdu
         answer: zu weit
@@ -1016,12 +919,12 @@ questions:
           der Linken ab und stimmte entsprechend der Koalitionslogik dem
           Alternativantrag der Koalitionsfraktionen zu. Ihre Rede liefert jedoch
           keine inhaltliche Begründung dafür, warum ihr die Forderung der Linken
-          zu weit ging. Im Gegenteil: Sie <a target="_blank" rel="noopener
-          noreferrer"
-          href="https://chatgpt.com/g/g-p-6a1ec4b453c0819180127d65114b879f/c/6a1ec4d8-b2c8-8391-90e9-7e33914c472c">forderte
-          die Bundesregierung zum Handeln auf</a>, verwies selbst auf erste
-          Verbesserungen zum Wintersemester 2026/27 und verlangte die
-          schrittweise Umsetzung der im Koalitionsvertrag angekündigten Reform.
+          zu weit ging. Im Gegenteil: Sie forderte die <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/115stzg.pdf#page=165">Bundesregierung
+          zum Handeln auf</a>, verwies selbst auf erste Verbesserungen zum
+          Wintersemester 2026/27 und verlangte die schrittweise Umsetzung der im
+          Koalitionsvertrag angekündigten Reform.
       - party: die-linke
         answer: richtig
         comment: >-
@@ -1029,7 +932,7 @@ questions:
           href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d7079dan.pdf">Antrag</a>
           zu. Sie hielt die auf Bundesebene ursprünglich <a target="_blank"
           rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/115stzg.pdf#page=165">angekündigten
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/115stzg.pdf#page=180">angekündigten
           Reformschritte zwar nur für ein Mindestmaß</a>, forderte aber, dass
           wenigstens diese vollständig, verbindlich und finanziell abgesichert
           umgesetzt werden.
@@ -1070,19 +973,109 @@ questions:
           anspruchsberechtigte Studierende ihre Förderung tatsächlich
           beantragen</a> und die Verfahren einfacher und unbürokratischer
           werden.
+  - id: question-11
+    index: 11
+    category: Demokratie & Institutionen
+    thesis: >-
+      Wenn die notwendige Zweidrittelmehrheit innerhalb von sechs Monaten nicht
+      zustande kommt, sollen Verfassungsrichter*innen auf Vorschlag des
+      Landesverfassungsgerichts auch mit absoluter Mehrheit gewählt werden
+      können.
+    info: >-
+      <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
+      Recherchen, Klagen und Community-Aktionen. Entdecke, wie wir mit
+      strategischen Klagen für <a target="_blank" rel="noopener noreferrer"
+      href="https://fragdenstaat.de/klagen/">Transparenz und Pressefreiheit
+      kämpfen</a>!</p>
+    keyword: Verfassungsgericht
+    answers:
+      - party: cdu
+        answer: richtig
+        comment: >-
+          Die CDU stimmte dem <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6653wge.pdf">Gesetzentwurf</a>
+          zu. Die Regelung sei ein <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=9">Schutz
+          vor Blockaden und Handlungsunfähigkeit</a>; man wolle sicherstellen,
+          dass das Landesverfassungsgericht seine Aufgabe dauerhaft erfüllen
+          kann. Ein arbeitsfähiges Gericht stärke die Gewaltenteilung,
+          verhindere Machtmissbrauch und sichere die Kontrolle staatlichen
+          Handelns.
+      - party: spd
+        answer: richtig
+        comment: >-
+          Die SPD stimmte dem <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6653wge.pdf">Gesetzentwurf</a>
+          zu. Es müsse verhindert werden, dass <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=14">demokratische
+          Institutionen durch gezielte Blockaden</a> handlungsunfähig werden.
+          Die Möglichkeit einer Wahl mit absoluter Mehrheit nach einem
+          gescheiterten sechsmonatigen Einigungsversuch solle deshalb die
+          dauerhafte Arbeitsfähigkeit des Landesverfassungsgerichts sichern.
+      - party: die-linke
+        answer: richtig
+        comment: >-
+          Die Linke stimmte dem <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6653wge.pdf">Gesetzentwurf</a>
+          zu. Das Landesverfassungsgericht sei ein <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/109stzg.pdf#page=16">zentraler
+          Schutz für Grund- und Freiheitsrechte</a> und eine Kontrollinstanz
+          gegenüber staatlicher Willkür. Die neue Wahlregel solle verhindern,
+          dass eine politische Blockade die Arbeitsfähigkeit des Gerichts und
+          damit die unabhängige Justiz gefährdet.
+      - party: die-gruenen
+        answer: richtig
+        comment: >-
+          Die Grünen stimmten der <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6653wge.pdf">Neuregelung</a>
+          zu. Eine jahrelange Blockade bei der Besetzung von Richterstellen
+          könne die <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=17">Verfassungsgerichtsbarkeit
+          und damit auch die Kontrolle der Landesregierung</a> gefährden. Die
+          Ersatzregelung mit absoluter Mehrheit solle deshalb gewährleisten,
+          dass das Gericht dauerhaft arbeitsfähig bleibt.
+      - party: afd
+        answer: zu weit
+        comment: >-
+          Die AfD lehnte den <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6653wge.pdf">Gesetzentwurf</a>
+          ab, denn mit ihm wolle man eine mögliche <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=7">Sperrminorität
+          umgehen</a>, um Verfassungsrichter*innen künftig ohne Zustimmung der
+          AfD wählen zu können. Generell lehne man „<a target="_blank"
+          rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=9">politische
+          Richter mit Parteibüchern in Verfassungsgerichten</a>“ ab.
+      - party: fdp
+        answer: richtig
+        comment: >-
+          Die FDP stimmte der <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6653wge.pdf">Neuregelung</a>
+          zu. Es müsse zwar weiterhin eine breite Zweidrittelmehrheit gesucht
+          werden, es sei jedoch notwendig, für den Fall einer dauerhaften
+          Blockade vorzusorgen. Da Verfassungsrichter*innen die Verfassung und
+          auch die Rechte von Minderheiten schützen, dürfe ihre <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/112stzg.pdf#page=19">Wahl
+          nicht über Jahre scheitern</a> und dadurch die Arbeitsfähigkeit des
+          Gerichts gefährden.
   - id: question-12
     index: 12
     category: Bildung
     thesis: >-
-      Bei Bundeswehrbesuchen an Schulen sollen parallel oder zeitnah auch
-      Friedensorganisationen zu Wort kommen, aber nicht verpflichtend vor
-      derselben Schulklasse.
+      Wenn die Bundeswehr Schulen besucht, sollen auch Friedensorganisationen zu
+      Wort kommen können. Das muss nicht verpflichtend vor derselben Schulkasse
+      stattfinden. 
     info: >-
       <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
       Recherchen, Klagen und Community-Aktionen. Lies jetzt diese spannende
       Recherche zum <a target="_blank" rel="noopener noreferrer"
       href="https://fragdenstaat.de/artikel/klagen/2024/07/hintergrunde-zum-sondervermogen-der-bundeswehr-bleiben-geheim/">Sondervermögen
       der Bundeswehr</a>!</p>
+    keyword: Bundeswehr an Schulen
     answers:
       - party: cdu
         answer: richtig
@@ -1090,7 +1083,7 @@ questions:
           Die CDU stimmte dem <a target="_blank" rel="noopener noreferrer"
           href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d7170raa.pdf">Antrag</a>
           zu. Eine kontroverse Behandlung von Friedens- und Sicherheitspolitik
-          sei unterstützendwert, doch es brauche keine <a target="_blank"
+          sei unterstützenswert, doch es brauche keine <a target="_blank"
           rel="noopener noreferrer"
           href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/116stzg.pdf#page=154">verpflichtende
           Gegenüberstellung</a> bestimmter externer Akteure. Entscheidend sei,
@@ -1117,21 +1110,25 @@ questions:
       - party: die-linke
         answer: nicht weit genug
         comment: >-
-          Die Linke enthielt sich bei der Abstimmung zum [Antrag] der
-          Koalitionsfraktionen. Stattdessen stimmte sie für ihren eigenen
-          Antrag. Es sei begrüßenswert, friedenspolitische Perspektiven
-          einzubeziehen, doch die unverbindliche Regelung sei nicht ausreichend.
+          Die Linke enthielt sich bei der Abstimmung zum <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d7170raa.pdf">Antrag</a>
+          der Koalitionsfraktionen. Stattdessen stimmte sie für ihren eigenen <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d7093dan.pdf">Antrag</a>.
+          Es sei begrüßenswert, friedenspolitische Perspektiven einzubeziehen,
+          doch die unverbindliche Regelung sei nicht ausreichend.
           Friedenspolitische Organisationen sollten im gleichen Umfang wie
-          Jugendoffizier<em>innen zu Wort kommen und Bundeswehrbesuche deshalb
-          <a target="_blank" rel="noopener noreferrer"
+          Jugendoffizier_innen zu Wort kommen und Bundeswehrbesuche deshalb <a
+          target="_blank" rel="noopener noreferrer"
           href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/116stzg.pdf#page=139">verbindlich
-          mit entsprechenden Angeboten</a> für dieselben
-          Schüler</em>innengruppen verbunden werden.
+          mit entsprechenden Angeboten</a> für dieselben Schüler_innengruppen
+          verbunden werden.
       - party: die-gruenen
         answer: richtig
         comment: >-
           Die Grünen stimmten dem <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d7093dan.pdf">Antrag</a>
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d7170raa.pdf">Antrag</a>
           der Regierungskoalition zu. Die Einbeziehung unterschiedlicher
           Perspektiven sei wichtig, man wolle Schulen aber <a target="_blank"
           rel="noopener noreferrer"
@@ -1170,86 +1167,99 @@ questions:
           eigenverantwortlich entschieden werden.
   - id: question-13
     index: 13
-    category: Gesundheit
+    category: Verkehr & Infrastruktur
     thesis: >-
-      Pflegende Angehörige sollen in erster Linie durch weniger Bürokratie
-      entlastet werden. 
+      Auch für reimportierte Simson-Mopeds bis Baujahr 1992 soll die
+      Sonderregelung des Einigungsvertrags gelten. Sie sollen 60 km/h fahren
+      dürfen, auch wenn für Kleinkrafträder niedrigere Höchstgeschwindigkeiten
+      gelten. 
     info: >-
-      <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
-      Recherchen, Klagen und Community-Aktionen. Lies jetzt diese spannende
-      Recherche zu den <a target="_blank" rel="noopener noreferrer"
-      href="https://fragdenstaat.de/artikel/exklusiv/2026/02/In-der-Gefaengnispsychiatrie-jahrelang-isoliert/">Zuständen
-      in der Gefändnispsychiatrie</a>.</p>
+      <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern setzt sich mit
+      investigativen Recherchen, Klagen und Community-Aktionen für mehr
+      Transparenz ein. Du möchtest selbst spannende Informationen über
+      Politiker*innen und Behörden ans Licht bringen? Stelle jetzt eine <a
+      target="_blank" rel="noopener noreferrer"
+      href="https://fragdenstaat.de/informationsfreiheit/einsteiger-guide/">IFG-Anfrage</a>!</p>
+    keyword: Simson-Mopeds
     answers:
       - party: cdu
         answer: richtig
         comment: >-
           Die CDU stimmte dem gemeinsamen <a target="_blank" rel="noopener
           noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d7141ran.pdf">Antrag</a>
-          der Koalitionsfraktionen zu. Sie wollte pflegende Angehörige vor allem
-          durch <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/116stzg.pdf#page=181">einfachere
-          Antragswege, weniger Bürokratie</a> und verlässliche wohnortnahe
-          Angebote entlasten.
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6089ran.pdf">Antrag</a>
+          der Koalitionsfraktionen zu. Sie hob die Simson als <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/101stzg.pdf#page=147">bezahlbares
+          Verkehrsmittel und als ostdeutsches Kulturgut</a> hervor, das bis
+          heute mehrere Generationen miteinander verbinde. Vor allem hielt sie
+          es für ungerecht, baugleiche Reimporte rechtlich anders zu behandeln.
       - party: spd
         answer: richtig
         comment: >-
           Die SPD stimmte dem <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d7141ran.pdf">Antrag</a>
-          zu. Ein Hauptproblem sei, dass bestehende Unterstützungsangebote wegen
-          <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/116stzg.pdf#page=188">komplizierter
-          und kleinteiliger Verfahren</a> häufig nicht bei den Betroffenen
-          ankommen. Pflegende Angehörige sollten deshalb verlässlichere
-          Strukturen, einfachere Ansprechpartner, wohnortnahe Angebote und mehr
-          Mitsprache erhalten.
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6089ran.pdf">Antrag</a>
+          zu. Die <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/101stzg.pdf#page=155">Simson
+          sei eine robuste und bezahlbare Form der Mobilität</a>, insbesondere
+          in Regionen mit wenigen Alternativen. Dass baugleiche Reimporte anders
+          behandelt würden als Fahrzeuge, die Deutschland nie verlassen hatten,
+          sei nicht nachvollziehbar; zugleich unterstützte die Fraktion
+          einfachere Zulassungen von Elektro-Umbauten.
       - party: die-linke
         answer: nicht weit genug
         comment: >-
-          Die Linke lehnte den [Antrag] ab, obwohl sie dessen Ziele ausdrücklich
-          für richtig hielt. Die vorgesehenen Maßnahmen gingen <a
-          target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/116stzg.pdf#page=187">jedoch
-          nicht weit genug</a>. Sie forderte zusätzlich Pflegelotsen zur
-          Orientierung im Hilfesystem, ein rund um die Uhr erreichbares
-          Servicetelefon, eine unabhängige Pflegeberatung und sechs Wochen
-          bezahlte Freistellung beim erstmaligen Auftreten eines familiären
-          Pflegefalls.
+          Die Linke teilte zwar die grundsätzlichen Ziele, enthielt sich aber
+          bei der Abstimmung zum <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6089ran.pdf">Antrag</a>
+          der Koalitionsfraktionen. Sie legte einen weitergehenden
+          Alternativantrag vor. Statt lediglich einzelne nationale
+          Zulassungsprobleme zu prüfen, wollte sie eine <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/101stzg.pdf#page=154">unbefristete
+          europaweite Anerkennung und Ausnahmeregelung für verkehrssichere
+          Simson-Kleinkrafträder</a> bis Baujahr 1992 erreichen. Außerdem sollte
+          sich das Land beim Bund für eine Verlängerung auslaufender
+          Übergangsregelungen einsetzen.
       - party: die-gruenen
-        answer: nicht weit genug
+        answer: zu weit
         comment: >-
-          Die Grünen enthielten sich bei der Abstimmung zum [Antrag]. Die
-          Maßnahmen seien <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/116stzg.pdf#page=190">ambitionslos</a>.
-          Die Grünen forderten darum einen umfassenderen Ansatz. Neben „Pflege
-          im Quartier“ sollten unter anderem Tagespflege, flexible
-          Betreuungszeiten, Nachtcafés, finanzielle Hilfen und regionale
-          Gesundheitskonferenzen ausgebaut werden.
+          Die Grünen enthielten sich bei der Abstimmung zum <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6089ran.pdf">Antrag</a>
+          der Koalitionsfraktionen. Sie begrüßten zwar insbesondere die
+          Möglichkeit, Simson-Kleinkrafträder auf Elektroantrieb umzurüsten. Bei
+          einer erleichterten Zulassung von Reimporten müssten aus ihrer Sicht
+          jedoch die <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/101stzg.pdf#page=156">deutschen
+          Sicherheitsanforderungen</a> eingehalten werden; zugleich kritisierten
+          sie die <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/101stzg.pdf#page=156">Schadstoff-
+          und Feinstaubemissionen</a> der traditionellen Zweitaktmotoren.
       - party: afd
         answer: nicht weit genug
         comment: >-
-          Die AfD enthielt sich bei der Abstimmung zum <a target="_blank"
-          rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d7141ran.pdf">Antrag</a>.
-          Sie erkannte die bisherigen Maßnahmen zur Unterstützung pflegender
-          Angehöriger grundsätzlich an, hielt den Antrag der
-          Koalitionsfraktionen aber <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/116stzg.pdf#page=184">für
-          keine ausreichende Antwort auf die existierenden Probleme</a> in der
-          Pflege Angehöriger. Nach mehreren Jahren politischer Initiativen seien
-          weitere Prüfaufträge zu wenig.
+          Die AfD bezeichnete den <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6089ran.pdf">Antrag</a>
+          zwar als grundsätzlich richtig, enthielt sich jedoch und brachte einen
+          eigenen Alternativantrag ein. Ihr reichten die vorgesehenen
+          Zulassungserleichterungen nicht aus. Sie verlangte zusätzlich, die
+          Simson als <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/101stzg.pdf#page=151">immaterielles
+          Kulturerbe</a> anzuerkennen, um das Fahrzeug und seine Besonderheiten
+          auch gegenüber künftigen Abgas- und Geschwindigkeitsregelungen stärker
+          zu schützen.
       - party: fdp
         answer: richtig
         comment: >-
           Die FDP stimmte dem <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d7141ran.pdf">Antrag</a>
-          zu. Bestehende Informationen und Hilfsangebote würden so leichter
-          zugänglich gemacht, <a target="_blank" rel="noopener noreferrer"
-          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/116stzg.pdf#page=186">niedrigschwellige
-          Anlaufstellen geschaffen und bürokratische Hürden</a> abgebaut.
-          Unterstützung müsse schnell, unbürokratisch und verlässlich bei
-          pflegenden Angehörigen ankommen.
+          href="https://padoka.landtag.sachsen-anhalt.de/files/drs/wp8/drs/d6089ran.pdf">Antrag</a>
+          zu. Es <a target="_blank" rel="noopener noreferrer"
+          href="https://padoka.landtag.sachsen-anhalt.de/files/plenum/wp8/101stzg.pdf#page=152">sei
+          nicht nachvollziehbar</a>, dass in Deutschland verbliebene
+          Simson-Kleinkrafträder aufgrund des Einigungsvertrags mit bis zu 60
+          km/h zugelassen sind, während baugleiche, später reimportierte Modelle
+          teilweise nur 45 km/h fahren dürfen.
 parties:
   - name: SPD
     slug: spd
