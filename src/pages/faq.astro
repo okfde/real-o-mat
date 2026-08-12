@@ -7,15 +7,17 @@ const items = (await getCollection('faq')).map((q) => q.data)
 ---
 
 <Content title="FAQ">
-  <h2>FAQ</h2>
-  <p>
-    {
-      items.map((x) => (
-        <>
-          <h3 set:html={marked.parseInline(x.question)} />
-          <div set:html={marked.parse(x.answer)} />
-        </>
-      ))
-    }
-  </p>
+  <div class="mx-auto max-w-[100ch] xl:py-12">
+    <h2>FAQ</h2>
+    <p>
+      {
+        items.map((x) => (
+          <>
+            <h3 set:html={marked.parseInline(x.question)} />
+            <div set:html={marked.parse(x.answer)} />
+          </>
+        ))
+      }
+    </p>
+  </div>
 </Content>
