@@ -6,6 +6,11 @@ on:
 
   workflow_dispatch:
 
+  workflow_run:
+    workflows: ["Update election data in repo"]
+    types:
+      - completed
+
 permissions:
   contents: read
   pages: write
@@ -17,6 +22,9 @@ concurrency:
 
 jobs:
   deploy:
+    if: >-
+      github.event_name != 'workflow_run' ||
+      github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
