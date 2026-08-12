@@ -20,12 +20,6 @@ const partners = await getCollection('partners')
       <ElectionSelection elections={elections} client:load />
 
       <div class="mt-2 flex flex-col items-center text-center text-sm">
-        <div class="mt-8 flex items-end md:justify-center">
-          <p aria-hidden="true" class="text-sm text-gray-600">Ein Projekt von</p>
-          <a href="https://fragdenstaat.de" target="_blank">
-            <img src={FdsLogo.src} alt="Ein Projekt von FragDenStaat" class="ms-4 mt-2 inline-block w-32" />
-          </a>
-        </div>
         <p class="mt-2">Der Real-O-Mat ist keine Wahlempfehlung, sondern ein Informationsangebot über Parteien und ihr Abstimmungsverhalten. FragDenStaat ist gemeinnützig und <a href="https://fragdenstaat.de/jetztspenden/?pk_campaign=realomat" target="_blank">spendenfinanziert</a>.</p>
       </div>
     </div>
