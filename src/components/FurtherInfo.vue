@@ -18,7 +18,7 @@ const furtherInfo = computed(() => getFurtherInfo(props.election.questions))
 
 <template>
   <div v-if="furtherInfo"
-    class="w-full md:w-1/2 md:-rotate-2 md:-mt-6 flex flex-col justify-between align-right bg-yellow-200 mt-6 p-4 md:p-8 md:mr-16 ml-auto shadow-lg">
+    class="w-full md:w-1/2 md:-rotate-2 md:[will-change:transform] md:-mt-6 flex flex-col justify-between align-right bg-yellow-200 mt-6 p-4 md:p-8 md:mr-16 ml-auto shadow-lg">
     <span class="text-xl font-semibold mb-3">Mehr von FragDenStaat</span>
     <p class="info mb-5" v-html="furtherInfo" />
     <div class="flex flex-row justify-end text-right items-center">
