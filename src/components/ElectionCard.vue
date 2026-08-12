@@ -35,7 +35,7 @@ const date = computed(() =>
       class="mt-4 flex items-center justify-end"
       :class="[election.archived ? 'text-purple-700' : 'text-purple-100']"
     >
-      Zur Wahl
+      Start
       <IconForward aria-hidden="true" class="ms-1" />
     </div>
   </a>
