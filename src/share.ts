@@ -1,6 +1,6 @@
 import {
-  publicUrl,
   shareResultTitle,
+  shareResultBody,
   shareResultEmojiFilled,
   shareResultEmojiEmpty,
 } from './const'
@@ -17,5 +17,5 @@ export function getShareResultText(
       shareResultEmojiEmpty.repeat(barCells - filled)
     return `${bar} ${percentage}% ${party}`
   })
-  return `${shareResultTitle}\n\n${lines.join('\n')}`
+  return `${shareResultTitle}\n\n${lines.join('\n')}\n\n${shareResultBody}`
 }
