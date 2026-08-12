@@ -44,8 +44,7 @@
   answer: |
     Der Real-O-Mat basiert auf umfassenden parlamentarischen Dokumenten des jeweiligen Bundeslandes. Voraussetzung dafür ist nicht nur eine umfassende, sondern auch eine leicht zugängliche Dokumentation der jeweiligen Anträge, Abstimmungen und Plenardebatten.
 
-    Für unser Team waren die Daten zu Berlin und Sachsen-Anhalt zugänglicher, da sie über die gesamte Legislaturperiode bereits niedrigschwelliger aufgearbeitet sind. Als kleines Team mussten wir uns zudem auf ausgewählte Wahlen beschränken und können aktuell nicht den Real-O-Mat nicht zu jeder Landtagswahl gewährleisten.Wenn ihr euch einen eigenen Überblick über Abstimmungen im Landtag von Mecklenburg-Vorpommern verschaffen wollt, könnt ihr das hier tun: 
-    [https://www.dokumentation.landtag-mv.de/parldok](https://www.dokumentation.landtag-mv.de/parldok)
+    Für unser Team waren die Daten zu Berlin und Sachsen-Anhalt zugänglicher, da sie über die gesamte Legislaturperiode bereits niedrigschwelliger aufgearbeitet sind. Als kleines Team mussten wir uns zudem auf ausgewählte Wahlen beschränken und können aktuell nicht den Real-O-Mat nicht zu jeder Landtagswahl gewährleisten. [Hier kannst Du Dir einen eigenen Überblick](https://www.dokumentation.landtag-mv.de/parldok) über Abstimmungen im Landtag von Mecklenburg-Vorpommern verschaffen.
 
 - id: 6
   question: Wer steckt hinter dem *Real-O-Mat*?
@@ -55,3 +54,11 @@
     FragDenStaat ist eine Transparenz- und Rechercheplattform. Seit 2011 setzen wir uns für Informationsfreiheit in Deutschland ein, vor allem mithilfe des Informationsfreiheitsgesetzes (IFG). Wir ermöglichen Nutzer*innen, ihr Recht auf Information wahrzunehmen, zum Beispiel über Anfragen nach dem IFG auf unserer Plattform FragDenStaat.de. Darüber hinaus setzen wir mit investigativen Recherchen, strategischen Klagen und Community-Aktionen das Recht auf Information durch.
 
     FragDenStaat ist ein Projekt der gemeinnützigen Open Knowledge Foundation Deutschland e.V. und spendenfinanziert.
+
+- id: 7
+  question: Wie kann ich per Briefwahl wählen?
+  answer: |
+    Mit [wahlbrief.de](https://www.wahlbrief.de) stellt FragDenStaat Dir ein Tool zur Verfügung, mit dem du innerhalb von wenigen Minuten Deine Briefwahlunterlagen beantragen kannst. Per Briefwahl zu wählen ist einfach, sicher und unkompliziert. Jede wahlberechtigte Person in Deutschland kann vor der Wahl per Brief ihre Stimme abgeben, statt am Tag der Wahl in ein Wahllokal zu gehen.
+
+    Wahlbrief hilft bei der Erstellung des Antrags auf Briefwahl, prüft auf Vollständigkeit und ermittelt die Adresse des zuständigen Amts anhand der Meldeanschrift. Der Antragstext kann dann per E-Mail ans Wahlamt des Hauptwohnsitzes gesendet werden. Auf [wahlbrief.de](https://www.wahlbrief.de) findest Du alle weiteren Infos.
+

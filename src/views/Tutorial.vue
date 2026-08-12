@@ -17,8 +17,8 @@ const emit = defineEmits(['done'])
     <h2 class="mt-4 !text-lg">Wie werden die Positionen bewertet?</h2>
     <p>
       Eine Zustimmung entspricht der Option „Ja, finde ich auch“. Eine Ablehnung und Enthaltung wird je nach Begründung
-      der Fraktion in Beschlussempfehlungen und Plenardebatten in „Nein, das geht mir zu weit“ bzw. „Nein, das reicht
-      mir nicht aus“ geteilt.
+      der Fraktion in Beschlussempfehlungen und Plenardebatten als „Nein, das geht mir zu weit“ bzw. „Nein, das reicht
+      mir nicht aus“ gewertet.
     </p>
     <div class="mt-4">
       <Disclosure v-slot="{ open }">
@@ -33,9 +33,8 @@ const emit = defineEmits(['done'])
         </DisclosureButton>
         <DisclosurePanel class="mt-2 rounded bg-purple-50 p-4 text-sm text-gray-800">
           <p>
-            „Bürgergeldempfänger*innen, die wiederholt eine existenzsichernde Arbeit
-            ablehnen, soll für zwei Monate der komplette Regelsatz des Bürgergelds
-            gestrichen werden.“
+            „Die Landesregierung soll sich auf Bundesebene für eine Überprüfung des Waffenrechts einsetzen, jedoch nicht
+            direkt für eine Verschärfung.“
           </p>
 
           <div class="mt-2 space-y-2">
@@ -44,15 +43,13 @@ const emit = defineEmits(['done'])
               zugestimmt
             </p>
             <p>
-              <strong>Nein, geht mir zu weit</strong>: Die Fraktion hat den Antrag
-              abgelehnt oder sich enthalten und begründet dies damit, dass diese
-              Sanktionierung von Bürgergeldempfänger*innen zu weitreichend ist.
+              <strong>Nein, geht mir zu weit</strong>: Die Fraktion hat den Antrag abgelehnt oder sich enthalten und
+              begründet dies damit, dass selbst eine Überprüfung des Waffenrechts derzeit nicht notwendig ist.
             </p>
             <p>
-              <strong>Nein, reicht mir nicht aus</strong>: Die Fraktion hat den Antrag
-              abgelehnt oder sich enthalten und begründet dies damit, dass diese
-              Sanktionierung von Bürgergeldempfänger*innen nicht weit genug geht. Es
-              sollen stärkere Maßnahmen ergriffen werden.
+              <strong>Nein, reicht mir nicht aus</strong>: Die Fraktion hat den Antrag abgelehnt oder sich enthalten und
+              begründet dies damit, dass eine reine Überprüfung des Waffenrechts nicht weit genug geht. Es sollte
+              verschärft werden.
             </p>
             <p>
               Die genaue Begründung des Abstimmungsverhaltens jeder Fraktion kannst du im Detail in der Auswertung
