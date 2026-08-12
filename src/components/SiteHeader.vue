@@ -23,8 +23,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <header
-    class="z-10 container mx-auto grid grid-cols-[1fr_auto] items-start gap-y-1 px-4 py-8 md:py-12 xl:items-start xl:py-24"
+  <header class="z-10 container mx-auto grid grid-cols-[1fr_auto] items-start gap-y-1 px-4 py-8 md:py-12 xl:py-24"
     @keydown.esc="closeMenu">
     <div>
       <a href="/">

@@ -34,10 +34,6 @@
   --color-purple-950: #3b0764;
 }
 
-p {
-  max-width: 100ch;
-}
-
 .btn {
   @apply inline-flex items-center rounded-full px-4 py-2 font-bold font-medium text-white;
   @apply bg-purple-700 outline-none hover:bg-purple-800 focus:ring-3 focus:ring-purple-600/50 active:bg-purple-900;
