@@ -8,33 +8,42 @@ const emit = defineEmits(['done'])
 
 <template>
   <div class="bg-white p-4 md:p-8">
-    <h2 class="!text-lg">Wie funktioniert der Real-O-Mat?</h2>
+    <h2 class="text-lg!">Wie funktioniert der Real-O-Mat?</h2>
     <p>
-      Im Landtag bzw. Abgeordnetenhaus haben die Fraktionen für oder gegen Anträge und Gesetzentwürfe gestimmt oder sich
-      enthalten. Der Real-O-Mat gleicht ihr Stimmverhalten mit deiner Position zu 14 Thesen ab. 
+      Im Landtag bzw. Abgeordnetenhaus haben die Fraktionen für oder gegen
+      Anträge und Gesetzentwürfe gestimmt oder sich enthalten. Der Real-O-Mat
+      gleicht ihr Stimmverhalten mit Deiner Position zu 14 Thesen ab.
     </p>
 
-    <h2 class="mt-4 !text-lg">Wie werden die Positionen bewertet?</h2>
+    <h2 class="mt-4 text-lg!">Wie werden die Positionen bewertet?</h2>
     <p>
-      Eine Zustimmung entspricht der Option „Ja, finde ich auch“. Eine Ablehnung und Enthaltung wird je nach Begründung
-      der Fraktion in Beschlussempfehlungen und Plenardebatten als „Nein, das geht mir zu weit“ bzw. „Nein, das reicht
-      mir nicht aus“ gewertet.
+      Eine Zustimmung entspricht der Option „Ja, finde ich auch“. Eine Ablehnung
+      und Enthaltung wird je nach Begründung der Fraktion in
+      Beschlussempfehlungen und Plenardebatten als „Nein, das geht mir zu weit“
+      bzw. „Nein, das reicht mir nicht aus“ gewertet.
     </p>
     <div class="mt-4">
       <Disclosure v-slot="{ open }">
         <DisclosureButton
-          class="flex items-center justify-between rounded bg-purple-100 px-4 py-2 outline-none focus:ring-3 focus:ring-purple-600/50 motion-safe:transition">
-          <IconChevron aria-hidden="true" class="h-5 w-5 text-purple-900 -rotate-90 motion-safe:transition-transform"
+          class="flex items-center justify-between rounded bg-purple-100 px-4 py-2 outline-none focus:ring-3 focus:ring-purple-600/50 motion-safe:transition"
+        >
+          <IconChevron
+            aria-hidden="true"
+            class="h-5 w-5 -rotate-90 text-purple-900 motion-safe:transition-transform"
             :class="{
               'rotate-0': open,
-            }" />
+            }"
+          />
 
           <h3>Beispiel anzeigen</h3>
         </DisclosureButton>
-        <DisclosurePanel class="mt-2 rounded bg-purple-50 p-4 text-sm text-gray-800">
+        <DisclosurePanel
+          class="mt-2 rounded bg-purple-50 p-4 text-sm text-gray-800"
+        >
           <p>
-            „Die Landesregierung soll sich auf Bundesebene für eine Überprüfung des Waffenrechts einsetzen, jedoch nicht
-            direkt für eine Verschärfung.“
+            „Die Landesregierung soll sich auf Bundesebene für eine Überprüfung
+            des Waffenrechts einsetzen, jedoch nicht direkt für eine
+            Verschärfung.“
           </p>
 
           <div class="mt-2 space-y-2">
@@ -43,21 +52,23 @@ const emit = defineEmits(['done'])
               zugestimmt
             </p>
             <p>
-              <strong>Nein, geht mir zu weit</strong>: Die Fraktion hat den Antrag abgelehnt oder sich enthalten und
-              begründet dies damit, dass selbst eine Überprüfung des Waffenrechts derzeit nicht notwendig ist.
+              <strong>Nein, geht mir zu weit</strong>: Die Fraktion hat den
+              Antrag abgelehnt oder sich enthalten und begründet dies damit,
+              dass selbst eine Überprüfung des Waffenrechts derzeit nicht
+              notwendig ist.
             </p>
             <p>
-              <strong>Nein, reicht mir nicht aus</strong>: Die Fraktion hat den Antrag abgelehnt oder sich enthalten und
-              begründet dies damit, dass eine reine Überprüfung des Waffenrechts nicht weit genug geht. Es sollte
-              verschärft werden.
+              <strong>Nein, reicht mir nicht aus</strong>: Die Fraktion hat den
+              Antrag abgelehnt oder sich enthalten und begründet dies damit,
+              dass eine reine Überprüfung des Waffenrechts nicht weit genug
+              geht. Es sollte verschärft werden.
             </p>
             <p>
-              Die genaue Begründung des Abstimmungsverhaltens jeder Fraktion kannst du im Detail in der Auswertung
-              nachlesen.
-              Mehr Infos findest du in der Methodik zum Real-O-Mat.
+              Die genaue Begründung des Abstimmungsverhaltens jeder Fraktion
+              kannst du im Detail in der Auswertung nachlesen. Mehr Infos
+              findest du in der Methodik zum Real-O-Mat.
             </p>
           </div>
-
         </DisclosurePanel>
       </Disclosure>
     </div>

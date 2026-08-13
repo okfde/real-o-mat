@@ -40,10 +40,10 @@ const setWeight = (questionId: string, e: Event) => {
   </div>
   <form @submit.prevent="emit('done')" v-else>
     <div class="mb-4 bg-white p-4 md:p-8">
-      <h2>Welche Thesen sind Ihnen besonders wichtig?</h2>
+      <h2>Welche Thesen sind Dir besonders wichtig?</h2>
       <p>
-        Markiere die Thesen, um diese mit doppelter Gewichtung in die
-        Berechnung einfließen zu lassen.
+        Markiere die Thesen, um diese mit doppelter Gewichtung in die Berechnung
+        einfließen zu lassen.
       </p>
       <button type="submit" class="btn mt-4">
         Weiter
