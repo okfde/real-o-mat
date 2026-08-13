@@ -3,7 +3,7 @@ import {
   shareResultBody,
   shareResultEmojiFilled,
   shareResultEmojiEmpty,
-} from './const'
+} from './const.ts'
 
 const barCells = 8
 
@@ -18,4 +18,8 @@ export function getShareResultText(
     return `${bar} ${percentage}% ${party}`
   })
   return `${shareResultTitle}\n\n${lines.join('\n')}\n\n${shareResultBody}`
+}
+
+export function changeLinksToExternal(html: string) {
+   return html.replace(/<a\s+href=/g, '<a target="_blank" rel="noopener noreferrer" href=')
 }

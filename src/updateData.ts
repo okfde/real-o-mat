@@ -6,6 +6,7 @@ import fs from "fs/promises";
 import * as yaml from "js-yaml";
 import { Marked } from "marked";
 import util from "util";
+import { changeLinksToExternal } from "./share.ts";
 
 const markdown = new Marked({ gfm: true });
 
@@ -59,9 +60,6 @@ async function fetchTable(url: string) {
       .replace(/^-+|-+$/g, '');
 
   const partySlug = (party: any) => normalizeSlug(party.fields.Title);
-
-  const changeLinksToExternal = (html: string) =>
-    html.replace(/<a\s+href=/g, '<a target="_blank" rel="noopener noreferrer" href=');
 
   const renderMarkdown = (value: string | null | undefined, inline = false) =>
     value

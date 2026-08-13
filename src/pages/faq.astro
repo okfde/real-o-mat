@@ -2,6 +2,7 @@
 import Content from '../layouts/Content.astro'
 import { getCollection } from 'astro:content'
 import { marked } from 'marked'
+import { changeLinksToExternal } from '../share'
 
 const items = (await getCollection('faq')).map((q) => q.data)
 ---
@@ -13,8 +14,8 @@ const items = (await getCollection('faq')).map((q) => q.data)
       {
         items.map((x) => (
           <>
-            <h3 set:html={marked.parseInline(x.question)} />
-            <div set:html={marked.parse(x.answer)} />
+            <h3 set:html={changeLinksToExternal(marked.parseInline(x.question))} />
+            <div set:html={changeLinksToExternal(marked.parse(x.answer))} />
           </>
         ))
       }
