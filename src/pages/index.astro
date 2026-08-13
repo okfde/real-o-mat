@@ -25,13 +25,14 @@ const elections = (await getCollection('elections'))
 
     <ElectionSelection elections={elections} client:load />
 
-    <div class="mt-2 flex flex-col items-center text-center text-sm">
-      <p class="mt-2">
+    <div class="mt-8 text-sm">
+      <p>
         Der Real-O-Mat ist keine Wahlempfehlung, sondern ein Informationsangebot
         über Parteien und ihr Abstimmungsverhalten. FragDenStaat ist
         gemeinnützig und <a
           href="https://fragdenstaat.de/jetztspenden/?pk_campaign=realomat"
-          target="_blank">spendenfinanziert</a
+          target="_blank"
+          class="link">spendenfinanziert</a
         >.
       </p>
     </div>
