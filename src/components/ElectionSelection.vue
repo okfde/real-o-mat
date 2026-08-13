@@ -26,9 +26,9 @@ const showArchive = ref(false)
       </li>
     </ul>
 
-    <a v-if="archivedElections.length" class="btn-text mt-4" href="/archiv/">
+    <a v-if="archivedElections.length" class="btn-text mt-6" href="/archiv/">
       <IconArchive aria-hidden="true" class="me-1" />
-      Archiv
+      Vergangene Wahlen
     </a>
   </nav>
 </template>
