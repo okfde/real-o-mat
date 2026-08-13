@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { computed, onMounted, ref, watch } from 'vue'
+import { computed, onMounted, provide, ref, watch } from 'vue'
 import {
   TransitionRoot,
   TransitionChild,
@@ -16,10 +16,13 @@ import IconBack from '~icons/material-symbols/arrow-back'
 import IconRestart from '~icons/material-symbols/restart-alt-rounded'
 import IconClose from '~icons/material-symbols/close-rounded'
 import Tutorial from '../../views/Tutorial.vue'
+import { ElectionKey } from '../../types.js'
 
 const props = defineProps<{
   election: Election
 }>()
+
+provide(ElectionKey, props.election)
 
 const questions = computed(() => props.election.questions)
 
