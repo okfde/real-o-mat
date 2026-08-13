@@ -29,6 +29,7 @@ const { answers, currentQuestionIndex, currentStage, viewTransition } =
   useStore(props.election.slug)
 
 const restartDialog = ref(false)
+const transitioning = ref(false)
 
 const reset = () => {
   restartDialog.value = false
@@ -99,20 +100,36 @@ onMounted(() => updateBeforeUnload())
 </script>
 
 <template>
-  <Transition :name="viewTransition" mode="out-in" :data-stage="currentStage">
+  <div :class="{ 'overflow-x-hidden': transitioning }">
+    <Transition
+      :name="viewTransition"
+      mode="out-in"
+      :data-stage="currentStage"
+      @before-leave="transitioning = true"
+      @after-enter="transitioning = false"
+    >
+      <Tutorial v-if="currentStage === Stage.Tutorial" @done="nextStage" />
+      <Questionnaire
+        v-else-if="currentStage === Stage.Questionnaire"
+        :election="election"
+        @done="nextStage"
+        @previous="previousStage"
+        @reset="confirmReset"
+      />
+      <Weights
+        v-else-if="currentStage === Stage.Weights"
+        :election="election"
+        @done="nextStage"
+        @previous="previousStage"
+      />
+      <Results v-else :election="election" />
+    </Transition>
+  </div>
 
-    <Tutorial v-if="currentStage === Stage.Tutorial" @done="nextStage" />
-
-    <Questionnaire v-else-if="currentStage === Stage.Questionnaire" :election="election" @done="nextStage"
-      @previous="previousStage" @reset="confirmReset" />
-
-    <Weights v-else-if="currentStage === Stage.Weights" :election="election" @done="nextStage"
-      @previous="previousStage" />
-
-    <Results v-else :election="election" />
-  </Transition>
-
-  <div class="mt-4 flex motion-safe:transition-all" v-if="[Stage.Weights, Stage.Results].includes(currentStage)">
+  <div
+    class="mt-4 flex motion-safe:transition-all"
+    v-if="[Stage.Weights, Stage.Results].includes(currentStage)"
+  >
     <button @click="previousStage" class="btn-text">
       <IconBack aria-hidden="true" class="me-1" />
       Zurück
@@ -126,18 +143,34 @@ onMounted(() => updateBeforeUnload())
 
   <TransitionRoot appear :show="restartDialog" as="template">
     <Dialog as="div" @close="restartDialog = false" class="relative z-10">
-      <TransitionChild as="template" enter="duration-300 ease-out" enter-from="opacity-0" enter-to="opacity-100"
-        leave="duration-200 ease-in" leave-from="opacity-100" leave-to="opacity-0">
+      <TransitionChild
+        as="template"
+        enter="duration-300 ease-out"
+        enter-from="opacity-0"
+        enter-to="opacity-100"
+        leave="duration-200 ease-in"
+        leave-from="opacity-100"
+        leave-to="opacity-0"
+      >
         <div class="fixed inset-0 bg-black/25" />
       </TransitionChild>
 
       <div class="fixed inset-0 overflow-y-auto">
-        <div class="flex min-h-full items-center justify-center p-4 text-center">
-          <TransitionChild as="template" enter="duration-300 ease-out" enter-from="opacity-0 scale-95"
-            enter-to="opacity-100 scale-100" leave="duration-200 ease-in" leave-from="opacity-100 scale-100"
-            leave-to="opacity-0 scale-95">
+        <div
+          class="flex min-h-full items-center justify-center p-4 text-center"
+        >
+          <TransitionChild
+            as="template"
+            enter="duration-300 ease-out"
+            enter-from="opacity-0 scale-95"
+            enter-to="opacity-100 scale-100"
+            leave="duration-200 ease-in"
+            leave-from="opacity-100 scale-100"
+            leave-to="opacity-0 scale-95"
+          >
             <DialogPanel
-              class="w-full max-w-lg transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+              class="w-full max-w-lg transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all"
+            >
               <div class="flex">
                 <DialogTitle as="h3" class="text-lg"> Los geht's! </DialogTitle>
 

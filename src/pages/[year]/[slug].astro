@@ -19,9 +19,7 @@ export async function getStaticPaths() {
 ---
 
 <Layout election={election} title={election.title}>
-  <div class="overflow-x-hidden">
-    <App election={election} client:only="vue" />
+  <App election={election} client:only="vue" />
 
-    <noscript> Bitte aktiviere JavaScript, um diese Seite zu nutzen. </noscript>
-  </div>
+  <noscript> Bitte aktiviere JavaScript, um diese Seite zu nutzen. </noscript>
 </Layout>
