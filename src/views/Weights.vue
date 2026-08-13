@@ -16,7 +16,9 @@ const sortedAnswers = computed(() => {
   return Object.values(answers.value)
     .map((answer) => ({
       ...answer,
-      question: props.election.questions.find((q) => q.id === answer.questionId)!,
+      question: props.election.questions.find(
+        (q) => q.id === answer.questionId,
+      )!,
     }))
     .sort((a, b) => a.question.index - b.question.index)
 })
@@ -52,11 +54,18 @@ const setWeight = (questionId: string, e: Event) => {
     </div>
 
     <div class="grid gap-4 md:grid-cols-1">
-      <label v-for="{ answer, weight, questionId, question } in sortedAnswers" :key="questionId"
-        class="flex items-start space-x-2 bg-white p-4">
-        <div>
-          <input type="checkbox" :checked="weight === 2" @change="(e) => setWeight(questionId, e)"
-            :aria-labelledby="`label-${questionId}`" />
+      <label
+        v-for="{ answer, weight, questionId, question } in sortedAnswers"
+        :key="questionId"
+        class="flex space-x-3 bg-white p-4 md:items-center md:space-x-4"
+      >
+        <div class="max-md:pt-1">
+          <input
+            type="checkbox"
+            :checked="weight === 2"
+            @change="(e) => setWeight(questionId, e)"
+            :aria-labelledby="`label-${questionId}`"
+          />
         </div>
 
         <div>
@@ -81,6 +90,10 @@ const setWeight = (questionId: string, e: Event) => {
 
 <style scoped>
 @reference "../assets/style.css";
+
+label {
+  @apply cursor-pointer;
+}
 
 input[type='checkbox'] {
   appearance: none;
