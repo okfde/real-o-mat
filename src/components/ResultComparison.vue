@@ -53,7 +53,10 @@ const getPartyAnswer = (question: Question, party: Party): Answer | undefined =>
             <AnswerIndicator :answer="answers[question.id]?.answer ?? '/'" />
           </td>
           <td class="text-center" v-for="party in parties" :key="party.slug">
-            <AnswerIndicator v-if="getPartyAnswer(question, party)" :answer="getPartyAnswer(question, party)!" />
+            <AnswerIndicator
+              v-if="getPartyAnswer(question, party)"
+              :answer="getPartyAnswer(question, party)!"
+            />
           </td>
         </tr>
       </tbody>
@@ -62,8 +65,13 @@ const getPartyAnswer = (question: Question, party: Party): Answer | undefined =>
 
   <div class="bg-white p-4 md:p-8" aria-hidden="true">
     <h3 class="mb-2 text-lg">Legende</h3>
-    <ul class="grid grid-cols-2 items-center gap-4 md:grid-cols-3 lg:grid-cols-5">
-      <li v-for="({ label }, answer) in answerOptions" class="flex items-center space-y-2">
+    <ul
+      class="grid grid-cols-2 items-center gap-4 md:grid-cols-3 lg:grid-cols-5"
+    >
+      <li
+        v-for="({ label }, answer) in answerOptions"
+        class="flex items-center space-y-2"
+      >
         <AnswerIndicator :answer="answer" :popup="false" class="me-4" />
         {{ label }}
       </li>

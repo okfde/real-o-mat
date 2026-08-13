@@ -15,7 +15,6 @@
   answer: |
     Der Real-O-Mat informiert über das tatsächliche Abstimmungsverhalten der Fraktionen. Da bspw. die FDP seit der Neuwahl 2023 im aktuellen Abgeordnetenhaus in Berlin nicht vertreten ist, taucht diese Partei in der Auswertung für Berlin nicht auf. 
 
-
 - id: 2
   question: Warum erhalte ich bei einigen Parteien ein sehr ähnliches Ergebnis?
   answer: |
@@ -29,7 +28,6 @@
     Während der Wahl-O-Mat lediglich auf Aussagen der Parteien basiert, wertet der Real-O-Mat das tatsächliche Abstimmungsverhalten der Fraktionen aus, die in der letzten Legislaturperiode im jeweiligen Landesparlament vertreten waren. Darüber hinaus liefert er die im parlamentarischen Verfahren bzw. in Debatten genannten Begründungen für das Abstimmungsverhalten der Fraktionen.
 
     Der Real-O-Mat bezieht sich auf Abstimmungen zu Anträgen und Gesetzentwürfen im jeweiligen Landesparlament, die Begründungen wurden aus Plenardebatten und Beschlussempfehlungen herausgearbeitet. Die Datenbasis bilden die verfügbaren Dokumente des [Landtags Sachsen-Anhalt](https://www.landtag.sachsen-anhalt.de/dokumente/neue-doku) bzw. des [Berliner Abgeordnetenhauses](https://www.parlament-berlin.de/dokumente). Sie sind im Real-O-Mat als Belege zu den Aussagen verlinkt.
-
 
 - id: 4
   question: Warum bildet der *Real-O-Mat* nicht die fraktionslosen Abgeordneten im Landesparlament ab?
@@ -61,4 +59,3 @@
     Mit [wahlbrief.de](https://www.wahlbrief.de) stellt FragDenStaat Dir ein Tool zur Verfügung, mit dem du innerhalb von wenigen Minuten Deine Briefwahlunterlagen beantragen kannst. Per Briefwahl zu wählen ist einfach, sicher und unkompliziert. Jede wahlberechtigte Person in Deutschland kann vor der Wahl per Brief ihre Stimme abgeben, statt am Tag der Wahl in ein Wahllokal zu gehen.
 
     Wahlbrief hilft bei der Erstellung des Antrags auf Briefwahl, prüft auf Vollständigkeit und ermittelt die Adresse des zuständigen Amts anhand der Meldeanschrift. Der Antragstext kann dann per E-Mail ans Wahlamt des Hauptwohnsitzes gesendet werden. Auf [wahlbrief.de](https://www.wahlbrief.de) findest Du alle weiteren Infos.
-

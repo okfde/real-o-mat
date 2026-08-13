@@ -14,7 +14,9 @@ const items = (await getCollection('faq')).map((q) => q.data)
       {
         items.map((x) => (
           <>
-            <h3 set:html={changeLinksToExternal(marked.parseInline(x.question))} />
+            <h3
+              set:html={changeLinksToExternal(marked.parseInline(x.question))}
+            />
             <div set:html={changeLinksToExternal(marked.parse(x.answer))} />
           </>
         ))

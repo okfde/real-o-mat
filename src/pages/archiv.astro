@@ -10,25 +10,25 @@ const elections = (await getCollection('elections'))
   .map((election) => election.data)
 ---
 
-<Layout title='Vergangene Wahlen'>
-    <div class="bg-white p-8 md:p-16 md:text-left">
-      <h2>Vergangene Wahlen</h2>
+<Layout title="Vergangene Wahlen">
+  <div class="bg-white p-8 md:p-16 md:text-left">
+    <h2>Vergangene Wahlen</h2>
 
-      <nav class="mt-8">
-        <ul class="grid gap-4 md:grid-cols-2">
-          {
-            elections.map((election) => (
-              <li>
-                <ElectionCard election={election} />
-              </li>
-            ))
-          }
-        </ul>
+    <nav class="mt-8">
+      <ul class="grid gap-4 md:grid-cols-2">
+        {
+          elections.map((election) => (
+            <li>
+              <ElectionCard election={election} />
+            </li>
+          ))
+        }
+      </ul>
 
-        <a href="/" class="btn-text mt-8">
-          <IconBack aria-hidden="true" class="me-1" />
-          Zurück
-        </a>
-      </nav>
-    </div>
+      <a href="/" class="btn-text mt-8">
+        <IconBack aria-hidden="true" class="me-1" />
+        Zurück
+      </a>
+    </nav>
+  </div>
 </Layout>

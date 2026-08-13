@@ -3,7 +3,9 @@ import DownloadData from '../components/DownloadData.vue'
 import Content from '../layouts/Content.astro'
 import { getCollection } from 'astro:content'
 
-const elections = (await getCollection('elections')).map((election) => election.data).sort((a, b) => b.date.getTime() - a.date.getTime())
+const elections = (await getCollection('elections'))
+  .map((election) => election.data)
+  .sort((a, b) => b.date.getTime() - a.date.getTime())
 
 const dateFormat = new Intl.DateTimeFormat('de-DE', { dateStyle: 'medium' })
 ---
@@ -13,35 +15,134 @@ const dateFormat = new Intl.DateTimeFormat('de-DE', { dateStyle: 'medium' })
     <h2>Methodik</h2>
     <h3>Ziel des Real-O-Mat</h3>
 
-    <p>Der Real-O-Mat bietet Menschen die Möglichkeit, das tatsächliche Abstimmungsverhalten aller Parteien im jeweiligen Landesparlament mit den eigenen Einstellungen zu ausgewählten politischen Forderungen abzugleichen. Dafür können sich Nutzer*innen durch Thesen klicken, die verschiedene wichtige Themen der letzten Legislaturperiode abdecken. Im Unterschied zum Wahl-O-Mat, der sich lediglich auf Aussagen der Parteien stützt, beruht der Real-O-Mat auf dem tatsächlichen Abstimmungsverhalten sowie den Positionierungen in Parlamentsdebatten der Fraktionen zu Anträgen und Gesetzentwürfen. Damit sollen Diskrepanzen zwischen dem tatsächlichen Abstimmungsverhalten der Parteien und den Aussagen in den Parteiprogrammen transparent gemacht werden.</p>
+    <p>
+      Der Real-O-Mat bietet Menschen die Möglichkeit, das tatsächliche
+      Abstimmungsverhalten aller Parteien im jeweiligen Landesparlament mit den
+      eigenen Einstellungen zu ausgewählten politischen Forderungen
+      abzugleichen. Dafür können sich Nutzer*innen durch Thesen klicken, die
+      verschiedene wichtige Themen der letzten Legislaturperiode abdecken. Im
+      Unterschied zum Wahl-O-Mat, der sich lediglich auf Aussagen der Parteien
+      stützt, beruht der Real-O-Mat auf dem tatsächlichen Abstimmungsverhalten
+      sowie den Positionierungen in Parlamentsdebatten der Fraktionen zu
+      Anträgen und Gesetzentwürfen. Damit sollen Diskrepanzen zwischen dem
+      tatsächlichen Abstimmungsverhalten der Parteien und den Aussagen in den
+      Parteiprogrammen transparent gemacht werden.
+    </p>
 
     <h3>Auswahl der Themen</h3>
 
-    <p>Die Thesen des Real-O-Mat wurden aus Gesetzentwürfen und Anträgen abgeleitet, über die in der laufenden Legislaturperiode im Landesparlament abgestimmt wurde. Dabei wurden Themen ausgewählt, die für breite Teile der Bevölkerung relevant sind und öffentlich diskutiert wurden.</p><p>Da die Gesetzentwürfe und Anträge oftmals komplex sind, bilden die Thesen in der Regel nur einen Teilaspekt des jeweiligen Gesetzentwurfs bzw. Antrags ab. Um zu gewährleisten, dass sich die Partei nicht nur auf andere Aspekte des jeweiligen Antrags bezieht, wurden zusätzlich Beschlussempfehlungen und Plenardebatten herangezogen, um die genaue Positionierung der Partei zur These herauszuarbeiten. Diese sind im Reiter „Begründungen” aufgeführt.</p><p>Themen, die nur auf Bundesbene entschieden werden können, wurden in der jeweiligen These so beschrieben, dass das Landesparlament sich für diese Themen beim Bund einsetzen soll.</p><p>Gab es mehrere Abstimmungen zum gleichen Thema, wurde versucht, nur die inhaltlich passende Abstimmung in die These aufzunehmen.</p>
+    <p>
+      Die Thesen des Real-O-Mat wurden aus Gesetzentwürfen und Anträgen
+      abgeleitet, über die in der laufenden Legislaturperiode im Landesparlament
+      abgestimmt wurde. Dabei wurden Themen ausgewählt, die für breite Teile der
+      Bevölkerung relevant sind und öffentlich diskutiert wurden.
+    </p><p>
+      Da die Gesetzentwürfe und Anträge oftmals komplex sind, bilden die Thesen
+      in der Regel nur einen Teilaspekt des jeweiligen Gesetzentwurfs bzw.
+      Antrags ab. Um zu gewährleisten, dass sich die Partei nicht nur auf andere
+      Aspekte des jeweiligen Antrags bezieht, wurden zusätzlich
+      Beschlussempfehlungen und Plenardebatten herangezogen, um die genaue
+      Positionierung der Partei zur These herauszuarbeiten. Diese sind im Reiter
+      „Begründungen” aufgeführt.
+    </p><p>
+      Themen, die nur auf Bundesbene entschieden werden können, wurden in der
+      jeweiligen These so beschrieben, dass das Landesparlament sich für diese
+      Themen beim Bund einsetzen soll.
+    </p><p>
+      Gab es mehrere Abstimmungen zum gleichen Thema, wurde versucht, nur die
+      inhaltlich passende Abstimmung in die These aufzunehmen.
+    </p>
 
     <h3>Bewertung des Abstimmungsverhaltens</h3>
 
-    <p>Quellen für die Thesen und die Bewertungen der Fraktionspositionierungen sind die Dokumente des jeweiligen Landesparlaments, insbesondere Gesetzentwürfe, Anträge, Beschlussempfehlungen und Plenarprotokolle. Diese sind zum Beleg der Thesen als Hyperlinks hinterlegt. In Einzelfällen wurden Internetseiten der Fraktionen für die Erläuterung der Positionierung genutzt.</p>
-    <p>Der Real-O-Mat betrachtet das Abstimmungsverhalten der Fraktionen zu den ausgewählten Thesen. Hat eine Fraktion bei einer Abstimmung mehrheitlich für einen bestimmten Sachverhalt gestimmt, so wird dies als Zustimmung gewertet, auch wenn sich einzelne Abgeordnete enthalten oder den Gesetzentwurf abgelehnt haben. Entscheidend für die Realpolitik ist die Mehrheitsposition der jeweiligen Fraktion.</p>
-    <p>Gab es mehrere Abstimmungen zum gleichen Thema, wurde versucht, nur die inhaltlich passende Abstimmung in die These aufzunehmen.</p>
-    <p>Der Real-O-Mat unterteilt das Abstimmungsverhalten der Parteien in drei Kategorien:</p>
+    <p>
+      Quellen für die Thesen und die Bewertungen der Fraktionspositionierungen
+      sind die Dokumente des jeweiligen Landesparlaments, insbesondere
+      Gesetzentwürfe, Anträge, Beschlussempfehlungen und Plenarprotokolle. Diese
+      sind zum Beleg der Thesen als Hyperlinks hinterlegt. In Einzelfällen
+      wurden Internetseiten der Fraktionen für die Erläuterung der
+      Positionierung genutzt.
+    </p>
+    <p>
+      Der Real-O-Mat betrachtet das Abstimmungsverhalten der Fraktionen zu den
+      ausgewählten Thesen. Hat eine Fraktion bei einer Abstimmung mehrheitlich
+      für einen bestimmten Sachverhalt gestimmt, so wird dies als Zustimmung
+      gewertet, auch wenn sich einzelne Abgeordnete enthalten oder den
+      Gesetzentwurf abgelehnt haben. Entscheidend für die Realpolitik ist die
+      Mehrheitsposition der jeweiligen Fraktion.
+    </p>
+    <p>
+      Gab es mehrere Abstimmungen zum gleichen Thema, wurde versucht, nur die
+      inhaltlich passende Abstimmung in die These aufzunehmen.
+    </p>
+    <p>
+      Der Real-O-Mat unterteilt das Abstimmungsverhalten der Parteien in drei
+      Kategorien:
+    </p>
     <ul class="list-disc break-inside-avoid-column ps-8">
       <li>„richtig”</li>
       <li>„geht nicht weit genug”</li>
       <li>„geht zu weit”</li>
     </ul>
     <p><strong>Zustimmung</strong></p>
-    <p>Hat eine Fraktion gegen einen Gesetzentwurf gestimmt oder sich enthalten, so wurde die Begründung der Fraktion ausgewertet. Die Begründungen dazu finden sich vornehmlich in den Parlamentsreden einzelner Abgeordneter oder in Positionspapieren der Fraktionen. Wenn die Partei gegen ein Gesetz gestimmt hat, weil es ihr nicht weit genug ging, z.B. weil sie nicht nur eine Entbürokratisierung des BAföG, sondern eine generelle Erhöhung forderte, wurde die Position der Fraktion mit „nein, reicht mir nicht aus” bewertet.</p>
+    <p>
+      Hat eine Fraktion gegen einen Gesetzentwurf gestimmt oder sich enthalten,
+      so wurde die Begründung der Fraktion ausgewertet. Die Begründungen dazu
+      finden sich vornehmlich in den Parlamentsreden einzelner Abgeordneter oder
+      in Positionspapieren der Fraktionen. Wenn die Partei gegen ein Gesetz
+      gestimmt hat, weil es ihr nicht weit genug ging, z.B. weil sie nicht nur
+      eine Entbürokratisierung des BAföG, sondern eine generelle Erhöhung
+      forderte, wurde die Position der Fraktion mit „nein, reicht mir nicht aus”
+      bewertet.
+    </p>
     <p><strong>Ablehnung</strong></p>
-    <p>Hat eine Fraktion gegen einen Gesetzentwurf gestimmt oder sich enthalten, so wurde die Begründung der Fraktion ausgewertet. Die Begründungen der jeweiligen Fraktionen finden sich vornehmlich in Parlamentsreden oder in Positionspapieren der Fraktionen. Wenn die Partei gegen ein Gesetz gestimmt hat, weil es ihr nicht weit genug ging, z.B. weil sie nicht nur eine Entbürokratisierung des BAföG, sondern eine generelle Erhöhung forderte, wurde die Position der Fraktion mit „Nein, reicht mir nicht aus” bewertet.</p>
-    <p>Hat eine Fraktion ein Gesetz abgelehnt, weil es ihr zu weit geht, z.B. weil sie eine Reform des BAföG insgesamt ablehnt, wurde die Position der Partei mit „Nein, geht mir zu weit” bewertet. Diese Unterscheidung soll eine präzisere Auswertung des Abstimmungsverhaltens ermöglichen.</p>
-    <p>Die Antwortmöglichkeiten im Real-O-Mat basieren ausschließlich auf dem tatsächlichen Abstimmungsverhalten der Parteien. Wenn zum Beispiel keine einzige Fraktion einen Antrag mit der Begründung abgelehnt hat, dass er „zu weit“ geht, wird diese Antwortoption auch bei den Thesen nicht angezeigt. Dementsprechend gibt es Fälle, in denen zu einzelnen Thesen nicht jede Antwortoption verfügbar ist.</p>
+    <p>
+      Hat eine Fraktion gegen einen Gesetzentwurf gestimmt oder sich enthalten,
+      so wurde die Begründung der Fraktion ausgewertet. Die Begründungen der
+      jeweiligen Fraktionen finden sich vornehmlich in Parlamentsreden oder in
+      Positionspapieren der Fraktionen. Wenn die Partei gegen ein Gesetz
+      gestimmt hat, weil es ihr nicht weit genug ging, z.B. weil sie nicht nur
+      eine Entbürokratisierung des BAföG, sondern eine generelle Erhöhung
+      forderte, wurde die Position der Fraktion mit „Nein, reicht mir nicht aus”
+      bewertet.
+    </p>
+    <p>
+      Hat eine Fraktion ein Gesetz abgelehnt, weil es ihr zu weit geht, z.B.
+      weil sie eine Reform des BAföG insgesamt ablehnt, wurde die Position der
+      Partei mit „Nein, geht mir zu weit” bewertet. Diese Unterscheidung soll
+      eine präzisere Auswertung des Abstimmungsverhaltens ermöglichen.
+    </p>
+    <p>
+      Die Antwortmöglichkeiten im Real-O-Mat basieren ausschließlich auf dem
+      tatsächlichen Abstimmungsverhalten der Parteien. Wenn zum Beispiel keine
+      einzige Fraktion einen Antrag mit der Begründung abgelehnt hat, dass er
+      „zu weit“ geht, wird diese Antwortoption auch bei den Thesen nicht
+      angezeigt. Dementsprechend gibt es Fälle, in denen zu einzelnen Thesen
+      nicht jede Antwortoption verfügbar ist.
+    </p>
 
     <h3>Berechnung der Ergebnisse mit Beispielrechnung</h3>
 
-    <p>Die Ergebnisse im Real-O-Mat werden so berechnet, dass eine vollständige Übereinstimmung einer Nutzerin mit einer Partei bei einer bestimmten These zunächst mit 100 % gewertet wird. Gibt es keine Übereinstimmung – beispielsweise wenn die Nutzerin bei einer These zum Thema Waffenrecht „nicht weit genug“ antwortet, während die SPD den Gesetzentwurf befürwortet hat („Ja, finde ich auch”) – wird für diese These 0 % Übereinstimmung mit der SPD berechnet. Die Übereinstimmungen aller Thesen werden anschließend addiert und durch die Gesamtzahl der berücksichtigten Thesen geteilt.</p>
-    <p>Wenn eine These für die Nutzerin besonders wichtig ist, kann sie diese entsprechend vor der Auswertung markieren, sodass die Position zu dieser Frage mit doppelter Gewichtung in das Endergebnis eingeht.</p>
-    <p>Überspringt die abstimmende Person eine These, so wird diese aus der Gesamtzahl der bewerteten Thesen herausgerechnet.</p>
+    <p>
+      Die Ergebnisse im Real-O-Mat werden so berechnet, dass eine vollständige
+      Übereinstimmung einer Nutzerin mit einer Partei bei einer bestimmten These
+      zunächst mit 100 % gewertet wird. Gibt es keine Übereinstimmung –
+      beispielsweise wenn die Nutzerin bei einer These zum Thema Waffenrecht
+      „nicht weit genug“ antwortet, während die SPD den Gesetzentwurf
+      befürwortet hat („Ja, finde ich auch”) – wird für diese These 0 %
+      Übereinstimmung mit der SPD berechnet. Die Übereinstimmungen aller Thesen
+      werden anschließend addiert und durch die Gesamtzahl der berücksichtigten
+      Thesen geteilt.
+    </p>
+    <p>
+      Wenn eine These für die Nutzerin besonders wichtig ist, kann sie diese
+      entsprechend vor der Auswertung markieren, sodass die Position zu dieser
+      Frage mit doppelter Gewichtung in das Endergebnis eingeht.
+    </p>
+    <p>
+      Überspringt die abstimmende Person eine These, so wird diese aus der
+      Gesamtzahl der bewerteten Thesen herausgerechnet.
+    </p>
     <table class="my-4 border-collapse">
       <thead>
         <tr>
@@ -80,16 +181,48 @@ const dateFormat = new Intl.DateTimeFormat('de-DE', { dateStyle: 'medium' })
     </table>
 
     <h3>Parteien</h3>
-    <p>Der Real-O-Mat betrachtet das Abstimmungsverhalten der Fraktionen im jeweiligen Landesparlament. Diese umfassen CDU, SPD, AfD, Die Linke, Bündnis 90/Die Grünen und FDP für Sachsen-Anhalt, CDU, SPD, AfD, Die Linke und Bündnis 90/Die Grünen für Berlin.</p>
-    <p>Eine Besonderheit der 8. Wahlperiode in Sachsen-Anhalt ist der Wechsel an der Spitze der Landesregierung: Reiner Haseloff (CDU) trat im Januar 2026 als Ministerpräsident zurück und wurde von Sven Schulze (CDU) abgelöst, während die Koalition aus CDU, SPD und FDP unverändert bestehen blieb.</p>
+    <p>
+      Der Real-O-Mat betrachtet das Abstimmungsverhalten der Fraktionen im
+      jeweiligen Landesparlament. Diese umfassen CDU, SPD, AfD, Die Linke,
+      Bündnis 90/Die Grünen und FDP für Sachsen-Anhalt, CDU, SPD, AfD, Die Linke
+      und Bündnis 90/Die Grünen für Berlin.
+    </p>
+    <p>
+      Eine Besonderheit der 8. Wahlperiode in Sachsen-Anhalt ist der Wechsel an
+      der Spitze der Landesregierung: Reiner Haseloff (CDU) trat im Januar 2026
+      als Ministerpräsident zurück und wurde von Sven Schulze (CDU) abgelöst,
+      während die Koalition aus CDU, SPD und FDP unverändert bestehen blieb.
+    </p>
     <p>Fraktionslose Abgeordnete werden im Real-O-Mat nicht abgebildet.</p>
 
-    <p>Besonderheit beim Real-O-Mat zur Bundestagswahl 2025 (Archiv): SPD, FDP, Bündnis 90/Die Grünen, CDU/CSU, Die Linke, BSW und AfD. Im Dezember 2023 löste sich die Fraktion Die Linke auf. Die Abgeordneten waren bis Januar 2024 fraktionslos im Bundestag vertreten. Ab dem 2. Februar 2024 bildete sich im Bundestag die Gruppe Die Linke und das Bündnis Sahra Wagenknecht (BSW). Bei Abstimmungen, die zwischen dem 7. Dezember 2023 und dem 31. Januar 2024 stattfanden, wurden die Abgeordneten der Partei zugeordnet, der sie ab Februar 2024 angehörten.</p>
-    <p>Da das BSW erst ab Ende 2023 bzw. Februar 2024 aktiv war, gibt es von der Fraktion zu vielen Thesen keine wertbare Positionierung. Eine 100%ige Übereinstimmung mit einer Partei ist nur dann möglich, wenn man ausschließlich zu Forderungen abstimmt, bei denen auch die jeweilige Partei eine wertbare Position hat (und nicht wertbare übersprungen werden). Da das BSW erst ab Ende 2023 bzw. Februar 2024 im Bundestag aktiv war, gibt es von der Gruppe zu vielen Thesen keine wertbare Positionierung.</p>
+    <p>
+      Besonderheit beim Real-O-Mat zur Bundestagswahl 2025 (Archiv): SPD, FDP,
+      Bündnis 90/Die Grünen, CDU/CSU, Die Linke, BSW und AfD. Im Dezember 2023
+      löste sich die Fraktion Die Linke auf. Die Abgeordneten waren bis Januar
+      2024 fraktionslos im Bundestag vertreten. Ab dem 2. Februar 2024 bildete
+      sich im Bundestag die Gruppe Die Linke und das Bündnis Sahra Wagenknecht
+      (BSW). Bei Abstimmungen, die zwischen dem 7. Dezember 2023 und dem 31.
+      Januar 2024 stattfanden, wurden die Abgeordneten der Partei zugeordnet,
+      der sie ab Februar 2024 angehörten.
+    </p>
+    <p>
+      Da das BSW erst ab Ende 2023 bzw. Februar 2024 aktiv war, gibt es von der
+      Fraktion zu vielen Thesen keine wertbare Positionierung. Eine 100%ige
+      Übereinstimmung mit einer Partei ist nur dann möglich, wenn man
+      ausschließlich zu Forderungen abstimmt, bei denen auch die jeweilige
+      Partei eine wertbare Position hat (und nicht wertbare übersprungen
+      werden). Da das BSW erst ab Ende 2023 bzw. Februar 2024 im Bundestag aktiv
+      war, gibt es von der Gruppe zu vielen Thesen keine wertbare
+      Positionierung.
+    </p>
 
     <h3>Daten herunterladen</h3>
     <p>
-      Du kannst hier die Thesen des Real-O-Mat im JSON-Format herunterladen. Die Daten stehen unter der Lizenz <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" target="_blank">CC-BY-SA 4.0</a>.
+      Du kannst hier die Thesen des Real-O-Mat im JSON-Format herunterladen. Die
+      Daten stehen unter der Lizenz <a
+        href="https://creativecommons.org/licenses/by-sa/4.0/deed.de"
+        target="_blank">CC-BY-SA 4.0</a
+      >.
     </p>
 
     <table class="my-4 border-collapse">
@@ -117,12 +250,21 @@ const dateFormat = new Intl.DateTimeFormat('de-DE', { dateStyle: 'medium' })
 
     <h3>Team</h3>
     <p>Recherche: Anna-Lena Disterheft, Raffael Ruppert (frei)</p>
-    <p>Projektleitung und Redaktion: Michelle Trimborn, Melek Bazgan, Matthias Jakubowski (FragDenStaat)</p>
+    <p>
+      Projektleitung und Redaktion: Michelle Trimborn, Melek Bazgan, Matthias
+      Jakubowski (FragDenStaat)
+    </p>
     <p>Technische Umsetzung: Gerd Kant, FG, Max Kronmüller (FragDenStaat)</p>
     <p>
-      Design Real-O-Mat: <a href="https://kellerundlieder.de" target="_blank">Keller und Lieder</a>
+      Design Real-O-Mat: <a href="https://kellerundlieder.de" target="_blank"
+        >Keller und Lieder</a
+      >
     </p>
-    <p>Der Real-O-Mat ist ein Projekt von FragDenStaat und spendenfinanziert. Er ist keine Wahlempfehlung, sondern ein Informationsangebot über Parteien und ihr Abstimmungsverhalten.</p>
+    <p>
+      Der Real-O-Mat ist ein Projekt von FragDenStaat und spendenfinanziert. Er
+      ist keine Wahlempfehlung, sondern ein Informationsangebot über Parteien
+      und ihr Abstimmungsverhalten.
+    </p>
   </div>
 </Content>
 

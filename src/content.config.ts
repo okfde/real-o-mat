@@ -58,7 +58,10 @@ export type FAQItem = z.infer<typeof faqItemSchema>
 // })
 
 const elections = defineCollection({
-  loader: glob({ base: TESTING ? 'tests/fixtures/' : 'src/data/elections/', pattern: '*.yaml' }),
+  loader: glob({
+    base: TESTING ? 'tests/fixtures/' : 'src/data/elections/',
+    pattern: '*.yaml',
+  }),
   schema: electionSchema,
 })
 

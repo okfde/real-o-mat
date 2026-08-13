@@ -18,9 +18,12 @@ defineProps<{
           <dd class="flex items-center space-x-4">
             <div class="flex-1">
               <div class="overflow-hidden rounded-full bg-white">
-                <div class="progress-result h-3 bg-purple-900" :style="{
-                  width: `${percentage}%`,
-                }" />
+                <div
+                  class="progress-result h-3 bg-purple-900"
+                  :style="{
+                    width: `${percentage}%`,
+                  }"
+                />
               </div>
             </div>
             <span>{{ percentage }}%</span>

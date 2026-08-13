@@ -20,7 +20,8 @@ if (currentQuestionIndex.value > props.election.questions.length) {
 }
 
 const currentQuestion = computed(
-  (): Question | undefined => props.election.questions[currentQuestionIndex.value],
+  (): Question | undefined =>
+    props.election.questions[currentQuestionIndex.value],
 )
 const questionsCount = computed(() => props.election.questions.length)
 

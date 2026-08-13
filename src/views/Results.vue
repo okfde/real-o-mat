@@ -42,7 +42,7 @@ const share = () => {
 <template>
   <div>
     <TabGroup>
-      <TabList class="flex space-x-2 rounded-t-lg mb-2">
+      <TabList class="mb-2 flex space-x-2 rounded-t-lg">
         <Tab as="template" v-slot="{ selected }">
           <button class="tab-button" :class="{ selected: selected }">
             <IconChart aria-hidden="true" />
@@ -76,13 +76,18 @@ const share = () => {
     </TabGroup>
     <FurtherInfo :election="election" />
     <Teleport to="main" v-if="canShare">
-      <div class="inset-x-0 bottom-12 z-20 mt-12 flex max-md:flex-col max-md:items-center gap-4 justify-center">
+      <div
+        class="inset-x-0 bottom-12 z-20 mt-12 flex justify-center gap-4 max-md:flex-col max-md:items-center"
+      >
         <button class="btn btn-lg inline shadow-md" @click="share">
           <IconShare aria-hidden="true" class="me-1" />
           Teile den Real-O-Mat!
         </button>
-        <a class="btn btn-lg inline shadow-md" href="//fragdenstaat.de/jetzt-spenden/?pk_campaign=realomat"
-          target="_blank">
+        <a
+          class="btn btn-lg inline shadow-md"
+          href="//fragdenstaat.de/jetzt-spenden/?pk_campaign=realomat"
+          target="_blank"
+        >
           <IconHeart aria-hidden="true" class="me-1" />
           Jetzt spenden!
         </a>
@@ -96,7 +101,7 @@ const share = () => {
 
 .tab-button {
   @apply flex w-full flex-1 flex-col items-center justify-center py-3 md:flex-row;
-  @apply rounded inset-ring-2 inset-ring-transparent bg-transparent text-xs text-purple-800 md:text-xl;
+  @apply rounded bg-transparent text-xs text-purple-800 inset-ring-2 inset-ring-transparent md:text-xl;
   @apply duration-200 outline-none focus:inset-ring-4 focus:inset-ring-purple-900 motion-safe:transition;
 }
 

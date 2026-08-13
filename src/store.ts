@@ -12,7 +12,7 @@ export type UserPosition = {
   questionId: string
 }
 
-const sample = <T,>(items: T[]): T | undefined =>
+const sample = <T>(items: T[]): T | undefined =>
   items[Math.floor(Math.random() * items.length)]
 
 export const answerOptions = {
@@ -59,10 +59,16 @@ export function useStore(slug: string) {
     if (answers.value[questionId]) delete answers.value[questionId]
   }
 
-  const currentQuestionIndex = useStorage('realomat-current-question-' + slug, 0)
+  const currentQuestionIndex = useStorage(
+    'realomat-current-question-' + slug,
+    0,
+  )
   const currentQuestionProgress = computed(() => currentQuestionIndex.value + 1)
 
-  const currentStage = useStorage<Stage>('realomat-stage-' + slug, Stage.Tutorial)
+  const currentStage = useStorage<Stage>(
+    'realomat-stage-' + slug,
+    Stage.Tutorial,
+  )
 
   const viewTransition = ref('slide' as 'slide' | 'slide-back')
 
@@ -102,7 +108,7 @@ export function useStore(slug: string) {
     const answeredQuestionsWithInfo = questions.filter(
       (question) => answers.value[question.id] && question.info?.trim(),
     )
-    console.log("questions", questions)
+    console.log('questions', questions)
     console.log('answeredQuestionsWithInfo', answeredQuestionsWithInfo)
     const weightedQuestionsWithInfo = answeredQuestionsWithInfo.filter(
       (question) => answers.value[question.id].weight === 2,
