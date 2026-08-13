@@ -28,7 +28,7 @@ onMounted(() => {
     @keydown.esc="closeMenu"
   >
     <div>
-      <a href="/">
+      <a href="/" class="inline-block">
         <h1
           class="-mt-2 mb-1 inline text-4xl font-bold sm:text-7xl lg:text-8xl"
           style="margin-left: -0.07em"

@@ -35,7 +35,16 @@ interface Props {
 
   <body class="bg-purple-50">
     <!-- Matomo Image Tracker-->
-    {import.meta.env.PROD && <img referrerpolicy="no-referrer-when-downgrade" src="https://traffic.okfn.de/matomo.php?idsite=58&rec=1" class="absolute -z-10" alt="" />}
+    {
+      import.meta.env.PROD && (
+        <img
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://traffic.okfn.de/matomo.php?idsite=58&rec=1"
+          class="absolute -z-10"
+          alt=""
+        />
+      )
+    }
 
     <GradientBackground />
 
@@ -52,19 +61,32 @@ interface Props {
         <div class="container mx-auto px-4 py-12 text-gray-600">
           <nav class="flex items-center max-md:flex-col">
             <div>
-              <a href="https://fragdenstaat.de" target="_blank">
+              <a
+                href="https://fragdenstaat.de"
+                target="_blank"
+                class="inline-block"
+              >
                 <img src={logo.src} alt="Ein Projekt von FragDenStaat" />
               </a>
             </div>
-            <ul class="flex flex-col items-center gap-4 max-md:mt-8 md:ms-auto md:flex-row md:gap-12">
+            <ul
+              class="flex flex-col items-center gap-4 max-md:mt-8 md:ms-auto md:flex-row md:gap-12"
+            >
               <li>
-                <a href="https://wahlbrief.de/" target="_blank" rel="noopener noreferrer" class="flex items-center">
+                <a
+                  href="https://wahlbrief.de/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center"
+                >
                   <IconLink aria-hidden="true" class="me-1" />
                   Jetzt Briefwahl beantragen
                 </a>
               </li>
               <li>
-                <a href="https://fragdenstaat.de/impressum" target="_blank"> Impressum </a>
+                <a href="https://fragdenstaat.de/impressum" target="_blank">
+                  Impressum
+                </a>
               </li>
               <li>
                 <a href="/datenschutz"> Datenschutz </a>
