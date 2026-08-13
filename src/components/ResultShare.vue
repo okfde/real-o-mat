@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, inject, ref } from 'vue'
 import { useClipboard } from '@vueuse/core'
 import { getShareResultText } from '../share'
 import IconShare from '~icons/material-symbols/ios-share-rounded'
 import { publicUrl } from '../const'
+import { ElectionKey } from '../types'
 
 const props = defineProps<{
   partyMatches: { party: string; percentage: number }[]
@@ -26,6 +27,7 @@ const shareResult = () => {
   }
 }
 
+const election = inject(ElectionKey)
 </script>
 
 <template>
