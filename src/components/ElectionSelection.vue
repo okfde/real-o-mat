@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { computed, ref } from 'vue'
+import { computed } from 'vue'
 import type { Election } from '../content.config'
 import IconArchive from '~icons/material-symbols/archive-outline-rounded'
 import ElectionCard from './ElectionCard.vue'
@@ -14,8 +14,6 @@ const activeElections = computed(() =>
 const archivedElections = computed(() =>
   props.elections.filter((election) => election.archived),
 )
-
-const showArchive = ref(false)
 </script>
 
 <template>

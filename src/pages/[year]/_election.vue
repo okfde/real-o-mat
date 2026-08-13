@@ -10,13 +10,11 @@ import {
 import Questionnaire from '../../views/Questionnaire.vue'
 import Results from '../../views/Results.vue'
 import Weights from '../../views/Weights.vue'
-import type { Election, Question } from '../../content.config.js'
+import type { Election } from '../../content.config.js'
 import { useStore, Stage } from '../../store.js'
 import IconBack from '~icons/material-symbols/arrow-back'
-import IconForward from '~icons/material-symbols/arrow-forward'
 import IconRestart from '~icons/material-symbols/restart-alt-rounded'
 import IconClose from '~icons/material-symbols/close-rounded'
-import FdsLogo from '../../assets/fragdenstaat.svg'
 import Tutorial from '../../views/Tutorial.vue'
 
 const props = defineProps<{

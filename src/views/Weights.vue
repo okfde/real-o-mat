@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import type { Election, Question } from '../content.config'
+import type { Election } from '../content.config'
 import IconForward from '~icons/material-symbols/arrow-forward'
 import { useStore } from '../store'
 
