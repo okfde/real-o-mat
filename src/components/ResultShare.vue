@@ -10,7 +10,7 @@ const props = defineProps<{
   partyMatches: { party: string; percentage: number }[]
 }>()
 
-const shareResultText = computed(() => getShareResultText(props.partyMatches))
+const shareResultText = computed(() => getShareResultText(props.partyMatches, election?.title))
 
 const { copy, copied } = useClipboard({ copiedDuring: 2000 })
 
