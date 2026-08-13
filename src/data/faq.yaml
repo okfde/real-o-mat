@@ -4,11 +4,11 @@
 - id: 0
   question: 'Wie wurden die Themen für den *Real-o-Mat* ausgewählt?'
   answer: |
-    Der Real-O-Mat fragt Positionen zu 14 politischen Forderungen aus der vergangenen Legislaturperiode in Berlin bzw. Sachsen-Anhalt ab. Die Thesen des Real-O-Mat wurden aus Gesetzentwürfen und Anträgen abgeleitet, über die in der letzten Legislaturperiode von 2021 bzw. 2023 bis Juli 2026 im jeweiligen Landtag bzw. Abgeordnetenhaus abgestimmt wurde. Diese Auswahl ist nicht vollständig, sondern bildet nur einen Teil der im jeweiligen Bundesland diskutierten Themen ab.
+    Der Real-O-Mat fragt Positionen zu 14 politischen Forderungen aus der vergangenen Legislaturperiode in Berlin bzw. Sachsen-Anhalt ab. Die Thesen des Real-O-Mat wurden aus Gesetzentwürfen und Anträgen abgeleitet, über die in der letzten Legislaturperiode von 2021 bzw. 2023 bis Juli 2026 im jeweiligen Landesparlament abgestimmt wurde. Diese Auswahl ist nicht vollständig, sondern bildet nur einen Teil der im jeweiligen Bundesland diskutierten Themen ab.
 
     Dabei wurden Themen ausgewählt, die für breite Teile der Bevölkerung im jeweiligen Bundesland relevant sind und öffentlich breit diskutiert wurden. So ist davon auszugehen, dass ein großer Teil der Nutzer*innen mit den Themen vertraut ist und eine Position zu den ausgewählten Themen hat. Dafür haben wir bspw. auch zivilgesellschaftliche Akteure vor Ort kontaktiert. 
 
-    Darüber hinaus spielte die Datenlage eine wichtige Rolle: Nur Themen, zu denen es a) entsprechende Anträge oder Gesetzentwürfe, über die im abgestimmt wurde und b) ausreichend inhaltliche Positionierung der Fraktionen, etwa in Plenarprotokollen gibt, konnten einbezogen werden.
+    Darüber hinaus spielte die Datenlage eine wichtige Rolle: Nur Themen, zu denen es a) entsprechende Anträge oder Gesetzentwürfe, über die im Landesparlament abgestimmt wurde und b) ausreichend inhaltliche Positionierung der Fraktionen, etwa in Plenarprotokollen gibt, konnten einbezogen werden.
 
 - id: 1
   question: Warum sind einige Parteien im *Real-o-Mat* nicht vertreten?
@@ -26,13 +26,13 @@
 - id: 3
   question: Wie unterscheiden sich der *Real-O-Mat* und der *Wahl-O-Mat*?
   answer: |
-    Während der Wahl-O-Mat lediglich auf Aussagen der Parteien basiert, wertet der Real-O-Mat das tatsächliche Abstimmungsverhalten der Fraktionen aus, die in der letzten Legislaturperiode im jeweiligen Landtag bzw. Abgeordnetenhaus vertreten waren. Darüber hinaus liefert er die im parlamentarischen Verfahren bzw. Debatten genannten Begründungen für das Abstimmungsverhalten der Fraktionen.
+    Während der Wahl-O-Mat lediglich auf Aussagen der Parteien basiert, wertet der Real-O-Mat das tatsächliche Abstimmungsverhalten der Fraktionen aus, die in der letzten Legislaturperiode im jeweiligen Landesparlament vertreten waren. Darüber hinaus liefert er die im parlamentarischen Verfahren bzw. in Debatten genannten Begründungen für das Abstimmungsverhalten der Fraktionen.
 
-    Der Real-O-Mat bezieht sich auf Abstimmungen zu Anträgen und Gesetzentwürfen im jeweiligen Landtag bzw. Abgeordnetenhaus, die Begründungen wurden aus Plenardebatten und Beschlussempfehlungen herausgearbeitet. Die Datenbasis bilden die verfügbaren Dokumente des [Landtags Sachsen-Anhalt](https://www.landtag.sachsen-anhalt.de/dokumente/neue-doku) bzw. des [Berliner Abgeordnetenhauses](https://www.parlament-berlin.de/dokumente). Sie sind im Real-O-Mat als Belege zu den Aussagen verlinkt.
+    Der Real-O-Mat bezieht sich auf Abstimmungen zu Anträgen und Gesetzentwürfen im jeweiligen Landesparlament, die Begründungen wurden aus Plenardebatten und Beschlussempfehlungen herausgearbeitet. Die Datenbasis bilden die verfügbaren Dokumente des [Landtags Sachsen-Anhalt](https://www.landtag.sachsen-anhalt.de/dokumente/neue-doku) bzw. des [Berliner Abgeordnetenhauses](https://www.parlament-berlin.de/dokumente). Sie sind im Real-O-Mat als Belege zu den Aussagen verlinkt.
 
 
 - id: 4
-  question: Warum bildet der *Real-O-Mat* nicht die fraktionslosen Abgeordneten im Landtag bzw. Abgeordnetenhaus ab?
+  question: Warum bildet der *Real-O-Mat* nicht die fraktionslosen Abgeordneten im Landesparlament ab?
 
   answer: |
     Der Real-O-Mat gibt Auskunft über das Abstimmungsverhalten der Fraktionen. Fraktionslose Abgeordnete bildet der Real-O-Mat nicht ab. Die Gruppe der fraktionslosen Abgeordneten zusammengefasst abzubilden, wäre nicht repräsentativ oder methodisch korrekt, da diese Abgeordneten keine gemeinsamen Abstimmungen treffen.
@@ -44,7 +44,7 @@
   answer: |
     Der Real-O-Mat basiert auf umfassenden parlamentarischen Dokumenten des jeweiligen Bundeslandes. Voraussetzung dafür ist nicht nur eine umfassende, sondern auch eine leicht zugängliche Dokumentation der jeweiligen Anträge, Abstimmungen und Plenardebatten.
 
-    Für unser Team waren die Daten zu Berlin und Sachsen-Anhalt zugänglicher, da sie über die gesamte Legislaturperiode bereits niedrigschwelliger aufgearbeitet sind. Als kleines Team mussten wir uns zudem auf ausgewählte Wahlen beschränken und können aktuell nicht den Real-O-Mat nicht zu jeder Landtagswahl gewährleisten. [Hier kannst Du Dir einen eigenen Überblick](https://www.dokumentation.landtag-mv.de/parldok) über Abstimmungen im Landtag von Mecklenburg-Vorpommern verschaffen.
+    Für unser Team waren die Daten zu Berlin und Sachsen-Anhalt zugänglicher, da sie über die gesamte Legislaturperiode bereits niedrigschwelliger aufgearbeitet sind. Als kleines Team mussten wir uns zudem auf ausgewählte Wahlen beschränken und können aktuell den Real-O-Mat nicht zu jeder Landtagswahl gewährleisten. [Hier kannst Du Dir einen eigenen Überblick](https://www.dokumentation.landtag-mv.de/parldok) über Abstimmungen im Landtag von Mecklenburg-Vorpommern verschaffen.
 
 - id: 6
   question: Wer steckt hinter dem *Real-O-Mat*?
