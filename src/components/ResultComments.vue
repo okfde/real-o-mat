@@ -50,21 +50,35 @@ const nextQuestion = () => {
     <hr class="border-gray-200" />
 
     <nav class="grid-r mt-6 grid grid-cols-3 justify-center">
-      <button @click="previousQuestion" :disabled="currentQuestionIndex === 0" class="btn-text justify-self-start">
+      <button
+        @click="previousQuestion"
+        :disabled="currentQuestionIndex === 0"
+        class="btn-text justify-self-start"
+      >
         <IconBack aria-hidden="true" class="me-1" />
         Zurück
       </button>
       <div class="text-center">
         <select
           class="w-full rounded-md border-gray-300 bg-purple-100 px-4 py-1 shadow-sm outline-none focus:ring-3 focus:ring-purple-600/50 motion-safe:transition"
-          v-model="currentQuestionIndex" aria-label="Springe zur These" @change="transitionName = undefined">
-          <option v-for="(question, index) in questions" :key="index" :value="index">
+          v-model="currentQuestionIndex"
+          aria-label="Springe zur These"
+          @change="transitionName = undefined"
+        >
+          <option
+            v-for="(question, index) in questions"
+            :key="index"
+            :value="index"
+          >
             These {{ index + 1 }}: {{ question.keyword || question.thesis }}
           </option>
         </select>
       </div>
-      <button @click="nextQuestion" class="btn-text justify-self-end"
-        :disabled="currentQuestionIndex === questions.length - 1">
+      <button
+        @click="nextQuestion"
+        class="btn-text justify-self-end"
+        :disabled="currentQuestionIndex === questions.length - 1"
+      >
         Weiter
         <IconForward aria-hidden="true" class="me-1" />
       </button>
@@ -77,22 +91,31 @@ const nextQuestion = () => {
             {{ currentQuestion.thesis }}
           </h3>
           <ul class="mt-8 grid gap-4 md:grid-cols-2">
-            <Disclosure as="li" default-open v-slot="{ open }"
-              v-for="({ party, comment }, i) in currentQuestion.answers" :key="party" class="flex flex-col">
+            <Disclosure
+              as="li"
+              default-open
+              v-slot="{ open }"
+              v-for="({ party, comment }, i) in currentQuestion.answers"
+              :key="party"
+              class="flex flex-col"
+            >
               <DisclosureButton
                 class="flex w-full items-center justify-between rounded bg-purple-100 px-3 py-3 outline-none focus:ring-3 focus:ring-purple-600/50 motion-safe:transition"
-                :class="{ 'rounded-b-none': open }">
-                <h4 class="flex items-center gap-3 text-lg font-medium md:text-xl">
-                  <AnswerIndicator v-if="
-                    getPartyAnswer(currentQuestion, partyBySlug.get(party)!)
-                  " :answer="getPartyAnswer(currentQuestion, partyBySlug.get(party)!)!
-                      " />
+                :class="{ 'rounded-b-none': open }"
+              >
+                <h4
+                  class="flex items-center gap-3 text-lg font-medium md:text-xl"
+                >
+                  <AnswerIndicator
+                    v-if="
+                      getPartyAnswer(currentQuestion, partyBySlug.get(party)!)
+                    "
+                    :answer="
+                      getPartyAnswer(currentQuestion, partyBySlug.get(party)!)!
+                    "
+                  />
                   {{ partyBySlug.get(party)?.name }}
                 </h4>
-                <IconChevron aria-hidden="true"
-                  class="h-5 w-5 transform text-purple-900 motion-safe:transition-transform" :class="{
-                    'rotate-180': open,
-                  }" />
               </DisclosureButton>
               <DisclosurePanel class="flex-1 rounded-b-lg bg-purple-50 p-4">
                 <div class="comment" v-if="comment" v-html="comment" />
