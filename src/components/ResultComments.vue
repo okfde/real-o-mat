@@ -82,41 +82,43 @@ const nextQuestion = () => {
       </button>
     </nav>
 
-    <Transition mode="out-in" :name="transitionName">
-      <article :key="currentQuestionIndex">
-        <h3 class="my-8 text-xl font-medium md:text-2xl">
-          {{ currentQuestion.thesis }}
-        </h3>
-        <ul class="mt-8 grid gap-4 md:grid-cols-2">
-          <Disclosure
-            as="li"
-            default-open
-            v-slot="{ open }"
-            v-for="({ party, comment }, i) in currentQuestion.answers"
-            :key="party"
-            class="flex flex-col"
-          >
-            <DisclosureButton
-              class="flex w-full items-center justify-between rounded bg-purple-100 px-4 py-2 outline-none focus:ring-3 focus:ring-purple-600/50 motion-safe:transition"
-              :class="{ 'rounded-b-none': open }"
+    <div class="overflow-x-hidden">
+      <Transition mode="out-in" :name="transitionName">
+        <article :key="currentQuestionIndex">
+          <h3 class="my-8 text-xl font-medium md:text-2xl">
+            {{ currentQuestion.thesis }}
+          </h3>
+          <ul class="mt-8 grid gap-4 md:grid-cols-2">
+            <Disclosure
+              as="li"
+              default-open
+              v-slot="{ open }"
+              v-for="({ party, comment }, i) in currentQuestion.answers"
+              :key="party"
+              class="flex flex-col"
             >
-              <h4 class="text-lg">{{ partyBySlug.get(party)?.name }}</h4>
-              <IconChevron
-                aria-hidden="true"
-                class="h-5 w-5 transform text-purple-900 motion-safe:transition-transform"
-                :class="{
-                  'rotate-180': open,
-                }"
-              />
-            </DisclosureButton>
-            <DisclosurePanel class="flex-1 rounded-b-lg bg-purple-50 p-4">
-              <div class="comment" v-if="comment" v-html="comment" />
-              <em v-else>keine Begründung angegeben</em>
-            </DisclosurePanel>
-          </Disclosure>
-        </ul>
-      </article>
-    </Transition>
+              <DisclosureButton
+                class="flex w-full items-center justify-between rounded bg-purple-100 px-4 py-2 outline-none focus:ring-3 focus:ring-purple-600/50 motion-safe:transition"
+                :class="{ 'rounded-b-none': open }"
+              >
+                <h4 class="text-lg">{{ partyBySlug.get(party)?.name }}</h4>
+                <IconChevron
+                  aria-hidden="true"
+                  class="h-5 w-5 transform text-purple-900 motion-safe:transition-transform"
+                  :class="{
+                    'rotate-180': open,
+                  }"
+                />
+              </DisclosureButton>
+              <DisclosurePanel class="flex-1 rounded-b-lg bg-purple-50 p-4">
+                <div class="comment" v-if="comment" v-html="comment" />
+                <em v-else>keine Begründung angegeben</em>
+              </DisclosurePanel>
+            </Disclosure>
+          </ul>
+        </article>
+      </Transition>
+    </div>
   </div>
 </template>
 
