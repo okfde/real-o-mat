@@ -1,0 +1,1236 @@
+title: Abgeordnetenhauswahl Berlin
+slug: berlin
+date: '2026-09-20'
+archived: false
+questions:
+  - id: question-0
+    index: 0
+    category: Wohnen
+    thesis: 'Das Land Berlin soll sich für einen bundesweiten Mietendeckel einsetzen. '
+    info: >-
+      <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern setzt sich mit
+      investigativen Recherchen, Klagen und Community-Aktionen für mehr
+      Transparenz ein. Du möchtest selbst spannende Informationen über
+      Politiker*innen und Behörden ans Licht bringen? <a target="_blank"
+      rel="noopener noreferrer"
+      href="https://fragdenstaat.de/informationsfreiheit/einsteiger-guide/"><u>Stelle
+      jetzt eine IFG-Anfrage!</u></a></p>
+    keyword: Mietendeckel
+    answers:
+      - party: cdu
+        answer: zu weit
+        comment: >-
+          Die CDU-Fraktion stimmte gegen den <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2058.pdf"><u>Antrag</u></a>
+          der Linken, da der Mietendeckel eine <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-078-pp.pdf#page=55">Fehlentscheidung
+          der Vergangenheit</a> gewesen sei, welcher zu einer Senkung der
+          angebotenen Wohnungen geführt habe. Man solle sich stattdessen darauf
+          fokussieren den Wohnungsbau zu fördern.
+      - party: spd
+        answer: nicht weit genug
+        comment: >-
+          Die SPD stimmte gegen den <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2058.pdf"><u>Antrag</u></a>,
+          obwohl der Mietendeckel auf eine <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-078-pp.pdf#page=58"><u>Idee
+          der SPD zurückzuführen sei</u></a>. Die Partei fordert eine <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-078-pp.pdf#page=58">Länderöffnungsklausel
+          im Mietrecht</a>, damit Bundesländer mit angespannten Wohnungsmärkten
+          handlungsfähig seien, eine Reform des Mietwucherparagrafen und die
+          Begrenzung der Index-Mieten.
+      - party: die-linke
+        answer: richtig
+        comment: >-
+          Die Fraktion der Linken stimmte für ihren eigenen<a target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2058.pdf"><u>
+          Antrag</u></a>, <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-078-pp.pdf#page=54"><u>da
+          hohe Miete die größte Existenzangst für Berlinerinnen und Berliner sei
+          und die Mieten explosionsartig angestiegen seien</u></a>. Bisher habe
+          es an einer politischen Lösung gemangelt, doch ein bundesweiter
+          Mietendeckel könne die „Mietabzocke“ stoppen.
+      - party: die-gruenen
+        answer: richtig
+        comment: >-
+          Die Fraktion der Grünen stimmte für den <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2058.pdf"><u>Antrag</u></a>,
+          da viele Menschen mehr als ein Drittel ihres Einkommens für die Miete
+          ausgeben. Der Mietendeckel sei kein Allheilmittel, <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-078-pp.pdf#page=56">jedoch
+          eine notwendige Notbremse</a>.
+      - party: afd
+        answer: zu weit
+        comment: >-
+          Die AfD hat gegen den<a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2058.pdf"><u>
+          Antrag</u></a> der Linken gestimmt, da Berlin <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-078-pp.pdf#page=60">keinen
+          „verfassungswidrigen Mietendeckel“ brauche</a>, sondern
+          Entbürokratisierung und massive Entlastungen bei staatlichen
+          Nebenkosten.
+  - id: question-1
+    index: 1
+    category: Verkehr & Infrastruktur
+    thesis: Die A100 soll nicht weiter verlängert werden.
+    info: >-
+      <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
+      Recherchen, Klagen und Community-Aktionen. Du möchtest mehr über unsere
+      Projekte zu Klima und Umwelt erfahren? Entdecke jetzt unseren <a
+      target="_blank" rel="noopener noreferrer"
+      href="https://fragdenstaat.de/climate"><u>Climate Helpdesk</u></a>!</p>
+    keyword: A100-Ausbau
+    answers:
+      - party: cdu
+        answer: zu weit
+        comment: >-
+          Die CDU lehnte den <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-1139.pdf"><u>Antrag</u></a>
+          der Grünen ab. Der Weiterbau der A100 über den Treptower Park hinaus
+          sei notwendig, um den Berliner Nordosten besser anzubinden, Straßen in
+          Wohngebieten zu entlasten und für weniger Staus zu sorgen, die auch zu
+          <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-070-wp.pdf#page=47"><u>wirtschaftlichem
+          Schaden</u></a> führen.
+      - party: spd
+        answer: zu weit
+        comment: >-
+          Die SPD stimmte gegen den <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-1139.pdf"><u>Antrag</u></a>
+          der Grünen. Zwar stimmte die SPD dem Antrag inhaltlich zu und betonte,
+          dass eine <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-070-wp.pdf#page=51"><u>Verlängerung
+          der A100 nicht sinnvoll sei</u></a>. Dennoch betonte die Fraktion,
+          dass <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-070-wp.pdf#page=51"><u>sie
+          nicht gegen ihren Koalitionspartner CDU stimmen werde</u></a> und
+          lehnte den Antrag somit ab.
+      - party: die-linke
+        answer: richtig
+        comment: >-
+          Die Linke stimmte dem <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-1139.pdf"><u>Antrag</u></a>
+          der Grünen zu und forderte ebenfalls, die A100 am Treptower Park
+          dauerhaft zu beenden. Der Weiterbau sei klimapolitisch, städtebaulich
+          und verkehrspolitisch falsch. Die <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-070-wp.pdf#page=50"><u>dafür
+          vorgesehenen Milliarden könne man sstattdessen unter anderem in Bus-,
+          Bahn- und Radverkehr investieren</u></a>.
+      - party: die-gruenen
+        answer: richtig
+        comment: >-
+          Die Grünen stimmten ihrem eigenen <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-1139.pdf"><u>Antrag</u></a>
+          zu. Ein weiterer Bauabschnitt könne das Chaos der A100 nicht lösen.
+          Statt eines Ausbaus brauche es vielmehr eine <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-070-wp.pdf#page=46"><u>Leistungsfähigkeitsprüfung</u></a>
+          des aktuellen Abschnittes 16.
+      - party: afd
+        answer: zu weit
+        comment: >-
+          Die AfD lehnte den <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-1139.pdf"><u>Antrag</u></a>
+          der Grünen ab. Sie forderte nicht nur, <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-070-wp.pdf#page=53"><u>den
+          17. Bauabschnitt möglichst schnell bauen zu lassen, sondern
+          perspektivisch auch weitere Abschnitte bis zum Ringschluss </u></a>der
+          Autobahn Sie erwartet davon eine bessere Anbindung der östlichen
+          Bezirke und eine Entlastung der innerstädtischen Straßen.
+  - id: question-2
+    index: 2
+    category: Demokratie & Institutionen
+    thesis: >-
+      Der Senat soll sich auf Bundesebene dafür einsetzen, dass Menschen aus
+      Nicht-EU-Ländern mit festem Wohnsitz in Deutschland sollen nach fünf
+      Jahren bei Landes- und Kommunalwahlen wählen dürfen.
+    info: >-
+      <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
+      Recherchen, Klagen und Community-Aktionen. Du findest unabhängige,
+      investigative Berichterstattung wichtig? Entdecke jetzt unsere <a
+      target="_blank" rel="noopener noreferrer"
+      href="https://fragdenstaat.de/recherchen"><u>Recherchen</u></a>!</p>
+    keyword: Wahlrecht
+    answers:
+      - party: cdu
+        answer: zu weit
+        comment: >-
+          Die CDU hat den <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-0989.pdf">Antrag</a>
+          der Fraktion Bündnis 90/Die Grünen und der Linken abgelehnt, da das
+          Wahlrecht für alle mit der Verfassungsordnung und den Grundprinzipien
+          der demokratischen Ordnung aus ihrer Sicht <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-049-wp.pdf#page=93">nicht
+          vereinbar sei</a>. Das Wahlrecht sei kein Menschenrecht, sondern ein
+          Staatsbürgerrecht, wer dies in Frage stelle, wende sich gegen die
+          Grundfeste der Verfassungsordnung.
+      - party: spd
+        answer: zu weit
+        comment: >-
+          Die SPD-Fraktion hat gegen den <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-0989.pdf">Antrag</a>
+          gestimmt. Es sei zwar keine gute Situation, dass so viele Menschen in
+          Berlin an den Wahlen nicht teilnehmen können. Die <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-049-wp.pdf#page=96">verfassungsrechtlichen
+          Hürden seien aber zu hoch</a> und die Aussichten sehr gering, dass
+          Menschen aus Nicht-EU-Ländern nach fünf Jahren in Deutschland wählen
+          dürfen. Aus diesem Grund würde die SPD lieber <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-049-wp.pdf#page=96">Änderungen
+          am Erteilen der Staatsangehörigkeit vornehmen</a> und nicht am
+          Wahlrecht.
+      - party: die-linke
+        answer: richtig
+        comment: >-
+          Die Linke hat für den eigenen <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-0989.pdf"><u>Antrag</u></a>
+          gestimmt, da <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-049-wp.pdf#page=92"><u>17
+          Prozent der Menschen in Berlin</u></a> von den Wahlen ausgeschlossen
+          seien, obwohl viele davon schon lange in Deutschland leben. Die Linke
+          setze sich für „<a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-049-wp.pdf#page=93"><u>Mehr
+          Teilhabe, mehr Gerechtigkeit, mehr Demokratie und für das Wahlrecht
+          für alle</u></a>“ ein.
+      - party: die-gruenen
+        answer: richtig
+        comment: >-
+          Die Grünen haben für den eigenen <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-0989.pdf"><u>Antrag</u></a>
+          gestimmt, da es ein <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-049-wp.pdf#page=95"><u>Demokratiedefizit</u></a>
+          sei, dass so viele Menschen in Berlin ihren Lebensmittelpunkt haben,
+          aber nicht wählen dürfen. <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-049-wp.pdf#page=95"><u>Sie
+          seinen von der Politik betroffen aber hätten kein
+          Mitspracherecht.</u></a> Dieses Defizit müsse behoben werden.
+      - party: afd
+        answer: zu weit
+        comment: >-
+          Die AfD hat den<a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-0989.pdf"><u>
+          Antrag</u></a> abgelehnt, da dieser ein „<a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-049-wp.pdf#page=96"><u>direkter
+          Angriff auf die Volkssouveränität und unser Grundgesetz</u></a>“ sei.
+          Die Fraktion bezeichnet den Antrag als <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-049-wp.pdf#page=96"><u>verfassungwidrig
+          und verfassungsfeindlich</u></a>. Wer ein „<a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-049-wp.pdf#page=96"><u>Ausländerwahlrecht</u></a>“
+          fordere, beschneide damit das Wahl- und Stimmgewicht deutscher
+          Staatsbürger. Der <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-0989.pdf"><u>Antrag</u></a>
+          erkläre „<a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-049-wp.pdf#page=96"><u>das
+          deutsche Staatsgebiet zu einem Siedlungs- und Herrschaftsgebiet für
+          Drittstaatler</u></a>“.
+  - id: question-3
+    index: 3
+    category: Migration
+    thesis: >-
+      Berlin soll keine Bezahlkarte mit Bargeldlimit für geflüchtete Menschen
+      einführen.
+    info: >-
+      <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
+      Recherchen, Klagen und Community-Aktionen. Du findest unabhängige,
+      investigative Berichterstattung wichtig? <a target="_blank" rel="noopener
+      noreferrer"
+      href="https://fragdenstaat.de/artikel/exklusiv/2024/12/alles-fur-eine-karte-asylsuchende-bezahlkarte/"><u>Entdecke
+      jetzt diese spannende Recherche zur Bezahlkarte</u></a>!</p>
+    keyword: Bezahlkarte
+    answers:
+      - party: cdu
+        answer: zu weit
+        comment: >-
+          Die CDU lehnte den <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-1748.pdf"><u>Antrag</u></a>
+          der Linksfraktion ab. Die Fraktion stellt klar, dass die Bezahlkarte
+          kommen wird und betont, <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-089-wp.pdf#page=108">dass
+          diese aus ihrer Sicht nicht diskriminierend sei</a>.
+      - party: spd
+        answer: zu weit
+        comment: >-
+          Die SPD lehnte den <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-1748.pdf"><u>Antrag</u></a>
+          der Linken ab. Die Fraktion sieht die Bezahlkarte zwar sehr kritisch
+          „<a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-089-wp.pdf#page=110"><u>weil
+          alle namhaften Expertinnen und Experten klipp und klar gesagt haben,
+          dass eine Bezahlkarte ökonomisch, teilhabepolitisch, verwaltungs- als
+          auch steuerungstechnisch absolut keinen Sinn ergibt.</u></a>“ Der SPD
+          Landesverband habe sich aber bereits <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-089-wp.pdf#page=110"><u>gegen
+          eine diskriminierende Bezahlkarte ausgesproche</u></a>n, die jetzt
+          geplante Version sei die <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-089-wp.pdf#page=110"><u>letzte
+          einzuführende Bezahlkarte in Deutschland sei und auch die </u></a>„<a
+          target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-089-wp.pdf#page=110"><u>softeste</u></a>“,
+          der negative Impact auf die Betroffenen sei geringer.
+      - party: die-linke
+        answer: richtig
+        comment: >-
+          Die Linksfraktion stimmte für den eigenen <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-1748.pdf"><u>Antrag</u></a>
+          und <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-089-wp.pdf#page=109"><u>kritisiert
+          die Bezahlkarte in ihrer jetzigen Form als diskriminierend, vor allem
+          im Hinblick auf das Bargeldlimit. </u></a>Es gehe mit dieser
+          Bezahlkarte darum, abzuschrecken, abzuwerten und auszugrenzen.
+      - party: die-gruenen
+        answer: richtig
+        comment: >-
+          Die Grünen stimmten für den <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-1748.pdf"><u>Antrag
+          </u></a>der Linksfraktion. <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-089-wp.pdf#page=107"><u>Die
+          Bezahlkarte sei im Prinzip ein sinnvolles, digitales
+          Verwaltungsinstrument, sie kritisierten aber die diskriminierende
+          Ausgestaltung der Berliner Bezahlkarte. </u></a>Insbesondere die <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-089-wp.pdf#page=107">Obergrenze
+          von 50 € für Bargeldabhebungen</a> sei problematisch.
+      - party: afd
+        answer: zu weit
+        comment: >-
+          Die AfD stimmte gegen den <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-1748.pdf"><u>Antrag</u></a>.
+          Die Bezahlkarte sei „<a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-089-wp.pdf#page=111"><u>ein
+          Asylmagnet, der weiter massenhaft Zuwanderung von Nichtberechtigten
+          nach Berlin anziehe</u></a>“. <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-089-wp.pdf#page=110"><u>Der
+          AfD-Fraktion gehen die Einschränkungen der Bezahlkarte nicht weit
+          genug.</u></a>
+  - id: question-4
+    index: 4
+    category: Demokratie & Institutionen
+    thesis: "Informationsanfragen von Bürger*innen zu\_kritischer Infrastruktur (z. B. Wasser- und Gesundheitsversorgung, ÖPNV, Medien) sollen pauschal abgelehnt werden, auch wenn die Veröffentlichung der Informationen keine konkrete Gefahr für die Sicherheit darstellt."
+    info: >-
+      <p>FragDenStaat macht nicht nur den Real-O-Mat. Seit 15 Jahren setzen wir
+      uns für Transparenz ein – mit investigativen Recherchen, Klagen und
+      Community-Aktionen. Lies jetzt mehr über die <a target="_blank"
+      rel="noopener noreferrer"
+      href="https://fragdenstaat.de/artikel/policy/2026/07/ifg-attacke-3/"><u>aktuellen
+      Angriffe auf Informationsfreiheit</u></a>.</p>
+    keyword: Informationsfreiheitsgesetzanfragen
+    answers:
+      - party: cdu
+        answer: richtig
+        comment: >-
+          Die CDU stimmte für das <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2999.pdf"><u>Gesetz</u></a>
+          zur Änderung des Berliner Datenschutzgesetzes. Die Angriffe auf die
+          Energieversorgung hätten gezeigt, dass die kritische Infrastruktur
+          gefährdet sei. Transparenz sei kein Selbstzweck, sie diene dem
+          demokratischen Gemeinwesen, aber sie dürfe dieses nicht zugleich
+          gefährden. <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=80">Transparenz
+          stehe die Pflicht des Staates entgegen, die Funktionsfähigkeit seiner
+          kritischen Infrastrukturen zu schützen </a>und damit letztlich Leib,
+          Leben und die Versorgung der Bevölkerung.
+      - party: spd
+        answer: richtig
+        comment: >-
+          Die SPD stimmte für das <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2999.pdf"><u>Gesetz</u></a>
+          zur Einschränkung der Informationsfreiheit, da dieses sowohl die <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=82">Sicherheit
+          der kritischen Infrastruktur als auch die Rechte der Bürgerinnen und
+          Bürger auf Datenschutz und Informationszugang stärke</a>. Man hätte
+          die Kritik von FragDenStaat ernst genommen und einige Änderungen am
+          Gesetz vorgenommen.
+      - party: die-linke
+        answer: zu weit
+        comment: >-
+          Die Linke lehnte das <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2999.pdf"><u>Gesetz</u></a>
+          ab, denn es schütze nicht die kritische Infrastruktur. Die Fraktion
+          fordert darum <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=83"><u>von
+          der Regierung die Umsetzung anderer Maßnahmen wie etwa ein
+          Notfallregister für Personen mit Einschränkungen für den
+          Katastrophenfall. </u></a>Zudem wirft sie der Regierungskoalition vor,
+          die Informationsfreiheit abbauen zu wollen und betont, dass man sich
+          stattdessen für ein <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=82"><u>Transparenzgesetz</u></a>
+          einsetzen wolle.
+      - party: die-gruenen
+        answer: zu weit
+        comment: >-
+          Die Grünen stimmten gegen das <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2999.pdf"><u>Gesetz</u></a>
+          zur Änderung des Berliner Datenschutzgesetzes. In der Debatte im
+          Fachausschuss konnte laut Abgeordnetem Ziller <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=81">keine
+          einzige IFG-Anfrage vorgelegt werden, die den Schutz kritischer
+          Infrastruktur gefährde</a>. Das Gesetz sei kein Sicherheitsgesetz,
+          sondern ein „<a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=81">Blankoscheck
+          für Intransparenz</a>“.
+      - party: afd
+        answer: zu weit
+        comment: >-
+          Die AfD-Fraktion lehnte das <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2999.pdf"><u>Gesetz</u></a>
+          ab. Die Fraktion unterstütze zwar den Schutz kritischer Infrastruktur,
+          <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=83">die
+          Einschnitte in die Informationsfreiheit und pauschalen
+          Bereichsausnahmen bei Informationsfreiheitsanfragen, auch für die
+          Steuerverwaltung</a>, gingen jedoch zu weit.
+  - id: question-5
+    index: 5
+    category: Gesellschaft
+    thesis: >-
+      Die Stadt Berlin soll sich für die Olympischen und Paralympischen Spiele
+      bewerben.
+    info: >-
+      <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern setzt sich mit
+      investigativen Recherchen, Klagen und Community-Aktionen für mehr
+      Transparenz ein. Du möchtest selbst spannende Informationen über
+      Politiker*innen und Behörden ans Licht bringen? <a target="_blank"
+      rel="noopener noreferrer"
+      href="https://fragdenstaat.de/informationsfreiheit/einsteiger-guide/"><u>Stelle
+      jetzt eine IFG-Anfrage!</u></a></p>
+    keyword: Olympische Spiele
+    answers:
+      - party: cdu
+        answer: richtig
+        comment: >-
+          Die CDU stimmte für die <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2962-1.pdf"><u>Volksinitiative
+          „Die Spiele für Berlin“</u></a>, da sie darin eine „<a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-086-wp.pdf#page=14"><u>enorme
+          Chancen für unsere Sportmetropole, für unsere Stadt Berlin</u></a>“,
+          etwa in Bezug auf Investitionen in Sportstätten und Infrastruktur,
+          sehen.
+      - party: spd
+        answer: richtig
+        comment: >-
+          Die SPD stimmte für den <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2962-1.pdf"><u>eigenen
+          Antrag</u></a>. Man wollte dem Sport <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-086-wp.pdf#page=18"><u>mehr
+          finanzielle Aufmerksamkeit schenken und die finanzielle Unterstützung
+          für Olympia nutzen, um in Berlin Sportanlagen zu sanieren.</u></a>
+      - party: die-linke
+        answer: zu weit
+        comment: >-
+          Die Linken lehnen eine <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2962-1.pdf"><u>Bewerbung
+          für die Olympischen Spiele </u></a>ab, da man sich diese <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-086-wp.pdf#page=21"><u>nicht
+          leisten könne</u></a>. Die echten <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-086-wp.pdf#page=20">Kosten
+          würden bei solchen Projekten die geplanten deutlich übersteigen</a>
+          und die Kostenrechnung der Landesregierung enthalte nicht alle
+          anfallenden Kostenpunkte.
+      - party: die-gruenen
+        answer: zu weit
+        comment: >-
+          Die Grünen lehnen eine <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2962-1.pdf"><u>Bewerbung
+          für Olympia</u></a> ab, mit der Begründung, <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-086-wp.pdf#page=16"><u>dass
+          die Stadt Berlin viele anderen Probleme habe, die gelöst werden
+          müssen</u></a>. Zudem <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-086-wp.pdf#page=17"><u>seien
+          die Sportstätten in Berlin in einem schlechten Zustand und die
+          Kostenschätzung für das Projekt sei intransparent</u></a>. Gelder für
+          Sportanlagen sollen direkt investiert werden, nicht über eine Umweg
+          über das Olympische Kommittee.
+      - party: afd
+        answer: richtig
+        comment: >-
+          Die AfD-Fraktion stimmte für den gemeinsamen <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2962-1.pdf"><u>Antrag</u></a>
+          von CDU und SPD. Olympia sei eine Chance <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-086-wp.pdf#page=23"><u>den
+          Sanierungsstau der Sportinfrastruktur zu lösen</u></a> und könne <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-086-wp.pdf#page=22"><u>Menschen
+          begeistern und der Stadt ein gemeinsames, endlich positives Ziel
+          geben</u></a>.
+  - id: question-6
+    index: 6
+    category: Innere Sicherheit
+    thesis: >-
+      Die Polizei darf Gesichter im Internet abgleichen, um nach als
+      gefährlichen geltenden Verdächtigen sowie deren Kontaktpersonen zu
+      suchen. 
+    info: >-
+      <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
+      Recherchen, Klagen und Community-Aktionen. Du findest unabhängige,
+      investigative Berichterstattung wichtig? Entdecke jetzt diese spannende
+      Recherche zum <a target="_blank" rel="noopener noreferrer"
+      href="https://fragdenstaat.de/artikel/exklusiv/2026/02/dobrindt-will-europas-ki-verordnung-verwassern/"><u>KI-Einsatz
+      von Sicherheitsbehörden</u></a>!</p>
+    keyword: Polizeibefugnisse
+    answers:
+      - party: cdu
+        answer: richtig
+        comment: >-
+          Die CDU stimmte für den eigenen <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2553.pdf"><u>Antrag</u></a>.
+          Das Gesetz mache <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-076-wp.pdf#page=15"><u>die
+          liberale Demokratie<br>wehrhaft gegen die bestehenden Gefahren</u></a>
+          wie Terrorismus und <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-076-wp.pdf#page=16"><u>solle
+          die Sicherheit, Freiheit und körperliche Unversehrtheit der
+          Bürgerinnen und Bürger schützen</u></a>.
+      - party: spd
+        answer: richtig
+        comment: >-
+          Die SPD hat für das <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2553.pdf"><u>Gesetz
+          zur Reform des Berliner Polizei- und Ordnungsrechts</u></a> gestimmt.
+          Die Polizei brauche <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-076-wp.pdf#page=10"><u>zeitgemäße
+          Instrumente, um ihrer Aufgabe gerecht zu werden</u></a>. Man habe sich
+          sehr genau überlegt, <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-076-wp.pdf#page=11"><u>wie
+          man das Verhältnis zwischen dem </u></a>„<a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-076-wp.pdf#page=11"><u>Einsatz
+          moderner Techniken und der Wahrung von Bürgerrechten</u></a>“
+          ausgestaltet.
+      - party: die-linke
+        answer: zu weit
+        comment: >-
+          Die Linke lehnt die <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2553.pdf"><u>Polizeireform</u></a>
+          entschieden ab, da es <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-076-wp.pdf#page=17"><u>kaum
+          noch eine Kontrolle darüber gäbe, wer im polizeilichen Datenbestand
+          lande und für wie lange</u></a>. Es seien zwar auch <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-076-wp.pdf#page=18"><u>ein
+          paar sinnvolle Maßnahmen enthalten, viele würden aber weit über das
+          Ziel hinausschießen</u></a>. Das Gesetz bewege sich an der <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-076-wp.pdf#page=17"><u>Grenze
+          des verfassungsrechtlich Zulässigen</u></a> und gehe manchmal auch
+          darüber hinaus.
+      - party: die-gruenen
+        answer: zu weit
+        comment: >-
+          Die Fraktion der Grünen stimmte gegen den <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2553.pdf"><u>Gesetzentwurf</u></a>
+          von CDU und SPD. Das Gesetz sei ein <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-076-wp.pdf#page=12"><u>Einfallstor
+          für einen Überwachsungsstaat</u></a>, inbesondere dann, wenn <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-076-wp.pdf#page=11"><u>Personen
+          überwacht werden, von denen keine Gefahr ausginge</u></a>, wie etwa
+          Kontakt- und Begleitpersonen. Man dürfe nicht im Namen der Sicherheit
+          <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-076-wp.pdf#page=12"><u>jeden
+          Menschen in Berlin zur Gefahrenquelle erklären</u></a>.
+      - party: afd
+        answer: richtig
+        comment: >-
+          Die AfD stimmte für die Reform des <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2553.pdf"><u>Polizei-
+          und Ordnungsgesetzes</u></a>. Die Novelle <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-076-wp.pdf#page=18"><u>schaffe
+          richtige und längst überfällige Befugnisse für die Sicherheitskräfte,
+          sie löse aber nicht das Kriminalitätsproblem der Stadt</u></a>.
+          Sicherheit für Berlin bedeute „<a target="_blank" rel="noopener
+          noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-076-wp.pdf#page=20"><u>Remigration
+          statt illegaler Massenmigration</u></a>“.
+  - id: question-7
+    index: 7
+    category: Innere Sicherheit
+    thesis: >-
+      Die Anwendung von Distanz-Elektroimpulsgeräten (Taser) soll der Berliner
+      Polizei erlaubt sein.
+    info: >-
+      <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
+      Recherchen, Klagen und Community-Aktionen. Du findest unabhängige,
+      investigative Berichterstattung wichtig? Entdecke jetzt diese spannende
+      Recherche zu <a target="_blank" rel="noopener noreferrer"
+      href="https://fragdenstaat.de/artikel/exklusiv/2023/10/elektroschocker-fur-die-polizei/"><u>Tasern
+      bei der Polizei</u></a>!</p>
+    keyword: Taser-Einsatz
+    answers:
+      - party: cdu
+        answer: richtig
+        comment: >-
+          Die CDU stimmte für das <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-1232.pdf"><u>Gesetz</u></a>
+          und sprach sich für den Einsatz von Tasern durch die Polizei aus. <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-040-pp.pdf#page=42"><u>Allein
+          die Androhung seines Einsatzes führe dazu, dass Täter von der weiteren
+          Tatbegehung ablassen würden</u></a>.
+      - party: spd
+        answer: richtig
+        comment: >-
+          Die SPD-Fraktion stimmte für den eigenen <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-1232.pdf"><u>Gesetzesentwurf</u></a>
+          und bezeichnet diesen als <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-040-pp.pdf#page=45"><u>gelungene
+          Lösung</u></a>. Der SPD-Abgeordnete äußerte sich in seiner Rede aber
+          nicht detaillierter zum Einsatz von Tasern.
+      - party: die-linke
+        answer: zu weit
+        comment: >-
+          Die Fraktion der Linken stimmte gegen das <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-1232.pdf"><u>Gesetz</u></a>,
+          da der Einsatz von Tasern nicht zu einer <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-040-pp.pdf#page=45"><u>Reduzierung
+          von Toten und Verletzten führe. Wissenschaftliche Untersuchungen
+          hätten bereits gezeigt, dass der Taser-Einsatz nicht zu einem
+          reduzierten Einsatz von Schusswaffen führe.</u></a>
+      - party: die-gruenen
+        answer: zu weit
+        comment: >-
+          Die Grünen stimmten gegen das <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-1232.pdf"><u>Gesetz</u></a>,
+          welches den Einsatz von Tasern erlaubt. <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-040-pp.pdf#page=43"><u>Zwar
+          gäbe es Situationen, in denen der Einsatz eines Tasers hilfreich sei,
+          man nehme dabei aber zu viel Kollateralschäden in Kauf</u></a>, vor
+          allem wenn man dem Taser rechtlich nicht einer Schusswaffe, sondern
+          einem Schlagstock gleichstelle.
+      - party: afd
+        answer: richtig
+        comment: >-
+          Die AfD stimmte für den<a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-1232.pdf"><u>
+          Antrag </u></a>der Regierungsparteien. Sie<a target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-040-pp.pdf#page=47"><u>
+          hebt gesondert hervor,</u></a> dass mit diesem Gesetz der Einsatz von
+          Tasern beschlossen werden kann. <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-040-pp.pdf#page=47"><u>Die
+          Novelle des Gesetzes geht der AfD-Fraktion insgesamt aber nicht weit
+          genug</u></a>, sie könne nur eine erste Novelle sein.
+  - id: question-8
+    index: 8
+    category: Migration
+    thesis: >-
+      Der Berliner Senat soll sich auf EU-Ebene für den Erhalt des Grundrechts
+      auf Asyl einsetzen. Asyl-Verfahren sollen nicht an die EU-Außengrenzen
+      verlagert werden.
+    info: >-
+      <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
+      Recherchen, Klagen und Community-Aktionen. Du findest unabhängige,
+      investigative Berichterstattung wichtig? Entdecke jetzt diese spannende <a
+      target="_blank" rel="noopener noreferrer"
+      href="https://fragdenstaat.de/artikel/exklusiv/2026/08/rechtsbruch-mit-ansage/"><u>Recherche
+      zur deutschen Grenzpolitik</u></a>!</p>
+    keyword: Asylrecht
+    answers:
+      - party: cdu
+        answer: zu weit
+        comment: >-
+          Die CDU-Fraktion stimmte gegen den<a target="_blank" rel="noopener
+          noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-1050.pdf"><u>
+          Antrag</u></a> der Linken mit der Begründung, dass der<a
+          target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-033-wp.pdf#page=110"><u>
+          EU-Asylkompromiss den Asylrechtsschutz nicht abschaffe, sondern ihn
+          für Antragssteller aus sicheren Herkunftsstaaten an die
+          EU-Außengrenzen verlagere</u></a>. Dies sei eine Anpassung an die
+          Realität.
+      - party: spd
+        answer: zu weit
+        comment: >-
+          Die SPD stimmte gegen den <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-1050.pdf"><u>Antrag</u></a>
+          der Linksfraktion. Man sei mit der Linksfraktion einer Meinung, dass
+          es <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-033-wp.pdf#page=113"><u>massiven
+          Nachbesserungsbedarf bei der Anwendung des Außengrenzen-Verfahrens
+          gäbe</u></a>. Man müsse jetzt an die EU appellieren, damit die
+          Umsetzung des Verfahrens freiwllig ist. Dennoch ging der SPD der
+          Antrag insgesamt zu weit.
+      - party: die-linke
+        answer: richtig
+        comment: >-
+          Die Linken stimmten für den eigenen <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-1050.pdf"><u>Antrag</u></a>.
+          Das Grundrecht auf Asyl sei <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-033-wp.pdf#page=109"><u>menschenrechtlich
+          geboten</u></a>. Dabei betonte sie, dass eine gemeinsame europäische
+          Asylpolitik etwas Gutes sein könnte, in der jetzigen Form sei das
+          Motto jedoch Abschottung und Ausgrenzung.
+      - party: die-gruenen
+        answer: richtig
+        comment: >-
+          Bündnis 90/die Grünen stimmten für den <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-1050.pdf"><u>Antrag</u></a>
+          der Linksfraktion. Man wollte nicht, dass <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-033-wp.pdf#page=111"><u>Geflüchtete
+          an den Grenzen festgehalten werden</u></a>.
+      - party: afd
+        answer: zu weit
+        comment: >-
+          Die AfD-Fraktion stimmte gegen den <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-1050.pdf"><u>Antrag</u></a>
+          und lobte, dass auf EU-Ebene Regelungen getroffen werden, den <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-033-wp.pdf#page=115">Zustrom
+          von Geflüchteten zu begrenzen</a>. Der AfD gehen diese Maßnahmen aber
+          noch nicht weit genug.
+  - id: question-9
+    index: 9
+    category: Transparenz
+    thesis: >-
+      Das Berliner Informationsfreiheitsgesetz soll durch ein Transparenzgesetz
+      ersetzt werden. Es soll Behörden verpflichten, wichtige Informationen und
+      Dokumente proaktiv, kostenlos und digital zu veröffentlichen.
+    info: >-
+      <p>FragDenStaat macht nicht nur den Real-O-Mat. Seit 15 Jahren setzen wir
+      uns für Transparenz ein – mit investigativen Recherchen, Klagen und
+      Community-Aktionen. Lies jetzt mehr über die <a target="_blank"
+      rel="noopener noreferrer"
+      href="https://fragdenstaat.de/artikel/policy/2026/07/ifg-attacke-3/"><u>aktuellen
+      Angriffe auf Informationsfreiheit</u></a>.</p>
+    keyword: Transparenzgesetz
+    answers:
+      - party: cdu
+        answer: zu weit
+        comment: >-
+          Der <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-1014.pdf"><u>Antrag</u></a>
+          für ein Berliner Transparenzgesetz wurde von der CDU-Fraktion
+          abgelehnt. Als Gründe nannte die Fraktion unter anderem <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=59"><u>den
+          Schutz kritischer Bereiche, der im Gesetz nicht ausreichend abgebildet
+          sei, sowie hohe Personalkosten bei der Bereitstellung</u></a>.
+      - party: spd
+        answer: zu weit
+        comment: >-
+          Das <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-1014.pdf"><u>Berliner
+          Transparenzgesetz</u></a> wurde von der SPD in seiner jetzigen Form
+          abgelehnt, da das „<a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=62"><u>Verhältnis
+          von Informationsfreiheit und Sicherheit in der vergangenen Zeit in die
+          Richtung zu mehr Sicherheit verschoben worden sei</u></a>“. Der
+          Gesetzentwurf sei „<a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=62"><u>veraltet</u></a>“,
+          die SPD kündigte an, einen eigenen Entwurf für ein Transparenzgesetz
+          vorzulegen.
+      - party: die-linke
+        answer: richtig
+        comment: >-
+          Die Fraktion die Linke stimmte für den gemeinsamen <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-1014.pdf"><u>Antrag</u></a>
+          mit den Grünen damit alle, die Informationen erhalten wollen, nicht
+          mehr mühsam Anträge stellen müssen, sondern <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=58"><u>diese
+          zugänglich im Internet finden</u></a>. Dies ermögliche einen
+          Paradigmenwechsel in der Informationspolitik des Landes.
+      - party: die-gruenen
+        answer: richtig
+        comment: >-
+          Die Grünen stimmten für den gemeinsamen <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-1014.pdf"><u>Antrag</u></a>
+          mit den Linken, <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=60"><u>da
+          das Berliner Transparenzgesetz Ausdruck einer modernen öffentlichen
+          Verwaltung sei, die Potenziale und Chancen der Digitalisierung
+          nutze.</u></a> Gleichzeitig kritisiert deíe Fraktion die vorgenommenen
+          Einschränkungen am Informationsfreiheitsgesetz und fordert mehr statt
+          weniger Transparenz.
+      - party: afd
+        answer: zu weit
+        comment: >-
+          Die AfD-Fraktion hat das <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-1014.pdf"><u>Berliner
+          Transparenzgesetz</u></a> abgelehnt. Man sei nicht gegen Transparenz,
+          doch der <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=62"><u>bürokratische
+          Aufwand hierfür würde die Verwaltung überfordern und sei damit nicht
+          praxistauglich</u></a>.
+  - id: question-10
+    index: 10
+    category: Mobilität
+    thesis: >-
+      Um den städtischen Raum besser zu nutzen, sollen in Berlin in Zukunft
+      weniger private Autos fahren.
+    info: >-
+      <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern setzt sich mit
+      investigativen Recherchen, Klagen und Community-Aktionen für mehr
+      Transparenz ein. Du möchtest selbst spannende Informationen über
+      Politiker*innen und Behörden ans Licht bringen? <a target="_blank"
+      rel="noopener noreferrer"
+      href="https://fragdenstaat.de/informationsfreiheit/einsteiger-guide/"><u>Stelle
+      jetzt eine IFG-Anfrage</u></a>!</p>
+    keyword: Autoverkehr
+    answers:
+      - party: cdu
+        answer: zu weit
+        comment: >-
+          Die CDU lehnte den <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-0983.pdf"><u>Antrag</u></a>
+          der Fraktionen Bündnis 90/Die Grünen und der Linken ab. Im Gesetz
+          seien <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-031-pp.pdf#page=55">viele
+          gute Punkte enthalten</a>, aber auch einige, bei denen die CDU nicht
+          mitgehen kann. Die CDU wolle keinen „<a target="_blank" rel="noopener
+          noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-031-pp.pdf#page=55">Kampf
+          gegen das Auto, gegen den motorisierten Individualverkehr
+          ausrufen</a>“, so wie es die antragstellenden Parteien laut CDU in das
+          Gesetz geschrieben hätten.
+      - party: spd
+        answer: zu weit
+        comment: >-
+          Die SPD lehnte den <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-0983.pdf"><u>Antrag</u></a>
+          ab, da er den Individualverkehr zu sehr einschränke. Es gäbe
+          Verkehrsteilnehmende, <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/AusschussPr/web/web19-022-wp.pdf#page=33">die
+          nur mit dem Auto zu ihren systemrelevanten Arbeitsplätzen kommen</a>
+          und diese wolle die SPD auch unterstützen, nicht nur den
+          Wirtschaftsverkehr.
+      - party: die-linke
+        answer: richtig
+        comment: >-
+          Die Fraktion der Linken stimmte dem gemeinsamen <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-0983.pdf"><u>Antrag</u></a>
+          mit der Fraktion Bündnis 90/Die Grünen zu. Man müsse den Mut haben, <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/AusschussPr/web/web19-022-wp.pdf#page=31">den
+          privaten motorisierten Individualverkehr ein bisschen
+          einzuschränken</a>, um etwa Unternehmen zu ermöglichen, schneller an
+          ihr Ziel zu kommen und Parkplätze zu finden.
+      - party: die-gruenen
+        answer: richtig
+        comment: >-
+          Die Grünen stimmte für den gemeinsamen <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-0983.pdf"><u>Antrag</u></a>.
+          Man müsse sich <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/AusschussPr/web/web19-022-wp.pdf#page=27">für
+          eine Reduktion des individuellen privaten Autoverkehrs
+          aussprechen</a>, ansonsten würde dies zulasten des Wirtschaftsverkehrs
+          gehen. Die Grünen wollen die Straßen vorrangig für die reservieren,
+          die tatsächlich auf das Auto angewiesen sind, wie etwa Hebammen,
+          Pflegedienste oder Malermeister.
+      - party: afd
+        answer: zu weit
+        comment: >-
+          Die AfD stimmte gegen <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-0983.pdf"><u>Antrag</u></a>
+          der Fraktionen Bündnis 90/Die Grünen und der Linken. Autofahrer werden
+          mit dem Gesetz „noch weiter gegängelt“, <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-031-pp.pdf#page=59"><u>die
+          einzelnen Verkehrsteilnehmer würden gegeneinander ausgespielt</u></a>.
+  - id: question-11
+    index: 11
+    category: Natur & Umwelt
+    thesis: >-
+      Aufgrund ihrer sozialen und ökologischen Relevanz für Berlin sollen
+      landeseigene Kleingärten gesetzlich geschützt werden.
+    info: >-
+      <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
+      Recherchen, Klagen und Community-Aktionen. Du möchtest mehr über unsere
+      Projekte zu Klima und Umwelt erfahren? Entdecke jetzt unseren <a
+      target="_blank" rel="noopener noreferrer"
+      href="https://fragdenstaat.de/climate"><u>Climate Helpdesk</u></a>!</p>
+    keyword: Kleingärten
+    answers:
+      - party: cdu
+        answer: richtig
+        comment: >-
+          Die CDU stimmte für das <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-2822.pdf"><u>Gesetz
+          zum Erhalt von Kleingartenanlagen</u></a>. Das Landesgesetz würde
+          Kleingärtenanlagen nun „<a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-081-pp.pdf#page=20"><u>auf
+          einem besonderen Niveau</u></a>“ schützen.
+      - party: spd
+        answer: richtig
+        comment: >-
+          Die SPD stimmte dem <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-2822.pdf"><u>Gesetz</u></a>
+          zum Schutz von Kleingärten zu. Es brauche das
+          Kleingärtensicherungsgesetz, da <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-081-pp.pdf#page=16"><u>seit
+          1990 ein Drittel der Kleingärten verschwunden sei</u></a>. Mit dem
+          bundesweit ersten Sicherungsgesetz für Kleingärten schreibe man
+          Geschichte und erhalte so Kleingärten <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-081-pp.pdf#page=16"><u>als
+          Orte der Gemeinschaft</u></a>.
+      - party: die-linke
+        answer: richtig
+        comment: >-
+          Die Fraktion der Linken stimmte für das <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-2822.pdf"><u>Gesetz</u></a>
+          und bezeichnet dieses als „<a target="_blank" rel="noopener
+          noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-081-pp.pdf#page=22"><u>Schritt
+          in die richtige Richtung, der aber eine Menge Schwächen hat</u></a>“.
+          Aus diesem Grund hatten die Linken einen <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2822-1.pdf"><u>Änderungsantrag</u></a>
+          eingereicht, der jedoch abgelehnt wurde. Sie kritisieren, dass die <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-081-pp.pdf#page=22"><u>Ausnahmeregelungen
+          interpretationsoffen seien</u></a> und ein <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-081-pp.pdf#page=22"><u>einfaches
+          öffentliches Interesse ausreiche, um Kleingartenflächen doch zu
+          bebauen</u></a>.
+      - party: die-gruenen
+        answer: richtig
+        comment: >-
+          Die Grünen stimmte dem <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-2822.pdf"><u>Gesetz
+          zum Erhalt von Kleingartenanlagen</u></a> zu. <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-081-pp.pdf#page=17"><u>Kleingärten<br>sollten
+          dauerhaft gesichert und klimaresilient weiterentwickelt
+          werden</u></a>, deshalb begrüßt die Fraktion das Gesetz ausdrücklich.
+      - party: afd
+        answer: nicht weit genug
+        comment: >-
+          Die AfD stimmte gegen die <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/DruckSachen/d19-2822.pdf"><u>gesetzliche
+          Verankerung</u></a> zum Schutz von Kleingärten. Dieses „<a
+          target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-081-pp.pdf#page=25"><u>Placebogesetz
+          zum Stimmenfang</u></a>“ bietet keinen ausreichenden Schutz für die
+          Berliner Kleingärten. Die AfD warb für einen eigenen <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-0543.pdf"><u>Antrag</u></a>,
+          der aber abgelehnt worden war.
+  - id: question-12
+    index: 12
+    category: Wirtschaft
+    thesis: >-
+      Um Ausbildungsplätze zu schaffen, sollen größere Betriebe, die nicht oder
+      zu wenig ausbilden, in einen Fonds einzahlen. Betriebe, die ausbilden,
+      erhalten aus diesem Fonds einen finanziellen Ausgleich.
+    info: >-
+      <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
+      Recherchen, Klagen und Community-Aktionen. Du findest unabhängige,
+      investigative Berichterstattung wichtig? Entdecke jetzt unsere <a
+      target="_blank" rel="noopener noreferrer"
+      href="https://fragdenstaat.de/artikel/exklusiv/2025/11/das-geschaft-mit-den-arbeitslosen/">Community-<u>Recherche</u>
+      „Jobcenter-Stories“</a>!</p>
+    keyword: Ausbildungsfonds
+    answers:
+      - party: cdu
+        answer: richtig
+        comment: >-
+          Die CDU stimmte dem <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2552.pdf"><u>Gesetz
+          zur Errichtung eines Ausbildungsförderungsfonds</u></a> zu, da der
+          Fonds das Ziel hat <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=45"><u>zusätzliche
+          Ausbildungsstellen finanziell zu unterstützen</u></a>. Es sei gut,
+          dass kleine Betriebe von der Regelung ausgenommen seien und <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=46"><u>Rahmenbedingungen
+          geschaffen werden, um Bürokratie zu verringern</u></a>.
+      - party: spd
+        answer: richtig
+        comment: >-
+          Die SPD stimmte dem eigenen <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2552.pdf"><u>Antrag</u></a>
+          zu, da durch das Gesetz zusätzliche <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=44">Ausbildungsplätzen
+          gefördert und Ausbildungsbetriebe unterstützt</a> würden. Das Gesetz
+          in der beschlossenen Form sei ein <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=44">Kompromiss</a>,
+          welcher aber ausgewogen und tragfähig sei.
+      - party: die-linke
+        answer: richtig
+        comment: >-
+          Die Fraktion der Linken stimmte dem <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2552.pdf"><u>Gesetz</u></a>
+          zu, da dieses <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=47"><u>ein
+          kleiner Schritt in die richtige Richtung sei</u></a>. Die Linken
+          kritisieren aber, <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=48"><u>dass
+          bestimmte Ausbildungsbetriebe von der Umlage ausgeschlossen sind und
+          fordern für die Zukunft weitere Anpassungen am Gesetz</u></a>.
+      - party: die-gruenen
+        answer: richtig
+        comment: >-
+          Die Fraktion der Grünen stimmte für das <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2552.pdf"><u>Gesetz
+          </u></a>zur Ausbildungsplatzumlage. Es sein grundsätzlich richtig,
+          dass das Land Berlin hier handle, auch wenn die <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=45">jetzige
+          Fassung nur ein Kompromiss</a> sei. Die Grünen kritisieren, dass <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=45">Betriebe,
+          die ausbilden wollen, es aber nicht können</a>, durch das Gesetz keine
+          Unterstützung erhalten. Man begrüße aber, dass kleinsten und kleinen
+          Betrieben durch das Gesetz kein Nachteil entstehe.
+      - party: afd
+        answer: zu weit
+        comment: >-
+          Die AfD stimmte gegen das <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2552.pdf"><u>Gesetz</u></a>,
+          da dieses die falsche Antwort auf ein echtes Problem sei. Die Ursache
+          für zu wenige Ausbildungsplätze läge am <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=48">Bildungssystem,
+          welches Schulabgänger ohne ausreichende Grund- und
+          Sprachkenntnisse</a> sowie ohne echte Berufsorientierung verabschiede.
+          Dabei bezeichnet die Partei die Ausbildungsplatzumlage als „<a
+          target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-083-wp.pdf#page=48">Zwangsabgabe</a>“,
+          die Betriebe bestrafe.
+  - id: question-13
+    index: 13
+    category: Gesellschaft
+    thesis: >-
+      Statt den erfolgreichen Volksentscheid „Deutsche Wohnen & Co enteignen“
+      schnellstmöglich umzusetzen, soll ein neues Gesetz zunächst nur festlegen,
+      unter welchen Bedingungen eine Enteignung geprüft werden kann.
+    info: >-
+      <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
+      Recherchen, Klagen und Community-Aktionen. Du findest unabhängige,
+      investigative Berichterstattung wichtig? Entdecke jetzt unsere <a
+      target="_blank" rel="noopener noreferrer"
+      href="https://fragdenstaat.de/recherchen"><u>Recherchen</u></a>!</p>
+    keyword: Volksentscheid
+    answers:
+      - party: cdu
+        answer: richtig
+        comment: >-
+          Die CDU-Fraktion stimmte dem <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2842.pdf">Antrag</a>
+          zu, betont jedoch, dass dies nur geschehe, um nicht mit dem
+          Koalitionsvertrag zu brechen. Inhaltlich positionierte sie sich gegen
+          das Gesetz und betont, <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-082-wp.pdf#page=74"><u>dass
+          es eine Enteignung oder Vergesellschaftung mit der CDU nicht geben
+          werde.</u></a>
+      - party: spd
+        answer: richtig
+        comment: >-
+          Die SPD stimmte dem <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2842.pdf">Antrag</a>
+          zu. <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-082-wp.pdf#page=73"><u>Eine
+          reine Umsetzung des Volksentscheides würde nur wenige Menschen
+          betreffen</u></a>, das neue Gesetz ermögliche eine viel
+          weitreichendere Änderung für Mieter*innen in Berlin.
+      - party: die-linke
+        answer: nicht weit genug
+        comment: >-
+          Die Fraktion der Linken stimmte gegen den <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2842.pdf">Antrag</a>.
+          Das Rahmengesetz sei „<a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-082-wp.pdf#page=75"><u>sinnlos</u></a>“
+          und juristisch unnütz. Statt des Rahmengesetzes brauche es vielmehr
+          eine tatsächliche <a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-082-wp.pdf#page=76"><u>Umsetzung
+          des Volksentscheides</u></a>.
+      - party: die-gruenen
+        answer: nicht weit genug
+        comment: >-
+          Die Fraktion der Grünen lehnte den <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2842.pdf">Antrag</a>
+          ab. Das Rahmengesetz sei „<a target="_blank" rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-082-wp.pdf#page=73"><u>überflüssig</u>“<u>
+          und </u>„<u>Volksverarsche</u></a>“, vielmehr bedanke man sich bei der
+          Initiative „Deutsche Wohnen &amp; Co. enteignen“, die einen eigenen
+          Gesetzentwurf vorgelegt hat. So wolle man grundsätzliche Probleme auf
+          dem Wohnungsmarkt regeln mit dem Ziel eines <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-082-wp.pdf#page=74"><u>gemeinwohlorientierten
+          Wohnungsmarktes</u></a>.
+      - party: afd
+        answer: zu weit
+        comment: >-
+          Die AfD stimmte gegen <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2842.pdf">Antrag</a>
+          für das Rahmengesetz. Zum einen sei es politisch<a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-082-wp.pdf#page=76"><u>
+          verantwortungslos</u></a>, ein Gesetz zu beschließen, bei dem es
+          massive verfassungsrechtliche Bedenken gäbe. Zum anderen sei das
+          Rahmengesetz ein fatales Zeichen an die Wirtschaft,<a target="_blank"
+          rel="noopener noreferrer"
+          href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/PlenarPr/p19-082-wp.pdf#page=77"><u>
+          sodass Investor*innen Berlin verlassen würden</u></a> und der
+          Wohnungsbau zum erliegen käme.
+  - id: question-14
+    index: 14
+    category: Frauen- und Queerpolitik
+    thesis: >-
+      Das Land Berlin benötigt ein Gesetz, das festlegt, wie Frauen und queere
+      Personen vor geschlechtsspezifischer und häuslicher Gewalt geschützt
+      werden können.
+    info: >-
+      <p>FragDenStaat macht nicht nur den Real-O-Mat, sondern auch investigative
+      Recherchen, Klagen und Community-Aktionen. Entdecke jetzt, wie wir mit dem
+      Gegenrechtsschutz <a target="_blank" rel="noopener noreferrer"
+      href="https://fragdenstaat.de/artikel/klagen/2026/06/sachsische-landesregierung-verliert-gegen-den-csd-dresden/"><u>die
+      Rechte queerer Menschen gegen autoritäre Behörden verteidigen</u></a>.</p>
+    keyword: Gewalthilfegesetz
+    answers:
+      - party: cdu
+        answer: zu weit
+        comment: >-
+          Die CDU stimmte gegen den <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-3193-1.pdf"><u>Änderungsantrag</u></a>
+          von Bündnis 90/Die Grünen Linken: Das <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-3193.pdf"><u>Gesetz
+          über die Gewalthilfe im Land Berlin</u></a> in seiner jetzigen Form
+          bedeute laut CDU nicht, dass es <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-089-pp.pdf#page=94"><u>keine
+          Schutzangebote für queere Menschen geben soll</u></a>. Man setze das
+          um, was <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-089-pp.pdf#page=94"><u>auf
+          Bundesebene für die Frauen vorgegeben ist</u></a>.
+      - party: spd
+        answer: zu weit
+        comment: >-
+          Die SPD lehnte den <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-3193-1.pdf"><u>Änderungsantrag</u></a>
+          von Bündnis 90/Die Grünen und den Linken zum Gewalthilfegesetz ab.
+          Durch den Änderungsantrag sollten explizit auch queere Menschen
+          gesetzlich vor Gewalt geschützt werden. Sie Stimmte jedoch hat
+          gemeinsam mit der CDU dem ursprünglichen Gesetzentwurf zu. Das
+          Gewalthilfegesetz sei ein „<a target="_blank" rel="noopener
+          noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-089-pp.pdf#page=92"><u>Meilenstein
+          im Gewaltschutz</u></a>“. Zu den Rechten queerer Menschen äußerte sich
+          die SPD nicht.
+      - party: die-linke
+        answer: richtig
+        comment: >-
+          Die Linke stimmte für den <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-3193-1.pdf"><u>Änderungsantrag</u></a>
+          und gegen das <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-3193.pdf"><u>Gesetz
+          über die Gewalthilfe im Land Berlin</u></a>. Die Fraktion kritisiert,
+          dass das neue Gesetz <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-089-pp.pdf#page=94"><u>queeren
+          Menschen den ganz realen Schutz verweigern würde</u></a>.
+      - party: die-gruenen
+        answer: richtig
+        comment: >-
+          Die Grünen stimmten für den eigenen <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-3193-1.pdf"><u>Änderungsantrag</u></a>
+          aber gegen das <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-3193.pdf"><u>Gesetz
+          über die Gewalthilfe im Land Berlin</u></a>. Sie <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-089-pp.pdf#page=93"><u>begrüßen
+          zwar das Gewalthilfegesetz</u></a>, können diesem jedoch nicht
+          zustimmen. <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-089-pp.pdf#page=93"><u>Queerfeindliche
+          Straftaten seien auf dem Höchststand</u></a>, doch das Gesetz gehe
+          dieses Problem nicht angemessen an.
+      - party: afd
+        answer: zu weit
+        comment: >-
+          Die AfD stimmte gegen den <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-3193-1.pdf"><u>Änderungsantrag</u></a>.
+          Sie sprach sich aber für das <a target="_blank" rel="noopener
+          noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-3193.pdf"><u>Gesetz
+          über die Gewalthilfe im Land Berlin</u></a> aus. Die Fraktion <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-089-pp.pdf#page=95"><u>teile
+          das grundsätzliche Anliegen</u></a> des Gewalthilfegesetzes, aber sehe
+          <a target="_blank" rel="noopener noreferrer"
+          href="https://www.parlament-berlin.de/ados/19/IIIPlen/protokoll/plen19-089-pp.pdf#page=96"><u>an
+          mehreren Stellen Nachbesserungsbedarf</u></a>. Die AfD äußerte sich
+          nicht zum Schutz queerer Menschen.
+parties:
+  - name: SPD
+    slug: spd
+    color: '#ff0000'
+  - name: Die Grünen
+    slug: die-gruenen
+    color: '#00ff00'
+  - name: Die Linke
+    slug: die-linke
+    color: '#ffffff'
+  - name: AfD
+    slug: afd
+    color: '#ffffff'
+  - name: CDU
+    slug: cdu
+    color: '#000000'
