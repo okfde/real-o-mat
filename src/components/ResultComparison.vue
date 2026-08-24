@@ -1,8 +1,9 @@
 <script lang="ts" setup>
-import type { Answer, Election, Party, Question } from '../content.config'
+import type { Election } from '../content.config'
 import { useStore, answerOptions } from '../store'
 import AnswerIndicator from '../components/AnswerIndicator.vue'
 import { computed, onMounted, ref, useTemplateRef } from 'vue'
+import { getPartyAnswer } from '../share'
 
 const props = defineProps<{
   election: Election
@@ -21,9 +22,6 @@ onMounted(() => {
     tableScroll.value = tableContainer.value!.scrollLeft
   })
 })
-
-const getPartyAnswer = (question: Question, party: Party): Answer | undefined =>
-  question.answers.find((a) => a.party === party.slug)?.answer
 </script>
 
 <template>
