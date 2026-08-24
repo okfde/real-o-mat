@@ -10,9 +10,9 @@ const emit = defineEmits(['done'])
   <div class="bg-white p-4 md:p-8">
     <h2 class="text-lg!">Wie funktioniert der Real-O-Mat?</h2>
     <p>
-      Im Landtag bzw. Abgeordnetenhaus haben die Fraktionen für oder gegen
-      Anträge und Gesetzentwürfe gestimmt oder sich enthalten. Der Real-O-Mat
-      gleicht ihr Stimmverhalten mit Deiner Position zu 14 Thesen ab.
+      Im Landesparlament haben die Fraktionen für oder gegen Anträge und
+      Gesetzentwürfe gestimmt oder sich enthalten. Der Real-O-Mat gleicht ihr
+      Stimmverhalten mit Deiner Position zu verschiedenen Themen ab.
     </p>
 
     <h2 class="mt-4 text-lg!">Wie werden die Positionen bewertet?</h2>
@@ -35,7 +35,7 @@ const emit = defineEmits(['done'])
             }"
           />
 
-          <h3>Beispiel anzeigen</h3>
+          <h3>Beispiel</h3>
         </DisclosureButton>
         <DisclosurePanel
           class="mt-2 rounded bg-purple-50 p-4 text-sm text-gray-800"
@@ -49,7 +49,7 @@ const emit = defineEmits(['done'])
           <div class="mt-2 space-y-2">
             <p>
               <strong>Ja, finde ich auch</strong>: Die Fraktion hat dem Antrag
-              zugestimmt
+              zugestimmt.
             </p>
             <p>
               <strong>Nein, geht mir zu weit</strong>: Die Fraktion hat den
