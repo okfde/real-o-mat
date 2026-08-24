@@ -1,10 +1,8 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 import type { Election } from '../content.config'
 import IconBack from '~icons/material-symbols/arrow-back'
 import IconForward from '~icons/material-symbols/arrow-forward'
-import IconChevron from '~icons/material-symbols/keyboard-arrow-down-rounded'
 import { partyMap } from '../store'
 import AnswerIndicator from '../components/AnswerIndicator.vue'
 import { getPartyAnswer } from '../share'
@@ -91,15 +89,13 @@ const nextQuestion = () => {
             {{ currentQuestion.thesis }}
           </h3>
           <ul class="mt-8 grid gap-4 md:grid-cols-2">
-            <Disclosure
-              as="li"
+            <li
               default-open
-              v-slot="{ open }"
               v-for="({ party, comment }, i) in currentQuestion.answers"
               :key="party"
               class="flex flex-col"
             >
-              <DisclosureButton
+              <div
                 class="flex w-full items-center justify-between rounded bg-purple-100 px-3 py-3 outline-none focus:ring-3 focus:ring-purple-600/50 motion-safe:transition"
                 :class="{ 'rounded-b-none': open }"
               >
@@ -116,12 +112,12 @@ const nextQuestion = () => {
                   />
                   {{ partyBySlug.get(party)?.name }}
                 </h4>
-              </DisclosureButton>
-              <DisclosurePanel class="flex-1 rounded-b-lg bg-purple-50 p-4">
+              </div>
+              <div class="flex-1 rounded-b-lg bg-purple-50 p-4">
                 <div class="comment" v-if="comment" v-html="comment" />
                 <em v-else>keine Begründung angegeben</em>
-              </DisclosurePanel>
-            </Disclosure>
+              </div>
+            </li>
           </ul>
         </article>
       </Transition>
